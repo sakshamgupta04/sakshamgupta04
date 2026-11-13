@@ -1,0 +1,10 @@
+{% if has(profile.principles) %}
+## 📐 Working Principles <a id="principles"></a>
+
+| Principle | How It Shows Up |
+|:---|:---|
+{% for p in profile.principles %}
+| **{{ p.title }}** | {{ p.detail }} |
+{% endfor %}
+
+{% endif %}

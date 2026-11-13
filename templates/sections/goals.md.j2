@@ -1,0 +1,38 @@
+## 🎯 Mission &amp; Goals <a id="goals"></a>
+
+{% if has(profile.goals.short_term) or has(profile.goals.mid_term) or has(profile.goals.long_term) %}
+### Objectives
+
+{% if has(profile.goals.short_term) %}
+**Short-Term Focus:**
+{% for g in profile.goals.short_term %}
+- {{ g }}
+{% endfor %}
+{% endif %}
+
+{% if has(profile.goals.mid_term) %}
+**Mid-Term Focus:**
+{% for g in profile.goals.mid_term %}
+- {{ g }}
+{% endfor %}
+{% endif %}
+
+{% if has(profile.goals.long_term) %}
+**Long-Term Vision:**
+{% for g in profile.goals.long_term %}
+- {{ g }}
+{% endfor %}
+{% endif %}
+
+{% endif %}
+
+{% if has(profile.goals.roadmap) %}
+### 🗺️ Engineering Roadmap
+
+| Status | Milestone |
+|:---|:---|
+{% for r in profile.goals.roadmap %}
+| {{ r.status | format_status }} | {{ r.item }} |
+{% endfor %}
+
+{% endif %}

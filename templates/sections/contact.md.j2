@@ -1,0 +1,18 @@
+## 📬 Get in Touch <a id="contact"></a>
+
+{% if has(profile.identity.availability.text) %}
+🟢 **Current Status:** {{ profile.identity.availability.text }}
+{% endif %}
+
+{% if has(profile.links.email) %}
+- **Email:** [{{ profile.links.email | replace('mailto:', '') }}]({{ profile.links.email }})
+{% endif %}
+{% if has(profile.links.linkedin) %}
+- **LinkedIn:** [{{ profile.identity.name }}]({{ profile.links.linkedin }})
+{% endif %}
+{% if has(profile.links.leetcode) %}
+- **LeetCode:** [{{ profile.identity.handle }}]({{ profile.links.leetcode }})
+{% endif %}
+{% if has(profile.links.github) %}
+- **GitHub:** [{{ profile.identity.handle }}]({{ profile.links.github }})
+{% endif %}

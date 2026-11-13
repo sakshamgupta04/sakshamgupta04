@@ -15,7 +15,7 @@ if str(PROJECT_ROOT) not in sys.path:
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
-from scripts.helpers import find_todo_values, has
+from scripts.helpers import find_todo_values, format_roadmap_status, has
 from scripts.schema import Profile, ProfileValidationError, validate_profile_dict
 from scripts.svg_terminal import write_terminal_svgs
 
@@ -50,6 +50,7 @@ def render_readme(profile: Profile, template_dir: Path, template_name: str) -> s
     )
     env.globals["has"] = has
     env.filters["has"] = has
+    env.filters["format_status"] = format_roadmap_status
 
     template = env.get_template(template_name)
     return template.render(profile=profile, has=has)

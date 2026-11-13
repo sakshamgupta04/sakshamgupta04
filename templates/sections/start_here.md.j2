@@ -1,0 +1,95 @@
+## 🧭 Start Here <a id="start-here"></a>
+
+<details open>
+<summary><b>💼 Recruiter &amp; Hiring Manager</b> (TL;DR, key highlights, availability)</summary>
+
+<br>
+
+{% if has(profile.links.resume_pdf) %}
+- **Resume:** [Download Resume (PDF)]({{ profile.links.resume_pdf }})
+{% endif %}
+{% if has(profile.identity.availability.text) %}
+- **Availability:** {{ profile.identity.availability.text }}
+{% endif %}
+{% if has(profile.identity.availability.work_mode) %}
+- **Work Mode:** {{ profile.identity.availability.work_mode }}
+{% endif %}
+{% if has(profile.identity.roles_targeted) %}
+- **Roles Targeted:** {{ profile.identity.roles_targeted | join(" • ") }}
+{% endif %}
+
+{% set featured_projects = [] %}
+{% for p in profile.projects if p.featured %}
+  {% if loop.index <= 3 %}
+    {% set _ = featured_projects.append(p) %}
+  {% endif %}
+{% endfor %}
+{% if has(featured_projects) %}
+**Top Featured Projects:**
+{% for p in featured_projects %}
+
+- **{{ p.title }}**: {{ p.tagline }}{% if has(p.links.live) %} ([Live Demo]({{ p.links.live }})){% endif %}
+{% endfor %}
+{% endif %}
+
+{% set recruiter_contacts = [] %}
+{% if has(profile.links.email) %}
+  {% set _ = recruiter_contacts.append("[" ~ (profile.links.email | replace('mailto:', '')) ~ "](" ~ profile.links.email ~ ")") %}
+{% endif %}
+{% if has(profile.links.linkedin) %}
+  {% set _ = recruiter_contacts.append("[LinkedIn Profile](" ~ profile.links.linkedin ~ ")") %}
+{% endif %}
+{% if has(recruiter_contacts) %}
+**Direct Contact:** {{ recruiter_contacts | join(" &nbsp;•&nbsp; ") }}
+{% endif %}
+
+</details>
+
+<details>
+<summary><b>🛠️ Software Engineer &amp; Tech Lead</b> (Architecture, codebases, stack)</summary>
+
+<br>
+
+{% if has(profile.projects) %}
+**Key Projects &amp; Architectures:**
+{% for p in profile.projects %}
+{% if loop.index <= 4 %}
+
+- **{{ p.title }}** (`{{ p.status.value }}`): {{ p.tagline }}
+  {% if has(p.stack) %}
+  - **Stack:** {{ p.stack | join(", ") }}
+  {% endif %}
+  {% if has(p.highlights) %}
+  - **Architecture:** {{ p.highlights[0] }}
+  {% endif %}
+  {% if has(p.repo) %}
+  - **Repository:** [github.com/{{ p.repo }}](https://github.com/{{ p.repo }})
+  {% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+</details>
+
+{% if has(profile.publications) or has(profile.open_source.interests) %}
+<details>
+<summary><b>🔬 Researcher &amp; Academic</b> (Publications &amp; research interests)</summary>
+
+<br>
+
+{% if has(profile.open_source.interests) %}
+**Research Interests:**
+{% for interest in profile.open_source.interests %}
+- {{ interest }}
+{% endfor %}
+{% endif %}
+
+{% if has(profile.publications) %}
+**Publications:**
+{% for pub in profile.publications %}
+- **{{ pub.title }}** ({{ pub.year }}) - {{ pub.venue }}
+{% endfor %}
+{% endif %}
+
+</details>
+{% endif %}

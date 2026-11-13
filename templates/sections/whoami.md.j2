@@ -1,0 +1,28 @@
+## 👤 About &amp; Overview <a id="about"></a>
+
+```text
+{{ profile.identity.handle }}@github:~$ whoami
+{% if has(profile.identity.name) -%}
+name:             {{ profile.identity.name }}
+{% endif -%}
+{% if has(profile.identity.roles_targeted) -%}
+roles_targeted:   {{ profile.identity.roles_targeted | join(", ") }}
+{% endif -%}
+{% if has(profile.identity.location) -%}
+location:         {{ profile.identity.location }}
+{% endif -%}
+{% if has(profile.identity.languages_spoken) -%}
+languages_spoken: {{ profile.identity.languages_spoken | join(", ") }}
+{% endif -%}
+{% if has(profile.identity.education) -%}
+{% for edu in profile.identity.education -%}
+education:        {{ edu.degree }} | {{ edu.school }} ({{ edu.start }}-{{ edu.end }}{% if has(edu.score) %}, {{ edu.score }}{% endif %})
+{% endfor -%}
+{% endif -%}
+{% if has(profile.identity.focus_areas) -%}
+focus_areas:      {{ profile.identity.focus_areas | join(", ") }}
+{% endif -%}
+{% if has(profile.identity.availability.text) -%}
+status:           {{ profile.identity.availability.text }}
+{% endif -%}
+```

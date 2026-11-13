@@ -64,14 +64,40 @@ status:   {{ profile.identity.tagline }}
 ---
 
 {% set toc = [] %}
-{% if has(profile.projects) %}{% set _ = toc.append("[Projects](#projects)") %}{% endif %}
-{% if has(profile.skills) %}{% set _ = toc.append("[Skills](#skills)") %}{% endif %}
-{% if has(profile.experience) %}{% set _ = toc.append("[Experience](#experience)") %}{% endif %}
-{% if has(profile.certifications) %}{% set _ = toc.append("[Certifications](#certifications)") %}{% endif %}
+{% set _ = toc.append("[About](#about)") %}
+{% set _ = toc.append("[Start Here](#start-here)") %}
+{% if has(profile.now) %}{% set _ = toc.append("[Now](#now)") %}{% endif %}
 {% if has(profile.goals) %}{% set _ = toc.append("[Roadmap &amp; Goals](#goals)") %}{% endif %}
 {% if has(profile.principles) %}{% set _ = toc.append("[Principles](#principles)") %}{% endif %}
-{% if has(profile.identity.education) %}{% set _ = toc.append("[Education](#education)") %}{% endif %}
 {% if has(profile.links) %}{% set _ = toc.append("[Contact](#contact)") %}{% endif %}
 {% if has(toc) %}
 **Jump to:** {{ toc | join(" &nbsp;•&nbsp; ") }}
+{% endif %}
+
+---
+
+{% include "sections/whoami.md.j2" %}
+
+---
+
+{% include "sections/start_here.md.j2" %}
+
+{% if has(profile.now) %}
+---
+
+{% include "sections/now.md.j2" %}
+{% endif %}
+
+---
+
+{% include "sections/goals.md.j2" %}
+
+---
+
+{% include "sections/principles.md.j2" %}
+
+{% if has(profile.links) %}
+---
+
+{% include "sections/contact.md.j2" %}
 {% endif %}

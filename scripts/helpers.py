@@ -48,3 +48,14 @@ def find_todo_values(data: Any, path: str = "") -> list[tuple[str, str]]:
     elif isinstance(data, str) and "todo" in data.lower():
         results.append((path, data))
     return results
+
+
+def format_roadmap_status(status: str | Any) -> str:
+    """Format roadmap status with both an icon and plain text word."""
+    raw = str(getattr(status, "value", status)).strip().lower()
+    mapping = {
+        "done": "✅ Done",
+        "doing": "⚡ In progress (doing)",
+        "next": "📋 Next (planned)",
+    }
+    return mapping.get(raw, str(status))

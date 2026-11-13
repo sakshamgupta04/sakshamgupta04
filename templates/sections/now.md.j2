@@ -1,0 +1,23 @@
+{% if has(profile.now) %}
+## ⚡ Now <a id="now"></a>
+
+{% if has(profile.now.updated) %}
+*Last updated: {{ profile.now.updated }}*
+{% endif %}
+
+| Focus Area | What I'm Doing |
+|:---|:---|
+{% if has(profile.now.building) %}
+| **🔨 Building** | {{ profile.now.building | join("<br>") }} |
+{% endif %}
+{% if has(profile.now.learning) %}
+| **📚 Learning** | {{ profile.now.learning | join("<br>") }} |
+{% endif %}
+{% if has(profile.now.reading) %}
+| **📖 Reading** | {{ profile.now.reading | join("<br>") }} |
+{% endif %}
+{% if has(profile.now.exploring) %}
+| **🔬 Exploring** | {{ profile.now.exploring | join("<br>") }} |
+{% endif %}
+
+{% endif %}

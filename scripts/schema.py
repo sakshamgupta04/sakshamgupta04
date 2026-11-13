@@ -69,6 +69,7 @@ class Identity(StrictModel):
     availability: Availability = Field(default_factory=Availability)
     roles_targeted: list[str] = Field(default_factory=list)
     education: list[EducationItem] = Field(default_factory=list)
+    focus_areas: list[str] = Field(default_factory=list)
 
 
 class Links(StrictModel):
