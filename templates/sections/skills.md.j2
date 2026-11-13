@@ -1,0 +1,30 @@
+## 🛠️ Skills &amp; Tech Stack <a id="skills"></a>
+
+{% if has(mermaid_skill_map) %}
+### 🗺️ Skill-to-Project Graph
+
+{{ mermaid_skill_map }}
+
+{% endif %}
+
+{% if has(profile.now.learning) %}
+🌱 **Currently learning:** {{ profile.now.learning | join(" • ") }}
+
+{% endif %}
+
+{% if has(profile.skills.groups) %}
+### 💻 Competencies by Category
+
+{% for group in profile.skills.groups %}
+{% if has(group.items) %}
+#### {{ group.name }}
+
+| Technology / Skill | Level |
+|:---|:---|
+{% for item in group.items %}
+| **{{ item.name }}** | {% if has(item.level) %}`{{ item.level.value }}`{% endif %} |
+{% endfor %}
+
+{% endif %}
+{% endfor %}
+{% endif %}

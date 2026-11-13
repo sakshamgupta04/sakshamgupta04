@@ -28,7 +28,7 @@ sakshamgupta04@github:~$ █
 
 ---
 
-**Jump to:** [About](#about) &nbsp;•&nbsp; [Start Here](#start-here) &nbsp;•&nbsp; [Roadmap &amp; Goals](#goals) &nbsp;•&nbsp; [Principles](#principles) &nbsp;•&nbsp; [Contact](#contact)
+**Jump to:** [About](#about) &nbsp;•&nbsp; [Start Here](#start-here) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Roadmap &amp; Goals](#goals) &nbsp;•&nbsp; [Principles](#principles) &nbsp;•&nbsp; [Contact](#contact)
 
 ---
 
@@ -86,6 +86,93 @@ status:           Open to full-time roles: web development, AI/ML engineering, s
 
 </details>
 
+
+
+---
+
+## 🛠️ Skills &amp; Tech Stack <a id="skills"></a>
+
+### 🗺️ Skill-to-Project Graph
+
+```mermaid
+flowchart LR
+  grp_Languages["Languages"] --> tech_Python["Python"]
+  tech_Python --> prj_AI_Video_Interview___Emotion_Analyzer["AI Video Interview & Emotion Analyzer"]
+  tech_Python --> prj_FarmGuard["FarmGuard"]
+  grp_Languages["Languages"] --> tech_TypeScript["TypeScript"]
+  tech_TypeScript --> prj_EchoNotes["EchoNotes"]
+  grp_Web["Web"] --> tech_Next_js["Next.js"]
+  tech_Next_js --> prj_AI_Video_Interview___Emotion_Analyzer["AI Video Interview & Emotion Analyzer"]
+  tech_Next_js --> prj_EchoNotes["EchoNotes"]
+  tech_Next_js --> prj_FarmGuard["FarmGuard"]
+  grp_Backend___Cloud["Backend & Cloud"] --> tech_Supabase__PostgreSQL__Auth["Supabase （PostgreSQL, Auth）"]
+  tech_Supabase__PostgreSQL__Auth --> prj_AI_Video_Interview___Emotion_Analyzer["AI Video Interview & Emotion Analyzer"]
+  tech_Supabase__PostgreSQL__Auth --> prj_EchoNotes["EchoNotes"]
+  tech_Supabase__PostgreSQL__Auth --> prj_FarmGuard["FarmGuard"]
+  grp_AI___ML["AI / ML"] --> tech_PyTorch["PyTorch"]
+  tech_PyTorch --> prj_EchoNotes["EchoNotes"]
+  grp_AI___ML["AI / ML"] --> tech_OpenCV["OpenCV"]
+  tech_OpenCV --> prj_AI_Video_Interview___Emotion_Analyzer["AI Video Interview & Emotion Analyzer"]
+  tech_OpenCV --> prj_FarmGuard["FarmGuard"]
+```
+
+
+
+### 💻 Competencies by Category
+
+#### Languages
+
+| Technology / Skill | Level |
+|:---|:---|
+| **Python** |  |
+| **TypeScript** |  |
+| **JavaScript** |  |
+| **C++** |  |
+| **Java** |  |
+| **SQL** |  |
+
+#### Web
+
+| Technology / Skill | Level |
+|:---|:---|
+| **React** |  |
+| **Next.js** |  |
+| **Node.js** |  |
+| **HTML/CSS** |  |
+| **REST APIs** |  |
+
+#### Backend & Cloud
+
+| Technology / Skill | Level |
+|:---|:---|
+| **Supabase (PostgreSQL, Auth)** |  |
+| **Google Cloud (Cloud Run, Vertex AI)** |  |
+
+#### AI / ML
+
+| Technology / Skill | Level |
+|:---|:---|
+| **Scikit-learn** |  |
+| **PyTorch** |  |
+| **TensorFlow** |  |
+| **OpenCV** |  |
+| **Pandas / NumPy** |  |
+| **Model evaluation** |  |
+
+#### Tools
+
+| Technology / Skill | Level |
+|:---|:---|
+| **Git / GitHub** |  |
+| **Jupyter** |  |
+
+#### Fundamentals
+
+| Technology / Skill | Level |
+|:---|:---|
+| **Data structures & algorithms** |  |
+| **Object-oriented programming** |  |
+| **System design** |  |
 
 
 ---

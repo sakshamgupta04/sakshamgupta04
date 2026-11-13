@@ -16,6 +16,7 @@ import yaml
 from jinja2 import Environment, FileSystemLoader
 
 from scripts.helpers import find_todo_values, format_roadmap_status, has
+from scripts.mermaid_generator import generate_mermaid_skill_map
 from scripts.schema import Profile, ProfileValidationError, validate_profile_dict
 from scripts.svg_terminal import write_terminal_svgs
 
@@ -53,7 +54,8 @@ def render_readme(profile: Profile, template_dir: Path, template_name: str) -> s
     env.filters["format_status"] = format_roadmap_status
 
     template = env.get_template(template_name)
-    return template.render(profile=profile, has=has)
+    mermaid_map = generate_mermaid_skill_map(profile)
+    return template.render(profile=profile, has=has, mermaid_skill_map=mermaid_map)
 
 
 def inspect_hidden_elements(profile: Profile) -> list[str]:

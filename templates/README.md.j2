@@ -67,6 +67,7 @@ status:   {{ profile.identity.tagline }}
 {% set _ = toc.append("[About](#about)") %}
 {% set _ = toc.append("[Start Here](#start-here)") %}
 {% if has(profile.now) %}{% set _ = toc.append("[Now](#now)") %}{% endif %}
+{% if has(profile.skills.groups) %}{% set _ = toc.append("[Skills](#skills)") %}{% endif %}
 {% if has(profile.goals) %}{% set _ = toc.append("[Roadmap &amp; Goals](#goals)") %}{% endif %}
 {% if has(profile.principles) %}{% set _ = toc.append("[Principles](#principles)") %}{% endif %}
 {% if has(profile.links) %}{% set _ = toc.append("[Contact](#contact)") %}{% endif %}
@@ -86,6 +87,12 @@ status:   {{ profile.identity.tagline }}
 ---
 
 {% include "sections/now.md.j2" %}
+{% endif %}
+
+{% if has(profile.skills.groups) %}
+---
+
+{% include "sections/skills.md.j2" %}
 {% endif %}
 
 ---
