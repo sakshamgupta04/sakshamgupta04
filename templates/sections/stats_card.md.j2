@@ -1,5 +1,5 @@
 {% if profile.features.stats_card and has(github_stats) and (has(github_stats.public_repos) or has(github_stats.total_stars)) %}
-### <a id="github-stats"></a>📊 GitHub Metrics
+## 📊 GitHub Metrics <a id="github-stats"></a>
 
 | Metric | Count |
 | :--- | :--- |
@@ -10,3 +10,4 @@
 | **Total Stargazers** | {{ github_stats.total_stars }} |
 {% endif %}
 {% endif %}
+

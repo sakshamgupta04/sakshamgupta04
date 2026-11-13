@@ -38,6 +38,9 @@ def main() -> None:
         [py, "scripts/build_readme.py", "--offline", "--check"],
     )
 
+    # 4. Link check (offline)
+    run_step("Link Check (--offline)", [py, "scripts/check_links.py", "--offline"])
+
     print("\n" + "=" * 50)
     print("ALL VERIFICATION CHECKS PASSED SUCCESSFULLY!")
     print("=" * 50 + "\n")
