@@ -17,6 +17,7 @@ from jinja2 import Environment, FileSystemLoader
 
 from scripts.helpers import find_todo_values, has
 from scripts.schema import Profile, ProfileValidationError, validate_profile_dict
+from scripts.svg_terminal import write_terminal_svgs
 
 MAX_README_BYTES = 100 * 1024  # 100 KB limit per project rules
 
@@ -94,6 +95,10 @@ def build(
 ) -> int:
     """Orchestrate profile loading, validation, rendering, and report generation."""
     raw_data, profile = load_profile_data(data_path)
+
+    # Generate terminal header SVGs
+    assets_dir = output_path.parent / "assets"
+    write_terminal_svgs(profile, assets_dir)
 
     rendered = render_readme(profile, template_dir, template_name)
     size_bytes = len(rendered.encode("utf-8"))

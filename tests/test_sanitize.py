@@ -73,3 +73,4 @@ def test_sanitize_text_composite() -> None:
     assert "<" not in clean
     assert "\n" not in clean
     assert "\\[feature\\]" in clean
+

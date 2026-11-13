@@ -31,3 +31,4 @@ def format_validation_error(err: ValidationError) -> list[str]:
         else:
             messages.append(f"Field '{loc}': {msg}. Fix this in data/profile.yml.")
     return messages
+

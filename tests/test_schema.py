@@ -98,3 +98,4 @@ def test_unsafe_link_rejected(valid_profile_data: dict[str, Any]) -> None:
     err_text = str(exc_info.value)
     assert "links -> portfolio" in err_text
     assert "Must start with http://, https://, or mailto:" in err_text
+
