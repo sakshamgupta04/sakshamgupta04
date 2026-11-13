@@ -28,7 +28,7 @@ sakshamgupta04@github:~$ █
 
 ---
 
-**Jump to:** [About](#about) &nbsp;•&nbsp; [Start Here](#start-here) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Education](#education) &nbsp;•&nbsp; [Roadmap &amp; Goals](#goals) &nbsp;•&nbsp; [Principles](#principles) &nbsp;•&nbsp; [Contact](#contact)
+**Jump to:** [About](#about) &nbsp;•&nbsp; [Start Here](#start-here) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Activity](#activity) &nbsp;•&nbsp; [Education](#education) &nbsp;•&nbsp; [Roadmap &amp; Goals](#goals) &nbsp;•&nbsp; [Principles](#principles) &nbsp;•&nbsp; [Contact](#contact)
 
 ---
 
@@ -214,6 +214,15 @@ flowchart LR
 ```
 
 
+### 📊 Codebase Distribution by Bytes
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg">
+  <img alt="Top Languages: Jupyter Notebook 90.0%, Python 3.7%, TypeScript 1.8%, C++ 1.6%, JavaScript 1.4%, C 0.6%" src="assets/languages-dark.svg" width="800">
+</picture>
+
+
 
 ### 💻 Competencies by Category
 
@@ -324,6 +333,17 @@ flowchart LR
 
 </details>
 
+
+
+---
+
+## ⚡ Recent Activity <a id="activity"></a>
+
+- Pushed `1f46e3c` to `sakshamgupta04/Farmland-Animal-Detection` (`main`) &nbsp;•&nbsp; <span title="2026-11-11 20:12:11"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/1f46e3cf32ac0107ae2461a10fd296642b6dac03)
+- Pushed `898041f` to `sakshamgupta04/Farmland-Animal-Detection` (`main`) &nbsp;•&nbsp; <span title="2026-11-12 18:42:00"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/898041f422d59fbad300f429dc7679524da87300)
+- Pushed `91bcfc1` to `sakshamgupta04/Farmland-Animal-Detection` (`main`) &nbsp;•&nbsp; <span title="2026-11-10 19:12:12"><em>3d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/91bcfc1a84d3bc62fc0701ab597a16a2a8484ed9)
+- Pushed `4f69e71` to `sakshamgupta04/Farmland-Animal-Detection` (`main`) &nbsp;•&nbsp; <span title="2026-11-10 19:15:59"><em>2d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/4f69e71eee11373791c2eff1c66cf0234b8fae1b)
+- Pushed `015b75a` to `sakshamgupta04/Hand-Gesture-Controlled-Mouse` (`main`) &nbsp;•&nbsp; <span title="2026-11-08 19:37:48"><em>4d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Hand-Gesture-Controlled-Mouse/commit/015b75a2dcfbae9edad49202a1b7727a7a9d30bd)
 
 
 ---

@@ -1,0 +1,8 @@
+{% if has(recent_activity) and profile.features.recent_activity %}
+## ⚡ Recent Activity <a id="activity"></a>
+
+{% for item in recent_activity %}
+- {{ item.description }} &nbsp;•&nbsp; <span title="{{ item.absolute_time }}"><em>{{ item.relative_time }}</em></span> &nbsp;•&nbsp; [View on GitHub]({{ item.url }})
+{% endfor %}
+
+{% endif %}

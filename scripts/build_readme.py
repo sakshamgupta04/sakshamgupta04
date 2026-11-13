@@ -1,4 +1,4 @@
-"""Build script to validate profile data and render README.md."""
+"""Build script to validate profile data, fetch dynamic data, and render README.md."""
 
 from __future__ import annotations
 
@@ -15,6 +15,7 @@ if str(PROJECT_ROOT) not in sys.path:
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
+from scripts.github_api import fetch_github_data
 from scripts.helpers import (
     find_todo_values,
     format_cert_kind,
@@ -25,6 +26,7 @@ from scripts.helpers import (
 )
 from scripts.mermaid_generator import generate_mermaid_skill_map
 from scripts.schema import Profile, ProfileValidationError, validate_profile_dict
+from scripts.svg_languages import format_languages_alt_text, write_languages_svgs
 from scripts.svg_terminal import write_terminal_svgs
 
 MAX_README_BYTES = 100 * 1024  # 100 KB limit per project rules
@@ -48,8 +50,13 @@ def load_profile_data(path: Path) -> tuple[dict[str, Any], Profile]:
         sys.exit(1)
 
 
-def render_readme(profile: Profile, template_dir: Path, template_name: str) -> str:
-    """Render README template with validated profile."""
+def render_readme(
+    profile: Profile,
+    template_dir: Path,
+    template_name: str,
+    dynamic_data: dict[str, Any] | None = None,
+) -> str:
+    """Render README template with validated profile and dynamic API data."""
     env = Environment(
         loader=FileSystemLoader(str(template_dir)),
         trim_blocks=True,
@@ -64,12 +71,27 @@ def render_readme(profile: Profile, template_dir: Path, template_name: str) -> s
     env.filters["format_cert_kind"] = format_cert_kind
     env.filters["validate_diagram"] = validate_mermaid_diagram
 
+    data = dynamic_data or {}
+    languages = data.get("languages", {})
+    recent_activity = data.get("recent_activity", [])
+    project_last_updated = data.get("project_last_updated", {})
+    languages_alt = format_languages_alt_text(languages)
+
     template = env.get_template(template_name)
     mermaid_map = generate_mermaid_skill_map(profile)
-    return template.render(profile=profile, has=has, mermaid_skill_map=mermaid_map)
+
+    return template.render(
+        profile=profile,
+        has=has,
+        mermaid_skill_map=mermaid_map,
+        languages=languages,
+        languages_alt_text=languages_alt,
+        recent_activity=recent_activity,
+        project_last_updated=project_last_updated,
+    )
 
 
-def inspect_hidden_elements(profile: Profile) -> list[str]:
+def inspect_hidden_elements(profile: Profile, dynamic_data: dict[str, Any] | None = None) -> list[str]:
     """Identify sections or major elements that are hidden because they are empty."""
     hidden: list[str] = []
 
@@ -96,6 +118,12 @@ def inspect_hidden_elements(profile: Profile) -> list[str]:
     if not has(profile.leetcode):
         hidden.append("leetcode (section empty/null)")
 
+    data = dynamic_data or {}
+    if not has(data.get("languages")):
+        hidden.append("languages_chart (no language data)")
+    if not has(data.get("recent_activity")):
+        hidden.append("recent_activity (no activity data)")
+
     return hidden
 
 
@@ -106,15 +134,34 @@ def build(
     template_name: str = "README.md.j2",
     offline: bool = False,
     check: bool = False,
+    cache_path: Path = Path("generated/last_good.json"),
 ) -> int:
-    """Orchestrate profile loading, validation, rendering, and report generation."""
+    """Orchestrate profile loading, dynamic fetching, validation, and rendering."""
     raw_data, profile = load_profile_data(data_path)
 
     # Generate terminal header SVGs
     assets_dir = output_path.parent / "assets"
     write_terminal_svgs(profile, assets_dir)
 
-    rendered = render_readme(profile, template_dir, template_name)
+    # Fetch dynamic GitHub data (or use offline cache)
+    project_repos = [p.repo for p in profile.projects if p.repo]
+    dynamic_data, cache_note = fetch_github_data(
+        handle=profile.identity.handle,
+        project_repos=project_repos,
+        offline=offline,
+        cache_path=cache_path,
+    )
+
+    # Generate language bar SVGs if language data exists
+    if has(dynamic_data.get("languages")):
+        write_languages_svgs(dynamic_data["languages"], assets_dir)
+
+    rendered = render_readme(
+        profile=profile,
+        template_dir=template_dir,
+        template_name=template_name,
+        dynamic_data=dynamic_data,
+    )
     size_bytes = len(rendered.encode("utf-8"))
 
     if size_bytes > MAX_README_BYTES:
@@ -128,14 +175,18 @@ def build(
     output_path.write_text(rendered, encoding="utf-8")
 
     if check:
-        hidden = inspect_hidden_elements(profile)
+        hidden = inspect_hidden_elements(profile, dynamic_data)
         todo_values = find_todo_values(raw_data)
 
         print("\n" + "=" * 60)
         print("PROFILE README GENERATION REPORT")
         print("=" * 60)
         print("Status:             VALIDATION & RENDER PASSED")
-        print(f"Offline Mode:       {'ENABLED (no network calls made)' if offline else 'DISABLED'}")
+        print(f"Offline Mode:       {'ENABLED' if offline else 'DISABLED'}")
+        if cache_note:
+            print(f"Dynamic Data Note:  {cache_note}")
+        else:
+            print("Dynamic Data Note:  Live GitHub API synchronization active")
         print(f"Output File:        {output_path.resolve()}")
         print(f"README Size:        {size_bytes:,} bytes / {MAX_README_BYTES:,} bytes limit")
         print("-" * 60)

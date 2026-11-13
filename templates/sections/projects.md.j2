@@ -10,7 +10,11 @@
 {% if has(p.links.live) %}{% set _ = row_links.append("[Live](" ~ p.links.live ~ ")") %}{% endif %}
 {% if has(p.links.demo) %}{% set _ = row_links.append("[Demo](" ~ p.links.demo ~ ")") %}{% endif %}
 {% if has(p.repo) %}{% set _ = row_links.append("[Code](https://github.com/" ~ p.repo ~ ")") %}{% endif %}
-| [**{{ p.title }}**](#{{ p.slug }}) | {{ p.status | format_project_status }} | {{ p.stack[:3] | join(", ") }}{% if p.stack | length > 3 %} +{{ p.stack | length - 3 }}{% endif %} | {{ row_links | join(" • ") if has(row_links) else "—" }} | {{ p.last_updated if has(p.last_updated) else "—" }} |
+{% set last_up = "—" %}
+{% if has(p.repo) and has(project_last_updated) and project_last_updated.get(p.repo) %}
+  {% set last_up = project_last_updated.get(p.repo) %}
+{% endif %}
+| [**{{ p.title }}**](#{{ p.slug }}) | {{ p.status | format_project_status }} | {{ p.stack[:3] | join(", ") }}{% if p.stack | length > 3 %} +{{ p.stack | length - 3 }}{% endif %} | {{ row_links | join(" • ") if has(row_links) else "—" }} | {{ last_up }} |
 {% endfor %}
 
 ---
@@ -71,3 +75,4 @@
 {% endif %}
 {% endfor %}
 {% endif %}
+

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 130" width="800" height="130">
+  <defs>
+    <style>
+      .bg { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 1; }
+      .bar-base { fill: #eaeef2; rx: 6px; }
+      .lang-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 12.5px; fill: #24292f; font-weight: 500; }
+      .lang-pct { fill: #57606a; font-weight: 400; }
+      .disclaimer { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 11px; fill: #57606a; font-style: italic; }
+    </style>
+    <clipPath id="bar-clip">
+      <rect x="25" y="24" width="750" height="12" rx="6" />
+    </clipPath>
+  </defs>
+
+  <rect x="2" y="2" width="796" height="126" rx="8" class="bg" />
+
+  <!-- Segmented Language Bar -->
+  <rect x="25" y="24" width="750" height="12" class="bar-base" />
+  <g clip-path="url(#bar-clip)">
+    <rect x="25.0" y="24" width="675.0" height="12" fill="#DA5B0B" /><rect x="700.0" y="24" width="27.8" height="12" fill="#3572A5" /><rect x="727.8" y="24" width="13.5" height="12" fill="#3178c6" /><rect x="741.2" y="24" width="12.0" height="12" fill="#f34b7d" /><rect x="753.2" y="24" width="10.5" height="12" fill="#f1e05a" /><rect x="763.8" y="24" width="11.2" height="12" fill="#555555" />
+  </g>
+
+  <!-- Legend -->
+  <circle cx="30" cy="60" r="5" fill="#DA5B0B" /><text x="41" y="64" class="lang-text">Jupyter Notebook <tspan class="lang-pct">90.0%</tspan></text><circle cx="280" cy="60" r="5" fill="#3572A5" /><text x="291" y="64" class="lang-text">Python <tspan class="lang-pct">3.7%</tspan></text><circle cx="530" cy="60" r="5" fill="#3178c6" /><text x="541" y="64" class="lang-text">TypeScript <tspan class="lang-pct">1.8%</tspan></text><circle cx="30" cy="84" r="5" fill="#f34b7d" /><text x="41" y="88" class="lang-text">C++ <tspan class="lang-pct">1.6%</tspan></text><circle cx="280" cy="84" r="5" fill="#f1e05a" /><text x="291" y="88" class="lang-text">JavaScript <tspan class="lang-pct">1.4%</tspan></text><circle cx="530" cy="84" r="5" fill="#555555" /><text x="541" y="88" class="lang-text">C <tspan class="lang-pct">0.6%</tspan></text>
+
+  <!-- Disclaimer note -->
+  <text x="25" y="116" class="disclaimer">* bytes of code in public repos, not a measure of skill</text>
+</svg>

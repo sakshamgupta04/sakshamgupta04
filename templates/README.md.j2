@@ -70,6 +70,7 @@ status:   {{ profile.identity.tagline }}
 {% if has(profile.projects) %}{% set _ = toc.append("[Projects](#projects)") %}{% endif %}
 {% if has(profile.skills.groups) %}{% set _ = toc.append("[Skills](#skills)") %}{% endif %}
 {% if has(profile.experience) %}{% set _ = toc.append("[Experience](#experience)") %}{% endif %}
+{% if has(recent_activity) and profile.features.recent_activity %}{% set _ = toc.append("[Activity](#activity)") %}{% endif %}
 {% if has(profile.identity.education) or has(profile.certifications) %}{% set _ = toc.append("[Education](#education)") %}{% endif %}
 {% if has(profile.publications) or profile.patent.mention %}{% set _ = toc.append("[Research](#research)") %}{% endif %}
 {% if has(profile.goals) %}{% set _ = toc.append("[Roadmap &amp; Goals](#goals)") %}{% endif %}
@@ -109,6 +110,12 @@ status:   {{ profile.identity.tagline }}
 ---
 
 {% include "sections/experience.md.j2" %}
+{% endif %}
+
+{% if has(recent_activity) and profile.features.recent_activity %}
+---
+
+{% include "sections/activity.md.j2" %}
 {% endif %}
 
 {% if has(profile.identity.education) or has(profile.certifications) %}
