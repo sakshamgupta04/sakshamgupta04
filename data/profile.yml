@@ -1,0 +1,255 @@
+# profile.yml  ->  copy to  data/profile.yml in your profile repo (sakshamgupta04/sakshamgupta04)
+#
+# THE ONLY FILE YOU EDIT. The README is generated from it.
+# Rules:
+#  - null or [] means "unknown": that element or section is hidden automatically.
+#  - Lines marked "# TODO" need your input. "# confirm" means I guessed from our chats; fix it if wrong.
+#  - Only write things that are true. Interviewers read this and ask about it.
+
+identity:
+  name: "Saksham Gupta"
+  handle: "sakshamgupta04"
+  headline: "Full-stack developer and ML engineer"        # confirm
+  tagline: "I build full-stack products and the machine learning behind them."   # confirm
+  location: null                                          # TODO e.g. "Jammu, India"
+  languages_spoken: []                                    # TODO e.g. ["English", "Hindi"]
+  availability:
+    status: "open_to_work"                                # open_to_work | open_to_internships | freelance | not_looking
+    text: "Open to full-time roles: web development, AI/ML engineering, software engineering"   # confirm
+    work_mode: null                                       # TODO e.g. "Remote or on-site, open to relocation"
+  roles_targeted: ["Full-Stack / Web Developer", "AI/ML Engineer", "Software Engineer (SDE)"]
+  education:
+    - school: "Model Institute of Engineering and Technology, Jammu"
+      degree: "B.Tech, Computer Science & Engineering (AI/ML)"
+      start: "2022"
+      end: "2026"
+      score: "CGPA 8.5"
+
+links:
+  github: "https://github.com/sakshamgupta04"
+  linkedin: "https://www.linkedin.com/in/saksham-gupta-458486294/"
+  leetcode: "https://leetcode.com/u/wupNOxI7hc/"
+  portfolio: null                                         # TODO your portfolio URL
+  resume_pdf: null                                        # TODO link to your resume PDF (e.g. on your portfolio)
+  email: "work.saksham04@gmail.com"
+  kaggle: null
+  huggingface: null
+  scholar: null                                           # TODO Google Scholar or ORCID, if you have it
+  x_twitter: null
+  blog: null
+
+# "Now" block: what you are doing right now. Update monthly. Keep it honest and short.
+now:
+  updated: null                                           # TODO e.g. "2026-11"
+  building: []                                            # TODO e.g. ["FarmGuard: edge-AI crop protection (PC prototype)"]
+  learning: []                                            # TODO e.g. ["RAG evaluation", "Edge ML deployment"]
+  reading: []
+  exploring: []
+
+goals:                                                    # draft from our chats; edit freely
+  short_term:
+    - "Join a team as a full-stack or ML engineer and ship production features"
+    - "Ship projects with live demos and measured results, not just notebooks"
+  mid_term:
+    - "Publish and present more research"
+    - "Contribute to open-source ML and web tooling"
+  long_term:
+    - "Build AI products that solve real problems for real people"
+  roadmap:                                                # status: done | doing | next
+    - { item: "Portfolio website live", status: "done", target: null }                       # confirm
+    - { item: "FarmGuard PC prototype with evaluation", status: "doing", target: null }      # confirm
+    - { item: "PaperLens: private in-browser document analyzer", status: "next", target: null }   # confirm
+    - { item: "First open-source contribution", status: "next", target: null }
+
+principles:                                               # confirm these match how you really work
+  - title: "Measure before you claim"
+    detail: "Every ML project gets a baseline and an evaluation. Numbers on my resume come from runs I can reproduce."
+  - title: "Fail gracefully"
+    detail: "Each feature has a fallback, so one broken dependency never breaks the whole product."
+  - title: "Privacy by design"
+    detail: "Prefer on-device and offline processing when it is practical."
+  - title: "Ship it"
+    detail: "A deployed link and a clear README beat an unfinished repository."
+
+skills:                                                   # level: daily | comfortable | learning | null (null = no label shown)
+  groups:
+    - name: "Languages"
+      items:
+        - { name: "Python", level: null }                 # TODO set levels honestly
+        - { name: "TypeScript", level: null }
+        - { name: "JavaScript", level: null }
+        - { name: "C++", level: null }
+        - { name: "Java", level: null }
+        - { name: "SQL", level: null }
+    - name: "Web"
+      items:
+        - { name: "React", level: null }
+        - { name: "Next.js", level: null }
+        - { name: "Node.js", level: null }
+        - { name: "HTML/CSS", level: null }
+        - { name: "REST APIs", level: null }
+    - name: "Backend & Cloud"
+      items:
+        - { name: "Supabase (PostgreSQL, Auth)", level: null }
+        - { name: "Google Cloud (Cloud Run, Vertex AI)", level: null }
+    - name: "AI / ML"
+      items:
+        - { name: "Scikit-learn", level: null }
+        - { name: "PyTorch", level: null }
+        - { name: "TensorFlow", level: null }
+        - { name: "OpenCV", level: null }
+        - { name: "Pandas / NumPy", level: null }
+        - { name: "Model evaluation", level: null }
+    - name: "Tools"
+      items:
+        - { name: "Git / GitHub", level: null }
+        - { name: "Jupyter", level: null }
+    - name: "Fundamentals"
+      items:
+        - { name: "Data structures & algorithms", level: null }
+        - { name: "Object-oriented programming", level: null }
+        - { name: "System design", level: null }
+
+projects:                                                 # status: shipped | building | planned. repo: "owner/name" or null
+  - slug: "echonotes"
+    title: "EchoNotes"
+    tagline: "Paste a YouTube link or upload a file; get chapters, key points, a summary and search that jumps to the exact moment."
+    status: "shipped"                                     # confirm
+    repo: null                                            # TODO "sakshamgupta04/echonotes"
+    featured: true
+    categories: ["ai-ml", "web", "backend"]
+    stack: ["Next.js", "TypeScript", "FastAPI", "Supabase", "faster-whisper", "PyTorch"]
+    highlights:
+      - "Input ladder: captions first, then audio download plus Whisper, then file upload"
+      - "Embedding-based chapters and semantic search linked to timestamps"
+    results: []                                           # TODO measured numbers only (WER, ROUGE-L, hit@5, speed)
+    links: { live: null, demo: null, paper: null, video: null }
+    diagram: null                                         # optional Mermaid flowchart text
+  - slug: "ai-video-interview-emotion-analyzer"
+    title: "AI Video Interview & Emotion Analyzer"
+    tagline: "Record an interview in the browser and get frame-by-frame emotion analysis."
+    status: "shipped"                                     # confirm
+    repo: null                                            # TODO
+    featured: true
+    categories: ["ai-ml", "web"]
+    stack: ["Next.js", "Python", "DeepFace", "OpenCV", "Supabase"]
+    highlights:
+      - "In-browser recording with the MediaRecorder API and multipart upload"
+      - "Emotion distributions and dominant emotion per answer"
+    results: []
+    links: { live: null, demo: null, paper: null, video: null }   # TODO prototype link
+    diagram: null
+  - slug: "farmguard"
+    title: "FarmGuard"
+    tagline: "Edge-AI crop protection: detects animals raiding crops, deters them humanely, and alerts the farmer."
+    status: "building"                                    # confirm
+    repo: null                                            # TODO
+    featured: true
+    categories: ["ai-ml", "backend"]
+    stack: ["Python", "ONNX Runtime", "OpenCV", "FastAPI", "Next.js", "Supabase"]
+    highlights:
+      - "Two-stage recognition: generic animal detector plus a species classifier"
+      - "Offline-first, with tracking, zones, voting and person suppression"
+    results: []                                           # TODO only after you run the evaluation
+    links: { live: null, demo: null, paper: null, video: null }
+    diagram: null
+  - slug: "paperlens"
+    title: "PaperLens"
+    tagline: "Private research-paper analyzer that runs entirely in the browser, with cited answers."
+    status: "planned"                                     # confirm: change to building/shipped when true
+    repo: null
+    featured: false
+    categories: ["ai-ml", "web"]
+    stack: ["React", "TypeScript", "Transformers.js", "WebLLM", "pdf.js"]
+    highlights: []
+    results: []
+    links: { live: null, demo: null, paper: null, video: null }
+    diagram: null
+  - slug: "people-ai"
+    title: "People.ai: Faculty Fit & Retention Prediction"
+    tagline: "Predicts faculty-role fit and long-term retention from profile data."
+    status: "shipped"                                     # confirm
+    repo: null
+    featured: false
+    categories: ["ai-ml"]
+    stack: ["Python", "Scikit-learn", "Pandas", "NumPy"]
+    highlights:
+      - "Feature engineering from resume and career-longevity signals"
+    results: []
+    links: { live: null, demo: null, paper: null, video: null }
+    diagram: null
+  - slug: "straatix-talent-exchange"
+    title: "Straatix Talent Exchange Platform"
+    tagline: "A two-sided hiring platform with separate HR and candidate portals."
+    status: "shipped"
+    repo: null                                            # company work: usually no public repo
+    featured: false
+    categories: ["web", "backend"]
+    stack: ["Next.js", "React", "TypeScript", "Supabase", "GCP"]
+    highlights:
+      - "Role-specific dashboards and a real-time notification system"
+    results: []
+    links: { live: null, demo: null, paper: null, video: null }
+    diagram: null
+
+experience:
+  - org: "Straatix Partners Labs Pvt. Ltd."
+    role: "SDE Intern"
+    start: "2026-01"
+    end: "2026-07"
+    bullets:
+      - "Built and scaled React/Next.js portal features for HR users and candidates, including dynamic interview scheduling components."
+      - "Implemented Supabase authentication with SSO and email sign-in flows, and wrote TypeScript serverless functions to automate the referral system."
+      - "Led the migration of legacy systems to Google Cloud Platform, deploying services on Cloud Run and using Vertex AI for production ML pipelines."
+    stack: ["React", "Next.js", "TypeScript", "Supabase", "GCP"]
+  - org: "Model Institute of Engineering and Technology"
+    role: "AI/ML Developer Intern (Director Internship)"
+    start: "2025-02"
+    end: "2026-01"
+    bullets:
+      - "Contributed to a patented AI platform for candidate evaluation and role prediction, using ML models for experience, personality (Big Five) and career-trajectory analysis."   # confirm you may say this
+      - "Implemented peer-group segmentation for fair candidate comparison, improving role-matching accuracy through model tuning."
+    stack: ["Python", "Scikit-learn"]
+  - org: "Model Institute of Engineering and Technology"
+    role: "Trainee, AI/ML Hands-on Training Program"
+    start: "2025-03"
+    end: "2025-03"
+    bullets:
+      - "Hands-on training in data preprocessing and model building on real-world datasets."
+    stack: []
+
+publications: []                                          # TODO each: {title, authors[], venue, year, status, doi, pdf, bibtex}
+patent:
+  mention: false                                          # TODO set true only if you are allowed to mention it
+  text: null
+
+certifications:                                           # kind: certification | course (be honest about which)
+  - { title: "Machine Learning Foundations: A Case Study Approach", issuer: "Coursera", kind: "certification", url: null }
+  - { title: "Python for Data Science, AI & Development", issuer: "Coursera", kind: "certification", url: "https://drive.google.com/file/d/17j6eLecMSaxxvODqh-qb5YJVmMsuQhfp/view?usp=sharing" }
+  - { title: "Machine Learning: Clustering & Retrieval", issuer: "Coursera", kind: "certification", url: "https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing" }
+  - { title: "The Joy of Computing Using Python", issuer: "NPTEL", kind: "certification", url: "https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing" }
+  - { title: "Introduction to Data Science", issuer: "Infosys Springboard", kind: "certification", url: "https://drive.google.com/file/d/1RTTiHSCDAAEp4-NnfZIxRDFUuZ_QltOR/view?usp=sharing" }
+  - { title: "GCP Associate Cloud Engineer: Training Course", issuer: "Udemy", kind: "course", url: null }
+  - { title: "JavaScript: The Complete Guide", issuer: "Udemy", kind: "course", url: null }
+
+open_source:
+  interests: []                                           # TODO e.g. ["ML tooling", "document AI", "web accessibility"]
+  want_to_contribute_to: []                               # TODO real projects you use
+  open_to_collaborate_on: []                              # TODO e.g. ["agri-tech", "edge ML", "RAG"]
+
+leetcode:
+  solved: null                                            # TODO number
+  rating: null
+  as_of: null                                             # TODO e.g. "2026-11"
+
+features:                                                 # each can be switched off
+  terminal_header: true        # self-generated animated SVG
+  mermaid_skill_map: true
+  languages_chart: true        # computed from the GitHub API (bytes of code, not proficiency)
+  recent_activity: true        # last public events, from the GitHub API
+  projects_last_updated: true  # from the GitHub API, only for projects with a repo
+  snake: false                 # contribution snake via a third-party GitHub Action (turn on after the first run)
+  stats_card: false            # vanity counts; off by default
+  leetcode_block: false        # uses the static numbers above
+  blog_rss: false              # needs links.blog
+  wakatime: false              # needs a WakaTime public share link
