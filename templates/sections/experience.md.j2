@@ -1,0 +1,32 @@
+{% if has(profile.experience) %}
+## 💼 Experience &amp; Engineering Roles <a id="experience"></a>
+
+{% for exp in profile.experience %}
+### **{{ exp.role }}** – {{ exp.org }}
+`{{ exp.start }}{% if has(exp.end) %} — {{ exp.end }}{% else %} — Present{% endif %}`
+
+{% if has(exp.bullets) %}
+<details open>
+<summary>Key Contributions &amp; Impact</summary>
+
+<br>
+
+{% for bullet in exp.bullets %}
+- {{ bullet }}
+{% endfor %}
+
+{% if has(exp.stack) %}
+<br>
+
+**Technologies Used:** {% for s in exp.stack %}`{{ s }}`{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
+{% endif %}
+
+</details>
+{% endif %}
+
+{% if not loop.last %}
+<br>
+{% endif %}
+{% endfor %}
+
+{% endif %}

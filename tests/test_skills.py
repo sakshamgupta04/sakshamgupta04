@@ -131,3 +131,4 @@ def test_currently_learning_line(profile_fixture: Profile) -> None:
         template_name="README.md.j2",
     )
     assert "🌱 **Currently learning:** RAG evaluation • Edge ML deployment" in output_populated
+

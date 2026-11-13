@@ -15,7 +15,14 @@ if str(PROJECT_ROOT) not in sys.path:
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
-from scripts.helpers import find_todo_values, format_roadmap_status, has
+from scripts.helpers import (
+    find_todo_values,
+    format_cert_kind,
+    format_project_status,
+    format_roadmap_status,
+    has,
+    validate_mermaid_diagram,
+)
 from scripts.mermaid_generator import generate_mermaid_skill_map
 from scripts.schema import Profile, ProfileValidationError, validate_profile_dict
 from scripts.svg_terminal import write_terminal_svgs
@@ -50,8 +57,12 @@ def render_readme(profile: Profile, template_dir: Path, template_name: str) -> s
         autoescape=False,
     )
     env.globals["has"] = has
+    env.globals["validate_diagram"] = validate_mermaid_diagram
     env.filters["has"] = has
     env.filters["format_status"] = format_roadmap_status
+    env.filters["format_project_status"] = format_project_status
+    env.filters["format_cert_kind"] = format_cert_kind
+    env.filters["validate_diagram"] = validate_mermaid_diagram
 
     template = env.get_template(template_name)
     mermaid_map = generate_mermaid_skill_map(profile)

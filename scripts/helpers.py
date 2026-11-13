@@ -1,7 +1,8 @@
-"""Template helpers and content visibility utilities."""
+"""Template helpers, validation utilities, and content visibility filters."""
 
 from __future__ import annotations
 
+import re
 from typing import Any
 
 from pydantic import BaseModel
@@ -23,7 +24,6 @@ def has(val: Any) -> bool:
     if isinstance(val, dict):
         return any(has(v) for v in val.values())
     if isinstance(val, BaseModel):
-        # Model is non-empty if at least one field has non-empty content
         return any(has(v) for _, v in val.model_dump().items())
     if isinstance(val, bool):
         return val
@@ -59,3 +59,45 @@ def format_roadmap_status(status: str | Any) -> str:
         "next": "📋 Next (planned)",
     }
     return mapping.get(raw, str(status))
+
+
+def format_project_status(status: str | Any) -> str:
+    """Format project status with icon and title-cased word."""
+    raw = str(getattr(status, "value", status)).strip().lower()
+    mapping = {
+        "shipped": "🚀 Shipped",
+        "building": "🔨 Building",
+        "planned": "💡 Planned",
+    }
+    return mapping.get(raw, str(status).title())
+
+
+def format_cert_kind(kind: str | Any) -> str:
+    """Format certification kind into 'Certification' or 'Course'."""
+    raw = str(getattr(kind, "value", kind)).strip().lower()
+    return "Certification" if raw == "certification" else "Course"
+
+
+def validate_mermaid_diagram(diagram: str | None, max_chars: int = 2000) -> str | None:
+    """Validate project.diagram ensuring it starts with flowchart/graph, has no HTML/click/href, and respects size limits."""
+    if not diagram or not isinstance(diagram, str):
+        return None
+    cleaned = diagram.strip()
+    if not cleaned or len(cleaned) > max_chars:
+        return None
+
+    # Must start with flowchart or graph
+    first_token = cleaned.split()[0].lower() if cleaned.split() else ""
+    if first_token not in ("flowchart", "graph"):
+        return None
+
+    # No HTML tags permitted
+    if re.search(r"<\/?[a-zA-Z][^>]*>", cleaned):
+        return None
+
+    # No click or href directives
+    lowered = cleaned.lower()
+    if re.search(r"\bclick\b", lowered) or re.search(r"\bhref\b", lowered):
+        return None
+
+    return cleaned

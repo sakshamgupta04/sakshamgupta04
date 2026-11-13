@@ -28,7 +28,7 @@ sakshamgupta04@github:~$ █
 
 ---
 
-**Jump to:** [About](#about) &nbsp;•&nbsp; [Start Here](#start-here) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Roadmap &amp; Goals](#goals) &nbsp;•&nbsp; [Principles](#principles) &nbsp;•&nbsp; [Contact](#contact)
+**Jump to:** [About](#about) &nbsp;•&nbsp; [Start Here](#start-here) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Education](#education) &nbsp;•&nbsp; [Roadmap &amp; Goals](#goals) &nbsp;•&nbsp; [Principles](#principles) &nbsp;•&nbsp; [Contact](#contact)
 
 ---
 
@@ -85,6 +85,103 @@ status:           Open to full-time roles: web development, AI/ML engineering, s
   - **Stack:** React, TypeScript, Transformers.js, WebLLM, pdf.js
 
 </details>
+
+
+
+---
+
+## 🚀 Featured Projects &amp; Work <a id="projects"></a>
+
+### Overview Matrix
+
+| Project | Status | Core Stack | Links | Last Updated |
+|:---|:---|:---|:---|:---|
+| [**EchoNotes**](#echonotes) | 🚀 Shipped | Next.js, TypeScript, FastAPI +3 | — | — |
+| [**AI Video Interview & Emotion Analyzer**](#ai-video-interview-emotion-analyzer) | 🚀 Shipped | Next.js, Python, DeepFace +2 | — | — |
+| [**FarmGuard**](#farmguard) | 🔨 Building | Python, ONNX Runtime, OpenCV +3 | — | — |
+| [**PaperLens**](#paperlens) | 💡 Planned | React, TypeScript, Transformers.js +2 | — | — |
+| [**People.ai: Faculty Fit & Retention Prediction**](#people-ai) | 🚀 Shipped | Python, Scikit-learn, Pandas +1 | — | — |
+| [**Straatix Talent Exchange Platform**](#straatix-talent-exchange) | 🚀 Shipped | Next.js, React, TypeScript +2 | — | — |
+
+---
+
+
+### EchoNotes <a id="echonotes"></a>
+
+**Status:** 🚀 Shipped &nbsp;•&nbsp; ⭐ *Featured Project*
+> Paste a YouTube link or upload a file; get chapters, key points, a summary and search that jumps to the exact moment.
+
+**Stack:** `Next.js` &nbsp;•&nbsp; `TypeScript` &nbsp;•&nbsp; `FastAPI` &nbsp;•&nbsp; `Supabase` &nbsp;•&nbsp; `faster-whisper` &nbsp;•&nbsp; `PyTorch`
+**Key Highlights:**
+- Input ladder: captions first, then audio download plus Whisper, then file upload
+- Embedding-based chapters and semantic search linked to timestamps
+
+
+
+
+<br>
+### AI Video Interview & Emotion Analyzer <a id="ai-video-interview-emotion-analyzer"></a>
+
+**Status:** 🚀 Shipped &nbsp;•&nbsp; ⭐ *Featured Project*
+> Record an interview in the browser and get frame-by-frame emotion analysis.
+
+**Stack:** `Next.js` &nbsp;•&nbsp; `Python` &nbsp;•&nbsp; `DeepFace` &nbsp;•&nbsp; `OpenCV` &nbsp;•&nbsp; `Supabase`
+**Key Highlights:**
+- In-browser recording with the MediaRecorder API and multipart upload
+- Emotion distributions and dominant emotion per answer
+
+
+
+
+<br>
+### FarmGuard <a id="farmguard"></a>
+
+**Status:** 🔨 Building &nbsp;•&nbsp; ⭐ *Featured Project*
+> Edge-AI crop protection: detects animals raiding crops, deters them humanely, and alerts the farmer.
+
+**Stack:** `Python` &nbsp;•&nbsp; `ONNX Runtime` &nbsp;•&nbsp; `OpenCV` &nbsp;•&nbsp; `FastAPI` &nbsp;•&nbsp; `Next.js` &nbsp;•&nbsp; `Supabase`
+**Key Highlights:**
+- Two-stage recognition: generic animal detector plus a species classifier
+- Offline-first, with tracking, zones, voting and person suppression
+
+
+
+
+<br>
+### PaperLens <a id="paperlens"></a>
+
+**Status:** 💡 Planned
+> Private research-paper analyzer that runs entirely in the browser, with cited answers.
+
+**Stack:** `React` &nbsp;•&nbsp; `TypeScript` &nbsp;•&nbsp; `Transformers.js` &nbsp;•&nbsp; `WebLLM` &nbsp;•&nbsp; `pdf.js`
+
+
+
+
+<br>
+### People.ai: Faculty Fit & Retention Prediction <a id="people-ai"></a>
+
+**Status:** 🚀 Shipped
+> Predicts faculty-role fit and long-term retention from profile data.
+
+**Stack:** `Python` &nbsp;•&nbsp; `Scikit-learn` &nbsp;•&nbsp; `Pandas` &nbsp;•&nbsp; `NumPy`
+**Key Highlights:**
+- Feature engineering from resume and career-longevity signals
+
+
+
+
+<br>
+### Straatix Talent Exchange Platform <a id="straatix-talent-exchange"></a>
+
+**Status:** 🚀 Shipped
+> A two-sided hiring platform with separate HR and candidate portals.
+
+**Stack:** `Next.js` &nbsp;•&nbsp; `React` &nbsp;•&nbsp; `TypeScript` &nbsp;•&nbsp; `Supabase` &nbsp;•&nbsp; `GCP`
+**Key Highlights:**
+- Role-specific dashboards and a real-time notification system
+
+
 
 
 
@@ -173,6 +270,86 @@ flowchart LR
 | **Data structures & algorithms** |  |
 | **Object-oriented programming** |  |
 | **System design** |  |
+
+
+---
+
+## 💼 Experience &amp; Engineering Roles <a id="experience"></a>
+
+### **SDE Intern** – Straatix Partners Labs Pvt. Ltd.
+`2026-01 — 2026-07`
+
+<details open>
+<summary>Key Contributions &amp; Impact</summary>
+
+<br>
+
+- Built and scaled React/Next.js portal features for HR users and candidates, including dynamic interview scheduling components.
+- Implemented Supabase authentication with SSO and email sign-in flows, and wrote TypeScript serverless functions to automate the referral system.
+- Led the migration of legacy systems to Google Cloud Platform, deploying services on Cloud Run and using Vertex AI for production ML pipelines.
+
+<br>
+
+**Technologies Used:** `React` &nbsp;•&nbsp; `Next.js` &nbsp;•&nbsp; `TypeScript` &nbsp;•&nbsp; `Supabase` &nbsp;•&nbsp; `GCP`
+</details>
+
+<br>
+### **AI/ML Developer Intern (Director Internship)** – Model Institute of Engineering and Technology
+`2025-02 — 2026-01`
+
+<details open>
+<summary>Key Contributions &amp; Impact</summary>
+
+<br>
+
+- Contributed to a patented AI platform for candidate evaluation and role prediction, using ML models for experience, personality (Big Five) and career-trajectory analysis.
+- Implemented peer-group segmentation for fair candidate comparison, improving role-matching accuracy through model tuning.
+
+<br>
+
+**Technologies Used:** `Python` &nbsp;•&nbsp; `Scikit-learn`
+</details>
+
+<br>
+### **Trainee, AI/ML Hands-on Training Program** – Model Institute of Engineering and Technology
+`2025-03 — 2025-03`
+
+<details open>
+<summary>Key Contributions &amp; Impact</summary>
+
+<br>
+
+- Hands-on training in data preprocessing and model building on real-world datasets.
+
+
+</details>
+
+
+
+---
+
+## 🎓 Education &amp; Certifications <a id="education"></a>
+
+### Degrees &amp; Academic Background
+
+- **B.Tech, Computer Science & Engineering (AI/ML)** – Model Institute of Engineering and Technology, Jammu
+  - **Timeline:** 2022 — 2026
+  - **Academic Standing:** CGPA 8.5
+
+
+### Professional Certifications &amp; Coursework
+
+| Title | Issuer | Type | Credential |
+|:---|:---|:---|:---|
+| **Machine Learning Foundations: A Case Study Approach** | Coursera | Certification | — |
+| **Python for Data Science, AI & Development** | Coursera | Certification | [Verify Credential](https://drive.google.com/file/d/17j6eLecMSaxxvODqh-qb5YJVmMsuQhfp/view?usp=sharing) |
+| **Machine Learning: Clustering & Retrieval** | Coursera | Certification | [Verify Credential](https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing) |
+| **The Joy of Computing Using Python** | NPTEL | Certification | [Verify Credential](https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing) |
+| **Introduction to Data Science** | Infosys Springboard | Certification | [Verify Credential](https://drive.google.com/file/d/1RTTiHSCDAAEp4-NnfZIxRDFUuZ_QltOR/view?usp=sharing) |
+| **GCP Associate Cloud Engineer: Training Course** | Udemy | Course | — |
+| **JavaScript: The Complete Guide** | Udemy | Course | — |
+
+
 
 
 ---

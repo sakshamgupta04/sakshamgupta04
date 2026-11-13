@@ -67,7 +67,11 @@ status:   {{ profile.identity.tagline }}
 {% set _ = toc.append("[About](#about)") %}
 {% set _ = toc.append("[Start Here](#start-here)") %}
 {% if has(profile.now) %}{% set _ = toc.append("[Now](#now)") %}{% endif %}
+{% if has(profile.projects) %}{% set _ = toc.append("[Projects](#projects)") %}{% endif %}
 {% if has(profile.skills.groups) %}{% set _ = toc.append("[Skills](#skills)") %}{% endif %}
+{% if has(profile.experience) %}{% set _ = toc.append("[Experience](#experience)") %}{% endif %}
+{% if has(profile.identity.education) or has(profile.certifications) %}{% set _ = toc.append("[Education](#education)") %}{% endif %}
+{% if has(profile.publications) or profile.patent.mention %}{% set _ = toc.append("[Research](#research)") %}{% endif %}
 {% if has(profile.goals) %}{% set _ = toc.append("[Roadmap &amp; Goals](#goals)") %}{% endif %}
 {% if has(profile.principles) %}{% set _ = toc.append("[Principles](#principles)") %}{% endif %}
 {% if has(profile.links) %}{% set _ = toc.append("[Contact](#contact)") %}{% endif %}
@@ -89,10 +93,34 @@ status:   {{ profile.identity.tagline }}
 {% include "sections/now.md.j2" %}
 {% endif %}
 
+{% if has(profile.projects) %}
+---
+
+{% include "sections/projects.md.j2" %}
+{% endif %}
+
 {% if has(profile.skills.groups) %}
 ---
 
 {% include "sections/skills.md.j2" %}
+{% endif %}
+
+{% if has(profile.experience) %}
+---
+
+{% include "sections/experience.md.j2" %}
+{% endif %}
+
+{% if has(profile.identity.education) or has(profile.certifications) %}
+---
+
+{% include "sections/education.md.j2" %}
+{% endif %}
+
+{% if has(profile.publications) or profile.patent.mention %}
+---
+
+{% include "sections/research.md.j2" %}
 {% endif %}
 
 ---
