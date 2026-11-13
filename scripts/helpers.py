@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import re
+import sys
+from pathlib import Path
 from typing import Any
 
 from pydantic import BaseModel
@@ -101,3 +103,49 @@ def validate_mermaid_diagram(diagram: str | None, max_chars: int = 2000) -> str 
         return None
 
     return cleaned
+
+
+def write_step_summary(
+    summary_path: Path,
+    profile: Any,
+    dynamic_data: dict[str, Any],
+    cache_note: str | None,
+    size_bytes: int,
+    offline: bool,
+) -> None:
+    """Write GitHub Action step summary markdown to GITHUB_STEP_SUMMARY."""
+    data_source = cache_note if cache_note else "Live GitHub API (Synchronized)"
+    refreshed: list[str] = [
+        "💻 Terminal Header SVGs (`assets/terminal-*.svg`)",
+        "📄 Main Profile README (`README.md`)",
+    ]
+    if has(dynamic_data.get("languages")):
+        refreshed.append("📊 Language Statistics Bar SVGs (`assets/languages-*.svg`)")
+    if has(dynamic_data.get("recent_activity")):
+        refreshed.append("⚡ Recent Public Activity Stream")
+    if has(dynamic_data.get("project_last_updated")):
+        refreshed.append("⏱️ Featured Project Repository Timestamps")
+
+    content = [
+        "## 🚀 Profile README Refresh Report",
+        "",
+        "| Metric | Details |",
+        "| :--- | :--- |",
+        "| **Status** | ✅ Success |",
+        f"| **README Size** | `{size_bytes:,} bytes` (Limit: 102,400 bytes) |",
+        f"| **Data Source** | {data_source} |",
+        f"| **Offline Mode** | `{'Enabled' if offline else 'Disabled'}` |",
+        "",
+        "### 🔄 Refreshed Sections & Components",
+        "",
+    ]
+    for item in refreshed:
+        content.append(f"- {item}")
+    content.append("")
+
+    try:
+        with summary_path.open("a", encoding="utf-8") as f:
+            f.write("\n".join(content) + "\n")
+    except OSError as exc:
+        print(f"[WARN] Failed to write GitHub step summary: {exc}", file=sys.stderr)
+

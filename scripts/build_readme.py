@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 from typing import Any
@@ -23,6 +24,7 @@ from scripts.helpers import (
     format_roadmap_status,
     has,
     validate_mermaid_diagram,
+    write_step_summary,
 )
 from scripts.mermaid_generator import generate_mermaid_skill_map
 from scripts.schema import Profile, ProfileValidationError, validate_profile_dict
@@ -173,6 +175,18 @@ def build(
         return 1
 
     output_path.write_text(rendered, encoding="utf-8")
+
+    # Write GitHub Action job summary if running inside GitHub Actions
+    summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_file:
+        write_step_summary(
+            Path(summary_file),
+            profile=profile,
+            dynamic_data=dynamic_data,
+            cache_note=cache_note,
+            size_bytes=size_bytes,
+            offline=offline,
+        )
 
     if check:
         hidden = inspect_hidden_elements(profile, dynamic_data)

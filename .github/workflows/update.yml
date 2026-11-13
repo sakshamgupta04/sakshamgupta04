@@ -1,0 +1,103 @@
+name: Refresh Profile README
+
+on:
+  schedule:
+    # Runs once a day at an odd minute (03:17 UTC)
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/**'
+      - 'templates/**'
+      - 'scripts/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-readme-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: Refresh Profile
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'sakshamgupta04' && !github.event.repository.fork
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check feature flags
+        id: features
+        run: |
+          python -c "
+          import os, yaml
+          with open('data/profile.yml', 'r', encoding='utf-8') as f:
+              data = yaml.safe_load(f) or {}
+          snake = str(data.get('features', {}).get('snake', False)).lower()
+          out = os.environ.get('GITHUB_OUTPUT')
+          if out:
+              with open(out, 'a', encoding='utf-8') as gh_out:
+                  gh_out.write(f'snake={snake}\n')
+          print(f'features.snake: {snake}')
+          "
+
+      - name: Build Profile README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/build_readme.py --check
+
+      - name: Generate snake animation
+        if: steps.features.outputs.snake == 'true'
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy snake animation to output branch
+        if: steps.features.outputs.snake == 'true'
+        run: |
+          if [ -d dist ]; then
+            cd dist
+            git init
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git checkout -b output
+            git add *.svg
+            git commit -m "chore: refresh contribution snake [skip ci]"
+            git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git output
+            cd ..
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/ generated/
+          if git diff --staged --quiet; then
+            echo "No generated changes to commit."
+          else
+            echo "Changes detected in generated files. Committing..."
+            git commit -m "chore: refresh profile README"
+            git push origin main
+          fi
