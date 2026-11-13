@@ -84,6 +84,7 @@ class Links(StrictModel):
     scholar: str | None = None
     x_twitter: str | None = None
     blog: str | None = None
+    wakatime: str | None = None
 
     @field_validator("*", mode="before")
     @classmethod
@@ -235,6 +236,7 @@ class Profile(StrictModel):
     certifications: list[CertificationItem] = Field(default_factory=list)
     open_source: OpenSource = Field(default_factory=OpenSource)
     leetcode: Leetcode = Field(default_factory=Leetcode)
+    wakatime: str | None = None
     features: Features = Field(default_factory=Features)
 
 

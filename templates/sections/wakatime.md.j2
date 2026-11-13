@@ -1,0 +1,9 @@
+{% if profile.features.wakatime and has(wakatime_stats) %}
+### <a id="wakatime"></a>⏱️ Weekly Coding Activity (WakaTime)
+
+| Language | Share | Time Tracked |
+| :--- | :--- | :--- |
+{% for item in wakatime_stats -%}
+| **{{ item.name }}** | {{ item.percent }}% | {{ item.text }} |
+{% endfor %}
+{% endif %}

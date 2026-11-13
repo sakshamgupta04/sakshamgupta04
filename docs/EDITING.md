@@ -106,19 +106,41 @@ The refresh workflow is located at `.github/workflows/update.yml`.
 
 ---
 
-## 5. Feature Flags & Third-Party Action Risk
+## 5. Feature Flags & Optional Blocks
 
-In `data/profile.yml`, feature flags are configured under the `features` dictionary:
+In `data/profile.yml`, feature flags are configured under the `features` dictionary (all optional blocks are disabled by default):
 
 ```yaml
 features:
-  recent_activity: true   # Displays 5 most recent public GitHub events
-  languages: true         # Displays top 6 languages by code bytes SVG chart
-  snake: false            # Contribution snake animation (disabled by default)
+  terminal_header: true        # Self-generated animated SVG header
+  mermaid_skill_map: true      # Mermaid dependency flowchart
+  languages_chart: true        # Top 6 languages by code bytes SVG chart
+  recent_activity: true        # Displays 5 most recent public GitHub events
+  projects_last_updated: true  # Commit timestamps for featured project repos
+  snake: false                 # Contribution snake animation (disabled by default)
+  stats_card: false            # Simple text table (public repos, total stars)
+  leetcode_block: false        # Solved count and rating from leetcode.* (no network calls)
+  blog_rss: false              # Latest 3 post titles from links.blog RSS/Atom feed
+  wakatime: false              # Weekly language breakdown from public WakaTime share link
 ```
 
-### Third-Party Risk Disclosure: `Platane/snk`
-The contribution snake game animation uses the third-party GitHub Action `Platane/snk`.
+### Optional Blocks Details:
+1. **`leetcode_block`**:
+   - Reads directly from `leetcode.solved`, `leetcode.rating`, and `leetcode.as_of`.
+   - Never makes network or scraping calls; strictly static numbers you control.
+   - Automatically hidden if both `solved` and `rating` are empty or null.
+2. **`blog_rss`**:
+   - Requires `links.blog` to be set to a valid RSS 2.0 or Atom feed.
+   - Fetches with a 10s timeout, sanitizes titles, and restricts links strictly to the blog's domain or subdomains.
+   - Caches to `generated/last_good.json` and gracefully hides on network failure.
+3. **`wakatime`**:
+   - Requires a public WakaTime share JSON URL in `links.wakatime`.
+   - Displays a clean weekly language split table with percentages and time tracked.
+   - Zero secrets or API keys required; caches and hides gracefully on failure.
+4. **`stats_card`**:
+   - Computes public non-fork repository count and total stargazer count across your repositories.
+   - Rendered as a simple markdown table without third-party badge services.
+5. **`snake` (Contribution Snake Animation)**:
 
 - **Security Risk:** Running third-party actions in GitHub workflows involves executing external containerized code. If a third-party action is compromised, it could attempt to exfiltrate workflow secrets or abuse write permissions.
 - **Safety Measures in this Repository:**
@@ -128,3 +150,4 @@ The contribution snake game animation uses the third-party GitHub Action `Platan
   4. **Strict Minimal Permissions:** The workflow only grants `contents: write`, with no access to external environments, identities, or extra secrets.
 
 To turn the contribution snake animation on, simply set `features.snake: true` in `data/profile.yml` and run `python scripts/verify.py`.
+

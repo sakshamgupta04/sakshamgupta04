@@ -1,0 +1,18 @@
+{% if profile.features.leetcode_block and (has(profile.leetcode.solved) or has(profile.leetcode.rating)) %}
+### <a id="leetcode"></a>🧩 LeetCode Stats
+
+| Metric | Value |
+| :--- | :--- |
+{% if has(profile.leetcode.solved) -%}
+| **Problems Solved** | {{ profile.leetcode.solved }} |
+{% endif -%}
+{% if has(profile.leetcode.rating) -%}
+| **Contest Rating** | {{ profile.leetcode.rating }} |
+{% endif -%}
+{% if has(profile.leetcode.as_of) -%}
+| **As of** | {{ profile.leetcode.as_of }} |
+{% endif -%}
+{% if has(profile.links.leetcode) -%}
+| **Profile** | [View LeetCode Profile]({{ profile.links.leetcode }}) |
+{% endif %}
+{% endif %}

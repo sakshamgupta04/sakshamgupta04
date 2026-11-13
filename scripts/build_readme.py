@@ -16,6 +16,7 @@ if str(PROJECT_ROOT) not in sys.path:
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
+from scripts.external_feeds import enrich_external_feeds
 from scripts.github_api import fetch_github_data
 from scripts.helpers import (
     find_todo_values,
@@ -65,13 +66,14 @@ def render_readme(
         lstrip_blocks=True,
         autoescape=False,
     )
-    env.globals["has"] = has
-    env.globals["validate_diagram"] = validate_mermaid_diagram
-    env.filters["has"] = has
-    env.filters["format_status"] = format_roadmap_status
-    env.filters["format_project_status"] = format_project_status
-    env.filters["format_cert_kind"] = format_cert_kind
-    env.filters["validate_diagram"] = validate_mermaid_diagram
+    env.globals.update(has=has, validate_diagram=validate_mermaid_diagram)
+    env.filters.update(
+        has=has,
+        format_status=format_roadmap_status,
+        format_project_status=format_project_status,
+        format_cert_kind=format_cert_kind,
+        validate_diagram=validate_mermaid_diagram,
+    )
 
     data = dynamic_data or {}
     languages = data.get("languages", {})
@@ -90,6 +92,9 @@ def render_readme(
         languages_alt_text=languages_alt,
         recent_activity=recent_activity,
         project_last_updated=project_last_updated,
+        github_stats=data.get("github_stats"),
+        blog_posts=data.get("blog_posts", []),
+        wakatime_stats=data.get("wakatime", []),
     )
 
 
@@ -97,34 +102,41 @@ def inspect_hidden_elements(profile: Profile, dynamic_data: dict[str, Any] | Non
     """Identify sections or major elements that are hidden because they are empty."""
     hidden: list[str] = []
 
-    if not has(profile.identity.location):
-        hidden.append("identity.location (null)")
-    if not has(profile.identity.languages_spoken):
-        hidden.append("identity.languages_spoken (empty)")
-    if not has(profile.identity.availability.work_mode):
-        hidden.append("identity.availability.work_mode (null)")
+    for field, name in [
+        (profile.identity.location, "identity.location (null)"),
+        (profile.identity.languages_spoken, "identity.languages_spoken (empty)"),
+        (profile.identity.availability.work_mode, "identity.availability.work_mode (null)"),
+    ]:
+        if not has(field):
+            hidden.append(name)
 
-    link_dump = profile.links.model_dump()
-    for link_name, link_val in link_dump.items():
+    for link_name, link_val in profile.links.model_dump().items():
         if not has(link_val):
             hidden.append(f"links.{link_name} (empty/null)")
 
-    if not has(profile.now):
-        hidden.append("now (section empty/null)")
-    if not has(profile.publications):
-        hidden.append("publications (section empty)")
-    if not has(profile.patent):
-        hidden.append("patent (mention=false/null)")
-    if not has(profile.open_source):
-        hidden.append("open_source (section empty)")
-    if not has(profile.leetcode):
-        hidden.append("leetcode (section empty/null)")
+    for block, name in [
+        (profile.now, "now (section empty/null)"),
+        (profile.publications, "publications (section empty)"),
+        (profile.patent, "patent (mention=false/null)"),
+        (profile.open_source, "open_source (section empty)"),
+        (profile.leetcode, "leetcode (section empty/null)"),
+    ]:
+        if not has(block):
+            hidden.append(name)
 
     data = dynamic_data or {}
     if not has(data.get("languages")):
         hidden.append("languages_chart (no language data)")
     if not has(data.get("recent_activity")):
         hidden.append("recent_activity (no activity data)")
+    if profile.features.leetcode_block and not (has(profile.leetcode.solved) or has(profile.leetcode.rating)):
+        hidden.append("leetcode_block (enabled but no solved/rating)")
+    if profile.features.blog_rss and not has(data.get("blog_posts")):
+        hidden.append("blog_rss (enabled but no blog posts)")
+    if profile.features.wakatime and not has(data.get("wakatime")):
+        hidden.append("wakatime (enabled but no wakatime stats)")
+    if profile.features.stats_card and not has(data.get("github_stats")):
+        hidden.append("stats_card (enabled but no github stats)")
 
     return hidden
 
@@ -153,6 +165,7 @@ def build(
         offline=offline,
         cache_path=cache_path,
     )
+    enrich_external_feeds(profile, dynamic_data, offline=offline, cache_path=cache_path)
 
     # Generate language bar SVGs if language data exists
     if has(dynamic_data.get("languages")):
@@ -167,43 +180,26 @@ def build(
     size_bytes = len(rendered.encode("utf-8"))
 
     if size_bytes > MAX_README_BYTES:
-        print(
-            f"\n[BUILD ERROR] Generated README.md size ({size_bytes} bytes) "
-            f"exceeds the 100 KB limit ({MAX_README_BYTES} bytes).",
-            file=sys.stderr,
-        )
+        print(f"\n[BUILD ERROR] README size ({size_bytes} bytes) exceeds limit.", file=sys.stderr)
         return 1
 
     output_path.write_text(rendered, encoding="utf-8")
 
-    # Write GitHub Action job summary if running inside GitHub Actions
     summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary_file:
-        write_step_summary(
-            Path(summary_file),
-            profile=profile,
-            dynamic_data=dynamic_data,
-            cache_note=cache_note,
-            size_bytes=size_bytes,
-            offline=offline,
-        )
+        write_step_summary(Path(summary_file), profile, dynamic_data, cache_note, size_bytes, offline)
 
     if check:
         hidden = inspect_hidden_elements(profile, dynamic_data)
         todo_values = find_todo_values(raw_data)
+        note = cache_note if cache_note else "Live GitHub API synchronization active"
 
-        print("\n" + "=" * 60)
-        print("PROFILE README GENERATION REPORT")
-        print("=" * 60)
+        print(f"\n{'=' * 60}\nPROFILE README GENERATION REPORT\n{'=' * 60}")
         print("Status:             VALIDATION & RENDER PASSED")
         print(f"Offline Mode:       {'ENABLED' if offline else 'DISABLED'}")
-        if cache_note:
-            print(f"Dynamic Data Note:  {cache_note}")
-        else:
-            print("Dynamic Data Note:  Live GitHub API synchronization active")
+        print(f"Dynamic Data Note:  {note}")
         print(f"Output File:        {output_path.resolve()}")
-        print(f"README Size:        {size_bytes:,} bytes / {MAX_README_BYTES:,} bytes limit")
-        print("-" * 60)
+        print(f"README Size:        {size_bytes:,} bytes / {MAX_README_BYTES:,} bytes limit\n{'-' * 60}")
         print(f"Hidden Elements / Sections ({len(hidden)}):")
         for item in hidden:
             print(f"  [HIDDEN] {item}")

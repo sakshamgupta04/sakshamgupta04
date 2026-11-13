@@ -58,15 +58,14 @@ def compute_relative_time(iso_str: str, now: datetime | None = None) -> str:
         seconds = max(0, int(diff.total_seconds()))
         if seconds < 60:
             return "just now"
-        minutes, hours, days = seconds // 60, seconds // 3600, seconds // 86400
-        if minutes < 60:
-            return f"{minutes}m ago"
-        if hours < 24:
-            return f"{hours}h ago"
-        if days < 30:
-            return f"{days}d ago"
-        months = days // 30
-        return f"{months}mo ago" if months < 12 else f"{months // 12}y ago"
+        m, h, d = seconds // 60, seconds // 3600, seconds // 86400
+        if m < 60:
+            return f"{m}m ago"
+        if h < 24:
+            return f"{h}h ago"
+        if d < 30:
+            return f"{d}d ago"
+        return f"{d // 30}mo ago" if d < 365 else f"{d // 365}y ago"
     except (ValueError, TypeError, AttributeError):
         return iso_str[:10] if iso_str else "recently"
 
@@ -78,9 +77,7 @@ def get_user_public_repos(handle: str, session: requests.Session) -> list[dict[s
     if resp.status_code != 200:
         return []
     repos = resp.json()
-    if not isinstance(repos, list):
-        return []
-    return [r for r in repos if not r.get("fork")]
+    return [r for r in repos if not r.get("fork")] if isinstance(repos, list) else []
 
 
 def get_languages_bytes(
@@ -185,16 +182,12 @@ def parse_recent_activity(events: list[dict[str, Any]], max_items: int = 5) -> l
             link = rel.get("html_url") or repo_url
 
         elif ev_type == "CreateEvent" and payload.get("ref_type") == "repository":
-            title = f"Created public repository `{repo_name}`"
-            link = repo_url
+            title, link = f"Created public repository `{repo_name}`", repo_url
 
         if title and is_github_url(link):
-            meaningful.append({
-                "description": title,
-                "url": link,
-                "relative_time": rel_time,
-                "absolute_time": abs_time,
-            })
+            meaningful.append(
+                {"description": title, "url": link, "relative_time": rel_time, "absolute_time": abs_time}
+            )
             if len(meaningful) >= max_items:
                 break
 
@@ -232,12 +225,17 @@ def fetch_github_data(
         pushed = get_project_last_pushed(repos, project_repos)
         raw_events = get_user_events(handle, session)
         activity = parse_recent_activity(raw_events, max_items=5)
+        github_stats = {
+            "public_repos": len(repos),
+            "total_stars": sum(r.get("stargazers_count", 0) for r in repos),
+        }
 
         data = {
             "fetched_at": datetime.now(UTC).isoformat()[:19] + "Z",
             "languages": langs,
             "project_last_updated": pushed,
             "recent_activity": activity,
+            "github_stats": github_stats,
         }
         cache_path.parent.mkdir(parents=True, exist_ok=True)
         cache_path.write_text(json.dumps(data, indent=2), encoding="utf-8")

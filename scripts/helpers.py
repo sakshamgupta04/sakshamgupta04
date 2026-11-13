@@ -125,6 +125,12 @@ def write_step_summary(
         refreshed.append("⚡ Recent Public Activity Stream")
     if has(dynamic_data.get("project_last_updated")):
         refreshed.append("⏱️ Featured Project Repository Timestamps")
+    if has(dynamic_data.get("github_stats")):
+        refreshed.append("📊 GitHub Repository & Stargazer Metrics")
+    if has(dynamic_data.get("blog_posts")):
+        refreshed.append("✍️ Latest Blog Articles Feed")
+    if has(dynamic_data.get("wakatime")):
+        refreshed.append("⏱️ WakaTime Coding Activity Breakdown")
 
     content = [
         "## 🚀 Profile README Refresh Report",

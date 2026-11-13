@@ -1,0 +1,9 @@
+{% if profile.features.blog_rss and has(blog_posts) %}
+### <a id="blog"></a>✍️ Latest Articles
+
+| Article | Published |
+| :--- | :--- |
+{% for post in blog_posts -%}
+| [{{ post.title }}]({{ post.url }}) | {{ post.date }} |
+{% endfor %}
+{% endif %}

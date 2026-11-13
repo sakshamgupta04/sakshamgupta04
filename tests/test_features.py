@@ -80,3 +80,4 @@ def test_write_step_summary(tmp_path: Path) -> None:
     assert "Live GitHub API" in content
     assert "Language Statistics Bar" in content
     assert "Recent Public Activity" in content
+

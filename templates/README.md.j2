@@ -71,9 +71,13 @@ status:   {{ profile.identity.tagline }}
 {% if has(profile.skills.groups) %}{% set _ = toc.append("[Skills](#skills)") %}{% endif %}
 {% if has(profile.experience) %}{% set _ = toc.append("[Experience](#experience)") %}{% endif %}
 {% if has(recent_activity) and profile.features.recent_activity %}{% set _ = toc.append("[Activity](#activity)") %}{% endif %}
+{% if profile.features.stats_card and has(github_stats) and (has(github_stats.public_repos) or has(github_stats.total_stars)) %}{% set _ = toc.append("[GitHub Metrics](#github-stats)") %}{% endif %}
+{% if profile.features.wakatime and has(wakatime_stats) %}{% set _ = toc.append("[WakaTime](#wakatime)") %}{% endif %}
 {% if profile.features.snake %}{% set _ = toc.append("[Contributions](#contributions)") %}{% endif %}
 {% if has(profile.identity.education) or has(profile.certifications) %}{% set _ = toc.append("[Education](#education)") %}{% endif %}
+{% if profile.features.leetcode_block and (has(profile.leetcode.solved) or has(profile.leetcode.rating)) %}{% set _ = toc.append("[LeetCode](#leetcode)") %}{% endif %}
 {% if has(profile.publications) or profile.patent.mention %}{% set _ = toc.append("[Research](#research)") %}{% endif %}
+{% if profile.features.blog_rss and has(blog_posts) %}{% set _ = toc.append("[Articles](#blog)") %}{% endif %}
 {% if has(profile.goals) %}{% set _ = toc.append("[Roadmap &amp; Goals](#goals)") %}{% endif %}
 {% if has(profile.principles) %}{% set _ = toc.append("[Principles](#principles)") %}{% endif %}
 {% if has(profile.links) %}{% set _ = toc.append("[Contact](#contact)") %}{% endif %}
@@ -119,6 +123,18 @@ status:   {{ profile.identity.tagline }}
 {% include "sections/activity.md.j2" %}
 {% endif %}
 
+{% if profile.features.stats_card and has(github_stats) and (has(github_stats.public_repos) or has(github_stats.total_stars)) %}
+---
+
+{% include "sections/stats_card.md.j2" %}
+{% endif %}
+
+{% if profile.features.wakatime and has(wakatime_stats) %}
+---
+
+{% include "sections/wakatime.md.j2" %}
+{% endif %}
+
 {% if profile.features.snake %}
 ---
 
@@ -131,10 +147,22 @@ status:   {{ profile.identity.tagline }}
 {% include "sections/education.md.j2" %}
 {% endif %}
 
+{% if profile.features.leetcode_block and (has(profile.leetcode.solved) or has(profile.leetcode.rating)) %}
+---
+
+{% include "sections/leetcode.md.j2" %}
+{% endif %}
+
 {% if has(profile.publications) or profile.patent.mention %}
 ---
 
 {% include "sections/research.md.j2" %}
+{% endif %}
+
+{% if profile.features.blog_rss and has(blog_posts) %}
+---
+
+{% include "sections/blog.md.j2" %}
 {% endif %}
 
 ---

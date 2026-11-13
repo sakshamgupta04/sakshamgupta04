@@ -347,6 +347,8 @@ flowchart LR
 
 
 
+
+
 ---
 
 ## 🎓 Education &amp; Certifications <a id="education"></a>
@@ -369,6 +371,8 @@ flowchart LR
 | **Introduction to Data Science** | Infosys Springboard | Certification | [Verify Credential](https://drive.google.com/file/d/1RTTiHSCDAAEp4-NnfZIxRDFUuZ_QltOR/view?usp=sharing) |
 | **GCP Associate Cloud Engineer: Training Course** | Udemy | Course | — |
 | **JavaScript: The Complete Guide** | Udemy | Course | — |
+
+
 
 
 
