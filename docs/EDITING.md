@@ -151,3 +151,42 @@ features:
 
 To turn the contribution snake animation on, simply set `features.snake: true` in `data/profile.yml` and run `python scripts/verify.py`.
 
+---
+
+## 6. Monthly Maintenance Routine (5-Minute Checklist)
+
+To keep your profile fresh and engaging for recruiters, engineers, and researchers, run this brief monthly routine:
+
+1. **Update the `now` block (`data/profile.yml`)**:
+   - Set `now.updated` to the current month (e.g. `"2026-12"`).
+   - Update `now.building` with projects or features you shipped or are actively coding.
+   - Update `now.learning` with newly adopted libraries, research topics, or architectures.
+   - Update `now.reading` or `now.exploring` with relevant engineering books, papers, or systems.
+2. **Review Project Statuses & Measured Results**:
+   - Transition active projects from `building` to `shipped` as milestones complete.
+   - Add measured impact metrics into `projects[*].results` (e.g. `"Reduced inference latency by 35%"`).
+   - Add newly created repository links into `projects[*].repo`.
+3. **Add Publications, Patents & Certifications**:
+   - When new papers or preprints appear, append to `publications` with DOI/PDF and optional BibTeX.
+   - If patent filings become public, toggle `patent.mention: true` with details.
+   - Add newly earned course or certification credentials with URLs.
+4. **Review the Inspection Report**:
+   - Run:
+     ```bash
+     python scripts/build_readme.py --check
+     ```
+   - Review the console report: verify what is shown, confirm what is hidden, and verify that zero `"TODO"` values are present.
+5. **Verify and Deploy**:
+   - Run the verification suite:
+     ```bash
+     python scripts/verify.py
+     ```
+   - Commit and push to `main`:
+     ```bash
+     git add data/profile.yml README.md
+     git commit -m "chore(profile): monthly update for <Month Year>"
+     git push origin main
+     ```
+   - GitHub Actions will automatically refresh dynamic statistics, timestamps, and SVGs.
+
+
