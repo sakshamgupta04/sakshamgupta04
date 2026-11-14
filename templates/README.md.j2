@@ -29,7 +29,8 @@
   {% set _ = quick_links.append("[📄 Resume](" + profile.links.resume_pdf + ")") %}
 {% endif %}
 {% if has(profile.links.email) %}
-  {% set _ = quick_links.append("[✉️ Email](" + profile.links.email + ")") %}
+  {% set mailto_url = profile.links.email if profile.links.email.startswith('mailto:') else 'mailto:' ~ profile.links.email %}
+  {% set _ = quick_links.append("[✉️ Email](" + mailto_url + ")") %}
 {% endif %}
 {% if has(profile.links.leetcode) %}
   {% set _ = quick_links.append("[🧩 LeetCode](" + profile.links.leetcode + ")") %}

@@ -55,7 +55,7 @@ I focus on connecting intelligent software with reliable engineering practices t
 - Engineered automated deployment pipelines with GitHub Actions and GCP Workload Identity Federation for keyless, secretless cloud delivery.
 
 **Technologies:** <code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>Google Cloud Platform</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>GitHub Actions</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code>
----
+<hr>
 
 ### AI/ML Developer Intern — Director Internship <a id="exp-2"></a>
 **Model Institute of Engineering and Technology, Jammu** &nbsp;|&nbsp; 🗓️ `February 2025 — January 2026`
@@ -64,6 +64,7 @@ I focus on connecting intelligent software with reliable engineering practices t
 - Tuned and evaluated classification models to improve role-matching precision and candidate fit scoring.
 
 **Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Machine Learning</code> &nbsp;•&nbsp; <code>Model Evaluation</code>
+
 
 ---
 
@@ -165,31 +166,34 @@ I focus on connecting intelligent software with reliable engineering practices t
 <table width="100%">
   <tr>
     <td width="33%" valign="top">
-      <h4>🧠 AI &amp; Machine Learning</h4>
-      <sub>Predictive Modeling &amp; Vision</sub>
-      <br><br>
-      • Applied ML &amp; Scikit-learn<br>
-      • Computer Vision &amp; DeepFace<br>
-      • Feature Engineering &amp; Tuning<br>
-      • Model Benchmarks &amp; Evaluation
+      <h4 style="margin-top: 0; margin-bottom: 4px;">🧠 AI &amp; Machine Learning</h4>
+      <p style="margin-top: 0; margin-bottom: 8px;"><sub>Predictive Modeling &amp; Vision</sub></p>
+      <ul>
+        <li>Applied ML &amp; Scikit-learn</li>
+        <li>Computer Vision &amp; DeepFace</li>
+        <li>Feature Engineering &amp; Tuning</li>
+        <li>Model Benchmarks &amp; Evaluation</li>
+      </ul>
     </td>
     <td width="33%" valign="top">
-      <h4>💻 Full-Stack Engineering</h4>
-      <sub>Interactive Web &amp; Scalable APIs</sub>
-      <br><br>
-      • React &amp; Next.js Architecture<br>
-      • REST APIs &amp; FastAPI Services<br>
-      • Supabase Auth &amp; PostgreSQL<br>
-      • TypeScript Serverless Workflows
+      <h4 style="margin-top: 0; margin-bottom: 4px;">💻 Full-Stack Engineering</h4>
+      <p style="margin-top: 0; margin-bottom: 8px;"><sub>Interactive Web &amp; Scalable APIs</sub></p>
+      <ul>
+        <li>React &amp; Next.js Architecture</li>
+        <li>REST APIs &amp; FastAPI Services</li>
+        <li>Supabase Auth &amp; PostgreSQL</li>
+        <li>TypeScript Serverless Workflows</li>
+      </ul>
     </td>
     <td width="33%" valign="top">
-      <h4>☁️ Cloud &amp; Deployment</h4>
-      <sub>Containerized Scalable Infrastructure</sub>
-      <br><br>
-      • Google Cloud Platform (GCP)<br>
-      • Microservices on Cloud Run<br>
-      • Vertex AI Production Pipelines<br>
-      • Keyless CI/CD with GCP WIF
+      <h4 style="margin-top: 0; margin-bottom: 4px;">☁️ Cloud &amp; Deployment</h4>
+      <p style="margin-top: 0; margin-bottom: 8px;"><sub>Containerized Scalable Infrastructure</sub></p>
+      <ul>
+        <li>Google Cloud Platform (GCP)</li>
+        <li>Microservices on Cloud Run</li>
+        <li>Vertex AI Production Pipelines</li>
+        <li>Keyless CI/CD with GCP WIF</li>
+      </ul>
     </td>
   </tr>
 </table>

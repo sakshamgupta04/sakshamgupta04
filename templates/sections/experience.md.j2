@@ -11,10 +11,10 @@
 
 {% if has(exp.stack) %}
 **Technologies:** {% for s in exp.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
+
 {% endif %}
 {% if not loop.last %}
-
----
+<hr>
 
 {% endif %}
 {% endfor %}
