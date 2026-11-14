@@ -15,22 +15,6 @@
   <img alt="{{ alt_lines | join('&#10;') }}" src="assets/terminal-dark.svg" width="800">
 </picture>
 
-```text
-{{ profile.identity.handle }}@github:~$ whoami
-{% if has(profile.identity.name) -%}
-name:     {{ profile.identity.name }}
-{% endif -%}
-{% if has(profile.identity.headline) -%}
-role:     {{ profile.identity.headline }}
-{% endif -%}
-{% if has(profile.identity.availability.text) -%}
-status:   {{ profile.identity.availability.text }}
-{% elif has(profile.identity.tagline) -%}
-status:   {{ profile.identity.tagline }}
-{% endif -%}
-{{ profile.identity.handle }}@github:~$ █
-```
-
 # Hey, I'm {{ profile.identity.name }} 👋
 {% if has(profile.identity.headline) %}
 ## {{ profile.identity.headline }}
@@ -70,7 +54,7 @@ status:   {{ profile.identity.tagline }}
 
 {% set toc = [] %}
 {% set _ = toc.append("[About](#about)") %}
-{% set _ = toc.append("[Start Here](#start-here)") %}
+{% if profile.features.start_here %}{% set _ = toc.append("[Start Here](#start-here)") %}{% endif %}
 {% if has(profile.now) %}{% set _ = toc.append("[Now](#now)") %}{% endif %}
 {% if has(profile.projects) %}{% set _ = toc.append("[Projects](#projects)") %}{% endif %}
 {% if has(profile.skills.groups) %}{% set _ = toc.append("[Skills](#skills)") %}{% endif %}
@@ -83,8 +67,8 @@ status:   {{ profile.identity.tagline }}
 {% if profile.features.leetcode_block and (has(profile.leetcode.solved) or has(profile.leetcode.rating)) %}{% set _ = toc.append("[LeetCode](#leetcode)") %}{% endif %}
 {% if has(profile.publications) or profile.patent.mention %}{% set _ = toc.append("[Research](#research)") %}{% endif %}
 {% if profile.features.blog_rss and has(blog_posts) %}{% set _ = toc.append("[Articles](#blog)") %}{% endif %}
-{% if has(profile.goals) %}{% set _ = toc.append("[Roadmap &amp; Goals](#goals)") %}{% endif %}
-{% if has(profile.principles) %}{% set _ = toc.append("[Principles](#principles)") %}{% endif %}
+{% if profile.features.goals and has(profile.goals) %}{% set _ = toc.append("[Roadmap &amp; Goals](#goals)") %}{% endif %}
+{% if profile.features.principles and has(profile.principles) %}{% set _ = toc.append("[Principles](#principles)") %}{% endif %}
 {% if has(profile.links) %}{% set _ = toc.append("[Contact](#contact)") %}{% endif %}
 {% if has(toc) %}
 **Jump to:** {{ toc | join(" &nbsp;•&nbsp; ") }}
@@ -94,9 +78,11 @@ status:   {{ profile.identity.tagline }}
 
 {% include "sections/whoami.md.j2" %}
 
+{% if profile.features.start_here %}
 ---
 
 {% include "sections/start_here.md.j2" %}
+{% endif %}
 
 {% if has(profile.now) %}
 ---
@@ -170,13 +156,17 @@ status:   {{ profile.identity.tagline }}
 {% include "sections/blog.md.j2" %}
 {% endif %}
 
+{% if profile.features.goals and has(profile.goals) %}
 ---
 
 {% include "sections/goals.md.j2" %}
+{% endif %}
 
+{% if profile.features.principles and has(profile.principles) %}
 ---
 
 {% include "sections/principles.md.j2" %}
+{% endif %}
 
 {% if has(profile.links) %}
 ---

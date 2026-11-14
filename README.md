@@ -10,14 +10,6 @@
   <img alt="sakshamgupta04@github:~$ whoami&#10;name: Saksham Gupta&#10;role: Full-stack developer and ML engineer&#10;status: Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)" src="assets/terminal-dark.svg" width="800">
 </picture>
 
-```text
-sakshamgupta04@github:~$ whoami
-name:     Saksham Gupta
-role:     Full-stack developer and ML engineer
-status:   Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)
-sakshamgupta04@github:~$ █
-```
-
 # Hey, I'm Saksham Gupta 👋
 ## Full-stack developer and ML engineer
 
@@ -31,7 +23,7 @@ sakshamgupta04@github:~$ █
 
 ---
 
-**Jump to:** [About](#about) &nbsp;•&nbsp; [Start Here](#start-here) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Activity](#activity) &nbsp;•&nbsp; [Education](#education) &nbsp;•&nbsp; [Roadmap &amp; Goals](#goals) &nbsp;•&nbsp; [Principles](#principles) &nbsp;•&nbsp; [Contact](#contact)
+**Jump to:** [About](#about) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Activity](#activity) &nbsp;•&nbsp; [Education](#education) &nbsp;•&nbsp; [Contact](#contact)
 
 ---
 
@@ -41,52 +33,6 @@ I'm **Saksham Gupta**, a Full-stack developer and ML engineer. I build end-to-en
 
 - 🎯 **Target Roles:** Full-Stack / Web Developer &nbsp;•&nbsp; AI/ML Engineer &nbsp;•&nbsp; Software Engineer (SDE)
 - 🎓 **Education:** B.Tech, Computer Science & Engineering (AI/ML) — Model Institute of Engineering and Technology, Jammu (2022–2026, CGPA 8.5)
-
----
-
-## 🧭 Start Here <a id="start-here"></a>
-
-<details open>
-<summary><b>💼 Recruiter &amp; Hiring Manager</b> (TL;DR, key highlights, availability)</summary>
-
-<br>
-
-- **Availability:** Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)
-- **Roles Targeted:** Full-Stack / Web Developer • AI/ML Engineer • Software Engineer (SDE)
-
-**Top Featured Projects:**
-
-- **EchoNotes**: Paste a YouTube link or upload a file; get chapters, key points, a summary and search that jumps to the exact moment.
-- **AI Video Interview & Emotion Analyzer**: Record an interview in the browser and get frame-by-frame emotion analysis.
-- **FarmGuard**: Edge-AI crop protection: detects animals raiding crops, deters them humanely, and alerts the farmer.
-**Direct Contact:** [work.saksham04@gmail.com](mailto:work.saksham04@gmail.com) &nbsp;•&nbsp; [LinkedIn Profile](https://www.linkedin.com/in/saksham-gupta-458486294/)
-
-</details>
-
-<details>
-<summary><b>🛠️ Software Engineer &amp; Tech Lead</b> (Architecture, codebases, stack)</summary>
-
-<br>
-
-**Key Projects &amp; Architectures:**
-
-- **EchoNotes** (`shipped`): Paste a YouTube link or upload a file; get chapters, key points, a summary and search that jumps to the exact moment.
-  - **Stack:** Next.js, TypeScript, FastAPI, Supabase, faster-whisper, PyTorch
-  - **Architecture:** Input ladder: captions first, then audio download plus Whisper, then file upload
-
-- **AI Video Interview & Emotion Analyzer** (`shipped`): Record an interview in the browser and get frame-by-frame emotion analysis.
-  - **Stack:** Next.js, Python, DeepFace, OpenCV, Supabase
-  - **Architecture:** In-browser recording with the MediaRecorder API and multipart upload
-
-- **FarmGuard** (`building`): Edge-AI crop protection: detects animals raiding crops, deters them humanely, and alerts the farmer.
-  - **Stack:** Python, ONNX Runtime, OpenCV, FastAPI, Next.js, Supabase
-  - **Architecture:** Two-stage recognition: generic animal detector plus a species classifier
-  - **Repository:** [github.com/sakshamgupta04/Farmland-Animal-Detection](https://github.com/sakshamgupta04/Farmland-Animal-Detection)
-
-- **PaperLens** (`planned`): Private research-paper analyzer that runs entirely in the browser, with cited answers.
-  - **Stack:** React, TypeScript, Transformers.js, WebLLM, pdf.js
-
-</details>
 
 
 
@@ -371,44 +317,6 @@ flowchart LR
 
 
 
----
-
-## 🎯 Mission &amp; Goals <a id="goals"></a>
-
-### Objectives
-
-**Short-Term Focus:**
-- Join a team as a full-stack or ML engineer and ship production features
-- Ship projects with live demos and measured results, not just notebooks
-
-**Mid-Term Focus:**
-- Publish and present more research
-- Contribute to open-source ML and web tooling
-
-**Long-Term Vision:**
-- Build AI products that solve real problems for real people
-
-
-### 🗺️ Engineering Roadmap
-
-| Status | Milestone |
-|:---|:---|
-| ✅ Done | Portfolio website live |
-| ⚡ In progress (doing) | FarmGuard PC prototype with evaluation |
-| 📋 Next (planned) | PaperLens: private in-browser document analyzer |
-| 📋 Next (planned) | First open-source contribution |
-
-
----
-
-## 📐 Working Principles <a id="principles"></a>
-
-| Principle | How It Shows Up |
-|:---|:---|
-| **Measure before you claim** | Every ML project gets a baseline and an evaluation. Numbers on my resume come from runs I can reproduce. |
-| **Fail gracefully** | Each feature has a fallback, so one broken dependency never breaks the whole product. |
-| **Privacy by design** | Prefer on-device and offline processing when it is practical. |
-| **Ship it** | A deployed link and a clear README beat an unfinished repository. |
 
 
 ---

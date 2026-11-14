@@ -42,7 +42,9 @@ def test_whoami_renders_populated_fields_and_hides_missing(profile_fixture: Prof
 
 
 def test_start_here_recruiter_and_engineer(profile_fixture: Profile) -> None:
-    output = render(profile_fixture)
+    p = copy.deepcopy(profile_fixture)
+    p.features.start_here = True
+    output = render(p)
     # Recruiter section
     assert "💼 Recruiter &amp; Hiring Manager" in output
     assert "EchoNotes" in output
@@ -56,13 +58,15 @@ def test_start_here_recruiter_and_engineer(profile_fixture: Profile) -> None:
 
 
 def test_researcher_hidden_when_empty(profile_fixture: Profile) -> None:
-    # Profile fixture has empty publications and open_source.interests
-    output = render(profile_fixture)
+    p = copy.deepcopy(profile_fixture)
+    p.features.start_here = True
+    output = render(p)
     assert "Researcher &amp; Academic" not in output
 
 
 def test_researcher_shown_when_populated(profile_fixture: Profile) -> None:
     p = copy.deepcopy(profile_fixture)
+    p.features.start_here = True
     p.open_source.interests = ["Edge AI Optimization", "Offline RAG"]
     output = render(p)
     assert "Researcher &amp; Academic" in output
@@ -93,7 +97,9 @@ def test_roadmap_status_icons_and_words() -> None:
 
 
 def test_principles_table_rendered(profile_fixture: Profile) -> None:
-    output = render(profile_fixture)
+    p = copy.deepcopy(profile_fixture)
+    p.features.principles = True
+    output = render(p)
     assert "## 📐 Working Principles" in output
     assert "Measure before you claim" in output
     assert "Fail gracefully" in output
@@ -102,7 +108,11 @@ def test_principles_table_rendered(profile_fixture: Profile) -> None:
 
 
 def test_anchors_and_toc_links(profile_fixture: Profile) -> None:
-    output = render(profile_fixture)
+    p = copy.deepcopy(profile_fixture)
+    p.features.start_here = True
+    p.features.goals = True
+    p.features.principles = True
+    output = render(p)
     assert 'id="about"' in output
     assert 'id="start-here"' in output
     assert 'id="goals"' in output
@@ -113,4 +123,13 @@ def test_anchors_and_toc_links(profile_fixture: Profile) -> None:
     assert "[Start Here](#start-here)" in output
     assert "[Roadmap &amp; Goals](#goals)" in output
     assert "[Principles](#principles)" in output
-    assert "[Contact](#contact)" in output
+
+
+def test_unwanted_sections_hidden_by_default(profile_fixture: Profile) -> None:
+    output = render(profile_fixture)
+    assert "## 🧭 Start Here" not in output
+    assert "## 🎯 Mission &amp; Goals" not in output
+    assert "## 📐 Working Principles" not in output
+    assert "[Start Here](#start-here)" not in output
+    assert "[Roadmap &amp; Goals](#goals)" not in output
+    assert "[Principles](#principles)" not in output

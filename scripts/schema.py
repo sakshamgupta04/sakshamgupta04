@@ -93,8 +93,7 @@ class Links(StrictModel):
             return None
         val = str(v).strip()
         if info.field_name == "email":
-            if not val.startswith("mailto:") and "@" in val:
-                val = f"mailto:{val}"
+            val = f"mailto:{val}" if (not val.startswith("mailto:") and "@" in val) else val
             if not is_safe_url(val):
                 raise ValueError(f"Invalid email '{v}'. Must be a valid email or mailto link.")
             return val
@@ -220,6 +219,9 @@ class Features(StrictModel):
     leetcode_block: bool = False
     blog_rss: bool = False
     wakatime: bool = False
+    start_here: bool = False
+    goals: bool = False
+    principles: bool = False
 
 
 class Profile(StrictModel):
@@ -241,7 +243,6 @@ class Profile(StrictModel):
 
 
 def validate_profile_dict(data: dict[str, Any]) -> Profile:
-    """Validate raw profile dictionary and return a validated Profile instance."""
     try:
         return Profile.model_validate(data)
     except ValidationError as e:
