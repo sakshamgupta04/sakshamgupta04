@@ -71,9 +71,12 @@ def test_write_terminal_svgs_creates_files(tmp_path: Path, profile_fixture: Prof
 
 
 def test_links_hidden_when_null(profile_fixture: Profile) -> None:
-    # Portfolio and resume_pdf are null in profile_fixture
+    # Portfolio and resume_pdf set to null to test hiding
+    p = copy.deepcopy(profile_fixture)
+    p.links.resume_pdf = None
+    p.links.portfolio = None
     rendered = render_readme(
-        profile=profile_fixture,
+        profile=p,
         template_dir=Path("templates"),
         template_name="README.md.j2",
     )

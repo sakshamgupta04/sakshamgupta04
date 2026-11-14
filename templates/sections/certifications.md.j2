@@ -1,0 +1,13 @@
+{% if has(profile.certifications) %}
+## 📜 $ certifications — Certifications &amp; Achievements <a id="certifications"></a>
+
+| Credential Name | Issuer | Type | Verified Credential |
+| :--- | :--- | :--- | :--- |
+{% for cert in profile.certifications %}
+| **{{ cert.title }}** | {{ cert.issuer }} | `{{ cert.kind | format_cert_kind }}` | {% if has(cert.url) %}[Verify Credential]({{ cert.url }}){% else %}—{% endif %} |
+{% endfor %}
+
+> 📌 **Hands-on Training:** AI/ML Hands-on Training Program, Model Institute of Engineering and Technology (March 2025).
+
+{% endif %}
+

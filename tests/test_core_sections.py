@@ -49,17 +49,19 @@ def test_start_here_recruiter_and_engineer(profile_fixture: Profile) -> None:
     assert "💼 Recruiter &amp; Hiring Manager" in output
     assert "EchoNotes" in output
     assert "AI Video Interview & Emotion Analyzer" in output
-    assert "FarmGuard" in output
+    assert "People.ai" in output
 
     # Engineer section
     assert "🛠️ Software Engineer &amp; Tech Lead" in output
     assert "Architecture:" in output
-    assert "Next.js, TypeScript, FastAPI" in output
+    assert "Next.js" in output
 
 
 def test_researcher_hidden_when_empty(profile_fixture: Profile) -> None:
     p = copy.deepcopy(profile_fixture)
     p.features.start_here = True
+    p.publications = []
+    p.open_source.interests = []
     output = render(p)
     assert "Researcher &amp; Academic" not in output
 

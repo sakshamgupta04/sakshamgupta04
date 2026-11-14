@@ -1,0 +1,9 @@
+{% if has(profile.expertise) %}
+## 🎯 $ engineering.expertise — Core Focus Areas <a id="expertise"></a>
+
+| {% for exp in profile.expertise %}{{ exp.title }}{% if not loop.last %} | {% endif %}{% endfor %} |
+| {% for exp in profile.expertise %}:---{% if not loop.last %} | {% endif %}{% endfor %} |
+| {% for exp in profile.expertise %}{{ exp.detail }}{% if not loop.last %} | {% endif %}{% endfor %} |
+
+{% endif %}
+

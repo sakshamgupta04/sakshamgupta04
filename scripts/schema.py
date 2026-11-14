@@ -14,23 +14,19 @@ class ProjectStatus(str, Enum):
     BUILDING = "building"
     PLANNED = "planned"
 
-
 class RoadmapStatus(str, Enum):
     DONE = "done"
     DOING = "doing"
     NEXT = "next"
 
-
 class CertificationKind(str, Enum):
     CERTIFICATION = "certification"
     COURSE = "course"
-
 
 class SkillLevel(str, Enum):
     DAILY = "daily"
     COMFORTABLE = "comfortable"
     LEARNING = "learning"
-
 
 class AvailabilityStatus(str, Enum):
     OPEN_TO_WORK = "open_to_work"
@@ -48,14 +44,12 @@ class Availability(StrictModel):
     text: str | None = None
     work_mode: str | None = None
 
-
 class EducationItem(StrictModel):
     school: str
     degree: str
     start: str | None = None
     end: str | None = None
     score: str | None = None
-
 
 class Identity(StrictModel):
     name: str
@@ -90,13 +84,10 @@ class Links(StrictModel):
         if not v:
             return None
         val = str(v).strip()
-        if info.field_name == "email":
-            val = f"mailto:{val}" if (not val.startswith("mailto:") and "@" in val) else val
-            if not is_safe_url(val):
-                raise ValueError(f"Invalid email '{v}'. Must be a valid email or mailto link.")
-            return val
+        if info.field_name == "email" and not val.startswith("mailto:") and "@" in val:
+            val = f"mailto:{val}"
         if not is_safe_url(val):
-            raise ValueError(f"Unsafe or invalid URL '{v}'. Must start with http://, https://, or mailto:.")
+            raise ValueError(f"Unsafe URL '{v}'. Must start with http://, https://, or mailto:.")
         return val
 
 
@@ -113,15 +104,17 @@ class RoadmapItem(StrictModel):
     status: RoadmapStatus
     target: str | None = None
 
-
 class Goals(StrictModel):
     short_term: list[str] = Field(default_factory=list)
     mid_term: list[str] = Field(default_factory=list)
     long_term: list[str] = Field(default_factory=list)
     roadmap: list[RoadmapItem] = Field(default_factory=list)
 
-
 class PrincipleItem(StrictModel):
+    title: str
+    detail: str
+
+class ExpertiseItem(StrictModel):
     title: str
     detail: str
 
@@ -150,10 +143,13 @@ class ProjectLinks(StrictModel):
 class ProjectItem(StrictModel):
     slug: str
     title: str
+    subtitle: str | None = None
+    category: str | None = None
     tagline: str | None = None
     status: ProjectStatus = ProjectStatus.BUILDING
     repo: str | None = None
     featured: bool = False
+    image: str | None = None
     categories: list[str] = Field(default_factory=list)
     stack: list[str] = Field(default_factory=list)
     highlights: list[str] = Field(default_factory=list)
@@ -167,6 +163,7 @@ class ExperienceItem(StrictModel):
     role: str
     start: str | None = None
     end: str | None = None
+    location: str | None = None
     bullets: list[str] = Field(default_factory=list)
     stack: list[str] = Field(default_factory=list)
 
@@ -238,6 +235,7 @@ class Profile(StrictModel):
     certifications: list[CertificationItem] = Field(default_factory=list)
     open_source: OpenSource = Field(default_factory=OpenSource)
     leetcode: Leetcode = Field(default_factory=Leetcode)
+    expertise: list[ExpertiseItem] = Field(default_factory=list)
     wakatime: str | None = None
     features: Features = Field(default_factory=Features)
 

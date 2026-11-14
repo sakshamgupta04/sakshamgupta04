@@ -14,7 +14,7 @@ from scripts.helpers import (
     format_project_status,
     validate_mermaid_diagram,
 )
-from scripts.schema import Profile, PublicationItem, validate_profile_dict
+from scripts.schema import Profile, ProjectItem, PublicationItem, validate_profile_dict
 
 
 @pytest.fixture
@@ -61,10 +61,11 @@ def test_diagram_validation_rules() -> None:
 
 
 def test_featured_projects_ordered_first(profile_fixture: Profile) -> None:
-    output = render(profile_fixture)
-    # EchoNotes (featured) must appear before PaperLens (planned, not featured)
-    pos_echonotes = output.find("### EchoNotes <a id=\"echonotes\">")
-    pos_paperlens = output.find("### PaperLens <a id=\"paperlens\">")
+    p = copy.deepcopy(profile_fixture)
+    p.projects.insert(0, ProjectItem(slug="paperlens", title="PaperLens", featured=False))
+    output = render(p)
+    pos_echonotes = output.find("EchoNotes")
+    pos_paperlens = output.find("PaperLens")
     assert pos_echonotes != -1
     assert pos_paperlens != -1
     assert pos_echonotes < pos_paperlens
@@ -84,9 +85,11 @@ def test_project_measured_results_hiding(profile_fixture: Profile) -> None:
 
 
 def test_research_section_hidden_when_empty_and_shown_when_present(profile_fixture: Profile) -> None:
-    # Fixture has empty publications and patent.mention = False
-    output_empty = render(profile_fixture)
-    assert "## 🔬 Research &amp; Intellectual Property" not in output_empty
+    p_empty = copy.deepcopy(profile_fixture)
+    p_empty.publications = []
+    p_empty.patent.mention = False
+    output_empty = render(p_empty)
+    assert "$ research — Publications" not in output_empty
 
     # Populated publications
     p_pub = copy.deepcopy(profile_fixture)
@@ -102,38 +105,41 @@ def test_research_section_hidden_when_empty_and_shown_when_present(profile_fixtu
         )
     ]
     output_pub = render(p_pub)
-    assert "## 🔬 Research &amp; Intellectual Property" in output_pub
+    assert "$ research — Publications" in output_pub
     assert "Privacy-Preserving On-Device Document AI" in output_pub
-    assert "[🔗 DOI](https://doi.org/10.1109/EXAMPLE.2026)" in output_pub
+    assert "[🔗 **DOI**](https://doi.org/10.1109/EXAMPLE.2026)" in output_pub
     assert "Cite (BibTeX)" in output_pub
 
     # Populated patent only
     p_pat = copy.deepcopy(profile_fixture)
+    p_pat.publications = []
     p_pat.patent.mention = True
     p_pat.patent.text = "System and Method for Automated Candidate Fit Scoring (App No. 202511012345)"
     output_pat = render(p_pat)
-    assert "## 🔬 Research &amp; Intellectual Property" in output_pat
+    assert "$ research — Publications" in output_pat
     assert "System and Method for Automated Candidate Fit Scoring" in output_pat
 
 
 def test_education_and_certifications_formatting(profile_fixture: Profile) -> None:
-    # Hidden by default when features.education is False
-    output_hidden = render(profile_fixture)
-    assert "## 🎓 Education &amp; Certifications" not in output_hidden
+    # When features.education is False
+    p_hidden = copy.deepcopy(profile_fixture)
+    p_hidden.features.education = False
+    output_hidden = render(p_hidden)
+    assert "$ education — Education" not in output_hidden
 
     p = copy.deepcopy(profile_fixture)
     p.features.education = True
     output = render(p)
-    assert "## 🎓 Education &amp; Certifications" in output
-    assert "B.Tech, Computer Science & Engineering (AI/ML)" in output
-    assert "CGPA 8.5" in output
+    assert "$ education — Education" in output
+    assert "B.Tech in Computer Science & Engineering (AI/ML)" in output
+    assert "CGPA 8.5/10" in output
 
     # Check cert kinds
     assert format_cert_kind("certification") == "Certification"
     assert format_cert_kind("course") == "Course"
 
     # Verify credential links: only when URL is present
-    assert "[Verify Credential](https://drive.google.com/file/d/17j6eLecMSaxxvODqh-qb5YJVmMsuQhfp/view?usp=sharing)" in output
+    assert "[Verify Credential](https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing)" in output
 
 
 def test_status_formatting_helpers() -> None:

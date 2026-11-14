@@ -1,29 +1,10 @@
-{% if has(profile.identity.education) or has(profile.certifications) %}
-## 🎓 Education &amp; Certifications <a id="education"></a>
-
 {% if has(profile.identity.education) %}
-### Degrees &amp; Academic Background
+## 🎓 $ education — Education <a id="education"></a>
 
+| Institution | Degree Program | Academic Period | CGPA Standing |
+| :--- | :--- | :--- | :--- |
 {% for edu in profile.identity.education %}
-- **{{ edu.degree }}** – {{ edu.school }}
-  - **Timeline:** {{ edu.start }} — {{ edu.end }}
-  {% if has(edu.score) %}
-  - **Academic Standing:** {{ edu.score }}
-  {% endif %}
+| **{{ edu.school }}** | {{ edu.degree }} | {{ edu.start }} — {{ edu.end }} | **{{ edu.score }}** |
 {% endfor %}
 
 {% endif %}
-
-{% if has(profile.certifications) %}
-### Professional Certifications &amp; Coursework
-
-| Title | Issuer | Type | Credential |
-|:---|:---|:---|:---|
-{% for cert in profile.certifications %}
-| **{{ cert.title }}** | {{ cert.issuer }} | {{ cert.kind | format_cert_kind }} | {% if has(cert.url) %}[Verify Credential]({{ cert.url }}){% else %}—{% endif %} |
-{% endfor %}
-
-{% endif %}
-
-{% endif %}
-

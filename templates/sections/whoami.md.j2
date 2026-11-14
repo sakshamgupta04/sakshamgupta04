@@ -1,15 +1,20 @@
-## 👨‍💻 About Me <a id="about"></a>
+## 👨‍💻 $ whoami — About Me <a id="about"></a>
 
-I'm **{{ profile.identity.name }}**{% if has(profile.identity.headline) %}, a {{ profile.identity.headline }}{% endif %}. I build end-to-end software systems, combining modern web technologies with practical machine learning to solve real problems.
+I'm **{{ profile.identity.name }}**, a Computer Science and Engineering graduate specializing in Artificial Intelligence and Machine Learning.
 
-| Profile Overview | Details |
+My work spans full-stack application development, REST API engineering, machine learning, and cloud infrastructure. I have practical experience building React and Next.js applications, developing AI-powered systems, integrating Supabase services, and deploying workloads using Google Cloud Platform.
+
+I focus on connecting intelligent software with reliable engineering practices to build applications that solve practical problems.
+
+| Attribute | Details |
 | :--- | :--- |
 {% if has(profile.identity.roles_targeted) -%}
 | 🎯 **Target Roles** | {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }} |
 {% endif -%}
 {% if has(profile.identity.education) -%}
 {% for edu in profile.identity.education -%}
-| 🎓 **Education** | {{ edu.degree }} — {{ edu.school }} ({{ edu.start }}–{{ edu.end }}{% if has(edu.score) %}, **{{ edu.score }}**{% endif %}) |
+| 🎓 **Degree &amp; School** | {{ edu.degree }} — {{ edu.school }} |
+| 🗓️ **Academic Period** | {{ edu.start }}–{{ edu.end }}{% if has(edu.score) %} &nbsp;|&nbsp; **CGPA {{ edu.score }}**{% endif %} |
 {% endfor -%}
 {% endif -%}
 {% if has(profile.identity.location) -%}
