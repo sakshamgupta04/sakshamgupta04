@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-13T19:45:41Z",
+  "fetched_at": "2026-11-14T10:28:59Z",
   "languages": {
-    "Python": 622970,
+    "Python": 714956,
     "HTML": 79862,
     "CSS": 77329,
     "JavaScript": 238993,
@@ -10,15 +10,22 @@
     "Batchfile": 2155,
     "C++": 262664,
     "C": 98225,
+    "Jinja": 15210,
     "Java": 1353,
     "Dockerfile": 1432
   },
   "project_last_updated": {},
   "recent_activity": [
     {
+      "description": "Pushed `34dc514` to `sakshamgupta04/sakshamgupta04` (`main`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/34dc5145e5282f773d3a804eef73cd682b91e658",
+      "relative_time": "14h ago",
+      "absolute_time": "2026-11-13 19:42:57"
+    },
+    {
       "description": "Pushed `1f46e3c` to `sakshamgupta04/Farmland-Animal-Detection` (`main`)",
       "url": "https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/1f46e3cf32ac0107ae2461a10fd296642b6dac03",
-      "relative_time": "1d ago",
+      "relative_time": "2d ago",
       "absolute_time": "2026-11-11 20:12:11"
     },
     {
@@ -38,12 +45,6 @@
       "url": "https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/4f69e71eee11373791c2eff1c66cf0234b8fae1b",
       "relative_time": "3d ago",
       "absolute_time": "2026-11-10 19:15:59"
-    },
-    {
-      "description": "Pushed `015b75a` to `sakshamgupta04/Hand-Gesture-Controlled-Mouse` (`main`)",
-      "url": "https://github.com/sakshamgupta04/Hand-Gesture-Controlled-Mouse/commit/015b75a2dcfbae9edad49202a1b7727a7a9d30bd",
-      "relative_time": "5d ago",
-      "absolute_time": "2026-11-08 19:37:48"
     }
   ],
   "github_stats": {
