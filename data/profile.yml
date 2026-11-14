@@ -11,12 +11,12 @@ identity:
   handle: "sakshamgupta04"
   headline: "Full-stack developer and ML engineer"        # confirm
   tagline: "I build full-stack products and the machine learning behind them."   # confirm
-  location: null                                          # TODO e.g. "Jammu, India"
-  languages_spoken: []                                    # TODO e.g. ["English", "Hindi"]
+  location: null
+  languages_spoken: []
   availability:
-    status: "open_to_work"                                # open_to_work | open_to_internships | freelance | not_looking
-    text: "Open to full-time roles: web development, AI/ML engineering, software engineering"   # confirm
-    work_mode: null                                       # TODO e.g. "Remote or on-site, open to relocation"
+    status: "open_to_work"
+    text: "Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)"
+    work_mode: null
   roles_targeted: ["Full-Stack / Web Developer", "AI/ML Engineer", "Software Engineer (SDE)"]
   education:
     - school: "Model Institute of Engineering and Technology, Jammu"
@@ -29,20 +29,20 @@ links:
   github: "https://github.com/sakshamgupta04"
   linkedin: "https://www.linkedin.com/in/saksham-gupta-458486294/"
   leetcode: "https://leetcode.com/u/wupNOxI7hc/"
-  portfolio: null                                         # TODO your portfolio URL
-  resume_pdf: null                                        # TODO link to your resume PDF (e.g. on your portfolio)
+  portfolio: null
+  resume_pdf: null
   email: "work.saksham04@gmail.com"
   kaggle: null
   huggingface: null
-  scholar: null                                           # TODO Google Scholar or ORCID, if you have it
+  scholar: null
   x_twitter: null
   blog: null
 
 # "Now" block: what you are doing right now. Update monthly. Keep it honest and short.
 now:
-  updated: null                                           # TODO e.g. "2026-11"
-  building: []                                            # TODO e.g. ["FarmGuard: edge-AI crop protection (PC prototype)"]
-  learning: []                                            # TODO e.g. ["RAG evaluation", "Edge ML deployment"]
+  updated: null
+  building: []
+  learning: []
   reading: []
   exploring: []
 
@@ -142,17 +142,25 @@ projects:                                                 # status: shipped | bu
   - slug: "farmguard"
     title: "FarmGuard"
     tagline: "Edge-AI crop protection: detects animals raiding crops, deters them humanely, and alerts the farmer."
-    status: "building"                                    # confirm
-    repo: null                                            # TODO
+    status: "building"
+    repo: "sakshamgupta04/Farmland-Animal-Detection"
     featured: true
     categories: ["ai-ml", "backend"]
     stack: ["Python", "ONNX Runtime", "OpenCV", "FastAPI", "Next.js", "Supabase"]
     highlights:
       - "Two-stage recognition: generic animal detector plus a species classifier"
       - "Offline-first, with tracking, zones, voting and person suppression"
-    results: []                                           # TODO only after you run the evaluation
+    results: []
     links: { live: null, demo: null, paper: null, video: null }
-    diagram: null
+    diagram: |
+      flowchart LR
+        Camera[Camera Feed] --> Pre[Frame Preprocessing]
+        Pre --> Det[Stage 1: Animal Detector]
+        Det --> Track[Kalman Tracker & Zone Check]
+        Track --> Clf[Stage 2: Species Classifier]
+        Clf --> Action{Threat Detected?}
+        Action -- Yes --> Deter[Humane Deterrent Alert]
+        Action -- No --> Log[(Telemetry Log)]
   - slug: "paperlens"
     title: "PaperLens"
     tagline: "Private research-paper analyzer that runs entirely in the browser, with cited answers."

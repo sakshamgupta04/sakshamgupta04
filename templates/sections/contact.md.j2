@@ -1,18 +1,20 @@
-## 📬 Get in Touch <a id="contact"></a>
+## 🤝 Let's Connect <a id="contact"></a>
 
 {% if has(profile.identity.availability.text) %}
 🟢 **Current Status:** {{ profile.identity.availability.text }}
 {% endif %}
 
-{% if has(profile.links.email) %}
-- **Email:** [{{ profile.links.email | replace('mailto:', '') }}]({{ profile.links.email }})
-{% endif %}
-{% if has(profile.links.linkedin) %}
-- **LinkedIn:** [{{ profile.identity.name }}]({{ profile.links.linkedin }})
-{% endif %}
-{% if has(profile.links.leetcode) %}
-- **LeetCode:** [{{ profile.identity.handle }}]({{ profile.links.leetcode }})
-{% endif %}
-{% if has(profile.links.github) %}
-- **GitHub:** [{{ profile.identity.handle }}]({{ profile.links.github }})
-{% endif %}
+<p align="left">
+{% set contact_items = [] %}
+{% if has(profile.links.email) %}{% set _ = contact_items.append("[✉️ Email](" ~ profile.links.email ~ ")") %}{% endif %}
+{% if has(profile.links.linkedin) %}{% set _ = contact_items.append("[💼 LinkedIn](" ~ profile.links.linkedin ~ ")") %}{% endif %}
+{% if has(profile.links.github) %}{% set _ = contact_items.append("[🐙 GitHub](" ~ profile.links.github ~ ")") %}{% endif %}
+{% if has(profile.links.leetcode) %}{% set _ = contact_items.append("[🧩 LeetCode](" ~ profile.links.leetcode ~ ")") %}{% endif %}
+{{ contact_items | join(" &nbsp;•&nbsp; ") }}
+</p>
+
+> *"Understand the problem deeply. Measure with rigor. Build something meaningful."*
+
+<p align="center">
+  <b>⭐ Always Building &nbsp;|&nbsp; Always Learning &nbsp;|&nbsp; Always Exploring 🚀</b>
+</p>

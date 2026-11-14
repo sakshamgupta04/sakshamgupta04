@@ -7,20 +7,24 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/terminal-light.svg">
-  <img alt="sakshamgupta04@github:~$ whoami&#10;name: Saksham Gupta&#10;role: Full-stack developer and ML engineer&#10;status: Open to full-time roles: web development, AI/ML engineering, software engineering" src="assets/terminal-dark.svg" width="800">
+  <img alt="sakshamgupta04@github:~$ whoami&#10;name: Saksham Gupta&#10;role: Full-stack developer and ML engineer&#10;status: Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)" src="assets/terminal-dark.svg" width="800">
 </picture>
 
 ```text
 sakshamgupta04@github:~$ whoami
 name:     Saksham Gupta
 role:     Full-stack developer and ML engineer
-status:   Open to full-time roles: web development, AI/ML engineering, software engineering
+status:   Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)
 sakshamgupta04@github:~$ █
 ```
 
+# Hey, I'm Saksham Gupta 👋
+## Full-stack developer and ML engineer
+
 > I build full-stack products and the machine learning behind them.
 
-🟢 **Available:** Open to full-time roles: web development, AI/ML engineering, software engineering
+🎓 **B.Tech, Computer Science & Engineering (AI/ML)** — Model Institute of Engineering and Technology, Jammu (CGPA 8.5)
+🟢 **Available:** Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)
 
 <p align="left">
   [💼 LinkedIn](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;•&nbsp; [✉️ Email](mailto:work.saksham04@gmail.com) &nbsp;•&nbsp; [🧩 LeetCode](https://leetcode.com/u/wupNOxI7hc/)
@@ -32,15 +36,18 @@ sakshamgupta04@github:~$ █
 
 ---
 
-## 👤 About &amp; Overview <a id="about"></a>
+## 👨‍💻 About Me <a id="about"></a>
 
-```text
-sakshamgupta04@github:~$ whoami
-name:             Saksham Gupta
-roles_targeted:   Full-Stack / Web Developer, AI/ML Engineer, Software Engineer (SDE)
-education:        B.Tech, Computer Science & Engineering (AI/ML) | Model Institute of Engineering and Technology, Jammu (2022-2026, CGPA 8.5)
-status:           Open to full-time roles: web development, AI/ML engineering, software engineering
-```
+Hey there! I'm **Saksham Gupta**, a Full-stack developer and ML engineer. I'm passionate about engineering intelligent products, scalable web applications, and practical machine learning systems that solve real-world problems.
+
+- 🚀 **Full-Stack & Cloud Architecture:** Experienced in building reactive, production-ready web platforms with Next.js, React, TypeScript, and FastAPI, backed by Supabase and Google Cloud Platform.
+- 🤖 **Applied AI & Machine Learning:** Hands-on with PyTorch, Scikit-learn, OpenCV, ONNX Runtime, and Whisper for computer vision, audio intelligence, and predictive modeling.
+- ⚡ **Edge AI & Embedded Systems:** Architecting real-world edge intelligence such as FarmGuard (two-stage animal detection, tracking, and offline-first inference).
+- ☁️ **Infrastructure & Scalability:** Deployed services on Cloud Run, built automated pipelines with Vertex AI, and engineered secure authentication with Supabase SSO.
+- 🎯 **Target Roles:** Full-Stack / Web Developer &nbsp;•&nbsp; AI/ML Engineer &nbsp;•&nbsp; Software Engineer (SDE)
+- 🎓 **Education:** B.Tech, Computer Science & Engineering (AI/ML) — Model Institute of Engineering and Technology, Jammu (2022–2026, CGPA 8.5)
+- 🟢 **Current Status:** Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)
+- 🧩 **Mindset:** *"Understand the problem deeply, measure with rigor, and build something meaningful."*
 ---
 
 ## 🧭 Start Here <a id="start-here"></a>
@@ -50,7 +57,7 @@ status:           Open to full-time roles: web development, AI/ML engineering, s
 
 <br>
 
-- **Availability:** Open to full-time roles: web development, AI/ML engineering, software engineering
+- **Availability:** Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)
 - **Roles Targeted:** Full-Stack / Web Developer • AI/ML Engineer • Software Engineer (SDE)
 
 **Top Featured Projects:**
@@ -80,6 +87,7 @@ status:           Open to full-time roles: web development, AI/ML engineering, s
 - **FarmGuard** (`building`): Edge-AI crop protection: detects animals raiding crops, deters them humanely, and alerts the farmer.
   - **Stack:** Python, ONNX Runtime, OpenCV, FastAPI, Next.js, Supabase
   - **Architecture:** Two-stage recognition: generic animal detector plus a species classifier
+  - **Repository:** [github.com/sakshamgupta04/Farmland-Animal-Detection](https://github.com/sakshamgupta04/Farmland-Animal-Detection)
 
 - **PaperLens** (`planned`): Private research-paper analyzer that runs entirely in the browser, with cited answers.
   - **Stack:** React, TypeScript, Transformers.js, WebLLM, pdf.js
@@ -98,7 +106,7 @@ status:           Open to full-time roles: web development, AI/ML engineering, s
 |:---|:---|:---|:---|:---|
 | [**EchoNotes**](#echonotes) | 🚀 Shipped | Next.js, TypeScript, FastAPI +3 | — | — |
 | [**AI Video Interview & Emotion Analyzer**](#ai-video-interview-emotion-analyzer) | 🚀 Shipped | Next.js, Python, DeepFace +2 | — | — |
-| [**FarmGuard**](#farmguard) | 🔨 Building | Python, ONNX Runtime, OpenCV +3 | — | — |
+| [**FarmGuard**](#farmguard) | 🔨 Building | Python, ONNX Runtime, OpenCV +3 | [Code](https://github.com/sakshamgupta04/Farmland-Animal-Detection) | — |
 | [**PaperLens**](#paperlens) | 💡 Planned | React, TypeScript, Transformers.js +2 | — | — |
 | [**People.ai: Faculty Fit & Retention Prediction**](#people-ai) | 🚀 Shipped | Python, Scikit-learn, Pandas +1 | — | — |
 | [**Straatix Talent Exchange Platform**](#straatix-talent-exchange) | 🚀 Shipped | Next.js, React, TypeScript +2 | — | — |
@@ -145,7 +153,23 @@ status:           Open to full-time roles: web development, AI/ML engineering, s
 - Offline-first, with tracking, zones, voting and person suppression
 
 
+**Project Links:** [📦 Repository](https://github.com/sakshamgupta04/Farmland-Animal-Detection)
 
+<details>
+<summary>🏗️ Architecture &amp; System Diagram</summary>
+
+```mermaid
+flowchart LR
+  Camera[Camera Feed] --> Pre[Frame Preprocessing]
+  Pre --> Det[Stage 1: Animal Detector]
+  Det --> Track[Kalman Tracker & Zone Check]
+  Track --> Clf[Stage 2: Species Classifier]
+  Clf --> Action{Threat Detected?}
+  Action -- Yes --> Deter[Humane Deterrent Alert]
+  Action -- No --> Log[(Telemetry Log)]
+```
+
+</details>
 
 <br>
 ### PaperLens <a id="paperlens"></a>
@@ -189,7 +213,7 @@ status:           Open to full-time roles: web development, AI/ML engineering, s
 
 ## 🛠️ Skills &amp; Tech Stack <a id="skills"></a>
 
-### 🗺️ Skill-to-Project Graph
+### 🗺️ Skill-to-Project Architecture Graph
 
 ```mermaid
 flowchart LR
@@ -224,61 +248,37 @@ flowchart LR
 
 
 
-### 💻 Competencies by Category
+### 💻 Core Technical Competencies
 
 #### Languages
 
-| Technology / Skill | Level |
-|:---|:---|
-| **Python** |  |
-| **TypeScript** |  |
-| **JavaScript** |  |
-| **C++** |  |
-| **Java** |  |
-| **SQL** |  |
+<p align="left">
+<code>Python</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>JavaScript</code> &nbsp;•&nbsp; <code>C++</code> &nbsp;•&nbsp; <code>Java</code> &nbsp;•&nbsp; <code>SQL</code></p>
 
 #### Web
 
-| Technology / Skill | Level |
-|:---|:---|
-| **React** |  |
-| **Next.js** |  |
-| **Node.js** |  |
-| **HTML/CSS** |  |
-| **REST APIs** |  |
+<p align="left">
+<code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>Node.js</code> &nbsp;•&nbsp; <code>HTML/CSS</code> &nbsp;•&nbsp; <code>REST APIs</code></p>
 
 #### Backend & Cloud
 
-| Technology / Skill | Level |
-|:---|:---|
-| **Supabase (PostgreSQL, Auth)** |  |
-| **Google Cloud (Cloud Run, Vertex AI)** |  |
+<p align="left">
+<code>Supabase (PostgreSQL, Auth)</code> &nbsp;•&nbsp; <code>Google Cloud (Cloud Run, Vertex AI)</code></p>
 
 #### AI / ML
 
-| Technology / Skill | Level |
-|:---|:---|
-| **Scikit-learn** |  |
-| **PyTorch** |  |
-| **TensorFlow** |  |
-| **OpenCV** |  |
-| **Pandas / NumPy** |  |
-| **Model evaluation** |  |
+<p align="left">
+<code>Scikit-learn</code> &nbsp;•&nbsp; <code>PyTorch</code> &nbsp;•&nbsp; <code>TensorFlow</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>Pandas / NumPy</code> &nbsp;•&nbsp; <code>Model evaluation</code></p>
 
 #### Tools
 
-| Technology / Skill | Level |
-|:---|:---|
-| **Git / GitHub** |  |
-| **Jupyter** |  |
+<p align="left">
+<code>Git / GitHub</code> &nbsp;•&nbsp; <code>Jupyter</code></p>
 
 #### Fundamentals
 
-| Technology / Skill | Level |
-|:---|:---|
-| **Data structures & algorithms** |  |
-| **Object-oriented programming** |  |
-| **System design** |  |
+<p align="left">
+<code>Data structures & algorithms</code> &nbsp;•&nbsp; <code>Object-oriented programming</code> &nbsp;•&nbsp; <code>System design</code></p>
 
 
 ---
@@ -419,11 +419,16 @@ flowchart LR
 
 ---
 
-## 📬 Get in Touch <a id="contact"></a>
+## 🤝 Let's Connect <a id="contact"></a>
 
-🟢 **Current Status:** Open to full-time roles: web development, AI/ML engineering, software engineering
+🟢 **Current Status:** Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)
 
-- **Email:** [work.saksham04@gmail.com](mailto:work.saksham04@gmail.com)
-- **LinkedIn:** [Saksham Gupta](https://www.linkedin.com/in/saksham-gupta-458486294/)
-- **LeetCode:** [sakshamgupta04](https://leetcode.com/u/wupNOxI7hc/)
-- **GitHub:** [sakshamgupta04](https://github.com/sakshamgupta04)
+<p align="left">
+[✉️ Email](mailto:work.saksham04@gmail.com) &nbsp;•&nbsp; [💼 LinkedIn](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;•&nbsp; [🐙 GitHub](https://github.com/sakshamgupta04) &nbsp;•&nbsp; [🧩 LeetCode](https://leetcode.com/u/wupNOxI7hc/)
+</p>
+
+> *"Understand the problem deeply. Measure with rigor. Build something meaningful."*
+
+<p align="center">
+  <b>⭐ Always Building &nbsp;|&nbsp; Always Learning &nbsp;|&nbsp; Always Exploring 🚀</b>
+</p>

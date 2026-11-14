@@ -1,28 +1,29 @@
-## 👤 About &amp; Overview <a id="about"></a>
+## 👨‍💻 About Me <a id="about"></a>
 
-```text
-{{ profile.identity.handle }}@github:~$ whoami
-{% if has(profile.identity.name) -%}
-name:             {{ profile.identity.name }}
-{% endif -%}
+Hey there! I'm **{{ profile.identity.name }}**{% if has(profile.identity.headline) %}, a {{ profile.identity.headline }}{% endif %}. I'm passionate about engineering intelligent products, scalable web applications, and practical machine learning systems that solve real-world problems.
+
+- 🚀 **Full-Stack & Cloud Architecture:** Experienced in building reactive, production-ready web platforms with Next.js, React, TypeScript, and FastAPI, backed by Supabase and Google Cloud Platform.
+- 🤖 **Applied AI & Machine Learning:** Hands-on with PyTorch, Scikit-learn, OpenCV, ONNX Runtime, and Whisper for computer vision, audio intelligence, and predictive modeling.
+- ⚡ **Edge AI & Embedded Systems:** Architecting real-world edge intelligence such as FarmGuard (two-stage animal detection, tracking, and offline-first inference).
+- ☁️ **Infrastructure & Scalability:** Deployed services on Cloud Run, built automated pipelines with Vertex AI, and engineered secure authentication with Supabase SSO.
 {% if has(profile.identity.roles_targeted) -%}
-roles_targeted:   {{ profile.identity.roles_targeted | join(", ") }}
-{% endif -%}
-{% if has(profile.identity.location) -%}
-location:         {{ profile.identity.location }}
-{% endif -%}
-{% if has(profile.identity.languages_spoken) -%}
-languages_spoken: {{ profile.identity.languages_spoken | join(", ") }}
+- 🎯 **Target Roles:** {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }}
 {% endif -%}
 {% if has(profile.identity.education) -%}
 {% for edu in profile.identity.education -%}
-education:        {{ edu.degree }} | {{ edu.school }} ({{ edu.start }}-{{ edu.end }}{% if has(edu.score) %}, {{ edu.score }}{% endif %})
+- 🎓 **Education:** {{ edu.degree }} — {{ edu.school }} ({{ edu.start }}–{{ edu.end }}{% if has(edu.score) %}, {{ edu.score }}{% endif %})
 {% endfor -%}
 {% endif -%}
+{% if has(profile.identity.location) -%}
+- 📍 **Location:** {{ profile.identity.location }}
+{% endif -%}
+{% if has(profile.identity.languages_spoken) -%}
+- 🗣️ **Languages Spoken:** {{ profile.identity.languages_spoken | join(", ") }}
+{% endif -%}
 {% if has(profile.identity.focus_areas) -%}
-focus_areas:      {{ profile.identity.focus_areas | join(", ") }}
+- 🔬 **Focus Areas:** {{ profile.identity.focus_areas | join(" &nbsp;•&nbsp; ") }}
 {% endif -%}
 {% if has(profile.identity.availability.text) -%}
-status:           {{ profile.identity.availability.text }}
+- 🟢 **Current Status:** {{ profile.identity.availability.text }}
 {% endif -%}
-```
+- 🧩 **Mindset:** *"Understand the problem deeply, measure with rigor, and build something meaningful."*
