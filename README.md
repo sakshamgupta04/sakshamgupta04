@@ -21,8 +21,6 @@
   [💼 LinkedIn](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;•&nbsp; [✉️ Email](mailto:work.saksham04@gmail.com) &nbsp;•&nbsp; [🧩 LeetCode](https://leetcode.com/u/wupNOxI7hc/)
 </p>
 
----
-
 **Jump to:** [About](#about) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Contact](#contact)
 
 ---
@@ -42,64 +40,46 @@ I'm **Saksham Gupta**, a Full-stack developer and ML engineer. I build end-to-en
 
 ## 🚀 Featured Projects &amp; Work <a id="projects"></a>
 
-### Overview Matrix
-
-| Project | Status | Core Stack | Links | Last Updated |
-|:---|:---|:---|:---|:---|
-| [**EchoNotes**](#echonotes) | 🚀 Shipped | Next.js, TypeScript, FastAPI +3 | — | — |
-| [**AI Video Interview & Emotion Analyzer**](#ai-video-interview-emotion-analyzer) | 🚀 Shipped | Next.js, Python, DeepFace +2 | — | — |
-| [**FarmGuard**](#farmguard) | 🔨 Building | Python, ONNX Runtime, OpenCV +3 | [Code](https://github.com/sakshamgupta04/Farmland-Animal-Detection) | 2026-11-12 |
-| [**PaperLens**](#paperlens) | 💡 Planned | React, TypeScript, Transformers.js +2 | — | — |
-| [**People.ai: Faculty Fit & Retention Prediction**](#people-ai) | 🚀 Shipped | Python, Scikit-learn, Pandas +1 | — | — |
-| [**Straatix Talent Exchange Platform**](#straatix-talent-exchange) | 🚀 Shipped | Next.js, React, TypeScript +2 | — | — |
-
----
-
 
 ### EchoNotes <a id="echonotes"></a>
 
 > Paste a YouTube link or upload a file; get chapters, key points, a summary and search that jumps to the exact moment.
 
-**Status:** 🚀 Shipped &nbsp;•&nbsp; ⭐ **Featured Project**
-**Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>PyTorch</code>
-**Key Highlights:**
-- Input ladder: captions first, then audio download plus Whisper, then file upload
-- Embedding-based chapters and semantic search linked to timestamps
+- **Status:** 🚀 Shipped &nbsp;|&nbsp; ⭐ **Featured**
+- **Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>PyTorch</code>
+- **Key Highlights:**
+  - Input ladder: captions first, then audio download plus Whisper, then file upload
+  - Embedding-based chapters and semantic search linked to timestamps
 
-
-
-
-<br>
 
 ---
+
 ### AI Video Interview & Emotion Analyzer <a id="ai-video-interview-emotion-analyzer"></a>
 
 > Record an interview in the browser and get frame-by-frame emotion analysis.
 
-**Status:** 🚀 Shipped &nbsp;•&nbsp; ⭐ **Featured Project**
-**Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>Python</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>Supabase</code>
-**Key Highlights:**
-- In-browser recording with the MediaRecorder API and multipart upload
-- Emotion distributions and dominant emotion per answer
+- **Status:** 🚀 Shipped &nbsp;|&nbsp; ⭐ **Featured**
+- **Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>Python</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>Supabase</code>
+- **Key Highlights:**
+  - In-browser recording with the MediaRecorder API and multipart upload
+  - Emotion distributions and dominant emotion per answer
 
-
-
-
-<br>
 
 ---
+
 ### FarmGuard <a id="farmguard"></a>
 
 > Edge-AI crop protection: detects animals raiding crops, deters them humanely, and alerts the farmer.
 
-**Status:** 🔨 Building &nbsp;•&nbsp; ⭐ **Featured Project**
-**Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>ONNX Runtime</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>Supabase</code>
-**Key Highlights:**
-- Two-stage recognition: generic animal detector plus a species classifier
-- Offline-first, with tracking, zones, voting and person suppression
+- **Status:** 🔨 Building &nbsp;|&nbsp; ⭐ **Featured**
+- **Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>ONNX Runtime</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>Supabase</code>
+- 🕒 **Last Activity:** `2026-11-12`
 
+- **Key Highlights:**
+  - Two-stage recognition: generic animal detector plus a species classifier
+  - Offline-first, with tracking, zones, voting and person suppression
 
-**Links:** [📦 **Repository**](https://github.com/sakshamgupta04/Farmland-Animal-Detection)
+- **Project Links:** [📦 **Repository**](https://github.com/sakshamgupta04/Farmland-Animal-Detection)
 
 <details open>
 <summary><b>📐 System Architecture Diagram</b></summary>
@@ -119,48 +99,38 @@ flowchart LR
 
 </details>
 
-<br>
 
 ---
+
 ### PaperLens <a id="paperlens"></a>
 
 > Private research-paper analyzer that runs entirely in the browser, with cited answers.
 
-**Status:** 💡 Planned
-**Technologies:** <code>React</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>Transformers.js</code> &nbsp;•&nbsp; <code>WebLLM</code> &nbsp;•&nbsp; <code>pdf.js</code>
-
-
-
-
-<br>
+- **Status:** 💡 Planned
+- **Technologies:** <code>React</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>Transformers.js</code> &nbsp;•&nbsp; <code>WebLLM</code> &nbsp;•&nbsp; <code>pdf.js</code>
 
 ---
+
 ### People.ai: Faculty Fit & Retention Prediction <a id="people-ai"></a>
 
 > Predicts faculty-role fit and long-term retention from profile data.
 
-**Status:** 🚀 Shipped
-**Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Pandas</code> &nbsp;•&nbsp; <code>NumPy</code>
-**Key Highlights:**
-- Feature engineering from resume and career-longevity signals
+- **Status:** 🚀 Shipped
+- **Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Pandas</code> &nbsp;•&nbsp; <code>NumPy</code>
+- **Key Highlights:**
+  - Feature engineering from resume and career-longevity signals
 
-
-
-
-<br>
 
 ---
+
 ### Straatix Talent Exchange Platform <a id="straatix-talent-exchange"></a>
 
 > A two-sided hiring platform with separate HR and candidate portals.
 
-**Status:** 🚀 Shipped
-**Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>React</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>GCP</code>
-**Key Highlights:**
-- Role-specific dashboards and a real-time notification system
-
-
-
+- **Status:** 🚀 Shipped
+- **Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>React</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>GCP</code>
+- **Key Highlights:**
+  - Role-specific dashboards and a real-time notification system
 
 
 ---
@@ -169,8 +139,6 @@ flowchart LR
 
 
 
-
-### 💻 Technical Competencies
 
 
 | Domain | Technologies &amp; Frameworks |

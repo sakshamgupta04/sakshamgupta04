@@ -24,8 +24,6 @@
 {% endif %}
 
 {% if has(profile.skills.groups) %}
-### 💻 Technical Competencies
-
 {% set ns = namespace(has_any_level=false) %}
 {% for group in profile.skills.groups %}
   {% for item in group.items %}
@@ -36,7 +34,7 @@
 {% if ns.has_any_level %}
 {% for group in profile.skills.groups %}
 {% if has(group.items) %}
-#### {{ group.name }}
+### {{ group.name }}
 
 | Technology / Skill | Level |
 |:---|:---|

@@ -1,24 +1,6 @@
 ## 🚀 Featured Projects &amp; Work <a id="projects"></a>
 
 {% if has(profile.projects) %}
-### Overview Matrix
-
-| Project | Status | Core Stack | Links | Last Updated |
-|:---|:---|:---|:---|:---|
-{% for p in profile.projects %}
-{% set row_links = [] %}
-{% if has(p.links.live) %}{% set _ = row_links.append("[Live](" ~ p.links.live ~ ")") %}{% endif %}
-{% if has(p.links.demo) %}{% set _ = row_links.append("[Demo](" ~ p.links.demo ~ ")") %}{% endif %}
-{% if has(p.repo) %}{% set _ = row_links.append("[Code](https://github.com/" ~ p.repo ~ ")") %}{% endif %}
-{% set last_up = "—" %}
-{% if has(p.repo) and has(project_last_updated) and project_last_updated.get(p.repo) %}
-  {% set last_up = project_last_updated.get(p.repo) %}
-{% endif %}
-| [**{{ p.title }}**](#{{ p.slug }}) | {{ p.status | format_project_status }} | {{ p.stack[:3] | join(", ") }}{% if p.stack | length > 3 %} +{{ p.stack | length - 3 }}{% endif %} | {{ row_links | join(" • ") if has(row_links) else "—" }} | {{ last_up }} |
-{% endfor %}
-
----
-
 {% set sorted_projects = [] %}
 {% for p in profile.projects if p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
 {% for p in profile.projects if not p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
@@ -28,26 +10,30 @@
 
 > {{ p.tagline }}
 
-**Status:** {{ p.status | format_project_status }}{% if p.featured %} &nbsp;•&nbsp; ⭐ **Featured Project**{% endif %}
+- **Status:** {{ p.status | format_project_status }}{% if p.featured %} &nbsp;|&nbsp; ⭐ **Featured**{% endif %}
 
 {% if has(p.stack) %}
-**Technologies:** {% for s in p.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
-{% endif %}
+- **Technologies:** {% for s in p.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
 
+{% endif %}
+{% if has(p.repo) and has(project_last_updated) and project_last_updated.get(p.repo) %}
+- 🕒 **Last Activity:** `{{ project_last_updated.get(p.repo) }}`
+
+{% endif %}
 {% if has(p.highlights) %}
-**Key Highlights:**
+- **Key Highlights:**
 {% for h in p.highlights %}
-- {{ h }}
+  - {{ h }}
 {% endfor %}
-{% endif %}
 
+{% endif %}
 {% if has(p.results) %}
-**Measured Evaluation &amp; Benchmarks:**
+- **Measured Evaluation &amp; Benchmarks:**
 {% for r in p.results %}
-- {{ r }}
+  - {{ r }}
 {% endfor %}
-{% endif %}
 
+{% endif %}
 {% set proj_links = [] %}
 {% if has(p.links.live) %}{% set _ = proj_links.append("[🔗 **Live Site**](" ~ p.links.live ~ ")") %}{% endif %}
 {% if has(p.links.demo) %}{% set _ = proj_links.append("[▶️ **Demo**](" ~ p.links.demo ~ ")") %}{% endif %}
@@ -55,9 +41,9 @@
 {% if has(p.links.paper) %}{% set _ = proj_links.append("[📄 **Paper**](" ~ p.links.paper ~ ")") %}{% endif %}
 {% if has(p.links.video) %}{% set _ = proj_links.append("[🎥 **Video Walkthrough**](" ~ p.links.video ~ ")") %}{% endif %}
 {% if has(proj_links) %}
-**Links:** {{ proj_links | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}
-{% endif %}
+- **Project Links:** {{ proj_links | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}
 
+{% endif %}
 {% set diag = validate_diagram(p.diagram) %}
 {% if diag %}
 <details open>
@@ -70,12 +56,12 @@
 ```
 
 </details>
-{% endif %}
 
+{% endif %}
 {% if not loop.last %}
-<br>
 
 ---
+
 {% endif %}
 {% endfor %}
 {% endif %}
