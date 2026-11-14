@@ -44,11 +44,10 @@
 {% endif %}
 {% endfor %}
 {% else %}
-| Domain | Technologies &amp; Frameworks |
-| :--- | :--- |
 {% for group in profile.skills.groups %}
 {% if has(group.items) %}
-| **{{ group.name }}** | {% for item in group.items %}<code>{{ item.name }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %} |
+- **{{ group.name }}:** {% for item in group.items %}<code>{{ item.name }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
+
 {% endif %}
 {% endfor %}
 {% endif %}

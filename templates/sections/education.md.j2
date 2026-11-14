@@ -4,7 +4,7 @@
 | Institution | Degree Program | Academic Period | CGPA Standing |
 | :--- | :--- | :--- | :--- |
 {% for edu in profile.identity.education %}
-| **{{ edu.school }}** | {{ edu.degree }} | {{ edu.start }} — {{ edu.end }} | **{{ edu.score }}** |
+| **{{ edu.school }}** | {{ edu.degree }} | {{ edu.start }} — {{ edu.end }} | **CGPA {{ edu.score }}** |
 {% endfor %}
 
 {% endif %}
