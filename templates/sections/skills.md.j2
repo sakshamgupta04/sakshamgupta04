@@ -24,30 +24,35 @@
 {% endif %}
 
 {% if has(profile.skills.groups) %}
-### 💻 Core Technical Competencies
+### 💻 Technical Competencies
 
-{% for group in profile.skills.groups %}
-{% if has(group.items) %}
 {% set ns = namespace(has_any_level=false) %}
-{% for item in group.items %}
-  {% if has(item.level) %}{% set ns.has_any_level = true %}{% endif %}
+{% for group in profile.skills.groups %}
+  {% for item in group.items %}
+    {% if has(item.level) %}{% set ns.has_any_level = true %}{% endif %}
+  {% endfor %}
 {% endfor %}
-#### {{ group.name }}
 
 {% if ns.has_any_level %}
+{% for group in profile.skills.groups %}
+{% if has(group.items) %}
+#### {{ group.name }}
+
 | Technology / Skill | Level |
 |:---|:---|
 {% for item in group.items %}
 | **{{ item.name }}** | {% if has(item.level) %}`{{ item.level.value }}`{% endif %} |
 {% endfor %}
-{% else %}
-<p align="left">
-{% for item in group.items %}
-<code>{{ item.name }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}
+{% endif %}
 {% endfor %}
-</p>
+{% else %}
+| Domain | Technologies &amp; Frameworks |
+| :--- | :--- |
+{% for group in profile.skills.groups %}
+{% if has(group.items) %}
+| **{{ group.name }}** | {% for item in group.items %}<code>{{ item.name }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %} |
+{% endif %}
+{% endfor %}
 {% endif %}
 
-{% endif %}
-{% endfor %}
 {% endif %}

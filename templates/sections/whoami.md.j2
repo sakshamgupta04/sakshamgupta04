@@ -2,20 +2,22 @@
 
 I'm **{{ profile.identity.name }}**{% if has(profile.identity.headline) %}, a {{ profile.identity.headline }}{% endif %}. I build end-to-end software systems, combining modern web technologies with practical machine learning to solve real problems.
 
+| Profile Overview | Details |
+| :--- | :--- |
 {% if has(profile.identity.roles_targeted) -%}
-- 🎯 **Target Roles:** {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }}
+| 🎯 **Target Roles** | {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }} |
 {% endif -%}
 {% if has(profile.identity.education) -%}
 {% for edu in profile.identity.education -%}
-- 🎓 **Education:** {{ edu.degree }} — {{ edu.school }} ({{ edu.start }}–{{ edu.end }}{% if has(edu.score) %}, {{ edu.score }}{% endif %})
+| 🎓 **Education** | {{ edu.degree }} — {{ edu.school }} ({{ edu.start }}–{{ edu.end }}{% if has(edu.score) %}, **{{ edu.score }}**{% endif %}) |
 {% endfor -%}
 {% endif -%}
 {% if has(profile.identity.location) -%}
-- 📍 **Location:** {{ profile.identity.location }}
+| 📍 **Location** | {{ profile.identity.location }} |
 {% endif -%}
 {% if has(profile.identity.languages_spoken) -%}
-- 🗣️ **Languages Spoken:** {{ profile.identity.languages_spoken | join(", ") }}
+| 🗣️ **Languages** | {{ profile.identity.languages_spoken | join(", ") }} |
 {% endif -%}
 {% if has(profile.identity.focus_areas) -%}
-- 🔬 **Focus Areas:** {{ profile.identity.focus_areas | join(" &nbsp;•&nbsp; ") }}
+| 🔬 **Focus Areas** | {{ profile.identity.focus_areas | join(" &nbsp;•&nbsp; ") }} |
 {% endif -%}

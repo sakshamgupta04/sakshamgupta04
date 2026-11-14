@@ -26,12 +26,12 @@
 {% for p in sorted_projects %}
 ### {{ p.title }} <a id="{{ p.slug }}"></a>
 
-**Status:** {{ p.status | format_project_status }}{% if p.featured %} &nbsp;•&nbsp; ⭐ *Featured Project*{% endif %}
-
 > {{ p.tagline }}
 
+**Status:** {{ p.status | format_project_status }}{% if p.featured %} &nbsp;•&nbsp; ⭐ **Featured Project**{% endif %}
+
 {% if has(p.stack) %}
-**Stack:** {% for s in p.stack %}`{{ s }}`{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
+**Technologies:** {% for s in p.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
 {% endif %}
 
 {% if has(p.highlights) %}
@@ -49,19 +49,21 @@
 {% endif %}
 
 {% set proj_links = [] %}
-{% if has(p.links.live) %}{% set _ = proj_links.append("[🔗 Live Site](" ~ p.links.live ~ ")") %}{% endif %}
-{% if has(p.links.demo) %}{% set _ = proj_links.append("[▶️ Demo](" ~ p.links.demo ~ ")") %}{% endif %}
-{% if has(p.repo) %}{% set _ = proj_links.append("[📦 Repository](https://github.com/" ~ p.repo ~ ")") %}{% endif %}
-{% if has(p.links.paper) %}{% set _ = proj_links.append("[📄 Paper](" ~ p.links.paper ~ ")") %}{% endif %}
-{% if has(p.links.video) %}{% set _ = proj_links.append("[🎥 Video Walkthrough](" ~ p.links.video ~ ")") %}{% endif %}
+{% if has(p.links.live) %}{% set _ = proj_links.append("[🔗 **Live Site**](" ~ p.links.live ~ ")") %}{% endif %}
+{% if has(p.links.demo) %}{% set _ = proj_links.append("[▶️ **Demo**](" ~ p.links.demo ~ ")") %}{% endif %}
+{% if has(p.repo) %}{% set _ = proj_links.append("[📦 **Repository**](https://github.com/" ~ p.repo ~ ")") %}{% endif %}
+{% if has(p.links.paper) %}{% set _ = proj_links.append("[📄 **Paper**](" ~ p.links.paper ~ ")") %}{% endif %}
+{% if has(p.links.video) %}{% set _ = proj_links.append("[🎥 **Video Walkthrough**](" ~ p.links.video ~ ")") %}{% endif %}
 {% if has(proj_links) %}
-**Project Links:** {{ proj_links | join(" &nbsp;•&nbsp; ") }}
+**Links:** {{ proj_links | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}
 {% endif %}
 
 {% set diag = validate_diagram(p.diagram) %}
 {% if diag %}
-<details>
-<summary>🏗️ Architecture &amp; System Diagram</summary>
+<details open>
+<summary><b>📐 System Architecture Diagram</b></summary>
+
+<br>
 
 ```mermaid
 {{ diag }}
@@ -72,7 +74,8 @@
 
 {% if not loop.last %}
 <br>
+
+---
 {% endif %}
 {% endfor %}
 {% endif %}
-

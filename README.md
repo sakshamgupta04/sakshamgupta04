@@ -31,8 +31,10 @@
 
 I'm **Saksham Gupta**, a Full-stack developer and ML engineer. I build end-to-end software systems, combining modern web technologies with practical machine learning to solve real problems.
 
-- 🎯 **Target Roles:** Full-Stack / Web Developer &nbsp;•&nbsp; AI/ML Engineer &nbsp;•&nbsp; Software Engineer (SDE)
-- 🎓 **Education:** B.Tech, Computer Science & Engineering (AI/ML) — Model Institute of Engineering and Technology, Jammu (2022–2026, CGPA 8.5)
+| Profile Overview | Details |
+| :--- | :--- |
+| 🎯 **Target Roles** | Full-Stack / Web Developer &nbsp;•&nbsp; AI/ML Engineer &nbsp;•&nbsp; Software Engineer (SDE) |
+| 🎓 **Education** | B.Tech, Computer Science & Engineering (AI/ML) — Model Institute of Engineering and Technology, Jammu (2022–2026, **CGPA 8.5**) |
 
 
 
@@ -56,10 +58,10 @@ I'm **Saksham Gupta**, a Full-stack developer and ML engineer. I build end-to-en
 
 ### EchoNotes <a id="echonotes"></a>
 
-**Status:** 🚀 Shipped &nbsp;•&nbsp; ⭐ *Featured Project*
 > Paste a YouTube link or upload a file; get chapters, key points, a summary and search that jumps to the exact moment.
 
-**Stack:** `Next.js` &nbsp;•&nbsp; `TypeScript` &nbsp;•&nbsp; `FastAPI` &nbsp;•&nbsp; `Supabase` &nbsp;•&nbsp; `faster-whisper` &nbsp;•&nbsp; `PyTorch`
+**Status:** 🚀 Shipped &nbsp;•&nbsp; ⭐ **Featured Project**
+**Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>PyTorch</code>
 **Key Highlights:**
 - Input ladder: captions first, then audio download plus Whisper, then file upload
 - Embedding-based chapters and semantic search linked to timestamps
@@ -68,12 +70,14 @@ I'm **Saksham Gupta**, a Full-stack developer and ML engineer. I build end-to-en
 
 
 <br>
+
+---
 ### AI Video Interview & Emotion Analyzer <a id="ai-video-interview-emotion-analyzer"></a>
 
-**Status:** 🚀 Shipped &nbsp;•&nbsp; ⭐ *Featured Project*
 > Record an interview in the browser and get frame-by-frame emotion analysis.
 
-**Stack:** `Next.js` &nbsp;•&nbsp; `Python` &nbsp;•&nbsp; `DeepFace` &nbsp;•&nbsp; `OpenCV` &nbsp;•&nbsp; `Supabase`
+**Status:** 🚀 Shipped &nbsp;•&nbsp; ⭐ **Featured Project**
+**Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>Python</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>Supabase</code>
 **Key Highlights:**
 - In-browser recording with the MediaRecorder API and multipart upload
 - Emotion distributions and dominant emotion per answer
@@ -82,21 +86,25 @@ I'm **Saksham Gupta**, a Full-stack developer and ML engineer. I build end-to-en
 
 
 <br>
+
+---
 ### FarmGuard <a id="farmguard"></a>
 
-**Status:** 🔨 Building &nbsp;•&nbsp; ⭐ *Featured Project*
 > Edge-AI crop protection: detects animals raiding crops, deters them humanely, and alerts the farmer.
 
-**Stack:** `Python` &nbsp;•&nbsp; `ONNX Runtime` &nbsp;•&nbsp; `OpenCV` &nbsp;•&nbsp; `FastAPI` &nbsp;•&nbsp; `Next.js` &nbsp;•&nbsp; `Supabase`
+**Status:** 🔨 Building &nbsp;•&nbsp; ⭐ **Featured Project**
+**Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>ONNX Runtime</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>Supabase</code>
 **Key Highlights:**
 - Two-stage recognition: generic animal detector plus a species classifier
 - Offline-first, with tracking, zones, voting and person suppression
 
 
-**Project Links:** [📦 Repository](https://github.com/sakshamgupta04/Farmland-Animal-Detection)
+**Links:** [📦 **Repository**](https://github.com/sakshamgupta04/Farmland-Animal-Detection)
 
-<details>
-<summary>🏗️ Architecture &amp; System Diagram</summary>
+<details open>
+<summary><b>📐 System Architecture Diagram</b></summary>
+
+<br>
 
 ```mermaid
 flowchart LR
@@ -112,23 +120,27 @@ flowchart LR
 </details>
 
 <br>
+
+---
 ### PaperLens <a id="paperlens"></a>
 
-**Status:** 💡 Planned
 > Private research-paper analyzer that runs entirely in the browser, with cited answers.
 
-**Stack:** `React` &nbsp;•&nbsp; `TypeScript` &nbsp;•&nbsp; `Transformers.js` &nbsp;•&nbsp; `WebLLM` &nbsp;•&nbsp; `pdf.js`
+**Status:** 💡 Planned
+**Technologies:** <code>React</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>Transformers.js</code> &nbsp;•&nbsp; <code>WebLLM</code> &nbsp;•&nbsp; <code>pdf.js</code>
 
 
 
 
 <br>
+
+---
 ### People.ai: Faculty Fit & Retention Prediction <a id="people-ai"></a>
 
-**Status:** 🚀 Shipped
 > Predicts faculty-role fit and long-term retention from profile data.
 
-**Stack:** `Python` &nbsp;•&nbsp; `Scikit-learn` &nbsp;•&nbsp; `Pandas` &nbsp;•&nbsp; `NumPy`
+**Status:** 🚀 Shipped
+**Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Pandas</code> &nbsp;•&nbsp; <code>NumPy</code>
 **Key Highlights:**
 - Feature engineering from resume and career-longevity signals
 
@@ -136,12 +148,14 @@ flowchart LR
 
 
 <br>
+
+---
 ### Straatix Talent Exchange Platform <a id="straatix-talent-exchange"></a>
 
-**Status:** 🚀 Shipped
 > A two-sided hiring platform with separate HR and candidate portals.
 
-**Stack:** `Next.js` &nbsp;•&nbsp; `React` &nbsp;•&nbsp; `TypeScript` &nbsp;•&nbsp; `Supabase` &nbsp;•&nbsp; `GCP`
+**Status:** 🚀 Shipped
+**Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>React</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>GCP</code>
 **Key Highlights:**
 - Role-specific dashboards and a real-time notification system
 
@@ -156,47 +170,17 @@ flowchart LR
 
 
 
-### 💻 Core Technical Competencies
-
-#### Languages
-
-<p align="left">
-<code>Python</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>JavaScript</code> &nbsp;•&nbsp; <code>C++</code> &nbsp;•&nbsp; <code>Java</code> &nbsp;•&nbsp; <code>SQL</code></p>
-
-#### Web
-
-<p align="left">
-<code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>Node.js</code> &nbsp;•&nbsp; <code>HTML/CSS</code> &nbsp;•&nbsp; <code>REST APIs</code></p>
-
-#### Backend & Cloud
-
-<p align="left">
-<code>Supabase (PostgreSQL, Auth)</code> &nbsp;•&nbsp; <code>Google Cloud (Cloud Run, Vertex AI)</code></p>
-
-#### AI / ML
-
-<p align="left">
-<code>Scikit-learn</code> &nbsp;•&nbsp; <code>PyTorch</code> &nbsp;•&nbsp; <code>TensorFlow</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>Pandas / NumPy</code> &nbsp;•&nbsp; <code>Model evaluation</code></p>
-
-#### Tools
-
-<p align="left">
-<code>Git / GitHub</code> &nbsp;•&nbsp; <code>Jupyter</code></p>
-
-#### Fundamentals
-
-<p align="left">
-<code>Data structures & algorithms</code> &nbsp;•&nbsp; <code>Object-oriented programming</code> &nbsp;•&nbsp; <code>System design</code></p>
+### 💻 Technical Competencies
 
 
-
-
-
-
-
-
-
-
+| Domain | Technologies &amp; Frameworks |
+| :--- | :--- |
+| **Languages** | <code>Python</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>JavaScript</code> &nbsp;•&nbsp; <code>C++</code> &nbsp;•&nbsp; <code>Java</code> &nbsp;•&nbsp; <code>SQL</code> |
+| **Web** | <code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>Node.js</code> &nbsp;•&nbsp; <code>HTML/CSS</code> &nbsp;•&nbsp; <code>REST APIs</code> |
+| **Backend & Cloud** | <code>Supabase (PostgreSQL, Auth)</code> &nbsp;•&nbsp; <code>Google Cloud (Cloud Run, Vertex AI)</code> |
+| **AI / ML** | <code>Scikit-learn</code> &nbsp;•&nbsp; <code>PyTorch</code> &nbsp;•&nbsp; <code>TensorFlow</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>Pandas / NumPy</code> &nbsp;•&nbsp; <code>Model evaluation</code> |
+| **Tools** | <code>Git / GitHub</code> &nbsp;•&nbsp; <code>Jupyter</code> |
+| **Fundamentals** | <code>Data structures & algorithms</code> &nbsp;•&nbsp; <code>Object-oriented programming</code> &nbsp;•&nbsp; <code>System design</code> |
 
 
 
@@ -204,8 +188,8 @@ flowchart LR
 
 ## 🤝 Let's Connect <a id="contact"></a>
 
-Interested in collaborating, discussing projects, or exploring engineering opportunities? Feel free to reach out:
+Whether you have an interesting engineering challenge, a collaboration idea, or an opportunity, feel free to reach out:
 
 <p align="left">
-[✉️ Email](mailto:work.saksham04@gmail.com) &nbsp;•&nbsp; [💼 LinkedIn](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;•&nbsp; [🐙 GitHub](https://github.com/sakshamgupta04) &nbsp;•&nbsp; [🧩 LeetCode](https://leetcode.com/u/wupNOxI7hc/)
+[✉️ **Email**](mailto:work.saksham04@gmail.com) &nbsp;&nbsp;•&nbsp;&nbsp; [💼 **LinkedIn**](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;&nbsp;•&nbsp;&nbsp; [🐙 **GitHub**](https://github.com/sakshamgupta04) &nbsp;&nbsp;•&nbsp;&nbsp; [🧩 **LeetCode**](https://leetcode.com/u/wupNOxI7hc/)
 </p>

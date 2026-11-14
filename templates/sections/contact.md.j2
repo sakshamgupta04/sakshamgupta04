@@ -1,12 +1,12 @@
 ## 🤝 Let's Connect <a id="contact"></a>
 
-Interested in collaborating, discussing projects, or exploring engineering opportunities? Feel free to reach out:
+Whether you have an interesting engineering challenge, a collaboration idea, or an opportunity, feel free to reach out:
 
 <p align="left">
 {% set contact_items = [] %}
-{% if has(profile.links.email) %}{% set _ = contact_items.append("[✉️ Email](" ~ profile.links.email ~ ")") %}{% endif %}
-{% if has(profile.links.linkedin) %}{% set _ = contact_items.append("[💼 LinkedIn](" ~ profile.links.linkedin ~ ")") %}{% endif %}
-{% if has(profile.links.github) %}{% set _ = contact_items.append("[🐙 GitHub](" ~ profile.links.github ~ ")") %}{% endif %}
-{% if has(profile.links.leetcode) %}{% set _ = contact_items.append("[🧩 LeetCode](" ~ profile.links.leetcode ~ ")") %}{% endif %}
-{{ contact_items | join(" &nbsp;•&nbsp; ") }}
+{% if has(profile.links.email) %}{% set _ = contact_items.append("[✉️ **Email**](" ~ profile.links.email ~ ")") %}{% endif %}
+{% if has(profile.links.linkedin) %}{% set _ = contact_items.append("[💼 **LinkedIn**](" ~ profile.links.linkedin ~ ")") %}{% endif %}
+{% if has(profile.links.github) %}{% set _ = contact_items.append("[🐙 **GitHub**](" ~ profile.links.github ~ ")") %}{% endif %}
+{% if has(profile.links.leetcode) %}{% set _ = contact_items.append("[🧩 **LeetCode**](" ~ profile.links.leetcode ~ ")") %}{% endif %}
+{{ contact_items | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}
 </p>
