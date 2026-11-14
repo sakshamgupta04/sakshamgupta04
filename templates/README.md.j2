@@ -40,12 +40,8 @@ status:   {{ profile.identity.tagline }}
 > {{ profile.identity.tagline }}
 {% endif %}
 
-{% if has(profile.identity.education) %}
-🎓 **{{ profile.identity.education[0].degree }}** — {{ profile.identity.education[0].school }}{% if has(profile.identity.education[0].score) %} ({{ profile.identity.education[0].score }}){% endif %}
-{% endif %}
-
 {% if has(profile.identity.availability.text) %}
-🟢 **Available:** {{ profile.identity.availability.text }}
+🟢 **Status:** {{ profile.identity.availability.text }}
 {% endif %}
 
 {% set quick_links = [] %}

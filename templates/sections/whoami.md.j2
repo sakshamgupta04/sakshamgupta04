@@ -1,11 +1,7 @@
 ## 👨‍💻 About Me <a id="about"></a>
 
-Hey there! I'm **{{ profile.identity.name }}**{% if has(profile.identity.headline) %}, a {{ profile.identity.headline }}{% endif %}. I'm passionate about engineering intelligent products, scalable web applications, and practical machine learning systems that solve real-world problems.
+I'm **{{ profile.identity.name }}**{% if has(profile.identity.headline) %}, a {{ profile.identity.headline }}{% endif %}. I build end-to-end software systems, combining modern web technologies with practical machine learning to solve real problems.
 
-- 🚀 **Full-Stack & Cloud Architecture:** Experienced in building reactive, production-ready web platforms with Next.js, React, TypeScript, and FastAPI, backed by Supabase and Google Cloud Platform.
-- 🤖 **Applied AI & Machine Learning:** Hands-on with PyTorch, Scikit-learn, OpenCV, ONNX Runtime, and Whisper for computer vision, audio intelligence, and predictive modeling.
-- ⚡ **Edge AI & Embedded Systems:** Architecting real-world edge intelligence such as FarmGuard (two-stage animal detection, tracking, and offline-first inference).
-- ☁️ **Infrastructure & Scalability:** Deployed services on Cloud Run, built automated pipelines with Vertex AI, and engineered secure authentication with Supabase SSO.
 {% if has(profile.identity.roles_targeted) -%}
 - 🎯 **Target Roles:** {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }}
 {% endif -%}
@@ -23,7 +19,3 @@ Hey there! I'm **{{ profile.identity.name }}**{% if has(profile.identity.headlin
 {% if has(profile.identity.focus_areas) -%}
 - 🔬 **Focus Areas:** {{ profile.identity.focus_areas | join(" &nbsp;•&nbsp; ") }}
 {% endif -%}
-{% if has(profile.identity.availability.text) -%}
-- 🟢 **Current Status:** {{ profile.identity.availability.text }}
-{% endif -%}
-- 🧩 **Mindset:** *"Understand the problem deeply, measure with rigor, and build something meaningful."*

@@ -23,8 +23,7 @@ sakshamgupta04@github:~$ █
 
 > I build full-stack products and the machine learning behind them.
 
-🎓 **B.Tech, Computer Science & Engineering (AI/ML)** — Model Institute of Engineering and Technology, Jammu (CGPA 8.5)
-🟢 **Available:** Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)
+🟢 **Status:** Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)
 
 <p align="left">
   [💼 LinkedIn](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;•&nbsp; [✉️ Email](mailto:work.saksham04@gmail.com) &nbsp;•&nbsp; [🧩 LeetCode](https://leetcode.com/u/wupNOxI7hc/)
@@ -38,16 +37,11 @@ sakshamgupta04@github:~$ █
 
 ## 👨‍💻 About Me <a id="about"></a>
 
-Hey there! I'm **Saksham Gupta**, a Full-stack developer and ML engineer. I'm passionate about engineering intelligent products, scalable web applications, and practical machine learning systems that solve real-world problems.
+I'm **Saksham Gupta**, a Full-stack developer and ML engineer. I build end-to-end software systems, combining modern web technologies with practical machine learning to solve real problems.
 
-- 🚀 **Full-Stack & Cloud Architecture:** Experienced in building reactive, production-ready web platforms with Next.js, React, TypeScript, and FastAPI, backed by Supabase and Google Cloud Platform.
-- 🤖 **Applied AI & Machine Learning:** Hands-on with PyTorch, Scikit-learn, OpenCV, ONNX Runtime, and Whisper for computer vision, audio intelligence, and predictive modeling.
-- ⚡ **Edge AI & Embedded Systems:** Architecting real-world edge intelligence such as FarmGuard (two-stage animal detection, tracking, and offline-first inference).
-- ☁️ **Infrastructure & Scalability:** Deployed services on Cloud Run, built automated pipelines with Vertex AI, and engineered secure authentication with Supabase SSO.
 - 🎯 **Target Roles:** Full-Stack / Web Developer &nbsp;•&nbsp; AI/ML Engineer &nbsp;•&nbsp; Software Engineer (SDE)
 - 🎓 **Education:** B.Tech, Computer Science & Engineering (AI/ML) — Model Institute of Engineering and Technology, Jammu (2022–2026, CGPA 8.5)
-- 🟢 **Current Status:** Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)
-- 🧩 **Mindset:** *"Understand the problem deeply, measure with rigor, and build something meaningful."*
+
 ---
 
 ## 🧭 Start Here <a id="start-here"></a>
@@ -421,14 +415,8 @@ flowchart LR
 
 ## 🤝 Let's Connect <a id="contact"></a>
 
-🟢 **Current Status:** Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)
+Interested in collaborating, discussing projects, or exploring engineering opportunities? Feel free to reach out:
 
 <p align="left">
 [✉️ Email](mailto:work.saksham04@gmail.com) &nbsp;•&nbsp; [💼 LinkedIn](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;•&nbsp; [🐙 GitHub](https://github.com/sakshamgupta04) &nbsp;•&nbsp; [🧩 LeetCode](https://leetcode.com/u/wupNOxI7hc/)
-</p>
-
-> *"Understand the problem deeply. Measure with rigor. Build something meaningful."*
-
-<p align="center">
-  <b>⭐ Always Building &nbsp;|&nbsp; Always Learning &nbsp;|&nbsp; Always Exploring 🚀</b>
 </p>

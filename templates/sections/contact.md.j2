@@ -1,8 +1,6 @@
 ## 🤝 Let's Connect <a id="contact"></a>
 
-{% if has(profile.identity.availability.text) %}
-🟢 **Current Status:** {{ profile.identity.availability.text }}
-{% endif %}
+Interested in collaborating, discussing projects, or exploring engineering opportunities? Feel free to reach out:
 
 <p align="left">
 {% set contact_items = [] %}
@@ -11,10 +9,4 @@
 {% if has(profile.links.github) %}{% set _ = contact_items.append("[🐙 GitHub](" ~ profile.links.github ~ ")") %}{% endif %}
 {% if has(profile.links.leetcode) %}{% set _ = contact_items.append("[🧩 LeetCode](" ~ profile.links.leetcode ~ ")") %}{% endif %}
 {{ contact_items | join(" &nbsp;•&nbsp; ") }}
-</p>
-
-> *"Understand the problem deeply. Measure with rigor. Build something meaningful."*
-
-<p align="center">
-  <b>⭐ Always Building &nbsp;|&nbsp; Always Learning &nbsp;|&nbsp; Always Exploring 🚀</b>
 </p>
