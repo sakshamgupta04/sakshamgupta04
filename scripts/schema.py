@@ -1,5 +1,3 @@
-"""Pydantic schema definitions and validation for profile.yml."""
-
 from __future__ import annotations
 
 from enum import Enum
@@ -222,6 +220,7 @@ class Features(StrictModel):
     start_here: bool = False
     goals: bool = False
     principles: bool = False
+    education: bool = False
 
 
 class Profile(StrictModel):

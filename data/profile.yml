@@ -254,7 +254,7 @@ features:                                                 # each can be switched
   terminal_header: true        # self-generated animated SVG
   mermaid_skill_map: true
   languages_chart: true        # computed from the GitHub API (bytes of code, not proficiency)
-  recent_activity: true        # last public events, from the GitHub API
+  recent_activity: false       # last public events, from the GitHub API
   projects_last_updated: true  # from the GitHub API, only for projects with a repo
   snake: false                 # contribution snake via a third-party GitHub Action (turn on after the first run)
   stats_card: false            # vanity counts; off by default
@@ -264,4 +264,5 @@ features:                                                 # each can be switched
   start_here: false            # collapsible recruiter/engineer blocks
   goals: false                 # roadmap & goals section
   principles: false            # working principles table
+  education: false             # education & certifications section
 

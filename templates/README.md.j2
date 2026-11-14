@@ -63,7 +63,7 @@
 {% if profile.features.stats_card and has(github_stats) and (has(github_stats.public_repos) or has(github_stats.total_stars)) %}{% set _ = toc.append("[GitHub Metrics](#github-stats)") %}{% endif %}
 {% if profile.features.wakatime and has(wakatime_stats) %}{% set _ = toc.append("[WakaTime](#wakatime)") %}{% endif %}
 {% if profile.features.snake %}{% set _ = toc.append("[Contributions](#contributions)") %}{% endif %}
-{% if has(profile.identity.education) or has(profile.certifications) %}{% set _ = toc.append("[Education](#education)") %}{% endif %}
+{% if profile.features.education and (has(profile.identity.education) or has(profile.certifications)) %}{% set _ = toc.append("[Education](#education)") %}{% endif %}
 {% if profile.features.leetcode_block and (has(profile.leetcode.solved) or has(profile.leetcode.rating)) %}{% set _ = toc.append("[LeetCode](#leetcode)") %}{% endif %}
 {% if has(profile.publications) or profile.patent.mention %}{% set _ = toc.append("[Research](#research)") %}{% endif %}
 {% if profile.features.blog_rss and has(blog_posts) %}{% set _ = toc.append("[Articles](#blog)") %}{% endif %}
@@ -132,7 +132,7 @@
 {% include "sections/snake.md.j2" %}
 {% endif %}
 
-{% if has(profile.identity.education) or has(profile.certifications) %}
+{% if profile.features.education and (has(profile.identity.education) or has(profile.certifications)) %}
 ---
 
 {% include "sections/education.md.j2" %}

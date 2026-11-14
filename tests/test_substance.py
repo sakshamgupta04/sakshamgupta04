@@ -117,7 +117,13 @@ def test_research_section_hidden_when_empty_and_shown_when_present(profile_fixtu
 
 
 def test_education_and_certifications_formatting(profile_fixture: Profile) -> None:
-    output = render(profile_fixture)
+    # Hidden by default when features.education is False
+    output_hidden = render(profile_fixture)
+    assert "## 🎓 Education &amp; Certifications" not in output_hidden
+
+    p = copy.deepcopy(profile_fixture)
+    p.features.education = True
+    output = render(p)
     assert "## 🎓 Education &amp; Certifications" in output
     assert "B.Tech, Computer Science & Engineering (AI/ML)" in output
     assert "CGPA 8.5" in output

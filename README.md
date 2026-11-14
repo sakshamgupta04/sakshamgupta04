@@ -23,7 +23,7 @@
 
 ---
 
-**Jump to:** [About](#about) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Activity](#activity) &nbsp;•&nbsp; [Education](#education) &nbsp;•&nbsp; [Contact](#contact)
+**Jump to:** [About](#about) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Contact](#contact)
 
 ---
 
@@ -275,42 +275,8 @@ flowchart LR
 
 
 
----
-
-## ⚡ Recent Activity <a id="activity"></a>
-
-- Pushed `34dc514` to `sakshamgupta04/sakshamgupta04` (`main`) &nbsp;•&nbsp; <span title="2026-11-13 19:42:57"><em>16h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/34dc5145e5282f773d3a804eef73cd682b91e658)
-- Pushed `1f46e3c` to `sakshamgupta04/Farmland-Animal-Detection` (`main`) &nbsp;•&nbsp; <span title="2026-11-11 20:12:11"><em>2d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/1f46e3cf32ac0107ae2461a10fd296642b6dac03)
-- Pushed `898041f` to `sakshamgupta04/Farmland-Animal-Detection` (`main`) &nbsp;•&nbsp; <span title="2026-11-12 18:42:00"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/898041f422d59fbad300f429dc7679524da87300)
-- Pushed `91bcfc1` to `sakshamgupta04/Farmland-Animal-Detection` (`main`) &nbsp;•&nbsp; <span title="2026-11-10 19:12:12"><em>3d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/91bcfc1a84d3bc62fc0701ab597a16a2a8484ed9)
-- Pushed `4f69e71` to `sakshamgupta04/Farmland-Animal-Detection` (`main`) &nbsp;•&nbsp; <span title="2026-11-10 19:15:59"><em>3d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/4f69e71eee11373791c2eff1c66cf0234b8fae1b)
 
 
-
-
-
----
-
-## 🎓 Education &amp; Certifications <a id="education"></a>
-
-### Degrees &amp; Academic Background
-
-- **B.Tech, Computer Science & Engineering (AI/ML)** – Model Institute of Engineering and Technology, Jammu
-  - **Timeline:** 2022 — 2026
-  - **Academic Standing:** CGPA 8.5
-
-
-### Professional Certifications &amp; Coursework
-
-| Title | Issuer | Type | Credential |
-|:---|:---|:---|:---|
-| **Machine Learning Foundations: A Case Study Approach** | Coursera | Certification | — |
-| **Python for Data Science, AI & Development** | Coursera | Certification | [Verify Credential](https://drive.google.com/file/d/17j6eLecMSaxxvODqh-qb5YJVmMsuQhfp/view?usp=sharing) |
-| **Machine Learning: Clustering & Retrieval** | Coursera | Certification | [Verify Credential](https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing) |
-| **The Joy of Computing Using Python** | NPTEL | Certification | [Verify Credential](https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing) |
-| **Introduction to Data Science** | Infosys Springboard | Certification | [Verify Credential](https://drive.google.com/file/d/1RTTiHSCDAAEp4-NnfZIxRDFUuZ_QltOR/view?usp=sharing) |
-| **GCP Associate Cloud Engineer: Training Course** | Udemy | Course | — |
-| **JavaScript: The Complete Guide** | Udemy | Course | — |
 
 
 
