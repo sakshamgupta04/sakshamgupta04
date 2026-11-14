@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-14T19:47:36Z",
+  "fetched_at": "2026-11-14T20:21:43Z",
   "languages": {
     "Python": 715885,
     "HTML": 79862,
@@ -15,7 +15,7 @@
     "Dockerfile": 1432
   },
   "project_last_updated": {
-    "sakshamgupta04/CIT-Internship-Web-Development-": "2024-08-21"
+    "sakshamgupta04/Youtube-Video-Summarizer": "2026-10-30"
   },
   "recent_activity": [
     {
@@ -45,7 +45,7 @@
     {
       "description": "Pushed `1f46e3c` to `sakshamgupta04/Farmland-Animal-Detection` (`main`)",
       "url": "https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/1f46e3cf32ac0107ae2461a10fd296642b6dac03",
-      "relative_time": "2d ago",
+      "relative_time": "3d ago",
       "absolute_time": "2026-11-11 20:12:11"
     }
   ],
