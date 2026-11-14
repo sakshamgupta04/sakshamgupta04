@@ -153,38 +153,6 @@ flowchart LR
 
 ## 🛠️ Skills &amp; Tech Stack <a id="skills"></a>
 
-### 🗺️ Skill-to-Project Architecture Graph
-
-```mermaid
-flowchart LR
-  grp_Languages["Languages"] --> tech_Python["Python"]
-  tech_Python --> prj_AI_Video_Interview___Emotion_Analyzer["AI Video Interview & Emotion Analyzer"]
-  tech_Python --> prj_FarmGuard["FarmGuard"]
-  grp_Languages["Languages"] --> tech_TypeScript["TypeScript"]
-  tech_TypeScript --> prj_EchoNotes["EchoNotes"]
-  grp_Web["Web"] --> tech_Next_js["Next.js"]
-  tech_Next_js --> prj_AI_Video_Interview___Emotion_Analyzer["AI Video Interview & Emotion Analyzer"]
-  tech_Next_js --> prj_EchoNotes["EchoNotes"]
-  tech_Next_js --> prj_FarmGuard["FarmGuard"]
-  grp_Backend___Cloud["Backend & Cloud"] --> tech_Supabase__PostgreSQL__Auth["Supabase （PostgreSQL, Auth）"]
-  tech_Supabase__PostgreSQL__Auth --> prj_AI_Video_Interview___Emotion_Analyzer["AI Video Interview & Emotion Analyzer"]
-  tech_Supabase__PostgreSQL__Auth --> prj_EchoNotes["EchoNotes"]
-  tech_Supabase__PostgreSQL__Auth --> prj_FarmGuard["FarmGuard"]
-  grp_AI___ML["AI / ML"] --> tech_PyTorch["PyTorch"]
-  tech_PyTorch --> prj_EchoNotes["EchoNotes"]
-  grp_AI___ML["AI / ML"] --> tech_OpenCV["OpenCV"]
-  tech_OpenCV --> prj_AI_Video_Interview___Emotion_Analyzer["AI Video Interview & Emotion Analyzer"]
-  tech_OpenCV --> prj_FarmGuard["FarmGuard"]
-```
-
-
-### 📊 Codebase Distribution by Bytes
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg">
-  <img alt="Top Languages: Jupyter Notebook 89.5%, Python 4.2%, TypeScript 1.7%, C++ 1.5%, JavaScript 1.4%, C 0.6%" src="assets/languages-dark.svg" width="800">
-</picture>
 
 
 

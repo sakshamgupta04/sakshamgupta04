@@ -78,7 +78,9 @@ def test_mermaid_empty_input_handling(profile_fixture: Profile) -> None:
 
 def test_mermaid_node_limit(profile_fixture: Profile) -> None:
     # Test strict max_nodes enforcement
-    diagram = generate_mermaid_skill_map(profile_fixture, max_nodes=10)
+    p = copy.deepcopy(profile_fixture)
+    p.features.mermaid_skill_map = True
+    diagram = generate_mermaid_skill_map(p, max_nodes=10)
     assert diagram != ""
     # Extract unique node IDs from edges: grp_... --> tech_... or tech_... --> prj_...
     node_ids = set()

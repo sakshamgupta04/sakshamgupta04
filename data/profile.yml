@@ -252,8 +252,8 @@ leetcode:
 
 features:                                                 # each can be switched off
   terminal_header: true        # self-generated animated SVG
-  mermaid_skill_map: true
-  languages_chart: true        # computed from the GitHub API (bytes of code, not proficiency)
+  mermaid_skill_map: false
+  languages_chart: false       # computed from the GitHub API (bytes of code, not proficiency)
   recent_activity: false       # last public events, from the GitHub API
   projects_last_updated: true  # from the GitHub API, only for projects with a repo
   snake: false                 # contribution snake via a third-party GitHub Action (turn on after the first run)
