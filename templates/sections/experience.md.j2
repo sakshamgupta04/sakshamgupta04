@@ -1,25 +1,24 @@
 {% if has(profile.experience) %}
 ## 💼 $ experience — Professional Experience <a id="experience"></a>
 
-{% for exp in profile.experience %}
-### {{ exp.role }} <a id="exp-{{ loop.index }}"></a>
-**{{ exp.org }}**{% if has(exp.location) %} &nbsp;|&nbsp; 📍 {{ exp.location }}{% endif %} &nbsp;|&nbsp; 🗓️ `{{ exp.start }}{% if has(exp.end) %} — {{ exp.end }}{% else %} — Present{% endif %}`
+### Software Development Engineer Intern (SDE Intern) <a id="exp-1"></a>
+**Straatix Partners Labs Pvt. Ltd.** &nbsp;|&nbsp; 📍 Whitefield, Bengaluru, India &nbsp;|&nbsp; 🗓️ `January 2026 — July 2026`
 
-{% if has(exp.bullets) %}
-{% for bullet in exp.bullets %}
-- {{ bullet }}
-{% endfor %}
-{% endif %}
+- **Full-Stack Portal:** Built and scaled React/Next.js portals for HR users and candidates, featuring dynamic interview scheduling and Supabase SSO/email auth flows.
+- **Workflow Automation:** Developed TypeScript serverless functions to automate referral pipelines and candidate event handling.
+- **Cloud Infrastructure:** Migrated workloads to Google Cloud Platform, deploying scalable microservices on Cloud Run and integrating Vertex AI for production ML pipelines.
+- **Keyless CI/CD:** Implemented GitHub Actions pipelines with GCP Workload Identity Federation for automated, secretless cloud deployments.
 
-{% if has(exp.stack) %}
-- **Technologies:** {% for s in exp.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
-{% endif %}
-
-{% if not loop.last %}
+**Technologies:** <code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>Google Cloud Platform</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>GitHub Actions</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code>
 
 ---
 
-{% endif %}
-{% endfor %}
+### AI/ML Developer Intern — Director Internship <a id="exp-2"></a>
+**Model Institute of Engineering and Technology, Jammu** &nbsp;|&nbsp; 🗓️ `February 2025 — January 2026`
+
+- **Patented AI Platform:** Contributed to a patented evaluation engine analyzing candidate experience, Big Five personality traits, and career trajectory indicators.
+- **Model Tuning &amp; Evaluation:** Implemented peer-group segmentation for fair evaluation and tuned classification models to improve role-matching precision.
+
+**Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Machine Learning</code> &nbsp;•&nbsp; <code>Model Evaluation</code>
 
 {% endif %}

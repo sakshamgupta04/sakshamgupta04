@@ -4,69 +4,59 @@
 {% set sorted_projects = [] %}
 {% for p in profile.projects if p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
 {% for p in profile.projects if not p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
+<table>
+  <tr>
+{% for p in sorted_projects[:3] %}
+    <td width="33%" valign="top">
+      <a id="{{ p.slug }}"></a>
+      {% if has(p.image) %}
+      <img src="{{ p.image }}" alt="{{ p.title }}" width="100%">
+      <br><br>
+      {% endif %}
+      <b>{{ p.title }}</b><br>
+      {% if has(p.subtitle) %}<sub>{{ p.subtitle }}</sub><br>{% endif %}
+      <p><i>{{ p.tagline }}</i></p>
+      {% if has(p.highlights) %}
+      <b>Key Highlights:</b>
+      <ul>
+      {% for h in p.highlights %}
+        <li>{{ h }}</li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+      {% if has(p.results) %}
+      <b>Measured Evaluation &amp; Benchmarks:</b>
+      <ul>
+      {% for r in p.results %}
+        <li>{{ r }}</li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+      {% if has(p.stack) %}
+      <b>Stack:</b>
+      {% for s in p.stack %}<code>{{ s }}</code>{% if not loop.last %} {% endif %}{% endfor %}
+      <br><br>
+      {% endif %}
+      {% set proj_links = [] %}
+      {% if has(p.links.live) %}{% set _ = proj_links.append("<a href=\"" ~ p.links.live ~ "\">▶️ <b>Live Site</b></a>") %}{% endif %}
+      {% if has(p.links.demo) %}{% set _ = proj_links.append("<a href=\"" ~ p.links.demo ~ "\">🔍 <b>Case Study</b></a>") %}{% endif %}
+      {% if has(p.repo) %}{% set _ = proj_links.append("<a href=\"https://github.com/" ~ p.repo ~ "\">📦 <b>Code</b></a>") %}{% endif %}
+      {% if has(proj_links) %}
+      {{ proj_links | join(" &nbsp;|&nbsp; ") }}
+      {% endif %}
+    </td>
+{% endfor %}
+  </tr>
+</table>
+
+{% if sorted_projects | length > 3 %}
 {% for p in sorted_projects %}
-### {{ p.title }}{% if has(p.subtitle) %} — *{{ p.subtitle }}*{% endif %} <a id="{{ p.slug }}"></a>
-
-{% if has(p.image) %}
-<p align="center">
-  <img src="{{ p.image }}" alt="{{ p.title }} Project Screenshot" width="760">
-</p>
-{% endif %}
-
+{% if loop.index > 3 %}
+### {{ p.title }} <a id="{{ p.slug }}"></a>
 > {{ p.tagline }}
-
-- **Category:** `{{ p.category or "Full-Stack AI" }}` &nbsp;|&nbsp; **Status:** {{ p.status | format_project_status }}{% if p.featured %} &nbsp;|&nbsp; ⭐ **Featured**{% endif %}
-
-{% if has(p.stack) %}
-- **Technologies:** {% for s in p.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
-
-{% endif %}
-{% if has(p.repo) and has(project_last_updated) and project_last_updated.get(p.repo) %}
-- 🕒 **Last Activity:** `{{ project_last_updated.get(p.repo) }}`
-
-{% endif %}
-{% if has(p.highlights) %}
-- **Technical Highlights:**
-{% for h in p.highlights %}
-  - {{ h }}
-{% endfor %}
-
-{% endif %}
-{% if has(p.results) %}
-- **Measured Evaluation &amp; Benchmarks:**
-{% for r in p.results %}
-  - {{ r }}
-{% endfor %}
-
-{% endif %}
-{% set proj_links = [] %}
-{% if has(p.links.live) %}{% set _ = proj_links.append("[▶️ **Live Site**](" ~ p.links.live ~ ")") %}{% endif %}
-{% if has(p.links.demo) %}{% set _ = proj_links.append("[🔍 **Case Study / Demo**](" ~ p.links.demo ~ ")") %}{% endif %}
-{% if has(p.repo) %}{% set _ = proj_links.append("[📦 **Repository**](https://github.com/" ~ p.repo ~ ")") %}{% endif %}
-{% if has(p.links.paper) %}{% set _ = proj_links.append("[📄 **Paper**](" ~ p.links.paper ~ ")") %}{% endif %}
-{% if has(p.links.video) %}{% set _ = proj_links.append("[🎥 **Video**](" ~ p.links.video ~ ")") %}{% endif %}
-{% if has(proj_links) %}
-- **Project Links:** {{ proj_links | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}
-
-{% endif %}
-{% set diag = validate_diagram(p.diagram) %}
-{% if diag %}
-<details open>
-<summary><b>📐 System Architecture Diagram</b></summary>
-
-<br>
-
-```mermaid
-{{ diag }}
-```
-
-</details>
-
-{% endif %}
-{% if not loop.last %}
-
----
-
+{% if has(p.stack) %}- **Technologies:** {% for s in p.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}{% endif %}
 {% endif %}
 {% endfor %}
+{% endif %}
+
 {% endif %}

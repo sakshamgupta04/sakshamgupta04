@@ -68,7 +68,7 @@ principles:
 
 skills:
   groups:
-    - name: "Programming Languages"
+    - name: "Languages"
       items:
         - { name: "Python", level: null }
         - { name: "C++", level: null }
@@ -88,13 +88,13 @@ skills:
         - { name: "REST APIs", level: null }
         - { name: "Supabase Serverless Functions", level: null }
         - { name: "FastAPI", level: null }
-    - name: "Databases & Services"
+    - name: "Databases"
       items:
         - { name: "Supabase", level: null }
         - { name: "PostgreSQL", level: null }
         - { name: "Supabase Auth", level: null }
         - { name: "Supabase Storage", level: null }
-    - name: "AI/ML & Computer Vision"
+    - name: "AI/ML"
       items:
         - { name: "Scikit-learn", level: null }
         - { name: "TensorFlow", level: null }

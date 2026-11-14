@@ -1,9 +1,18 @@
-{% if has(profile.expertise) %}
 ## 🎯 $ engineering.expertise — Core Focus Areas <a id="expertise"></a>
 
-| {% for exp in profile.expertise %}{{ exp.title }}{% if not loop.last %} | {% endif %}{% endfor %} |
-| {% for exp in profile.expertise %}:---{% if not loop.last %} | {% endif %}{% endfor %} |
-| {% for exp in profile.expertise %}{{ exp.detail }}{% if not loop.last %} | {% endif %}{% endfor %} |
-
-{% endif %}
-
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <h3>🧠 AI &amp; Machine Learning</h3>
+      <p>Applied ML, computer vision, feature engineering, and predictive modeling.</p>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <h3>💻 Full-Stack Engineering</h3>
+      <p>Frontend development, REST APIs, authentication, and database integration.</p>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <h3>☁️ Cloud &amp; Deployment</h3>
+      <p>GCP, Cloud Run, Supabase, and secure deployment workflows.</p>
+    </td>
+  </tr>
+</table>

@@ -9,15 +9,12 @@
 
 {% if has(profile.publications) %}
 {% for pub in profile.publications %}
-### {{ pub.title }}
-*{{ pub.authors | join(", ") }}* &nbsp;•&nbsp; **{{ pub.venue }}** ({{ pub.year }}){% if has(pub.status) %} &nbsp;•&nbsp; *[{{ pub.status }}]*{% endif %}
-
-{% set pub_links = [] %}
-{% if has(pub.doi) %}{% set _ = pub_links.append("[🔗 **DOI**](https://doi.org/" ~ pub.doi ~ ")") %}{% endif %}
-{% if has(pub.pdf) %}{% set _ = pub_links.append("[📄 **Full Paper / PDF**](" ~ pub.pdf ~ ")") %}{% endif %}
-{% if has(pub_links) %}
-{{ pub_links | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}
-{% endif %}
+- **{{ pub.title }}**  
+  *{{ pub.authors | join(", ") }}* &nbsp;•&nbsp; **{{ pub.venue }}** ({{ pub.year }}){% if has(pub.status) %} &nbsp;•&nbsp; *[{{ pub.status }}]*{% endif %}  
+  {% set pub_links = [] %}
+  {% if has(pub.doi) %}{% set _ = pub_links.append("[🔗 **DOI**](https://doi.org/" ~ pub.doi ~ ")") %}{% endif %}
+  {% if has(pub.pdf) %}{% set _ = pub_links.append("[📄 **Full Paper / PDF**](" ~ pub.pdf ~ ")") %}{% endif %}
+  {% if has(pub_links) %}{{ pub_links | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}{% endif %}
 
 {% if has(pub.bibtex) %}
 <details>
@@ -30,11 +27,6 @@
 </details>
 {% endif %}
 
-{% if not loop.last %}
-
----
-
-{% endif %}
 {% endfor %}
 {% endif %}
 

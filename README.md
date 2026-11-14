@@ -10,18 +10,20 @@
   <img alt="sakshamgupta04@github:~$ whoami&#10;name: Saksham Gupta&#10;role: Software Developer · AI/ML Engineer&#10;status: Open to full-time roles: Software Engineer, AI/ML Developer, Full-Stack Engineer" src="assets/terminal-dark.svg" width="800">
 </picture>
 
-# Hey, I'm Saksham Gupta 👋
-## Software Developer · AI/ML Engineer
 
-> Building software that connects intelligence with real-world use.
+<div align="center">
 
-🟢 **Status:** Open to full-time roles: Software Engineer, AI/ML Developer, Full-Stack Engineer
+[🌐 **Portfolio Website ↗**](https://sakshamsgupta-portfolio.vercel.app/) &nbsp;&nbsp;•&nbsp;&nbsp; [💼 LinkedIn](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;&nbsp;•&nbsp;&nbsp; [🐙 GitHub](https://github.com/sakshamgupta04) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 Resume](https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf) &nbsp;&nbsp;•&nbsp;&nbsp; [✉️ Email](mailto:work.saksham04@gmail.com) &nbsp;&nbsp;•&nbsp;&nbsp; [🧩 LeetCode](https://leetcode.com/u/wupNOxI7hc/)
 
-<p align="left">
-  [🌐 Portfolio](https://sakshamsgupta-portfolio.vercel.app/) &nbsp;•&nbsp; [🐙 GitHub](https://github.com/sakshamgupta04) &nbsp;•&nbsp; [💼 LinkedIn](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;•&nbsp; [📄 Resume](https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf) &nbsp;•&nbsp; [✉️ Email](mailto:work.saksham04@gmail.com) &nbsp;•&nbsp; [🧩 LeetCode](https://leetcode.com/u/wupNOxI7hc/)
-</p>
+</div>
 
-**Jump to:** [About](#about) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Focus Areas](#expertise) &nbsp;•&nbsp; [Research](#research) &nbsp;•&nbsp; [Certifications](#certifications) &nbsp;•&nbsp; [Education](#education) &nbsp;•&nbsp; [Contact](#contact)
+<br>
+
+<div align="center">
+
+**Jump to:** [About](#about) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Tech Stack](#skills) &nbsp;•&nbsp; [Focus Areas](#expertise) &nbsp;•&nbsp; [Research](#research) &nbsp;•&nbsp; [Certifications](#certifications) &nbsp;•&nbsp; [Education](#education) &nbsp;•&nbsp; [Contact](#contact)
+
+</div>
 
 ---
 
@@ -49,91 +51,82 @@ I focus on connecting intelligent software with reliable engineering practices t
 ### Software Development Engineer Intern (SDE Intern) <a id="exp-1"></a>
 **Straatix Partners Labs Pvt. Ltd.** &nbsp;|&nbsp; 📍 Whitefield, Bengaluru, India &nbsp;|&nbsp; 🗓️ `January 2026 — July 2026`
 
-- Built and scaled React/Next.js portal features for HR users and candidates, including dynamic interview scheduling components and improvements to the user experience.
-- Implemented Supabase authentication using SSO and email sign-in flows.
-- Developed TypeScript serverless functions to automate referral workflows.
-- Led migration work from legacy systems to Google Cloud Platform.
-- Deployed services using Cloud Run and worked with Vertex AI for production machine learning pipelines.
-- Implemented GitHub Actions and GCP Workload Identity Federation for keyless CI/CD as part of the Straatix platform work.
+- **Full-Stack Portal:** Built and scaled React/Next.js portals for HR users and candidates, featuring dynamic interview scheduling and Supabase SSO/email auth flows.
+- **Workflow Automation:** Developed TypeScript serverless functions to automate referral pipelines and candidate event handling.
+- **Cloud Infrastructure:** Migrated workloads to Google Cloud Platform, deploying scalable microservices on Cloud Run and integrating Vertex AI for production ML pipelines.
+- **Keyless CI/CD:** Implemented GitHub Actions pipelines with GCP Workload Identity Federation for automated, secretless cloud deployments.
 
-- **Technologies:** <code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>Google Cloud Platform</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>GitHub Actions</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code>
+**Technologies:** <code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>Google Cloud Platform</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>GitHub Actions</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code>
 
 ---
 
 ### AI/ML Developer Intern — Director Internship <a id="exp-2"></a>
 **Model Institute of Engineering and Technology, Jammu** &nbsp;|&nbsp; 🗓️ `February 2025 — January 2026`
 
-- Contributed to a patented AI platform for candidate evaluation and role prediction.
-- Worked with machine learning models analyzing experience, Big Five personality traits, and career trajectory.
-- Implemented peer-group segmentation for fairer candidate comparisons.
-- Improved model evaluation and role-matching through model tuning.
+- **Patented AI Platform:** Contributed to a patented evaluation engine analyzing candidate experience, Big Five personality traits, and career trajectory indicators.
+- **Model Tuning &amp; Evaluation:** Implemented peer-group segmentation for fair evaluation and tuned classification models to improve role-matching precision.
 
-- **Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Machine Learning</code> &nbsp;•&nbsp; <code>Model Evaluation</code>
+**Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Machine Learning</code> &nbsp;•&nbsp; <code>Model Evaluation</code>
 
 
 ---
 
 ## 🚀 $ featured.builds — Featured Projects <a id="projects"></a>
 
-### People.ai — *Faculty Fit & Retention Prediction* <a id="people-ai"></a>
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <a id="people-ai"></a>
+      <img src="assets/projects/people-ai.png" alt="People.ai" width="100%">
+      <br><br>
+      <b>People.ai</b><br>
+<sub>Faculty Fit & Retention Prediction</sub><br>      <p><i>An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, educational background, and career trajectory.</i></p>
+      <b>Key Highlights:</b>
+      <ul>
+        <li>Engineered features from candidate profiles, including skill diversity, experience trends, educational background, and career longevity indicators.</li>
+        <li>Developed and evaluated supervised classification models for faculty-role fit and retention prediction.</li>
+        <li>Applied preprocessing, feature engineering, and model evaluation to improve classification quality.</li>
+      </ul>
+      <b>Stack:</b>
+<code>Python</code> <code>Scikit-learn</code> <code>Gemini</code> <code>Machine Learning</code> <code>Model Evaluation</code>      <br><br>
+      <a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit">🔍 <b>Case Study</b></a>
+    </td>
+    <td width="33%" valign="top">
+      <a id="ai-video-interview-emotion-analyzer"></a>
+      <img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="100%">
+      <br><br>
+      <b>AI Video Interview & Emotion Analyzer</b><br>
+      <p><i>A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.</i></p>
+      <b>Key Highlights:</b>
+      <ul>
+        <li>Developed browser-based interview recording using the MediaRecorder API and multipart video upload.</li>
+        <li>Built a frame-by-frame facial expression analysis pipeline using DeepFace and OpenCV Haar cascades.</li>
+        <li>Calculated emotion distributions and dominant detected emotions.</li>
+        <li>Integrated REST APIs with Supabase Storage and PostgreSQL for video storage, analysis orchestration, and candidate metadata.</li>
+      </ul>
+      <b>Stack:</b>
+<code>Next.js</code> <code>Python</code> <code>DeepFace</code> <code>OpenCV</code> <code>Supabase</code>      <br><br>
+      <a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer">🔍 <b>Case Study</b></a>
+    </td>
+    <td width="33%" valign="top">
+      <a id="echonotes"></a>
+      <img src="assets/projects/echonotes.png" alt="EchoNotes" width="100%">
+      <br><br>
+      <b>EchoNotes</b><br>
+<sub>AI-Powered Transcription & Semantic Search</sub><br>      <p><i>An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.</i></p>
+      <b>Key Highlights:</b>
+      <ul>
+        <li>Developed audio ingestion and transcription workflows using captions and faster-whisper.</li>
+        <li>Implemented semantic search using embeddings and timestamp-linked navigation.</li>
+        <li>Built a full-stack application for processing, summarizing, and exploring audio/video content.</li>
+      </ul>
+      <b>Stack:</b>
+<code>Next.js</code> <code>TypeScript</code> <code>FastAPI</code> <code>Supabase</code> <code>faster-whisper</code> <code>PyTorch</code>      <br><br>
+      <a href="https://youtube-video-summarizer-sage.vercel.app/">▶️ <b>Live Site</b></a> &nbsp;|&nbsp; <a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes">🔍 <b>Case Study</b></a> &nbsp;|&nbsp; <a href="https://github.com/sakshamgupta04/CIT-Internship-Web-Development-">📦 <b>Code</b></a>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="assets/projects/people-ai.png" alt="People.ai Project Screenshot" width="760">
-</p>
-
-> An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, educational background, and career trajectory.
-
-- **Category:** `Applied Machine Learning` &nbsp;|&nbsp; **Status:** 🚀 Shipped &nbsp;|&nbsp; ⭐ **Featured**
-- **Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Gemini</code> &nbsp;•&nbsp; <code>Machine Learning</code> &nbsp;•&nbsp; <code>Model Evaluation</code>
-- **Technical Highlights:**
-  - Engineered features from candidate profiles, including skill diversity, experience trends, educational background, and career longevity indicators.
-  - Developed and evaluated supervised classification models for faculty-role fit and retention prediction.
-  - Applied preprocessing, feature engineering, and model evaluation to improve classification quality.
-
-- **Project Links:** [🔍 **Case Study / Demo**](https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit)
-
-
----
-
-### AI Video Interview & Emotion Analyzer <a id="ai-video-interview-emotion-analyzer"></a>
-
-<p align="center">
-  <img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer Project Screenshot" width="760">
-</p>
-
-> A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.
-
-- **Category:** `Computer Vision / Full-Stack AI` &nbsp;|&nbsp; **Status:** 🚀 Shipped &nbsp;|&nbsp; ⭐ **Featured**
-- **Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>Python</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>Supabase</code>
-- **Technical Highlights:**
-  - Developed browser-based interview recording using the MediaRecorder API and multipart video upload.
-  - Built a frame-by-frame facial expression analysis pipeline using DeepFace and OpenCV Haar cascades.
-  - Calculated emotion distributions and dominant detected emotions.
-  - Integrated REST APIs with Supabase Storage and PostgreSQL for video storage, analysis orchestration, and candidate metadata.
-
-- **Project Links:** [🔍 **Case Study / Demo**](https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer)
-
-
----
-
-### EchoNotes — *AI-Powered Transcription & Semantic Search* <a id="echonotes"></a>
-
-<p align="center">
-  <img src="assets/projects/echonotes.png" alt="EchoNotes Project Screenshot" width="760">
-</p>
-
-> An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.
-
-- **Category:** `NLP / Full-Stack AI` &nbsp;|&nbsp; **Status:** 🚀 Shipped &nbsp;|&nbsp; ⭐ **Featured**
-- **Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>PyTorch</code>
-- 🕒 **Last Activity:** `2024-08-21`
-
-- **Technical Highlights:**
-  - Developed audio ingestion and transcription workflows using captions and faster-whisper.
-  - Implemented semantic search using embeddings and timestamp-linked navigation.
-  - Built a full-stack application for processing, summarizing, and exploring audio/video content.
-
-- **Project Links:** [▶️ **Live Site**](https://youtube-video-summarizer-sage.vercel.app/) &nbsp;&nbsp;•&nbsp;&nbsp; [🔍 **Case Study / Demo**](https://sakshamsgupta-portfolio.vercel.app/projects/echonotes) &nbsp;&nbsp;•&nbsp;&nbsp; [📦 **Repository**](https://github.com/sakshamgupta04/CIT-Internship-Web-Development-)
 
 
 ---
@@ -146,11 +139,11 @@ I focus on connecting intelligent software with reliable engineering practices t
 
 | Domain | Technologies &amp; Frameworks |
 | :--- | :--- |
-| **Programming Languages** | <code>Python</code> &nbsp;•&nbsp; <code>C++</code> &nbsp;•&nbsp; <code>Java</code> &nbsp;•&nbsp; <code>JavaScript</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>SQL</code> |
+| **Languages** | <code>Python</code> &nbsp;•&nbsp; <code>C++</code> &nbsp;•&nbsp; <code>Java</code> &nbsp;•&nbsp; <code>JavaScript</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>SQL</code> |
 | **Frontend** | <code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>HTML</code> &nbsp;•&nbsp; <code>CSS</code> |
 | **Backend & APIs** | <code>Node.js</code> &nbsp;•&nbsp; <code>REST APIs</code> &nbsp;•&nbsp; <code>Supabase Serverless Functions</code> &nbsp;•&nbsp; <code>FastAPI</code> |
-| **Databases & Services** | <code>Supabase</code> &nbsp;•&nbsp; <code>PostgreSQL</code> &nbsp;•&nbsp; <code>Supabase Auth</code> &nbsp;•&nbsp; <code>Supabase Storage</code> |
-| **AI/ML & Computer Vision** | <code>Scikit-learn</code> &nbsp;•&nbsp; <code>TensorFlow</code> &nbsp;•&nbsp; <code>PyTorch</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Pandas</code> &nbsp;•&nbsp; <code>NumPy</code> |
+| **Databases** | <code>Supabase</code> &nbsp;•&nbsp; <code>PostgreSQL</code> &nbsp;•&nbsp; <code>Supabase Auth</code> &nbsp;•&nbsp; <code>Supabase Storage</code> |
+| **AI/ML** | <code>Scikit-learn</code> &nbsp;•&nbsp; <code>TensorFlow</code> &nbsp;•&nbsp; <code>PyTorch</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Pandas</code> &nbsp;•&nbsp; <code>NumPy</code> |
 | **Cloud & DevOps** | <code>Google Cloud Platform</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>Docker</code> &nbsp;•&nbsp; <code>GitHub Actions</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code> |
 | **Developer Tools** | <code>Git</code> &nbsp;•&nbsp; <code>GitHub</code> &nbsp;•&nbsp; <code>VS Code</code> &nbsp;•&nbsp; <code>Jupyter Notebook</code> &nbsp;•&nbsp; <code>Airtable</code> &nbsp;•&nbsp; <code>Claude</code> |
 
@@ -159,11 +152,22 @@ I focus on connecting intelligent software with reliable engineering practices t
 
 ## 🎯 $ engineering.expertise — Core Focus Areas <a id="expertise"></a>
 
-| 🧠 AI & Machine Learning | 💻 Full-Stack Engineering | ☁️ Cloud & Deployment |
-| :--- | :--- | :--- |
-| Applied machine learning, computer vision, feature engineering, predictive modeling, and intelligent applications. | Frontend development, REST APIs, authentication, database integration, and application architecture. | Google Cloud Platform, Cloud Run, Supabase, serverless services, and secure deployment workflows. |
-
-
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <h3>🧠 AI &amp; Machine Learning</h3>
+      <p>Applied ML, computer vision, feature engineering, and predictive modeling.</p>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <h3>💻 Full-Stack Engineering</h3>
+      <p>Frontend development, REST APIs, authentication, and database integration.</p>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <h3>☁️ Cloud &amp; Deployment</h3>
+      <p>GCP, Cloud Run, Supabase, and secure deployment workflows.</p>
+    </td>
+  </tr>
+</table>
 
 
 
@@ -173,18 +177,13 @@ I focus on connecting intelligent software with reliable engineering practices t
 ## 🔬 $ research — Publications <a id="research"></a>
 
 
-### Machine Learning-Based Approach for Diabetes Detection and Prediction
-*Saksham Gupta, Gandharv Kaloo, Palvi Sharma, Aarush Wali* &nbsp;•&nbsp; **IEEE 3rd International Conference on Advancement in Computation & Computer Technologies (InCACCT)** (2025)
+- **Machine Learning-Based Approach for Diabetes Detection and Prediction**  
+  *Saksham Gupta, Gandharv Kaloo, Palvi Sharma, Aarush Wali* &nbsp;•&nbsp; **IEEE 3rd International Conference on Advancement in Computation & Computer Technologies (InCACCT)** (2025)  
 [🔗 **DOI**](https://doi.org/10.1109/InCACCT65424.2025.11011335) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/diabetes-risk-forecasting.pdf)
 
-
-
----
-
-### Evaluating the Accuracy and Computational Load of Booth's Algorithm and Vedic Multiplication in Digital Systems
-*Veena Tripathi, Saksham Gupta, Aarush Wali, Archit Bali, Aradhika Gandotra, Ayushman Vohra* &nbsp;•&nbsp; **Taylor & Francis / CRC Press** (2024)
+- **Evaluating the Accuracy and Computational Load of Booth's Algorithm and Vedic Multiplication in Digital Systems**  
+  *Veena Tripathi, Saksham Gupta, Aarush Wali, Archit Bali, Aradhika Gandotra, Ayushman Vohra* &nbsp;•&nbsp; **Taylor & Francis / CRC Press** (2024)  
 [🔗 **DOI**](https://doi.org/10.1201/9781003637530-29) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/booths-vedic-multiplication.pdf)
-
 
 
 
@@ -223,6 +222,4 @@ I focus on connecting intelligent software with reliable engineering practices t
 
 I'm open to discussing software engineering opportunities, AI/ML projects, and technical collaborations. Feel free to explore my work or get in touch:
 
-<p align="left">
-[🌐 **Portfolio**](https://sakshamsgupta-portfolio.vercel.app/) &nbsp;&nbsp;•&nbsp;&nbsp; [✉️ **Email**](mailto:work.saksham04@gmail.com) &nbsp;&nbsp;•&nbsp;&nbsp; [💼 **LinkedIn**](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;&nbsp;•&nbsp;&nbsp; [🐙 **GitHub**](https://github.com/sakshamgupta04) &nbsp;&nbsp;•&nbsp;&nbsp; [🧩 **LeetCode**](https://leetcode.com/u/wupNOxI7hc/) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 **Résumé**](https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf)
-</p>
+[🌐 **Portfolio Website**](https://sakshamsgupta-portfolio.vercel.app/) &nbsp;&nbsp;•&nbsp;&nbsp; [✉️ **Email**](mailto:work.saksham04@gmail.com) &nbsp;&nbsp;•&nbsp;&nbsp; [💼 **LinkedIn**](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;&nbsp;•&nbsp;&nbsp; [🐙 **GitHub**](https://github.com/sakshamgupta04) &nbsp;&nbsp;•&nbsp;&nbsp; [🧩 **LeetCode**](https://leetcode.com/u/wupNOxI7hc/) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 **Résumé PDF**](https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf)
