@@ -52,9 +52,6 @@ goals:
     - "Build AI products that solve real problems for real people"
   roadmap:
     - { item: "Portfolio website live", status: "done", target: null }
-    - { item: "FarmGuard PC prototype with evaluation", status: "doing", target: null }
-    - { item: "PaperLens: private in-browser document analyzer", status: "next", target: null }
-    - { item: "First open-source contribution", status: "next", target: null }
 
 principles:
   - title: "Measure before you claim"
@@ -133,17 +130,16 @@ projects:
     title: "People.ai"
     subtitle: "Faculty Fit & Retention Prediction"
     category: "Applied Machine Learning"
-    tagline: "An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, educational background, and career trajectory."
+    tagline: "An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory."
     status: "shipped"
     repo: null
     featured: true
     image: "assets/projects/people-ai.png"
     categories: ["ai-ml"]
-    stack: ["Python", "Scikit-learn", "Gemini", "Machine Learning", "Model Evaluation"]
+    stack: ["Python", "Scikit-learn", "Gemini", "Model Evaluation"]
     highlights:
-      - "Engineered features from candidate profiles, including skill diversity, experience trends, educational background, and career longevity indicators."
-      - "Developed and evaluated supervised classification models for faculty-role fit and retention prediction."
-      - "Applied preprocessing, feature engineering, and model evaluation to improve classification quality."
+      - "Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators."
+      - "Trained and evaluated supervised classification models for faculty role fit and retention prediction."
     results: []
     links:
       live: null
@@ -154,7 +150,7 @@ projects:
 
   - slug: "ai-video-interview-emotion-analyzer"
     title: "AI Video Interview & Emotion Analyzer"
-    subtitle: null
+    subtitle: "Real-Time Facial Expression & Emotion Telemetry"
     category: "Computer Vision / Full-Stack AI"
     tagline: "A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results."
     status: "shipped"
@@ -162,12 +158,10 @@ projects:
     featured: true
     image: "assets/projects/interview-analyzer.png"
     categories: ["ai-ml", "web"]
-    stack: ["Next.js", "Python", "DeepFace", "OpenCV", "Supabase"]
+    stack: ["Next.js", "Python", "DeepFace", "Supabase"]
     highlights:
-      - "Developed browser-based interview recording using the MediaRecorder API and multipart video upload."
-      - "Built a frame-by-frame facial expression analysis pipeline using DeepFace and OpenCV Haar cascades."
-      - "Calculated emotion distributions and dominant detected emotions."
-      - "Integrated REST APIs with Supabase Storage and PostgreSQL for video storage, analysis orchestration, and candidate metadata."
+      - "Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage."
+      - "Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades."
     results: []
     links:
       live: null
@@ -182,15 +176,14 @@ projects:
     category: "NLP / Full-Stack AI"
     tagline: "An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval."
     status: "shipped"
-    repo: "sakshamgupta04/CIT-Internship-Web-Development-"
+    repo: "sakshamgupta04/Youtube-Video-Summarizer"
     featured: true
     image: "assets/projects/echonotes.png"
     categories: ["ai-ml", "web", "backend"]
-    stack: ["Next.js", "TypeScript", "FastAPI", "Supabase", "faster-whisper", "PyTorch"]
+    stack: ["Next.js", "FastAPI", "faster-whisper", "Supabase"]
     highlights:
       - "Developed audio ingestion and transcription workflows using captions and faster-whisper."
       - "Implemented semantic search using embeddings and timestamp-linked navigation."
-      - "Built a full-stack application for processing, summarizing, and exploring audio/video content."
     results: []
     links:
       live: "https://youtube-video-summarizer-sage.vercel.app/"
@@ -206,12 +199,9 @@ experience:
     end: "July 2026"
     location: "Whitefield, Bengaluru, India"
     bullets:
-      - "Built and scaled React/Next.js portal features for HR users and candidates, including dynamic interview scheduling components and improvements to the user experience."
-      - "Implemented Supabase authentication using SSO and email sign-in flows."
-      - "Developed TypeScript serverless functions to automate referral workflows."
-      - "Led migration work from legacy systems to Google Cloud Platform."
-      - "Deployed services using Cloud Run and worked with Vertex AI for production machine learning pipelines."
-      - "Implemented GitHub Actions and GCP Workload Identity Federation for keyless CI/CD as part of the Straatix platform work."
+      - "Built and scaled React/Next.js portals for HR users and candidates, implementing dynamic interview scheduling and Supabase SSO/email authentication workflows."
+      - "Migrated backend services to Google Cloud Platform, deploying containerized microservices on Cloud Run and integrating Vertex AI for production ML workflows."
+      - "Engineered automated deployment pipelines with GitHub Actions and GCP Workload Identity Federation for keyless, secretless cloud delivery."
     stack: ["React", "Next.js", "TypeScript", "Supabase", "Google Cloud Platform", "Cloud Run", "Vertex AI", "GitHub Actions", "Workload Identity Federation"]
 
   - org: "Model Institute of Engineering and Technology, Jammu"
@@ -219,10 +209,9 @@ experience:
     start: "February 2025"
     end: "January 2026"
     bullets:
-      - "Contributed to a patented AI platform for candidate evaluation and role prediction."
-      - "Worked with machine learning models analyzing experience, Big Five personality traits, and career trajectory."
-      - "Implemented peer-group segmentation for fairer candidate comparisons."
-      - "Improved model evaluation and role-matching through model tuning."
+      - "Contributed to a patented evaluation engine analyzing candidate experience, Big Five personality traits, and career trajectory indicators."
+      - "Implemented peer-group segmentation algorithms to enable fair, normalized candidate comparisons across varying backgrounds."
+      - "Tuned and evaluated classification models to improve role-matching precision and candidate fit scoring."
     stack: ["Python", "Scikit-learn", "Machine Learning", "Model Evaluation"]
 
 publications:
@@ -249,22 +238,10 @@ patent:
   text: null
 
 certifications:
-  - title: "GCP Associate Cloud Engineer Certification Training"
-    issuer: "Udemy"
-    kind: "course"
-    url: "https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing"
   - title: "Machine Learning Foundations: A Case Study Approach"
     issuer: "Coursera"
     kind: "certification"
     url: "https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing"
-  - title: "JavaScript — The Complete Guide"
-    issuer: "Udemy"
-    kind: "course"
-    url: "https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing"
-  - title: "The Complete Guide to Airtable"
-    issuer: "Udemy"
-    kind: "course"
-    url: "https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing"
   - title: "Machine Learning: Clustering & Retrieval"
     issuer: "Coursera"
     kind: "certification"
@@ -273,6 +250,18 @@ certifications:
     issuer: "NPTEL"
     kind: "certification"
     url: "https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing"
+  - title: "GCP Associate Cloud Engineer Certification Training"
+    issuer: "Udemy"
+    kind: "course"
+    url: "https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing"
+  - title: "JavaScript — The Complete Guide"
+    issuer: "Udemy"
+    kind: "course"
+    url: "https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing"
+  - title: "The Complete Guide to Airtable"
+    issuer: "Udemy"
+    kind: "course"
+    url: "https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing"
 
 open_source:
   interests: []
@@ -289,7 +278,7 @@ features:
   mermaid_skill_map: false
   languages_chart: false
   recent_activity: false
-  projects_last_updated: true
+  projects_last_updated: false
   snake: false
   stats_card: false
   leetcode_block: false
