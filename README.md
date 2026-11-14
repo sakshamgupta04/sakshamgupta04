@@ -7,11 +7,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/terminal-light.svg">
-  <img alt="sakshamgupta04@github:~$ whoami&#10;name: Saksham Gupta&#10;role: Full-stack developer and ML engineer&#10;status: Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)" src="assets/terminal-dark.svg" width="800">
+  <img alt="sakshamgupta04@github:~$ whoami&#10;name: Saksham Gupta&#10;role: Software Engineer | AI/ML Developer | Full-Stack Engineer&#10;status: Open to full-time roles: Full-Stack Developer, AI/ML Engineer, Software Engineer (SDE)" src="assets/terminal-dark.svg" width="800">
 </picture>
 
 # Hey, I'm Saksham Gupta 👋
-## Full-stack developer and ML engineer
+## Software Engineer | AI/ML Developer | Full-Stack Engineer
 
 > I build full-stack products and the machine learning behind them.
 
@@ -27,7 +27,7 @@
 
 ## 👨‍💻 About Me <a id="about"></a>
 
-I'm **Saksham Gupta**, a Full-stack developer and ML engineer. I build end-to-end software systems, combining modern web technologies with practical machine learning to solve real problems.
+I'm **Saksham Gupta**, a Software Engineer | AI/ML Developer | Full-Stack Engineer. I build end-to-end software systems, combining modern web technologies with practical machine learning to solve real problems.
 
 | Profile Overview | Details |
 | :--- | :--- |
