@@ -126,6 +126,8 @@ I focus on connecting intelligent software with reliable engineering practices t
 
 - **Category:** `NLP / Full-Stack AI` &nbsp;|&nbsp; **Status:** 🚀 Shipped &nbsp;|&nbsp; ⭐ **Featured**
 - **Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>PyTorch</code>
+- 🕒 **Last Activity:** `2024-08-21`
+
 - **Technical Highlights:**
   - Developed audio ingestion and transcription workflows using captions and faster-whisper.
   - Implemented semantic search using embeddings and timestamp-linked navigation.

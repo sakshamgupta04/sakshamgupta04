@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-14T12:56:38Z",
+  "fetched_at": "2026-11-14T19:34:27Z",
   "languages": {
-    "Python": 714956,
+    "Python": 715885,
     "HTML": 79862,
     "CSS": 77329,
     "JavaScript": 238993,
@@ -10,24 +10,36 @@
     "Batchfile": 2155,
     "C++": 262664,
     "C": 98225,
-    "Jinja": 15210,
+    "Jinja": 15282,
     "Java": 1353,
     "Dockerfile": 1432
   },
   "project_last_updated": {
-    "sakshamgupta04/Farmland-Animal-Detection": "2026-11-12"
+    "sakshamgupta04/CIT-Internship-Web-Development-": "2024-08-21"
   },
   "recent_activity": [
     {
+      "description": "Pushed `2d12ea0` to `sakshamgupta04/sakshamgupta04` (`main`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/2d12ea0032c527c4b4874e8e889e8a5da115f948",
+      "relative_time": "1d ago",
+      "absolute_time": "2026-11-13 18:53:56"
+    },
+    {
+      "description": "Pushed `f4c57e9` to `sakshamgupta04/sakshamgupta04` (`main`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/f4c57e9453a6853ca61e5a4515dda0f2757f56f3",
+      "relative_time": "1d ago",
+      "absolute_time": "2026-11-13 18:47:38"
+    },
+    {
       "description": "Pushed `4e6d04c` to `sakshamgupta04/sakshamgupta04` (`main`)",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/4e6d04c321c8590227377ab8554d66467370bcda",
-      "relative_time": "31m ago",
+      "relative_time": "7h ago",
       "absolute_time": "2026-11-14 12:24:55"
     },
     {
       "description": "Pushed `34dc514` to `sakshamgupta04/sakshamgupta04` (`main`)",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/34dc5145e5282f773d3a804eef73cd682b91e658",
-      "relative_time": "17h ago",
+      "relative_time": "23h ago",
       "absolute_time": "2026-11-13 19:42:57"
     },
     {
@@ -35,18 +47,6 @@
       "url": "https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/1f46e3cf32ac0107ae2461a10fd296642b6dac03",
       "relative_time": "2d ago",
       "absolute_time": "2026-11-11 20:12:11"
-    },
-    {
-      "description": "Pushed `898041f` to `sakshamgupta04/Farmland-Animal-Detection` (`main`)",
-      "url": "https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/898041f422d59fbad300f429dc7679524da87300",
-      "relative_time": "1d ago",
-      "absolute_time": "2026-11-12 18:42:00"
-    },
-    {
-      "description": "Pushed `91bcfc1` to `sakshamgupta04/Farmland-Animal-Detection` (`main`)",
-      "url": "https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/91bcfc1a84d3bc62fc0701ab597a16a2a8484ed9",
-      "relative_time": "3d ago",
-      "absolute_time": "2026-11-10 19:12:12"
     }
   ],
   "github_stats": {
