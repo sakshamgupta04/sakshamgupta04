@@ -106,7 +106,7 @@ Hey there! I'm **Saksham Gupta**, a Full-stack developer and ML engineer. I'm pa
 |:---|:---|:---|:---|:---|
 | [**EchoNotes**](#echonotes) | 🚀 Shipped | Next.js, TypeScript, FastAPI +3 | — | — |
 | [**AI Video Interview & Emotion Analyzer**](#ai-video-interview-emotion-analyzer) | 🚀 Shipped | Next.js, Python, DeepFace +2 | — | — |
-| [**FarmGuard**](#farmguard) | 🔨 Building | Python, ONNX Runtime, OpenCV +3 | [Code](https://github.com/sakshamgupta04/Farmland-Animal-Detection) | — |
+| [**FarmGuard**](#farmguard) | 🔨 Building | Python, ONNX Runtime, OpenCV +3 | [Code](https://github.com/sakshamgupta04/Farmland-Animal-Detection) | 2026-11-12 |
 | [**PaperLens**](#paperlens) | 💡 Planned | React, TypeScript, Transformers.js +2 | — | — |
 | [**People.ai: Faculty Fit & Retention Prediction**](#people-ai) | 🚀 Shipped | Python, Scikit-learn, Pandas +1 | — | — |
 | [**Straatix Talent Exchange Platform**](#straatix-talent-exchange) | 🚀 Shipped | Next.js, React, TypeScript +2 | — | — |
@@ -339,7 +339,7 @@ flowchart LR
 
 ## ⚡ Recent Activity <a id="activity"></a>
 
-- Pushed `34dc514` to `sakshamgupta04/sakshamgupta04` (`main`) &nbsp;•&nbsp; <span title="2026-11-13 19:42:57"><em>14h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/34dc5145e5282f773d3a804eef73cd682b91e658)
+- Pushed `34dc514` to `sakshamgupta04/sakshamgupta04` (`main`) &nbsp;•&nbsp; <span title="2026-11-13 19:42:57"><em>16h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/34dc5145e5282f773d3a804eef73cd682b91e658)
 - Pushed `1f46e3c` to `sakshamgupta04/Farmland-Animal-Detection` (`main`) &nbsp;•&nbsp; <span title="2026-11-11 20:12:11"><em>2d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/1f46e3cf32ac0107ae2461a10fd296642b6dac03)
 - Pushed `898041f` to `sakshamgupta04/Farmland-Animal-Detection` (`main`) &nbsp;•&nbsp; <span title="2026-11-12 18:42:00"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/898041f422d59fbad300f429dc7679524da87300)
 - Pushed `91bcfc1` to `sakshamgupta04/Farmland-Animal-Detection` (`main`) &nbsp;•&nbsp; <span title="2026-11-10 19:12:12"><em>3d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/Farmland-Animal-Detection/commit/91bcfc1a84d3bc62fc0701ab597a16a2a8484ed9)
