@@ -221,6 +221,7 @@ class Features(StrictModel):
     goals: bool = False
     principles: bool = False
     education: bool = False
+    experience: bool = False
 
 
 class Profile(StrictModel):

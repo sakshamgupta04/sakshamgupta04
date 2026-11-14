@@ -23,7 +23,7 @@
 
 ---
 
-**Jump to:** [About](#about) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Contact](#contact)
+**Jump to:** [About](#about) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Skills](#skills) &nbsp;•&nbsp; [Contact](#contact)
 
 ---
 
@@ -187,59 +187,6 @@ flowchart LR
 
 <p align="left">
 <code>Data structures & algorithms</code> &nbsp;•&nbsp; <code>Object-oriented programming</code> &nbsp;•&nbsp; <code>System design</code></p>
-
-
----
-
-## 💼 Experience &amp; Engineering Roles <a id="experience"></a>
-
-### **SDE Intern** – Straatix Partners Labs Pvt. Ltd.
-`2026-01 — 2026-07`
-
-<details open>
-<summary>Key Contributions &amp; Impact</summary>
-
-<br>
-
-- Built and scaled React/Next.js portal features for HR users and candidates, including dynamic interview scheduling components.
-- Implemented Supabase authentication with SSO and email sign-in flows, and wrote TypeScript serverless functions to automate the referral system.
-- Led the migration of legacy systems to Google Cloud Platform, deploying services on Cloud Run and using Vertex AI for production ML pipelines.
-
-<br>
-
-**Technologies Used:** `React` &nbsp;•&nbsp; `Next.js` &nbsp;•&nbsp; `TypeScript` &nbsp;•&nbsp; `Supabase` &nbsp;•&nbsp; `GCP`
-</details>
-
-<br>
-### **AI/ML Developer Intern (Director Internship)** – Model Institute of Engineering and Technology
-`2025-02 — 2026-01`
-
-<details open>
-<summary>Key Contributions &amp; Impact</summary>
-
-<br>
-
-- Contributed to a patented AI platform for candidate evaluation and role prediction, using ML models for experience, personality (Big Five) and career-trajectory analysis.
-- Implemented peer-group segmentation for fair candidate comparison, improving role-matching accuracy through model tuning.
-
-<br>
-
-**Technologies Used:** `Python` &nbsp;•&nbsp; `Scikit-learn`
-</details>
-
-<br>
-### **Trainee, AI/ML Hands-on Training Program** – Model Institute of Engineering and Technology
-`2025-03 — 2025-03`
-
-<details open>
-<summary>Key Contributions &amp; Impact</summary>
-
-<br>
-
-- Hands-on training in data preprocessing and model building on real-world datasets.
-
-
-</details>
 
 
 

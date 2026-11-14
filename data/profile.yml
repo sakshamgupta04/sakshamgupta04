@@ -265,4 +265,5 @@ features:                                                 # each can be switched
   goals: false                 # roadmap & goals section
   principles: false            # working principles table
   education: false             # education & certifications section
+  experience: false            # experience & engineering roles section
 

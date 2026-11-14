@@ -58,7 +58,7 @@
 {% if has(profile.now) %}{% set _ = toc.append("[Now](#now)") %}{% endif %}
 {% if has(profile.projects) %}{% set _ = toc.append("[Projects](#projects)") %}{% endif %}
 {% if has(profile.skills.groups) %}{% set _ = toc.append("[Skills](#skills)") %}{% endif %}
-{% if has(profile.experience) %}{% set _ = toc.append("[Experience](#experience)") %}{% endif %}
+{% if profile.features.experience and has(profile.experience) %}{% set _ = toc.append("[Experience](#experience)") %}{% endif %}
 {% if has(recent_activity) and profile.features.recent_activity %}{% set _ = toc.append("[Activity](#activity)") %}{% endif %}
 {% if profile.features.stats_card and has(github_stats) and (has(github_stats.public_repos) or has(github_stats.total_stars)) %}{% set _ = toc.append("[GitHub Metrics](#github-stats)") %}{% endif %}
 {% if profile.features.wakatime and has(wakatime_stats) %}{% set _ = toc.append("[WakaTime](#wakatime)") %}{% endif %}
@@ -102,7 +102,7 @@
 {% include "sections/skills.md.j2" %}
 {% endif %}
 
-{% if has(profile.experience) %}
+{% if profile.features.experience and has(profile.experience) %}
 ---
 
 {% include "sections/experience.md.j2" %}

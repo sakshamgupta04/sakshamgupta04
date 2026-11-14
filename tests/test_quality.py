@@ -49,7 +49,7 @@ def test_table_of_contents_anchors_match_headings() -> None:
 
     # Find all anchor links in TOC: (#anchor-name)
     toc_anchors = re.findall(r"\(#([^\)]+)\)", toc_line)
-    assert len(toc_anchors) >= 5, "Too few TOC anchors found"
+    assert len(toc_anchors) >= 4, "Too few TOC anchors found"
 
     # Find all anchor definitions: id="anchor-name"
     defined_anchors = set(re.findall(r"""id=["']([^"']+)["']""", rendered))
