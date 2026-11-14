@@ -1,16 +1,21 @@
-## 🚀 Featured Projects &amp; Work <a id="projects"></a>
+## 🚀 $ featured.builds — Featured Projects <a id="projects"></a>
 
 {% if has(profile.projects) %}
 {% set sorted_projects = [] %}
 {% for p in profile.projects if p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
 {% for p in profile.projects if not p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
-
 {% for p in sorted_projects %}
-### {{ p.title }} <a id="{{ p.slug }}"></a>
+### {{ p.title }}{% if has(p.subtitle) %} — *{{ p.subtitle }}*{% endif %} <a id="{{ p.slug }}"></a>
+
+{% if has(p.image) %}
+<p align="center">
+  <img src="{{ p.image }}" alt="{{ p.title }} Project Screenshot" width="760">
+</p>
+{% endif %}
 
 > {{ p.tagline }}
 
-- **Status:** {{ p.status | format_project_status }}{% if p.featured %} &nbsp;|&nbsp; ⭐ **Featured**{% endif %}
+- **Category:** `{{ p.category or "Full-Stack AI" }}` &nbsp;|&nbsp; **Status:** {{ p.status | format_project_status }}{% if p.featured %} &nbsp;|&nbsp; ⭐ **Featured**{% endif %}
 
 {% if has(p.stack) %}
 - **Technologies:** {% for s in p.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
@@ -21,7 +26,7 @@
 
 {% endif %}
 {% if has(p.highlights) %}
-- **Key Highlights:**
+- **Technical Highlights:**
 {% for h in p.highlights %}
   - {{ h }}
 {% endfor %}
@@ -35,11 +40,11 @@
 
 {% endif %}
 {% set proj_links = [] %}
-{% if has(p.links.live) %}{% set _ = proj_links.append("[🔗 **Live Site**](" ~ p.links.live ~ ")") %}{% endif %}
-{% if has(p.links.demo) %}{% set _ = proj_links.append("[▶️ **Demo**](" ~ p.links.demo ~ ")") %}{% endif %}
+{% if has(p.links.live) %}{% set _ = proj_links.append("[▶️ **Live Site**](" ~ p.links.live ~ ")") %}{% endif %}
+{% if has(p.links.demo) %}{% set _ = proj_links.append("[🔍 **Case Study / Demo**](" ~ p.links.demo ~ ")") %}{% endif %}
 {% if has(p.repo) %}{% set _ = proj_links.append("[📦 **Repository**](https://github.com/" ~ p.repo ~ ")") %}{% endif %}
 {% if has(p.links.paper) %}{% set _ = proj_links.append("[📄 **Paper**](" ~ p.links.paper ~ ")") %}{% endif %}
-{% if has(p.links.video) %}{% set _ = proj_links.append("[🎥 **Video Walkthrough**](" ~ p.links.video ~ ")") %}{% endif %}
+{% if has(p.links.video) %}{% set _ = proj_links.append("[🎥 **Video**](" ~ p.links.video ~ ")") %}{% endif %}
 {% if has(proj_links) %}
 - **Project Links:** {{ proj_links | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}
 

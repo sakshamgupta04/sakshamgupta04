@@ -1,5 +1,5 @@
 {% if has(profile.publications) or profile.patent.mention %}
-## 🔬 Research &amp; Intellectual Property <a id="research"></a>
+## 🔬 $ research — Publications <a id="research"></a>
 
 {% if profile.patent.mention and has(profile.patent.text) %}
 ### Patents
@@ -8,17 +8,15 @@
 {% endif %}
 
 {% if has(profile.publications) %}
-### Publications
-
 {% for pub in profile.publications %}
-#### {{ pub.title }}
+### {{ pub.title }}
 *{{ pub.authors | join(", ") }}* &nbsp;•&nbsp; **{{ pub.venue }}** ({{ pub.year }}){% if has(pub.status) %} &nbsp;•&nbsp; *[{{ pub.status }}]*{% endif %}
 
 {% set pub_links = [] %}
-{% if has(pub.doi) %}{% set _ = pub_links.append("[🔗 DOI](https://doi.org/" ~ pub.doi ~ ")") %}{% endif %}
-{% if has(pub.pdf) %}{% set _ = pub_links.append("[📄 PDF](" ~ pub.pdf ~ ")") %}{% endif %}
+{% if has(pub.doi) %}{% set _ = pub_links.append("[🔗 **DOI**](https://doi.org/" ~ pub.doi ~ ")") %}{% endif %}
+{% if has(pub.pdf) %}{% set _ = pub_links.append("[📄 **Full Paper / PDF**](" ~ pub.pdf ~ ")") %}{% endif %}
 {% if has(pub_links) %}
-{{ pub_links | join(" &nbsp;•&nbsp; ") }}
+{{ pub_links | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}
 {% endif %}
 
 {% if has(pub.bibtex) %}
@@ -32,8 +30,12 @@
 </details>
 {% endif %}
 
+{% if not loop.last %}
+
+---
+
+{% endif %}
 {% endfor %}
 {% endif %}
 
 {% endif %}
-

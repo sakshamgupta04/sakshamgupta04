@@ -1,33 +1,25 @@
 {% if has(profile.experience) %}
-## 💼 Experience &amp; Engineering Roles <a id="experience"></a>
+## 💼 $ experience — Professional Experience <a id="experience"></a>
 
 {% for exp in profile.experience %}
-### **{{ exp.role }}** – {{ exp.org }}
-`{{ exp.start }}{% if has(exp.end) %} — {{ exp.end }}{% else %} — Present{% endif %}`
+### {{ exp.role }} <a id="exp-{{ loop.index }}"></a>
+**{{ exp.org }}**{% if has(exp.location) %} &nbsp;|&nbsp; 📍 {{ exp.location }}{% endif %} &nbsp;|&nbsp; 🗓️ `{{ exp.start }}{% if has(exp.end) %} — {{ exp.end }}{% else %} — Present{% endif %}`
 
 {% if has(exp.bullets) %}
-<details open>
-<summary>Key Contributions &amp; Impact</summary>
-
-<br>
-
 {% for bullet in exp.bullets %}
 - {{ bullet }}
 {% endfor %}
-
-{% if has(exp.stack) %}
-<br>
-
-**Technologies Used:** {% for s in exp.stack %}`{{ s }}`{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
 {% endif %}
 
-</details>
+{% if has(exp.stack) %}
+- **Technologies:** {% for s in exp.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
 {% endif %}
 
 {% if not loop.last %}
-<br>
+
+---
+
 {% endif %}
 {% endfor %}
 
 {% endif %}
-

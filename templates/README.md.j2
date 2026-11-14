@@ -29,14 +29,17 @@
 {% endif %}
 
 {% set quick_links = [] %}
-{% if has(profile.links.resume_pdf) %}
-  {% set _ = quick_links.append("[📄 Resume](" + profile.links.resume_pdf + ")") %}
-{% endif %}
 {% if has(profile.links.portfolio) %}
   {% set _ = quick_links.append("[🌐 Portfolio](" + profile.links.portfolio + ")") %}
 {% endif %}
+{% if has(profile.links.github) %}
+  {% set _ = quick_links.append("[🐙 GitHub](" + profile.links.github + ")") %}
+{% endif %}
 {% if has(profile.links.linkedin) %}
   {% set _ = quick_links.append("[💼 LinkedIn](" + profile.links.linkedin + ")") %}
+{% endif %}
+{% if has(profile.links.resume_pdf) %}
+  {% set _ = quick_links.append("[📄 Resume](" + profile.links.resume_pdf + ")") %}
 {% endif %}
 {% if has(profile.links.email) %}
   {% set _ = quick_links.append("[✉️ Email](" + profile.links.email + ")") %}
@@ -54,16 +57,18 @@
 {% set _ = toc.append("[About](#about)") %}
 {% if profile.features.start_here %}{% set _ = toc.append("[Start Here](#start-here)") %}{% endif %}
 {% if has(profile.now) %}{% set _ = toc.append("[Now](#now)") %}{% endif %}
+{% if profile.features.experience and has(profile.experience) %}{% set _ = toc.append("[Experience](#experience)") %}{% endif %}
 {% if has(profile.projects) %}{% set _ = toc.append("[Projects](#projects)") %}{% endif %}
 {% if has(profile.skills.groups) %}{% set _ = toc.append("[Skills](#skills)") %}{% endif %}
-{% if profile.features.experience and has(profile.experience) %}{% set _ = toc.append("[Experience](#experience)") %}{% endif %}
+{% if has(profile.expertise) %}{% set _ = toc.append("[Focus Areas](#expertise)") %}{% endif %}
 {% if has(recent_activity) and profile.features.recent_activity %}{% set _ = toc.append("[Activity](#activity)") %}{% endif %}
 {% if profile.features.stats_card and has(github_stats) and (has(github_stats.public_repos) or has(github_stats.total_stars)) %}{% set _ = toc.append("[GitHub Metrics](#github-stats)") %}{% endif %}
 {% if profile.features.wakatime and has(wakatime_stats) %}{% set _ = toc.append("[WakaTime](#wakatime)") %}{% endif %}
 {% if profile.features.snake %}{% set _ = toc.append("[Contributions](#contributions)") %}{% endif %}
-{% if profile.features.education and (has(profile.identity.education) or has(profile.certifications)) %}{% set _ = toc.append("[Education](#education)") %}{% endif %}
-{% if profile.features.leetcode_block and (has(profile.leetcode.solved) or has(profile.leetcode.rating)) %}{% set _ = toc.append("[LeetCode](#leetcode)") %}{% endif %}
 {% if has(profile.publications) or profile.patent.mention %}{% set _ = toc.append("[Research](#research)") %}{% endif %}
+{% if profile.features.education and has(profile.certifications) %}{% set _ = toc.append("[Certifications](#certifications)") %}{% endif %}
+{% if profile.features.education and has(profile.identity.education) %}{% set _ = toc.append("[Education](#education)") %}{% endif %}
+{% if profile.features.leetcode_block and (has(profile.leetcode.solved) or has(profile.leetcode.rating)) %}{% set _ = toc.append("[LeetCode](#leetcode)") %}{% endif %}
 {% if profile.features.blog_rss and has(blog_posts) %}{% set _ = toc.append("[Articles](#blog)") %}{% endif %}
 {% if profile.features.goals and has(profile.goals) %}{% set _ = toc.append("[Roadmap &amp; Goals](#goals)") %}{% endif %}
 {% if profile.features.principles and has(profile.principles) %}{% set _ = toc.append("[Principles](#principles)") %}{% endif %}
@@ -88,6 +93,12 @@
 {% include "sections/now.md.j2" %}
 {% endif %}
 
+{% if profile.features.experience and has(profile.experience) %}
+---
+
+{% include "sections/experience.md.j2" %}
+{% endif %}
+
 {% if has(profile.projects) %}
 ---
 
@@ -100,76 +111,80 @@
 {% include "sections/skills.md.j2" %}
 {% endif %}
 
-{% if profile.features.experience and has(profile.experience) %}
+{% if has(profile.expertise) %}
 ---
 
-{% include "sections/experience.md.j2" %}
+{% include "sections/expertise.md.j2" %}
 {% endif %}
 
-{%- if has(recent_activity) and profile.features.recent_activity %}
-
+{% if has(recent_activity) and profile.features.recent_activity %}
 ---
 
 {% include "sections/activity.md.j2" %}
-{%- endif %}
-{%- if profile.features.stats_card and has(github_stats) and (has(github_stats.public_repos) or has(github_stats.total_stars)) %}
+{% endif %}
 
+{% if profile.features.stats_card and has(github_stats) and (has(github_stats.public_repos) or has(github_stats.total_stars)) %}
 ---
 
 {% include "sections/stats_card.md.j2" %}
-{%- endif %}
-{%- if profile.features.wakatime and has(wakatime_stats) %}
+{% endif %}
 
+{% if profile.features.wakatime and has(wakatime_stats) %}
 ---
 
 {% include "sections/wakatime.md.j2" %}
-{%- endif %}
-{%- if profile.features.snake %}
+{% endif %}
 
+{% if profile.features.snake %}
 ---
 
 {% include "sections/snake.md.j2" %}
-{%- endif %}
-{%- if profile.features.education and (has(profile.identity.education) or has(profile.certifications)) %}
+{% endif %}
 
----
-
-{% include "sections/education.md.j2" %}
-{%- endif %}
-{%- if profile.features.leetcode_block and (has(profile.leetcode.solved) or has(profile.leetcode.rating)) %}
-
----
-
-{% include "sections/leetcode.md.j2" %}
-{%- endif %}
-{%- if has(profile.publications) or profile.patent.mention %}
-
+{% if has(profile.publications) or profile.patent.mention %}
 ---
 
 {% include "sections/research.md.j2" %}
-{%- endif %}
-{%- if profile.features.blog_rss and has(blog_posts) %}
+{% endif %}
 
+{% if profile.features.education and has(profile.certifications) %}
+---
+
+{% include "sections/certifications.md.j2" %}
+{% endif %}
+
+{% if profile.features.education and has(profile.identity.education) %}
+---
+
+{% include "sections/education.md.j2" %}
+{% endif %}
+
+{% if profile.features.leetcode_block and (has(profile.leetcode.solved) or has(profile.leetcode.rating)) %}
+---
+
+{% include "sections/leetcode.md.j2" %}
+{% endif %}
+
+{% if profile.features.blog_rss and has(blog_posts) %}
 ---
 
 {% include "sections/blog.md.j2" %}
-{%- endif %}
-{%- if profile.features.goals and has(profile.goals) %}
+{% endif %}
 
+{% if profile.features.goals and has(profile.goals) %}
 ---
 
 {% include "sections/goals.md.j2" %}
-{%- endif %}
-{%- if profile.features.principles and has(profile.principles) %}
+{% endif %}
 
+{% if profile.features.principles and has(profile.principles) %}
 ---
 
 {% include "sections/principles.md.j2" %}
-{%- endif %}
+{% endif %}
 
-{%- if has(profile.links) %}
-
+{% if has(profile.links) %}
 ---
 
 {% include "sections/contact.md.j2" %}
-{%- endif %}
+{% endif %}
