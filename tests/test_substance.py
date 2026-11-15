@@ -139,7 +139,7 @@ def test_education_and_certifications_formatting(profile_fixture: Profile) -> No
     assert format_cert_kind("course") == "Course"
 
     # Verify credential links: only when URL is present
-    assert 'href="https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing"' in output
+    assert "[Verify Credential](https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing)" in output
 
 
 def test_status_formatting_helpers() -> None:

@@ -1,36 +1,17 @@
 {% if profile.features.education and has(profile.certifications) %}
 ## 🎖️ Certifications &amp; Achievements <a id="certifications"></a>
 
+| Machine Learning &amp; Python | Cloud, Web &amp; Tools |
+| :--- | :--- |
 {% set categories = namespace(ml=[], other=[]) %}
 {% for cert in profile.certifications %}
-{% set entry %}<strong>{{ cert.title }}</strong><br><sub>{{ cert.issuer }} · {{ cert.kind | format_cert_kind }}{% if has(cert.url) %} · <a href="{{ cert.url }}">View credential ↗</a>{% endif %}</sub>{% endset %}
+{% set entry %}**{{ cert.title }}**<br><sub>{{ cert.issuer }} · {{ cert.kind | format_cert_kind }}{% if has(cert.url) %} · [View credential]({{ cert.url }}){% endif %}</sub>{% endset %}
 {% if cert.issuer in ['Coursera', 'NPTEL'] %}{% set _ = categories.ml.append(entry | trim) %}{% else %}{% set _ = categories.other.append(entry | trim) %}{% endif %}
 {% endfor %}
-<table>
-  <thead>
-    <tr>
-      <th width="50%" align="left">🧠 AI &amp; Machine Learning</th>
-      <th width="50%" align="left">☁️ Cloud &amp; Development</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td valign="top">
-        {% for entry in categories.ml %}
-        <p>{{ entry }}</p>
-        {% endfor %}
-      </td>
-      <td valign="top">
-        {% for entry in categories.other %}
-        <p>{{ entry }}</p>
-        {% endfor %}
-      </td>
-    </tr>
-  </tbody>
-</table>
+{% for index in range([categories.ml | length, categories.other | length] | max) %}
+| {{ categories.ml[index] if index < categories.ml | length else '—' }} | {{ categories.other[index] if index < categories.other | length else '—' }} |
+{% endfor %}
 
-> 🏆 **Practical AI/ML Training** · Model Institute of Engineering and Technology · March 2025
->
-> AI/ML Hands-on Training Program
+**🏆 Hands-on Training:** AI/ML Hands-on Training Program · Model Institute of Engineering and Technology · March 2025
 
 {% endif %}

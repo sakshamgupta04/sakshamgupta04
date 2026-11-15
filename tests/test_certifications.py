@@ -17,14 +17,11 @@ def test_certification_showcase_preserves_all_credentials() -> None:
         dynamic_data={},
     )
     section = rendered.split("## 🎖️ Certifications &amp; Achievements", 1)[1].split("\n---", 1)[0]
-    assert "🧠 AI &amp; Machine Learning" in section
-    assert "☁️ Cloud &amp; Development" in section
-    assert section.count('<td valign="top">') == 2
+    assert "| Machine Learning &amp; Python | Cloud, Web &amp; Tools |" in section
     for credential in profile.certifications:
         assert credential.title in section
         if credential.url:
             assert section.count(credential.url) == 1
-    assert section.count("View credential ↗</a>") == 6
-    assert "Practical AI/ML Training" in section
+    assert section.count("[View credential]") == 6
     assert "AI/ML Hands-on Training Program" in section
     assert "March 2025" in section
