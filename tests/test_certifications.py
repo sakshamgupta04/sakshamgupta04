@@ -39,7 +39,7 @@ def test_certification_svgs_have_separate_cards_in_all_variants() -> None:
             svg = render_certification_svg(profile, dark=dark, mobile=mobile)
             root = ET.fromstring(svg)
             rectangles = root.findall("{http://www.w3.org/2000/svg}rect")
-            assert len(rectangles) == len(profile.certifications) + 1
+            assert len(rectangles) == 2 * len(profile.certifications) + 1
             assert 'aria-labelledby="title desc"' in svg
             for cert in profile.certifications:
                 assert cert.issuer.upper() in svg
