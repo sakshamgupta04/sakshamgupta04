@@ -5,51 +5,53 @@
 {% for p in profile.projects if p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
 {% for p in profile.projects if not p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
 {% for p in sorted_projects[:3] %}
-<table width="100%">
-  <tr>
-    <td width="38%" valign="top" align="center" style="padding: 12px 14px 12px 12px;">
-      <a id="{{ p.slug }}"></a>
-      {% if has(p.image) %}
-      <img src="{{ p.image }}" alt="{{ p.title }}" width="100%" style="border-radius: 8px; display: block; border: 1px solid #293B59;">
-      {% endif %}
-    </td>
-    <td width="62%" valign="top" style="padding: 12px 14px 12px 0;">
-      <h3 style="margin-top: 0; margin-bottom: 4px;">{{ p.title }}{% if has(p.subtitle) %} &nbsp;<sub>{{ p.subtitle }}</sub>{% endif %}</h3>
-      <p style="margin-top: 4px; margin-bottom: 8px;">{{ p.tagline }}</p>
-      {% if has(p.highlights) %}
-      <b>Key Engineering Highlights:</b>
-      <ul>
-      {% for h in p.highlights[:2] %}
-        <li>{{ h }}</li>
-      {% endfor %}
-      </ul>
-      {% endif %}
-      {% if has(p.results) %}
-      <b>Measured Evaluation &amp; Benchmarks:</b>
-      <ul>
-      {% for r in p.results %}
-        <li>{{ r }}</li>
-      {% endfor %}
-      </ul>
-      {% endif %}
-      {% if has(p.stack) %}
-      <p style="margin-top: 8px; margin-bottom: 8px;">
-      {% for s in p.stack[:4] %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
-      </p>
-      {% endif %}
-      {% set proj_links = [] %}
-      {% if has(p.links.demo) %}{% set _ = proj_links.append("<a href=\"" ~ p.links.demo ~ "\">🔍 <b>Case Study ↗</b></a>") %}{% endif %}
-      {% if has(p.links.live) %}{% set _ = proj_links.append("<a href=\"" ~ p.links.live ~ "\">▶️ <b>Live Site ↗</b></a>") %}{% endif %}
-      {% if has(p.repo) %}{% set _ = proj_links.append("<a href=\"https://github.com/" ~ p.repo ~ "\">📦 <b>Source Code ↗</b></a>") %}{% endif %}
-      {% if has(proj_links) %}
-      <p style="margin-top: 8px; margin-bottom: 0;">
-      {{ proj_links | join(" &nbsp;&nbsp;|&nbsp;&nbsp; ") }}
-      </p>
-      {% endif %}
-    </td>
-  </tr>
-</table>
+### {{ p.title }}{% if has(p.subtitle) %} — {{ p.subtitle }}{% endif %} <a id="{{ p.slug }}"></a>
 
+{% if has(p.image) %}
+<p align="center">
+  <img src="{{ p.image }}" alt="{{ p.title }}" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
+</p>
+{% endif %}
+
+{{ p.tagline }}
+
+{% if has(p.highlights) %}
+**Key Engineering Highlights:**
+
+
+{% for h in p.highlights[:2] %}
+- {{ h }}
+{% endfor %}
+{% endif %}
+
+{% if has(p.results) %}
+**Measured Evaluation &amp; Benchmarks:**
+
+
+{% for r in p.results %}
+- {{ r }}
+{% endfor %}
+{% endif %}
+
+{% if has(p.stack) %}
+**Technologies:** {% for s in p.stack[:5] %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
+{% endif %}
+
+{% set proj_links = [] %}
+{% if has(p.links.demo) %}{% set _ = proj_links.append("<a href=\"" ~ p.links.demo ~ "\">🔍 <b>Case Study ↗</b></a>") %}{% endif %}
+{% if has(p.links.live) %}{% set _ = proj_links.append("<a href=\"" ~ p.links.live ~ "\">▶️ <b>Live Site ↗</b></a>") %}{% endif %}
+{% if has(p.repo) %}{% set _ = proj_links.append("<a href=\"https://github.com/" ~ p.repo ~ "\">📦 <b>Source Code ↗</b></a>") %}{% endif %}
+{% if has(proj_links) %}
+<p style="margin-top: 10px; margin-bottom: 0;">
+{{ proj_links | join(" &nbsp;&nbsp;|&nbsp;&nbsp; ") }}
+</p>
+{% endif %}
+
+{% if not loop.last %}
+
+---
+
+{% endif %}
 {% endfor %}
 
 {% if sorted_projects | length > 3 %}

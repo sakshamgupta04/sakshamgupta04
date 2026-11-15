@@ -1,33 +1,23 @@
 {% if has(profile.experience) %}
 ## 💼 Professional Experience <a id="experience"></a>
 
-<table width="100%">
 {% for exp in profile.experience %}
-  <tr>
-    <td width="48" valign="top" align="center" style="border-right: 2px solid #8B5CF6; padding: 14px 10px;">
-      <div style="width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 8px; background-color: #17243C; border: 1px solid {% if 'Straatix' in exp.org %}#8B5CF6{% else %}#2DD4BF{% endif %}; font-size: 16px; font-weight: 800; color: {% if 'Straatix' in exp.org %}#8B5CF6{% else %}#2DD4BF{% endif %};">
-        {% if 'Straatix' in exp.org %}S{% else %}M{% endif %}
-      </div>
-    </td>
-    <td valign="top" style="padding: 12px 16px;">
-      <h3 style="margin-top: 0; margin-bottom: 2px;">{{ exp.org }} <a id="exp-{{ loop.index }}"></a></h3>
-      <p style="margin-top: 0; margin-bottom: 6px; color: #38BDF8; font-weight: 600;">
-        {{ exp.role }}
-        {% if has(exp.start) and has(exp.end) %}&nbsp;&nbsp;<sub>🗓️ {{ exp.start }} — {{ exp.end }}</sub>{% endif %}
-        {% if has(exp.location) %}&nbsp;&nbsp;<sub>📍 {{ exp.location }}</sub>{% endif %}
-      </p>
-      <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.55;">
-      {% for b in exp.bullets %}
-        <li>{{ b }}</li>
-      {% endfor %}
-      </ul>
-      {% if has(exp.stack) %}
-      <p style="margin: 8px 0 0 0; font-size: 12px;">
-        <span style="color: #A5B4CF; font-weight: 600;">Tech:</span> &nbsp;{% for s in exp.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;{% endif %}{% endfor %}
-      </p>
-      {% endif %}
-    </td>
-  </tr>
+### {{ exp.org }} <a id="exp-{{ loop.index }}"></a>
+**{{ exp.role }}**{% if has(exp.start) and has(exp.end) %} &nbsp;•&nbsp; 🗓️ {{ exp.start }} — {{ exp.end }}{% endif %}{% if has(exp.location) %} &nbsp;•&nbsp; 📍 {{ exp.location }}{% endif %}
+
+
+{% for b in exp.bullets %}
+- {{ b }}
 {% endfor %}
-</table>
+
+{% if has(exp.stack) %}
+**Technologies:** {% for s in exp.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
+{% endif %}
+
+{% if not loop.last %}
+
+---
+
+{% endif %}
+{% endfor %}
 {% endif %}

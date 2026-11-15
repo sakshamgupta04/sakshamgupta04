@@ -1,51 +1,9 @@
-<table width="100%">
-<tr>
-<td width="58%" valign="top" style="border: 0; padding: 0 12px 0 0;">
+## 👤 About Me <a id="about"></a>
 
-<h3 style="margin-top: 0; margin-bottom: 8px;">👤 About Me <a id="about"></a></h3>
+I'm **{{ profile.identity.name }}**, a Computer Science and Engineering graduate{% if has(profile.identity.education) %} from **{{ profile.identity.education[0].school }}**{% endif %} specializing in Artificial Intelligence and Machine Learning.
 
-<img src="assets/layers-icon.svg" align="right" width="95" alt="Engineering Layers" style="margin: 0 0 8px 12px; display: block;">
-
-<p style="margin: 0 0 8px 0; font-size: 13.5px; line-height: 1.55;">I'm <b>{{ profile.identity.name }}</b>, a Computer Science and Engineering graduate{% if has(profile.identity.education) %} from <b>{{ profile.identity.education[0].school }}</b>{% endif %} specializing in Artificial Intelligence and Machine Learning.</p>
-
-<p style="margin: 0 0 8px 0; font-size: 13px; line-height: 1.55; color: #A5B4CF;">I build full-stack applications, develop AI/ML solutions, and deploy scalable systems on the cloud. I enjoy turning ideas into practical, end-to-end products that solve real-world problems with reliable engineering practices.</p>
+{{ profile.identity.summary }}
 
 {% if has(profile.identity.roles_targeted) -%}
-<p style="margin: 6px 0 0 0; font-size: 12px; color: #F4F7FF;"><b>🎯 Target Roles:</b> {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }}</p>
-{% endif -%}
-
-</td>
-<td width="42%" valign="top" style="border: 0; padding: 0;">
-
-<h3 style="margin-top: 0; margin-bottom: 8px;">⚡ Quick Highlights</h3>
-
-<table width="100%">
-  <tr>
-    <td width="50%" align="center" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px; padding: 10px 4px;">
-      <div style="font-size: 15px; font-weight: 700; color: #8B5CF6; margin-bottom: 2px;">&lt;/&gt;</div>
-      <div style="font-size: 18px; font-weight: 800; color: #F4F7FF;">2+</div>
-      <div style="font-size: 11px; color: #A5B4CF;">Internships</div>
-    </td>
-    <td width="50%" align="center" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px; padding: 10px 4px;">
-      <div style="font-size: 15px; margin-bottom: 2px;">📦</div>
-      <div style="font-size: 18px; font-weight: 800; color: #F4F7FF;">3+</div>
-      <div style="font-size: 11px; color: #A5B4CF;">Major Projects</div>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px; padding: 10px 4px;">
-      <div style="font-size: 15px; margin-bottom: 2px;">📄</div>
-      <div style="font-size: 18px; font-weight: 800; color: #F4F7FF;">2</div>
-      <div style="font-size: 11px; color: #A5B4CF;">Research Papers</div>
-    </td>
-    <td width="50%" align="center" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px; padding: 10px 4px;">
-      <div style="font-size: 15px; margin-bottom: 2px;">🏅</div>
-      <div style="font-size: 18px; font-weight: 800; color: #F4F7FF;">6</div>
-      <div style="font-size: 11px; color: #A5B4CF;">Certifications</div>
-    </td>
-  </tr>
-</table>
-
-</td>
-</tr>
-</table>
+**🎯 Target Roles:** {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }}
+{%- endif %}
