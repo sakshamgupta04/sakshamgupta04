@@ -71,114 +71,190 @@
 </div>
 {% endif %}
 
+<br>
+
 ---
+
+<br>
 
 {% include "sections/whoami.md.j2" %}
 
 {% if profile.features.start_here %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/start_here.md.j2" %}
 {% endif %}
 
 {% if has(profile.now) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/now.md.j2" %}
 {% endif %}
 
 {% if profile.features.experience and has(profile.experience) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/experience.md.j2" %}
 {% endif %}
 
 {% if has(profile.projects) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/projects.md.j2" %}
 {% endif %}
 
 {% if has(profile.skills.groups) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/skills.md.j2" %}
 {% endif %}
 
 {% if has(profile.expertise) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/expertise.md.j2" %}
 {% endif %}
 
 {% if has(recent_activity) and profile.features.recent_activity %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/activity.md.j2" %}
 {% endif %}
 
 {% if profile.features.stats_card and has(github_stats) and (has(github_stats.public_repos) or has(github_stats.total_stars)) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/stats_card.md.j2" %}
 {% endif %}
 
 {% if profile.features.wakatime and has(wakatime_stats) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/wakatime.md.j2" %}
 {% endif %}
 
 {% if profile.features.snake %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/snake.md.j2" %}
 {% endif %}
 
 {% if has(profile.publications) or profile.patent.mention %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/research.md.j2" %}
 {% endif %}
 
 {% if profile.features.education and has(profile.certifications) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/certifications.md.j2" %}
 {% endif %}
 
 {% if profile.features.education and has(profile.identity.education) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/education.md.j2" %}
 {% endif %}
 
 {% if has(profile.links) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/contact.md.j2" %}
 {% endif %}
 
 {% if profile.features.leetcode_block and (has(profile.leetcode.solved) or has(profile.leetcode.rating)) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/leetcode.md.j2" %}
 {% endif %}
 
 {% if profile.features.blog_rss and has(blog_posts) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/blog.md.j2" %}
 {% endif %}
 
 {% if profile.features.goals and has(profile.goals) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/goals.md.j2" %}
 {% endif %}
 
 {% if profile.features.principles and has(profile.principles) %}
+<br>
+
 ---
+
+<br>
 
 {% include "sections/principles.md.j2" %}
 {% endif %}

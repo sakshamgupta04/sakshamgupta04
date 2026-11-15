@@ -25,7 +25,11 @@
 
 </div>
 
+<br>
+
 ---
+
+<br>
 
 ## 👤 About Me <a id="about"></a>
 
@@ -36,7 +40,11 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 **🎯 Target Roles:** Full-Stack / Web Developer &nbsp;•&nbsp; AI/ML Engineer &nbsp;•&nbsp; Software Engineer (SDE)
 
 
+<br>
+
 ---
+
+<br>
 
 ## 💼 Professional Experience <a id="experience"></a>
 
@@ -60,17 +68,23 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 **Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Machine Learning</code> &nbsp;•&nbsp; <code>Model Evaluation</code>
 
+<br>
+
 ---
+
+<br>
 
 ## ⚡ Featured Projects <a id="projects"></a>
 
-### People.ai — Faculty Fit & Retention Prediction <a id="people-ai"></a>
-
-<p align="center">
+<a id="people-ai"></a>
+<p align="center" style="margin-bottom: 16px;">
   <img src="assets/projects/people-ai.png" alt="People.ai" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
 </p>
 
-An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.
+### People.ai — Faculty Fit & Retention Prediction
+<p style="margin: 8px 0 12px 0; font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+  An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.
+</p>
 
 **Key Engineering Highlights:**
 
@@ -79,21 +93,29 @@ An AI-driven faculty evaluation system designed to assess role suitability and p
 - Trained and evaluated supervised classification models for faculty role fit and retention prediction.
 
 
-**Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Gemini</code> &nbsp;•&nbsp; <code>Model Evaluation</code>
-<p style="margin-top: 10px; margin-bottom: 0;">
+<p style="margin: 12px 0 8px 0;">
+  <b>Technologies:</b> &nbsp;<code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Gemini</code> &nbsp;•&nbsp; <code>Model Evaluation</code></p>
+
+<p style="margin-top: 14px; margin-bottom: 0;">
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit">🔍 <b>Case Study ↗</b></a>
 </p>
 
 
+<br>
+
 ---
 
-### AI Video Interview & Emotion Analyzer — Real-Time Facial Expression & Emotion Telemetry <a id="ai-video-interview-emotion-analyzer"></a>
+<br>
 
-<p align="center">
+<a id="ai-video-interview-emotion-analyzer"></a>
+<p align="center" style="margin-bottom: 16px;">
   <img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
 </p>
 
-A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.
+### AI Video Interview & Emotion Analyzer — Real-Time Facial Expression & Emotion Telemetry
+<p style="margin: 8px 0 12px 0; font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+  A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.
+</p>
 
 **Key Engineering Highlights:**
 
@@ -102,21 +124,29 @@ A web-based interview analysis platform that records video responses and process
 - Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.
 
 
-**Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>Python</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Supabase</code>
-<p style="margin-top: 10px; margin-bottom: 0;">
+<p style="margin: 12px 0 8px 0;">
+  <b>Technologies:</b> &nbsp;<code>Next.js</code> &nbsp;•&nbsp; <code>Python</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Supabase</code></p>
+
+<p style="margin-top: 14px; margin-bottom: 0;">
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer">🔍 <b>Case Study ↗</b></a>
 </p>
 
 
+<br>
+
 ---
 
-### EchoNotes — AI-Powered Transcription & Semantic Search <a id="echonotes"></a>
+<br>
 
-<p align="center">
+<a id="echonotes"></a>
+<p align="center" style="margin-bottom: 16px;">
   <img src="assets/projects/echonotes.png" alt="EchoNotes" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
 </p>
 
-An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.
+### EchoNotes — AI-Powered Transcription & Semantic Search
+<p style="margin: 8px 0 12px 0; font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+  An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.
+</p>
 
 **Key Engineering Highlights:**
 
@@ -125,37 +155,66 @@ An AI-powered application that converts audio and video content into structured 
 - Implemented semantic search using embeddings and timestamp-linked navigation.
 
 
-**Technologies:** <code>Next.js</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>Supabase</code>
-<p style="margin-top: 10px; margin-bottom: 0;">
+<p style="margin: 12px 0 8px 0;">
+  <b>Technologies:</b> &nbsp;<code>Next.js</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>Supabase</code></p>
+
+<p style="margin-top: 14px; margin-bottom: 0;">
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes">🔍 <b>Case Study ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://youtube-video-summarizer-sage.vercel.app/">▶️ <b>Live Site ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer">📦 <b>Source Code ↗</b></a>
 </p>
 
 
 
 
+<br>
+
 ---
+
+<br>
 
 ## 🛠️ Technical Stack <a id="skills"></a>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/tech-grid-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/tech-grid-light.svg">
-  <img alt="Technical Stack" src="assets/tech-grid-dark.svg" width="100%" style="display: block; margin-bottom: 12px;">
-</picture>
 
 
 
 
+<table width="100%">
+  <tr>
+    <td style="padding: 14px 18px; border: 0;">
+      <h3 style="margin: 0 0 8px 0; color: #8B5CF6; font-size: 15px;">🔤 Languages</h3>
+      <code>Python</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>JavaScript</code> &nbsp;•&nbsp; <code>C++</code> &nbsp;•&nbsp; <code>Java</code> &nbsp;•&nbsp; <code>SQL</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #38BDF8; font-size: 15px;">🌐 Frontend &amp; Backend</h3>
+      <code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>Node.js</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>REST APIs</code> &nbsp;•&nbsp; <code>Supabase Serverless Functions</code> &nbsp;•&nbsp; <code>HTML5</code> &nbsp;•&nbsp; <code>CSS3</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #A78BFA; font-size: 15px;">🧠 AI &amp; Machine Learning</h3>
+      <code>PyTorch</code> &nbsp;•&nbsp; <code>TensorFlow</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Pandas</code> &nbsp;•&nbsp; <code>NumPy</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #2DD4BF; font-size: 15px;">☁️ Data &amp; Cloud</h3>
+      <code>Google Cloud Platform</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>PostgreSQL</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>Supabase Storage</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #38BDF8; font-size: 15px;">⚙️ DevOps &amp; Tooling</h3>
+      <code>Docker</code> &nbsp;•&nbsp; <code>GitHub Actions</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code> &nbsp;•&nbsp; <code>Git</code> &nbsp;•&nbsp; <code>GitHub</code> &nbsp;•&nbsp; <code>VS Code</code> &nbsp;•&nbsp; <code>Jupyter Notebook</code>
+    </td>
+  </tr>
+</table>
 
-- **Languages:** Python, C++, Java, JavaScript, TypeScript, SQL
-- **Frontend:** React, Next.js, HTML, CSS
-- **Backend & APIs:** Node.js, REST APIs, Supabase Serverless Functions, FastAPI
-- **Databases:** Supabase, PostgreSQL, Supabase Auth, Supabase Storage
-- **AI/ML:** Scikit-learn, TensorFlow, PyTorch, OpenCV, DeepFace, Pandas, NumPy
-- **Cloud & DevOps:** Google Cloud Platform, Cloud Run, Vertex AI, Docker, GitHub Actions, Workload Identity Federation
-- **Developer Tools:** Git, GitHub, VS Code, Jupyter Notebook, Airtable, Claude
+<br>
 
 ---
+
+<br>
 
 ## 🎯 Core Focus Areas <a id="expertise"></a>
 
@@ -171,7 +230,11 @@ Containerizing microservices with Docker and deploying serverless workloads to G
 
 
 
+<br>
+
 ---
+
+<br>
 
 ## 📖 Research Publications <a id="research"></a>
 
@@ -189,7 +252,11 @@ Containerizing microservices with Docker and deploying serverless workloads to G
 
 
 
+<br>
+
 ---
+
+<br>
 
 ## 🎖️ Certifications &amp; Achievements <a id="certifications"></a>
 
@@ -203,16 +270,24 @@ Containerizing microservices with Docker and deploying serverless workloads to G
 > 🏆 **Hands-on Training:** AI/ML Hands-on Training Program, Model Institute of Engineering and Technology (March 2025).
 
 
+<br>
+
 ---
+
+<br>
 
 ## 🎓 Education <a id="education"></a>
 
 ### Model Institute of Engineering and Technology, Jammu
 **B.Tech in Computer Science & Engineering (AI/ML)** &nbsp;•&nbsp; 🗓️ 2022 — 2026
-> **Academic Standing:** CGPA 8.5/10 (First Class with Distinction)
+> **Academic Standing:** CGPA 8.5/10
 
+
+<br>
 
 ---
+
+<br>
 
 ## 🚀 Let's Connect <a id="contact"></a>
 

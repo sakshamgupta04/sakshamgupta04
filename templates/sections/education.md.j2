@@ -6,7 +6,7 @@
 **{{ edu.degree }}**{% if has(edu.start) and has(edu.end) %} &nbsp;•&nbsp; 🗓️ {{ edu.start }} — {{ edu.end }}{% endif %}{% if has(edu.location) %} &nbsp;•&nbsp; 📍 {{ edu.location }}{% endif %}
 
 {% if has(edu.score) %}
-> **Academic Standing:** CGPA {{ edu.score }} (First Class with Distinction)
+> **Academic Standing:** CGPA {{ edu.score }}
 {% endif %}
 {% endfor %}
 

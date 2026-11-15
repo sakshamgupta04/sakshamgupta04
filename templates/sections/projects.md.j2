@@ -5,15 +5,18 @@
 {% for p in profile.projects if p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
 {% for p in profile.projects if not p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
 {% for p in sorted_projects[:3] %}
-### {{ p.title }}{% if has(p.subtitle) %} — {{ p.subtitle }}{% endif %} <a id="{{ p.slug }}"></a>
-
+<a id="{{ p.slug }}"></a>
 {% if has(p.image) %}
-<p align="center">
+<p align="center" style="margin-bottom: 16px;">
   <img src="{{ p.image }}" alt="{{ p.title }}" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
 </p>
 {% endif %}
 
-{{ p.tagline }}
+### {{ p.title }}{% if has(p.subtitle) %} — {{ p.subtitle }}{% endif %}
+
+<p style="margin: 8px 0 12px 0; font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+  {{ p.tagline }}
+</p>
 
 {% if has(p.highlights) %}
 **Key Engineering Highlights:**
@@ -34,7 +37,9 @@
 {% endif %}
 
 {% if has(p.stack) %}
-**Technologies:** {% for s in p.stack[:5] %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
+<p style="margin: 12px 0 8px 0;">
+  <b>Technologies:</b> &nbsp;{% for s in p.stack[:5] %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
+</p>
 {% endif %}
 
 {% set proj_links = [] %}
@@ -42,14 +47,18 @@
 {% if has(p.links.live) %}{% set _ = proj_links.append("<a href=\"" ~ p.links.live ~ "\">▶️ <b>Live Site ↗</b></a>") %}{% endif %}
 {% if has(p.repo) %}{% set _ = proj_links.append("<a href=\"https://github.com/" ~ p.repo ~ "\">📦 <b>Source Code ↗</b></a>") %}{% endif %}
 {% if has(proj_links) %}
-<p style="margin-top: 10px; margin-bottom: 0;">
+<p style="margin-top: 14px; margin-bottom: 0;">
 {{ proj_links | join(" &nbsp;&nbsp;|&nbsp;&nbsp; ") }}
 </p>
 {% endif %}
 
 {% if not loop.last %}
 
+<br>
+
 ---
+
+<br>
 
 {% endif %}
 {% endfor %}

@@ -1,11 +1,5 @@
 ## 🛠️ Technical Stack <a id="skills"></a>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/tech-grid-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/tech-grid-light.svg">
-  <img alt="Technical Stack" src="assets/tech-grid-dark.svg" width="100%" style="display: block; margin-bottom: 12px;">
-</picture>
-
 {% if has(mermaid_skill_map) and profile.features.mermaid_skill_map %}
 <p><b>Skill-to-Project Architecture Graph</b></p>
 {{ mermaid_skill_map }}
@@ -45,10 +39,37 @@
 {% endif %}
 {% endfor %}
 {% else %}
-{% for group in profile.skills.groups %}
-{% if has(group.items) %}
-- **{{ group.name }}:** {{ group.items | map(attribute='name') | join(', ') }}
-{% endif %}
-{% endfor %}
+<table width="100%">
+  <tr>
+    <td style="padding: 14px 18px; border: 0;">
+      <h3 style="margin: 0 0 8px 0; color: #8B5CF6; font-size: 15px;">🔤 Languages</h3>
+      <code>Python</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>JavaScript</code> &nbsp;•&nbsp; <code>C++</code> &nbsp;•&nbsp; <code>Java</code> &nbsp;•&nbsp; <code>SQL</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #38BDF8; font-size: 15px;">🌐 Frontend &amp; Backend</h3>
+      <code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>Node.js</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>REST APIs</code> &nbsp;•&nbsp; <code>Supabase Serverless Functions</code> &nbsp;•&nbsp; <code>HTML5</code> &nbsp;•&nbsp; <code>CSS3</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #A78BFA; font-size: 15px;">🧠 AI &amp; Machine Learning</h3>
+      <code>PyTorch</code> &nbsp;•&nbsp; <code>TensorFlow</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Pandas</code> &nbsp;•&nbsp; <code>NumPy</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #2DD4BF; font-size: 15px;">☁️ Data &amp; Cloud</h3>
+      <code>Google Cloud Platform</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>PostgreSQL</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>Supabase Storage</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #38BDF8; font-size: 15px;">⚙️ DevOps &amp; Tooling</h3>
+      <code>Docker</code> &nbsp;•&nbsp; <code>GitHub Actions</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code> &nbsp;•&nbsp; <code>Git</code> &nbsp;•&nbsp; <code>GitHub</code> &nbsp;•&nbsp; <code>VS Code</code> &nbsp;•&nbsp; <code>Jupyter Notebook</code>
+    </td>
+  </tr>
+</table>
 {% endif %}
 {% endif %}
