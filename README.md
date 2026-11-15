@@ -208,13 +208,32 @@ Containerizing microservices with Docker and deploying serverless workloads to G
 
 ## 🎖️ Certifications &amp; Achievements <a id="certifications"></a>
 
-| Machine Learning &amp; Python | Cloud, Web &amp; Tools |
-| :--- | :--- |
-| **Machine Learning Foundations: A Case Study Approach**<br><sub>Coursera · Certification · [View credential](https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing)</sub> | **GCP Associate Cloud Engineer Certification Training**<br><sub>Udemy · Course · [View credential](https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing)</sub> |
-| **Machine Learning: Clustering & Retrieval**<br><sub>Coursera · Certification · [View credential](https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing)</sub> | **JavaScript — The Complete Guide**<br><sub>Udemy · Course · [View credential](https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing)</sub> |
-| **The Joy of Computing Using Python**<br><sub>NPTEL · Certification · [View credential](https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing)</sub> | **The Complete Guide to Airtable**<br><sub>Udemy · Course · [View credential](https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing)</sub> |
+<table>
+  <thead>
+    <tr>
+      <th width="50%" align="left">🧠 AI &amp; Machine Learning</th>
+      <th width="50%" align="left">☁️ Cloud &amp; Development</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="top">
+        <p><strong>Machine Learning Foundations: A Case Study Approach</strong><br><sub>Coursera · Certification · <a href="https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing">View credential ↗</a></sub></p>
+        <p><strong>Machine Learning: Clustering & Retrieval</strong><br><sub>Coursera · Certification · <a href="https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing">View credential ↗</a></sub></p>
+        <p><strong>The Joy of Computing Using Python</strong><br><sub>NPTEL · Certification · <a href="https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing">View credential ↗</a></sub></p>
+      </td>
+      <td valign="top">
+        <p><strong>GCP Associate Cloud Engineer Certification Training</strong><br><sub>Udemy · Course · <a href="https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing">View credential ↗</a></sub></p>
+        <p><strong>JavaScript — The Complete Guide</strong><br><sub>Udemy · Course · <a href="https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing">View credential ↗</a></sub></p>
+        <p><strong>The Complete Guide to Airtable</strong><br><sub>Udemy · Course · <a href="https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing">View credential ↗</a></sub></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-**🏆 Hands-on Training:** AI/ML Hands-on Training Program · Model Institute of Engineering and Technology · March 2025
+> 🏆 **Practical AI/ML Training** · Model Institute of Engineering and Technology · March 2025
+>
+> AI/ML Hands-on Training Program
 
 
 ---
