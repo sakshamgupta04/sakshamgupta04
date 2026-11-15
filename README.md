@@ -64,7 +64,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 <a id="people-ai"></a>
 <p align="center">
-  <img src="assets/projects/people-ai.png" alt="People.ai" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
+  <img src="assets/projects/people-ai.png" alt="People.ai" width="620">
 </p>
 
 ### 01 &nbsp; People.ai
@@ -93,7 +93,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 <a id="ai-video-interview-emotion-analyzer"></a>
 <p align="center">
-  <img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
+  <img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="620">
 </p>
 
 ### 02 &nbsp; AI Video Interview & Emotion Analyzer
@@ -122,7 +122,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 <a id="echonotes"></a>
 <p align="center">
-  <img src="assets/projects/echonotes.png" alt="EchoNotes" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
+  <img src="assets/projects/echonotes.png" alt="EchoNotes" width="620">
 </p>
 
 ### 03 &nbsp; EchoNotes
