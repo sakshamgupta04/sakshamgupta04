@@ -5,21 +5,19 @@
 -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/terminal-light.svg">
-  <img alt="sakshamgupta04@github:~$ whoami&#10;name: Saksham Gupta&#10;role: Software Developer · AI/ML Engineer&#10;status: Open to full-time roles: Software Engineer, AI/ML Developer, Full-Stack Engineer" src="assets/terminal-dark.svg" width="800">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
+  <img alt="sakshamgupta04@github — Saksham Gupta&#10;Software Developer · AI/ML Engineer&#10;Open to full-time roles: Software Engineer, AI/ML Developer, Full-Stack Engineer" src="assets/hero-dark.svg" width="100%">
 </picture>
 
 
-<div align="center">
+<div align="center" markdown="1">
 
-[🌐 **Portfolio Website ↗**](https://sakshamsgupta-portfolio.vercel.app/) &nbsp;&nbsp;•&nbsp;&nbsp; [💼 LinkedIn](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;&nbsp;•&nbsp;&nbsp; [🐙 GitHub](https://github.com/sakshamgupta04) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 Resume](https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf) &nbsp;&nbsp;•&nbsp;&nbsp; [✉️ Email](mailto:work.saksham04@gmail.com) &nbsp;&nbsp;•&nbsp;&nbsp; [🧩 LeetCode](https://leetcode.com/u/wupNOxI7hc/)
+<!-- [🌐 Portfolio] --><a href="https://sakshamsgupta-portfolio.vercel.app/">🌐 <b>Portfolio Website ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [🐙 GitHub] --><a href="https://github.com/sakshamgupta04">🐙 <b>GitHub ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [💼 LinkedIn] --><a href="https://www.linkedin.com/in/saksham-gupta-458486294/">💼 <b>LinkedIn ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [✉️ Email] --><a href="mailto:work.saksham04@gmail.com">✉️ <b>Email ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [📄 Resume] --><a href="https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf">📄 <b>Resume ↓</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [🧩 LeetCode] --><a href="https://leetcode.com/u/wupNOxI7hc/">🧩 <b>LeetCode ↗</b></a>
 
 </div>
 
-<br>
-
-<div align="center">
+<div align="center" markdown="1">
 
 **Jump to:** [About](#about) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Tech Stack](#skills) &nbsp;•&nbsp; [Focus Areas](#expertise) &nbsp;•&nbsp; [Research](#research) &nbsp;•&nbsp; [Certifications](#certifications) &nbsp;•&nbsp; [Education](#education) &nbsp;•&nbsp; [Contact](#contact)
 
@@ -27,228 +25,239 @@
 
 ---
 
-## 👨‍💻 $ whoami — About Me <a id="about"></a>
+## 👤 About Me <a id="about"></a>
 
-I'm **Saksham Gupta**, a Computer Science and Engineering graduate specializing in Artificial Intelligence and Machine Learning.
+I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model Institute of Engineering and Technology, Jammu** specializing in Artificial Intelligence and Machine Learning.
 
-My work spans full-stack application development, REST API engineering, machine learning, and cloud infrastructure. I have practical experience building React and Next.js applications, developing AI-powered systems, integrating Supabase services, and deploying workloads using Google Cloud Platform.
 
-I focus on connecting intelligent software with reliable engineering practices to build applications that solve practical problems.
 
-| Attribute | Details |
-| :--- | :--- |
-| 🎯 **Target Roles** | Full-Stack / Web Developer &nbsp;•&nbsp; AI/ML Engineer &nbsp;•&nbsp; Software Engineer (SDE) |
-| 🎓 **Degree &amp; School** | B.Tech in Computer Science & Engineering (AI/ML) — Model Institute of Engineering and Technology, Jammu |
-| 🗓️ **Academic Period** | 2022–2026 &nbsp;|&nbsp; **CGPA 8.5/10** |
-| 📍 **Location** | Jammu, India |
-
+**🎯 Target Roles:** Full-Stack / Web Developer &nbsp;•&nbsp; AI/ML Engineer &nbsp;•&nbsp; Software Engineer (SDE)
 
 
 ---
 
-## 💼 $ experience — Professional Experience <a id="experience"></a>
+## 💼 Professional Experience <a id="experience"></a>
 
-### Software Development Engineer Intern (SDE Intern) <a id="exp-1"></a>
-**Straatix Partners Labs Pvt. Ltd.** &nbsp;|&nbsp; 📍 Whitefield, Bengaluru, India &nbsp;|&nbsp; 🗓️ `January 2026 — July 2026`
+### Straatix Partners Labs Pvt. Ltd. <a id="exp-1"></a>
+**Software Development Engineer Intern (SDE Intern)** &nbsp;•&nbsp; 🗓️ January 2026 — July 2026 &nbsp;•&nbsp; 📍 Whitefield, Bengaluru, India
+
 - Built and scaled React/Next.js portals for HR users and candidates, implementing dynamic interview scheduling and Supabase SSO/email authentication workflows.
 - Migrated backend services to Google Cloud Platform, deploying containerized microservices on Cloud Run and integrating Vertex AI for production ML workflows.
 - Engineered automated deployment pipelines with GitHub Actions and GCP Workload Identity Federation for keyless, secretless cloud delivery.
 
 **Technologies:** <code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>Google Cloud Platform</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>GitHub Actions</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code>
-<hr>
 
-### AI/ML Developer Intern — Director Internship <a id="exp-2"></a>
-**Model Institute of Engineering and Technology, Jammu** &nbsp;|&nbsp; 🗓️ `February 2025 — January 2026`
+---
+
+### Model Institute of Engineering and Technology, Jammu <a id="exp-2"></a>
+**AI/ML Developer Intern — Director Internship** &nbsp;•&nbsp; 🗓️ February 2025 — January 2026
+
 - Contributed to a patented evaluation engine analyzing candidate experience, Big Five personality traits, and career trajectory indicators.
 - Implemented peer-group segmentation algorithms to enable fair, normalized candidate comparisons across varying backgrounds.
 - Tuned and evaluated classification models to improve role-matching precision and candidate fit scoring.
 
 **Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Machine Learning</code> &nbsp;•&nbsp; <code>Model Evaluation</code>
 
+---
+
+## ⚡ Featured Projects <a id="projects"></a>
+
+<a id="people-ai"></a>
+<p align="center">
+  <img src="assets/projects/people-ai.png" alt="People.ai" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
+</p>
+
+### 01 &nbsp; People.ai
+**Faculty Fit & Retention Prediction**
+
+<p style="font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+  An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.
+</p>
+
+**Key Engineering Highlights:**
+
+
+- Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.
+- Trained and evaluated supervised classification models for faculty role fit and retention prediction.
+
+
+<p>
+  <b>Technologies:</b> &nbsp;<code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Gemini</code> &nbsp;•&nbsp; <code>Model Evaluation</code></p>
+
+<p>
+<a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit">🔍 <b>Case Study ↗</b></a>
+</p>
+
 
 ---
 
-## 🚀 $ featured.builds — Featured Projects <a id="projects"></a>
+<a id="ai-video-interview-emotion-analyzer"></a>
+<p align="center">
+  <img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
+</p>
+
+### 02 &nbsp; AI Video Interview & Emotion Analyzer
+**Real-Time Facial Expression & Emotion Telemetry**
+
+<p style="font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+  A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.
+</p>
+
+**Key Engineering Highlights:**
+
+
+- Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.
+- Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.
+
+
+<p>
+  <b>Technologies:</b> &nbsp;<code>Next.js</code> &nbsp;•&nbsp; <code>Python</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Supabase</code></p>
+
+<p>
+<a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer">🔍 <b>Case Study ↗</b></a>
+</p>
+
+
+---
+
+<a id="echonotes"></a>
+<p align="center">
+  <img src="assets/projects/echonotes.png" alt="EchoNotes" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
+</p>
+
+### 03 &nbsp; EchoNotes
+**AI-Powered Transcription & Semantic Search**
+
+<p style="font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+  An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.
+</p>
+
+**Key Engineering Highlights:**
+
+
+- Developed audio ingestion and transcription workflows using captions and faster-whisper.
+- Implemented semantic search using embeddings and timestamp-linked navigation.
+
+
+<p>
+  <b>Technologies:</b> &nbsp;<code>Next.js</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>Supabase</code></p>
+
+<p>
+<a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes">🔍 <b>Case Study ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://youtube-video-summarizer-sage.vercel.app/">▶️ <b>Live Site ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer">📦 <b>Source Code ↗</b></a>
+</p>
+
+
+
+
+---
+
+## 🛠️ Technical Stack <a id="skills"></a>
+
+
+
+
 
 <table width="100%">
   <tr>
-    <td width="38%" valign="top" align="center">
-      <a id="people-ai"></a>
-      <img src="assets/projects/people-ai.png" alt="People.ai" width="100%" style="border-radius: 6px; display: block;">
+    <td style="padding: 14px 18px; border: 0;">
+      <h3 style="margin: 0 0 8px 0; color: #8B5CF6; font-size: 15px;">🔤 Languages</h3>
+      <code>Python</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>JavaScript</code> &nbsp;•&nbsp; <code>C++</code> &nbsp;•&nbsp; <code>Java</code> &nbsp;•&nbsp; <code>SQL</code>
     </td>
-    <td width="62%" valign="top">
-      <h3 style="margin-top: 0; margin-bottom: 4px;">People.ai &nbsp;<sub>Faculty Fit & Retention Prediction</sub></h3>
-      <p style="margin-top: 4px; margin-bottom: 8px;">An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.</p>
-      <b>Key Engineering Highlights:</b>
-      <ul>
-        <li>Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.</li>
-        <li>Trained and evaluated supervised classification models for faculty role fit and retention prediction.</li>
-      </ul>
-      <p>
-<code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Gemini</code> &nbsp;•&nbsp; <code>Model Evaluation</code>      </p>
-      <p>
-      <a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit">🔍 <b>Case Study ↗</b></a>
-      </p>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #38BDF8; font-size: 15px;">🌐 Frontend &amp; Backend</h3>
+      <code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>Node.js</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>REST APIs</code> &nbsp;•&nbsp; <code>Supabase Serverless Functions</code> &nbsp;•&nbsp; <code>HTML5</code> &nbsp;•&nbsp; <code>CSS3</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #A78BFA; font-size: 15px;">🧠 AI &amp; Machine Learning</h3>
+      <code>PyTorch</code> &nbsp;•&nbsp; <code>TensorFlow</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Pandas</code> &nbsp;•&nbsp; <code>NumPy</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #2DD4BF; font-size: 15px;">☁️ Data &amp; Cloud</h3>
+      <code>Google Cloud Platform</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>PostgreSQL</code> &nbsp;•&nbsp; <code>Supabase</code> &nbsp;•&nbsp; <code>Supabase Storage</code>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 14px 18px; border: 0; border-top: 1px solid #293B59;">
+      <h3 style="margin: 0 0 8px 0; color: #38BDF8; font-size: 15px;">⚙️ DevOps &amp; Tooling</h3>
+      <code>Docker</code> &nbsp;•&nbsp; <code>GitHub Actions</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code> &nbsp;•&nbsp; <code>Git</code> &nbsp;•&nbsp; <code>GitHub</code> &nbsp;•&nbsp; <code>VS Code</code> &nbsp;•&nbsp; <code>Jupyter Notebook</code>
     </td>
   </tr>
 </table>
 
-<table width="100%">
-  <tr>
-    <td width="38%" valign="top" align="center">
-      <a id="ai-video-interview-emotion-analyzer"></a>
-      <img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="100%" style="border-radius: 6px; display: block;">
-    </td>
-    <td width="62%" valign="top">
-      <h3 style="margin-top: 0; margin-bottom: 4px;">AI Video Interview & Emotion Analyzer &nbsp;<sub>Real-Time Facial Expression & Emotion Telemetry</sub></h3>
-      <p style="margin-top: 4px; margin-bottom: 8px;">A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.</p>
-      <b>Key Engineering Highlights:</b>
-      <ul>
-        <li>Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.</li>
-        <li>Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.</li>
-      </ul>
-      <p>
-<code>Next.js</code> &nbsp;•&nbsp; <code>Python</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Supabase</code>      </p>
-      <p>
-      <a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer">🔍 <b>Case Study ↗</b></a>
-      </p>
-    </td>
-  </tr>
-</table>
+---
 
-<table width="100%">
-  <tr>
-    <td width="38%" valign="top" align="center">
-      <a id="echonotes"></a>
-      <img src="assets/projects/echonotes.png" alt="EchoNotes" width="100%" style="border-radius: 6px; display: block;">
-    </td>
-    <td width="62%" valign="top">
-      <h3 style="margin-top: 0; margin-bottom: 4px;">EchoNotes &nbsp;<sub>AI-Powered Transcription & Semantic Search</sub></h3>
-      <p style="margin-top: 4px; margin-bottom: 8px;">An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.</p>
-      <b>Key Engineering Highlights:</b>
-      <ul>
-        <li>Developed audio ingestion and transcription workflows using captions and faster-whisper.</li>
-        <li>Implemented semantic search using embeddings and timestamp-linked navigation.</li>
-      </ul>
-      <p>
-<code>Next.js</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>Supabase</code>      </p>
-      <p>
-      <a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes">🔍 <b>Case Study ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://youtube-video-summarizer-sage.vercel.app/">▶️ <b>Live Site ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer">📦 <b>Source Code ↗</b></a>
-      </p>
-    </td>
-  </tr>
-</table>
+## 🎯 Core Focus Areas <a id="expertise"></a>
+
+### 🧠 AI &amp; Machine Learning
+Developing predictive models, supervised classification pipelines, computer vision systems, and feature engineering with scikit-learn, TensorFlow, and PyTorch. Rigorous focus on model evaluation, validation metrics, and production inference.
+
+### 💻 Full-Stack Engineering
+Architecting end-to-end web applications with React, Next.js, and TypeScript, backed by robust RESTful APIs in FastAPI and Node.js. Persistent state management, real-time sync, and database design with Supabase and PostgreSQL.
+
+### ☁️ Cloud &amp; Infrastructure
+Containerizing microservices with Docker and deploying serverless workloads to Google Cloud Platform (Cloud Run, Vertex AI). Implementing keyless, secure CI/CD pipelines using GitHub Actions and GCP Workload Identity Federation.
 
 
 
 
 ---
 
-## 🛠️ $ tech-stack.yml — Technical Stack <a id="skills"></a>
+## 📖 Research Publications <a id="research"></a>
 
 
-
-
-
-- **Languages:** <code>Python</code> &nbsp;•&nbsp; <code>C++</code> &nbsp;•&nbsp; <code>Java</code> &nbsp;•&nbsp; <code>JavaScript</code> &nbsp;•&nbsp; <code>TypeScript</code> &nbsp;•&nbsp; <code>SQL</code>
-- **Frontend:** <code>React</code> &nbsp;•&nbsp; <code>Next.js</code> &nbsp;•&nbsp; <code>HTML</code> &nbsp;•&nbsp; <code>CSS</code>
-- **Backend & APIs:** <code>Node.js</code> &nbsp;•&nbsp; <code>REST APIs</code> &nbsp;•&nbsp; <code>Supabase Serverless Functions</code> &nbsp;•&nbsp; <code>FastAPI</code>
-- **Databases:** <code>Supabase</code> &nbsp;•&nbsp; <code>PostgreSQL</code> &nbsp;•&nbsp; <code>Supabase Auth</code> &nbsp;•&nbsp; <code>Supabase Storage</code>
-- **AI/ML:** <code>Scikit-learn</code> &nbsp;•&nbsp; <code>TensorFlow</code> &nbsp;•&nbsp; <code>PyTorch</code> &nbsp;•&nbsp; <code>OpenCV</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Pandas</code> &nbsp;•&nbsp; <code>NumPy</code>
-- **Cloud & DevOps:** <code>Google Cloud Platform</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>Docker</code> &nbsp;•&nbsp; <code>GitHub Actions</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code>
-- **Developer Tools:** <code>Git</code> &nbsp;•&nbsp; <code>GitHub</code> &nbsp;•&nbsp; <code>VS Code</code> &nbsp;•&nbsp; <code>Jupyter Notebook</code> &nbsp;•&nbsp; <code>Airtable</code> &nbsp;•&nbsp; <code>Claude</code>
+### Machine Learning-Based Approach for Diabetes Detection and Prediction
+*Saksham Gupta, Gandharv Kaloo, Palvi Sharma, Aarush Wali* &nbsp;•&nbsp; **IEEE 3rd International Conference on Advancement in Computation & Computer Technologies (InCACCT)** (2025)
+[🔗 **DOI**](https://doi.org/10.1109/InCACCT65424.2025.11011335) &nbsp;&nbsp;|&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/diabetes-risk-forecasting.pdf)
 
 
 ---
 
-## 🎯 $ engineering.expertise — Core Focus Areas <a id="expertise"></a>
-
-<table width="100%">
-  <tr>
-    <td width="33%" valign="top">
-      <h4 style="margin-top: 0; margin-bottom: 4px;">🧠 AI &amp; Machine Learning</h4>
-      <p style="margin-top: 0; margin-bottom: 8px;"><sub>Predictive Modeling &amp; Vision</sub></p>
-      <ul>
-        <li>Applied ML &amp; Scikit-learn</li>
-        <li>Computer Vision &amp; DeepFace</li>
-        <li>Feature Engineering &amp; Tuning</li>
-        <li>Model Benchmarks &amp; Evaluation</li>
-      </ul>
-    </td>
-    <td width="33%" valign="top">
-      <h4 style="margin-top: 0; margin-bottom: 4px;">💻 Full-Stack Engineering</h4>
-      <p style="margin-top: 0; margin-bottom: 8px;"><sub>Interactive Web &amp; Scalable APIs</sub></p>
-      <ul>
-        <li>React &amp; Next.js Architecture</li>
-        <li>REST APIs &amp; FastAPI Services</li>
-        <li>Supabase Auth &amp; PostgreSQL</li>
-        <li>TypeScript Serverless Workflows</li>
-      </ul>
-    </td>
-    <td width="33%" valign="top">
-      <h4 style="margin-top: 0; margin-bottom: 4px;">☁️ Cloud &amp; Deployment</h4>
-      <p style="margin-top: 0; margin-bottom: 8px;"><sub>Containerized Scalable Infrastructure</sub></p>
-      <ul>
-        <li>Google Cloud Platform (GCP)</li>
-        <li>Microservices on Cloud Run</li>
-        <li>Vertex AI Production Pipelines</li>
-        <li>Keyless CI/CD with GCP WIF</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
+### Evaluating the Accuracy and Computational Load of Booth's Algorithm and Vedic Multiplication in Digital Systems
+*Veena Tripathi, Saksham Gupta, Aarush Wali, Archit Bali, Aradhika Gandotra, Ayushman Vohra* &nbsp;•&nbsp; **Taylor & Francis / CRC Press** (2024)
+[🔗 **DOI**](https://doi.org/10.1201/9781003637530-29) &nbsp;&nbsp;|&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/booths-vedic-multiplication.pdf)
 
 
 
 ---
 
-## 🔬 $ research — Publications <a id="research"></a>
+## 🎖️ Certifications &amp; Achievements <a id="certifications"></a>
 
+- **Machine Learning Foundations: A Case Study Approach** — Coursera &nbsp;•&nbsp; `Certification` &nbsp;•&nbsp; [Verify Credential](https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing)
+- **Machine Learning: Clustering & Retrieval** — Coursera &nbsp;•&nbsp; `Certification` &nbsp;•&nbsp; [Verify Credential](https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing)
+- **The Joy of Computing Using Python** — NPTEL &nbsp;•&nbsp; `Certification` &nbsp;•&nbsp; [Verify Credential](https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing)
+- **GCP Associate Cloud Engineer Certification Training** — Udemy &nbsp;•&nbsp; `Course` &nbsp;•&nbsp; [Verify Credential](https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing)
+- **JavaScript — The Complete Guide** — Udemy &nbsp;•&nbsp; `Course` &nbsp;•&nbsp; [Verify Credential](https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing)
+- **The Complete Guide to Airtable** — Udemy &nbsp;•&nbsp; `Course` &nbsp;•&nbsp; [Verify Credential](https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing)
 
-- **Machine Learning-Based Approach for Diabetes Detection and Prediction**  
-  *Saksham Gupta, Gandharv Kaloo, Palvi Sharma, Aarush Wali* &nbsp;•&nbsp; **IEEE 3rd International Conference on Advancement in Computation & Computer Technologies (InCACCT)** (2025)  
-[🔗 **DOI**](https://doi.org/10.1109/InCACCT65424.2025.11011335) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/diabetes-risk-forecasting.pdf)
-
-- **Evaluating the Accuracy and Computational Load of Booth's Algorithm and Vedic Multiplication in Digital Systems**  
-  *Veena Tripathi, Saksham Gupta, Aarush Wali, Archit Bali, Aradhika Gandotra, Ayushman Vohra* &nbsp;•&nbsp; **Taylor & Francis / CRC Press** (2024)  
-[🔗 **DOI**](https://doi.org/10.1201/9781003637530-29) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/booths-vedic-multiplication.pdf)
-
-
-
----
-
-## 📜 $ certifications — Certifications &amp; Achievements <a id="certifications"></a>
-
-| Credential Name | Issuer | Type | Verified Credential |
-| :--- | :--- | :--- | :--- |
-| **Machine Learning Foundations: A Case Study Approach** | Coursera | `Certification` | [Verify Credential](https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing) |
-| **Machine Learning: Clustering & Retrieval** | Coursera | `Certification` | [Verify Credential](https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing) |
-| **The Joy of Computing Using Python** | NPTEL | `Certification` | [Verify Credential](https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing) |
-| **GCP Associate Cloud Engineer Certification Training** | Udemy | `Course` | [Verify Credential](https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing) |
-| **JavaScript — The Complete Guide** | Udemy | `Course` | [Verify Credential](https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing) |
-| **The Complete Guide to Airtable** | Udemy | `Course` | [Verify Credential](https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing) |
-
-> 📌 **Hands-on Training:** AI/ML Hands-on Training Program, Model Institute of Engineering and Technology (March 2025).
+> 🏆 **Hands-on Training:** AI/ML Hands-on Training Program, Model Institute of Engineering and Technology (March 2025).
 
 
 ---
 
-## 🎓 $ education — Education <a id="education"></a>
+## 🎓 Education <a id="education"></a>
 
-| Institution | Degree Program | Academic Period | CGPA Standing |
-| :--- | :--- | :--- | :--- |
-| **Model Institute of Engineering and Technology, Jammu** | B.Tech in Computer Science & Engineering (AI/ML) | 2022 — 2026 | **CGPA 8.5/10** |
-
-
-
-
+### Model Institute of Engineering and Technology, Jammu
+**B.Tech in Computer Science & Engineering (AI/ML)** &nbsp;•&nbsp; 🗓️ 2022 — 2026
+> **Academic Standing:** CGPA 8.5/10
 
 
 ---
 
-## 🤝 $ contact.sh — Let's Connect <a id="contact"></a>
+## 🚀 Let's Connect <a id="contact"></a>
 
-I'm open to discussing software engineering opportunities, AI/ML projects, and technical collaborations. Feel free to explore my work or get in touch:
+I'm actively looking for software engineering, AI/ML, and full-stack development opportunities. Whether you have an open role, an engineering challenge, or want to discuss technical projects, feel free to reach out!
 
-[🌐 **Portfolio Website**](https://sakshamsgupta-portfolio.vercel.app/) &nbsp;&nbsp;•&nbsp;&nbsp; [✉️ **Email**](mailto:work.saksham04@gmail.com) &nbsp;&nbsp;•&nbsp;&nbsp; [💼 **LinkedIn**](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;&nbsp;•&nbsp;&nbsp; [🐙 **GitHub**](https://github.com/sakshamgupta04) &nbsp;&nbsp;•&nbsp;&nbsp; [🧩 **LeetCode**](https://leetcode.com/u/wupNOxI7hc/) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 **Résumé PDF**](https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf)
+<div align="center" markdown="1">
+
+[🌐 **Portfolio**](https://sakshamsgupta-portfolio.vercel.app/) &nbsp;&nbsp;•&nbsp;&nbsp; [✉️ **Email**](mailto:work.saksham04@gmail.com) &nbsp;&nbsp;•&nbsp;&nbsp; [💼 **LinkedIn**](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;&nbsp;•&nbsp;&nbsp; [🐙 **GitHub**](https://github.com/sakshamgupta04) &nbsp;&nbsp;•&nbsp;&nbsp; [🧩 **LeetCode**](https://leetcode.com/u/wupNOxI7hc/) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 **Resume**](https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf)
+
+</div>
+
+
+

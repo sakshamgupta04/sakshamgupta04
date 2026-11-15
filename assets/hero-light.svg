@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 220" width="880" height="220">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#7C3AED" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0D9488" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="laptopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <style>
+      .txt-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .txt-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- Outer Card Frame -->
+  <rect x="2" y="2" width="876" height="216" rx="16" fill="url(#cardBg)" stroke="#CBD5E1" stroke-width="1.5" />
+
+  <!-- Flowing Ribbon Waves -->
+  <g opacity="0.6" filter="url(#softGlow)">
+    <path d="M 380 150 Q 520 30, 680 90 T 860 60" fill="none" stroke="url(#waveGrad)" stroke-width="6" stroke-linecap="round" />
+    <path d="M 400 165 Q 540 45, 700 105 T 870 75" fill="none" stroke="url(#waveGrad)" stroke-width="3" opacity="0.7" />
+    <path d="M 350 185 Q 500 95, 650 140 T 840 105" fill="none" stroke="#0D9488" stroke-width="2.5" opacity="0.4" />
+  </g>
+
+  <!-- LEFT COLUMN CONTENT -->
+  <text x="40" y="44" class="txt-sans" fill="#475569" font-size="13" font-weight="500">Hi, I&apos;m</text>
+  <text x="40" y="82" class="txt-sans" font-size="34" font-weight="800" letter-spacing="-0.5">
+    <tspan fill="#0F172A">Saksham </tspan><tspan fill="url(#nameGrad)">Gupta</tspan>
+  </text>
+  <text x="40" y="108" class="txt-sans" fill="#0284C7" font-size="14.5" font-weight="600">Software Developer · AI/ML Engineer</text>
+  <text x="40" y="132" class="txt-sans" fill="#475569" font-size="12" font-weight="400">
+    <tspan x="40" dy="0">Building intelligent, scalable, and user-centric applications</tspan>
+    <tspan x="40" dy="17">bridging AI, full-stack development, and cloud infrastructure.</tspan>
+  </text>
+
+  <!-- Role Status Pills -->
+  <g transform="translate(40, 166)">
+    <rect x="0" y="0" width="155" height="24" rx="12" fill="#F1F5F9" stroke="#0D9488" stroke-opacity="0.6" stroke-width="1" />
+    <circle cx="12" cy="12" r="3.5" fill="#0D9488" />
+    <text x="22" y="15.5" class="txt-sans" fill="#0F172A" font-size="10" font-weight="600">Open to Full-Time Roles</text>
+  </g>
+  <g transform="translate(202, 166)">
+    <rect x="0" y="0" width="105" height="24" rx="12" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+    <text x="11" y="15.5" class="txt-sans" fill="#475569" font-size="9.5" font-weight="500">Software Engineer</text>
+  </g>
+  <g transform="translate(314, 166)">
+    <rect x="0" y="0" width="98" height="24" rx="12" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+    <text x="11" y="15.5" class="txt-sans" fill="#475569" font-size="9.5" font-weight="500">AI/ML Developer</text>
+  </g>
+  <g transform="translate(419, 166)">
+    <rect x="0" y="0" width="106" height="24" rx="12" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+    <text x="10" y="15.5" class="txt-sans" fill="#475569" font-size="9.5" font-weight="500">Full-Stack Engineer</text>
+  </g>
+
+  <!-- RIGHT 3D LAPTOP ILLUSTRATION -->
+  <g transform="translate(580, 10)">
+    <ellipse cx="120" cy="95" rx="110" ry="70" fill="#0284C7" opacity="0.22" filter="url(#softGlow)" />
+    <ellipse cx="120" cy="95" rx="75" ry="50" fill="#7C3AED" opacity="0.3" filter="url(#softGlow)" />
+    <!-- Screen Shell -->
+    <path d="M 40 22 L 195 12 L 190 135 L 34 148 Z" fill="#CBD5E1" stroke="#CBD5E1" stroke-width="1.2" />
+    <!-- Screen Bezel & Display -->
+    <path d="M 45 27 L 190 17 L 185 129 L 40 141 Z" fill="#0F172A" />
+    <!-- Code on Screen -->
+    <text x="115" y="86" class="txt-mono" fill="#0284C7" font-size="34" font-weight="700" text-anchor="middle" filter="url(#softGlow)">&lt; / &gt;</text>
+    <!-- Base Keyboard Chassis -->
+    <path d="M 16 147 L 205 134 L 235 182 L 4 196 Z" fill="url(#laptopGrad)" stroke="#CBD5E1" stroke-width="1.2" />
+    <!-- Trackpad -->
+    <path d="M 95 163 L 150 159 L 154 180 L 98 184 Z" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8" opacity="0.8" />
+    <!-- Front Edge Glow -->
+    <path d="M 4 196 L 235 182 L 237 186 L 2 200 Z" fill="#0284C7" opacity="0.65" />
+  </g>
+</svg>

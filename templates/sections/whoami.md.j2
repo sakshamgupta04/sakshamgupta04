@@ -1,28 +1,9 @@
-## 👨‍💻 $ whoami — About Me <a id="about"></a>
+## 👤 About Me <a id="about"></a>
 
-I'm **{{ profile.identity.name }}**, a Computer Science and Engineering graduate specializing in Artificial Intelligence and Machine Learning.
+I'm **{{ profile.identity.name }}**, a Computer Science and Engineering graduate{% if has(profile.identity.education) %} from **{{ profile.identity.education[0].school }}**{% endif %} specializing in Artificial Intelligence and Machine Learning.
 
-My work spans full-stack application development, REST API engineering, machine learning, and cloud infrastructure. I have practical experience building React and Next.js applications, developing AI-powered systems, integrating Supabase services, and deploying workloads using Google Cloud Platform.
+{{ profile.identity.summary }}
 
-I focus on connecting intelligent software with reliable engineering practices to build applications that solve practical problems.
-
-| Attribute | Details |
-| :--- | :--- |
 {% if has(profile.identity.roles_targeted) -%}
-| 🎯 **Target Roles** | {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }} |
-{% endif -%}
-{% if has(profile.identity.education) -%}
-{% for edu in profile.identity.education -%}
-| 🎓 **Degree &amp; School** | {{ edu.degree }} — {{ edu.school }} |
-| 🗓️ **Academic Period** | {{ edu.start }}–{{ edu.end }}{% if has(edu.score) %} &nbsp;|&nbsp; **CGPA {{ edu.score }}**{% endif %} |
-{% endfor -%}
-{% endif -%}
-{% if has(profile.identity.location) -%}
-| 📍 **Location** | {{ profile.identity.location }} |
-{% endif -%}
-{% if has(profile.identity.languages_spoken) -%}
-| 🗣️ **Languages** | {{ profile.identity.languages_spoken | join(", ") }} |
-{% endif -%}
-{% if has(profile.identity.focus_areas) -%}
-| 🔬 **Focus Areas** | {{ profile.identity.focus_areas | join(" &nbsp;•&nbsp; ") }} |
-{% endif -%}
+**🎯 Target Roles:** {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }}
+{%- endif %}

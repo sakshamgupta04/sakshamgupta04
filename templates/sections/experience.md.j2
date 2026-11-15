@@ -1,9 +1,10 @@
 {% if has(profile.experience) %}
-## 💼 $ experience — Professional Experience <a id="experience"></a>
+## 💼 Professional Experience <a id="experience"></a>
 
 {% for exp in profile.experience %}
-### {{ exp.role }} <a id="exp-{{ loop.index }}"></a>
-**{{ exp.org }}**{% if has(exp.location) %} &nbsp;|&nbsp; 📍 {{ exp.location }}{% endif %}{% if has(exp.start) and has(exp.end) %} &nbsp;|&nbsp; 🗓️ `{{ exp.start }} — {{ exp.end }}`{% endif %}
+### {{ exp.org }} <a id="exp-{{ loop.index }}"></a>
+**{{ exp.role }}**{% if has(exp.start) and has(exp.end) %} &nbsp;•&nbsp; 🗓️ {{ exp.start }} — {{ exp.end }}{% endif %}{% if has(exp.location) %} &nbsp;•&nbsp; 📍 {{ exp.location }}{% endif %}
+
 
 {% for b in exp.bullets %}
 - {{ b }}
@@ -11,12 +12,12 @@
 
 {% if has(exp.stack) %}
 **Technologies:** {% for s in exp.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
-
 {% endif %}
+
 {% if not loop.last %}
-<hr>
+
+---
 
 {% endif %}
 {% endfor %}
-
 {% endif %}

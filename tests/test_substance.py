@@ -89,7 +89,7 @@ def test_research_section_hidden_when_empty_and_shown_when_present(profile_fixtu
     p_empty.publications = []
     p_empty.patent.mention = False
     output_empty = render(p_empty)
-    assert "$ research — Publications" not in output_empty
+    assert "Research Publications" not in output_empty
 
     # Populated publications
     p_pub = copy.deepcopy(profile_fixture)
@@ -105,7 +105,7 @@ def test_research_section_hidden_when_empty_and_shown_when_present(profile_fixtu
         )
     ]
     output_pub = render(p_pub)
-    assert "$ research — Publications" in output_pub
+    assert "Research Publications" in output_pub
     assert "Privacy-Preserving On-Device Document AI" in output_pub
     assert "[🔗 **DOI**](https://doi.org/10.1109/EXAMPLE.2026)" in output_pub
     assert "Cite (BibTeX)" in output_pub
@@ -116,7 +116,7 @@ def test_research_section_hidden_when_empty_and_shown_when_present(profile_fixtu
     p_pat.patent.mention = True
     p_pat.patent.text = "System and Method for Automated Candidate Fit Scoring (App No. 202511012345)"
     output_pat = render(p_pat)
-    assert "$ research — Publications" in output_pat
+    assert "Research Publications" in output_pat
     assert "System and Method for Automated Candidate Fit Scoring" in output_pat
 
 
@@ -125,12 +125,12 @@ def test_education_and_certifications_formatting(profile_fixture: Profile) -> No
     p_hidden = copy.deepcopy(profile_fixture)
     p_hidden.features.education = False
     output_hidden = render(p_hidden)
-    assert "$ education — Education" not in output_hidden
+    assert "Education" not in output_hidden
 
     p = copy.deepcopy(profile_fixture)
     p.features.education = True
     output = render(p)
-    assert "$ education — Education" in output
+    assert "Education" in output
     assert "B.Tech in Computer Science & Engineering (AI/ML)" in output
     assert "CGPA 8.5/10" in output
 

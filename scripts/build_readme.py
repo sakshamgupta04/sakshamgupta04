@@ -29,7 +29,9 @@ from scripts.helpers import (
 )
 from scripts.mermaid_generator import generate_mermaid_skill_map
 from scripts.schema import Profile, ProfileValidationError, validate_profile_dict
+from scripts.svg_hero import write_hero_svgs
 from scripts.svg_languages import format_languages_alt_text, write_languages_svgs
+from scripts.svg_tech_grid import write_tech_grid_svgs
 from scripts.svg_terminal import write_terminal_svgs
 
 MAX_README_BYTES = 100 * 1024  # 100 KB limit per project rules
@@ -153,8 +155,10 @@ def build(
     """Orchestrate profile loading, dynamic fetching, validation, and rendering."""
     raw_data, profile = load_profile_data(data_path)
 
-    # Generate terminal header SVGs
+    # Generate hero & terminal header SVGs
     assets_dir = output_path.parent / "assets"
+    write_hero_svgs(profile, assets_dir)
+    write_tech_grid_svgs(assets_dir)
     write_terminal_svgs(profile, assets_dir)
 
     # Fetch dynamic GitHub data (or use offline cache)

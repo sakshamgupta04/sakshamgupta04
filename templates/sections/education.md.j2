@@ -1,10 +1,13 @@
-{% if has(profile.identity.education) %}
-## 🎓 $ education — Education <a id="education"></a>
+{% if profile.features.education and has(profile.identity.education) %}
+## 🎓 Education <a id="education"></a>
 
-| Institution | Degree Program | Academic Period | CGPA Standing |
-| :--- | :--- | :--- | :--- |
 {% for edu in profile.identity.education %}
-| **{{ edu.school }}** | {{ edu.degree }} | {{ edu.start }} — {{ edu.end }} | **CGPA {{ edu.score }}** |
+### {{ edu.school }}
+**{{ edu.degree }}**{% if has(edu.start) and has(edu.end) %} &nbsp;•&nbsp; 🗓️ {{ edu.start }} — {{ edu.end }}{% endif %}{% if has(edu.location) %} &nbsp;•&nbsp; 📍 {{ edu.location }}{% endif %}
+
+{% if has(edu.score) %}
+> **Academic Standing:** CGPA {{ edu.score }}
+{% endif %}
 {% endfor %}
 
 {% endif %}
