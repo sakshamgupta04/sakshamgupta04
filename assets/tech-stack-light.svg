@@ -4,7 +4,7 @@
   <rect x="1" y="1" width="878" height="350" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
   <g transform="translate(24, 25)"><rect width="36" height="36" rx="9" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/><text x="18" y="23" font-family="monospace" font-size="15" font-weight="800" fill="#38BDF8" text-anchor="middle">&lt;/&gt;</text></g>
   <rect x="72" y="23" width="3" height="40" rx="1.5" fill="#38BDF8"/>
-  <text x="86" y="40" class="txt-title" fill="#0F172A">Languages & Core</text>
+  <text x="86" y="40" class="txt-title" fill="#0F172A">Languages &amp; Core</text>
   <text x="86" y="57" class="txt-desc" fill="#475569">Programming, algorithms, and application logic.</text>
   <g transform="translate(356, 28)">
     <rect width="82" height="30" rx="15" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
@@ -40,7 +40,7 @@
   <g transform="translate(24, 113)"><rect width="36" height="36" rx="9" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/><path d="M18 11L9 16L18 21L27 16L18 11Z" fill="none" stroke="#8B5CF6" stroke-width="1.8"/><path d="M9 19.5L18 24.5L27 19.5" fill="none" stroke="#8B5CF6" stroke-width="1.8"/></g>
   <rect x="72" y="111" width="3" height="40" rx="1.5" fill="#8B5CF6"/>
   <text x="86" y="128" class="txt-title" fill="#0F172A">Full-Stack Development</text>
-  <text x="86" y="145" class="txt-desc" fill="#475569">Responsive web apps, backend services, & APIs.</text>
+  <text x="86" y="145" class="txt-desc" fill="#475569">Responsive web apps, backend services, &amp; APIs.</text>
   <g transform="translate(356, 116)">
     <rect width="80" height="30" rx="15" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
     <g transform="translate(8, 7)"><ellipse cx="8" cy="8" rx="2" ry="2" fill="#61DAFB"/><ellipse cx="8" cy="8" rx="7.5" ry="3" fill="none" stroke="#61DAFB" stroke-width="1"/><ellipse cx="8" cy="8" rx="7.5" ry="3" fill="none" stroke="#61DAFB" stroke-width="1" transform="rotate(60 8 8)"/><ellipse cx="8" cy="8" rx="7.5" ry="3" fill="none" stroke="#61DAFB" stroke-width="1" transform="rotate(120 8 8)"/></g>
@@ -69,8 +69,8 @@
   <line x1="20" y1="176" x2="860" y2="176" stroke="#E2E8F0" stroke-width="1"/>
   <g transform="translate(24, 201)"><rect width="36" height="36" rx="9" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/><path d="M14 12a4 4 0 00-4 4c0 1.5.8 2.8 2 3.5V22h3v-2.5a4 4 0 00-1-7.5zm8 0a4 4 0 00-1 7.5V22h3v-2.5c1.2-.7 2-2 2-3.5a4 4 0 00-4-4z" fill="#2DD4BF"/></g>
   <rect x="72" y="199" width="3" height="40" rx="1.5" fill="#2DD4BF"/>
-  <text x="86" y="216" class="txt-title" fill="#0F172A">AI & Machine Learning</text>
-  <text x="86" y="233" class="txt-desc" fill="#475569">Predictive models, vision systems, & AI integrations.</text>
+  <text x="86" y="216" class="txt-title" fill="#0F172A">AI &amp; Machine Learning</text>
+  <text x="86" y="233" class="txt-desc" fill="#475569">Predictive models, vision systems, &amp; AI integrations.</text>
   <g transform="translate(356, 204)">
     <rect width="90" height="30" rx="15" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
     <g transform="translate(8, 7)"><path d="M9.8 1.8a5.5 5.5 0 00-6.1 8.8l1.3-1.3a3.7 3.7 0 014.2-5.9l.6-1.6z" fill="#EE4C2C"/><circle cx="11.5" cy="4.2" r="1.1" fill="#EE4C2C"/></g>
@@ -99,8 +99,8 @@
   <line x1="20" y1="264" x2="860" y2="264" stroke="#E2E8F0" stroke-width="1"/>
   <g transform="translate(24, 289)"><rect width="36" height="36" rx="9" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/><path d="M23 20h-9a4.5 4.5 0 01-1-8.9 6 6 0 0111.5-1.1A4.5 4.5 0 0123 20z" fill="none" stroke="#38BDF8" stroke-width="1.8"/></g>
   <rect x="72" y="287" width="3" height="40" rx="1.5" fill="#38BDF8"/>
-  <text x="86" y="304" class="txt-title" fill="#0F172A">Cloud, Data & DevOps</text>
-  <text x="86" y="321" class="txt-desc" fill="#475569">Cloud deployment, data infrastructure, & CI/CD.</text>
+  <text x="86" y="304" class="txt-title" fill="#0F172A">Cloud, Data &amp; DevOps</text>
+  <text x="86" y="321" class="txt-desc" fill="#475569">Cloud deployment, data infrastructure, &amp; CI/CD.</text>
   <g transform="translate(356, 292)">
     <rect width="74" height="30" rx="15" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
     <g transform="translate(8, 7)"><path d="M12.4 7a4.2 4.2 0 00-7.8-1.2A3.5 3.5 0 001.5 9a3.5 3.5 0 003.5 3.5h7.2a3 3 0 003-3 3 3 0 00-2.8-2.5z" fill="#4285F4"/><path d="M8.2 4.6a4.2 4.2 0 013.9 2.5 3 3 0 012.7 2.4c.1-.4.2-.7.2-1a3.5 3.5 0 00-3.5-3.5h-.6A4.2 4.2 0 008.2 4.6z" fill="#EA4335"/><path d="M4.6 12.5h7.6a3 3 0 002.8-2 3 3 0 01-2.8 2H5A3.5 3.5 0 011.5 9c0 .4.1.8.2 1.2a3.5 3.5 0 002.9 2.3z" fill="#34A853"/><path d="M1.7 10.2A3.5 3.5 0 011.5 9a3.5 3.5 0 013.1-3.2A4.2 4.2 0 018.2 4.6 4.2 4.2 0 004.6 5.8 3.5 3.5 0 001.7 10.2z" fill="#FBBC05"/></g>

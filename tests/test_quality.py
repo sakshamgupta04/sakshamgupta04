@@ -183,3 +183,21 @@ def test_link_extractor_utils() -> None:
     assert "https://docs.example.com" in md_urls
     assert "https://images.example.com/pic.png" in md_urls
     assert "assets/pic.png" not in md_urls
+
+
+def test_all_svg_assets_are_well_formed_xml() -> None:
+    """Ensure all generated SVG assets in assets/ are strictly valid XML."""
+    import xml.etree.ElementTree as ET
+
+    assets_dir = Path("assets")
+    svg_files = list(assets_dir.glob("*.svg"))
+    assert len(svg_files) >= 6, "Expected at least 6 SVG files in assets/"
+
+    for svg_file in svg_files:
+        content = svg_file.read_text(encoding="utf-8")
+        try:
+            tree = ET.fromstring(content)
+            assert tree.tag.endswith("svg"), f"Root tag of {svg_file.name} is not <svg>"
+        except ET.ParseError as e:
+            raise AssertionError(f"SVG asset {svg_file.name} contains invalid XML: {e}") from e
+

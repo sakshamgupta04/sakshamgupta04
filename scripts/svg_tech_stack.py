@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import html
 from pathlib import Path
 
 
@@ -210,15 +211,18 @@ def generate_tech_stack_svg(theme: str = "dark") -> str:
         lines.append(
             f'  <rect x="72" y="{y + 23}" width="3" height="40" rx="1.5" fill="{r["accent"]}"/>'
         )
+        title_esc = html.escape(r["title"])
+        desc_esc = html.escape(r["desc"])
         lines.append(
-            f'  <text x="86" y="{y + 40}" class="txt-title" fill="{text_primary}">{r["title"]}</text>'
+            f'  <text x="86" y="{y + 40}" class="txt-title" fill="{text_primary}">{title_esc}</text>'
         )
         lines.append(
-            f'  <text x="86" y="{y + 57}" class="txt-desc" fill="{text_secondary}">{r["desc"]}</text>'
+            f'  <text x="86" y="{y + 57}" class="txt-desc" fill="{text_secondary}">{desc_esc}</text>'
         )
 
         cur_x = 356
         for tech, badge_w in r["techs"]:
+            tech_esc = html.escape(tech)
             lines.append(f'  <g transform="translate({cur_x}, {y + 28})">')
             lines.append(
                 f'    <rect width="{badge_w}" height="30" rx="15" fill="{bg_pill}" stroke="{border_col}" stroke-width="1"/>'
@@ -227,7 +231,7 @@ def generate_tech_stack_svg(theme: str = "dark") -> str:
                 f'    <g transform="translate(8, 7)">{get_logo_svg(tech)}</g>'
             )
             lines.append(
-                f'    <text x="30" y="19" class="txt-badge" fill="{text_primary}">{tech}</text>'
+                f'    <text x="30" y="19" class="txt-badge" fill="{text_primary}">{tech_esc}</text>'
             )
             lines.append("  </g>")
             cur_x += badge_w + 8
@@ -269,17 +273,20 @@ def generate_tech_stack_mobile_svg(theme: str = "dark") -> str:
         lines.append(
             f'  <rect x="58" y="{y + 13}" width="3" height="34" rx="1.5" fill="{r["accent"]}"/>'
         )
+        title_esc = html.escape(r["title"])
+        desc_esc = html.escape(r["desc"])
         lines.append(
-            f'  <text x="68" y="{y + 27}" class="txt-m-title" fill="{text_primary}">{r["title"]}</text>'
+            f'  <text x="68" y="{y + 27}" class="txt-m-title" fill="{text_primary}">{title_esc}</text>'
         )
         lines.append(
-            f'  <text x="68" y="{y + 43}" class="txt-m-desc" fill="{text_secondary}">{r["desc"]}</text>'
+            f'  <text x="68" y="{y + 43}" class="txt-m-desc" fill="{text_secondary}">{desc_esc}</text>'
         )
 
         for row_idx, badge_row in enumerate(r["m_rows"]):
             bx = 18
             by = y + 56 + (row_idx * 36)
             for tech, bw in badge_row:
+                tech_esc = html.escape(tech)
                 lines.append(f'  <g transform="translate({bx}, {by})">')
                 lines.append(
                     f'    <rect width="{bw}" height="28" rx="14" fill="{bg_pill}" stroke="{border_col}" stroke-width="1"/>'
@@ -288,7 +295,7 @@ def generate_tech_stack_mobile_svg(theme: str = "dark") -> str:
                     f'    <g transform="translate(7, 6)">{get_logo_svg(tech)}</g>'
                 )
                 lines.append(
-                    f'    <text x="28" y="18" class="txt-m-badge" fill="{text_primary}">{tech}</text>'
+                    f'    <text x="28" y="18" class="txt-m-badge" fill="{text_primary}">{tech_esc}</text>'
                 )
                 lines.append("  </g>")
                 bx += bw + 8
