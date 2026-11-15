@@ -112,9 +112,7 @@ In `data/profile.yml`, feature flags are configured under the `features` diction
 
 ```yaml
 features:
-  terminal_header: true        # Self-generated animated SVG header
-  mermaid_skill_map: true      # Mermaid dependency flowchart
-  languages_chart: true        # Top 6 languages by code bytes SVG chart
+  mermaid_skill_map: true      # Optional skill map feature (if enabled in template)
   recent_activity: true        # Displays 5 most recent public GitHub events
   projects_last_updated: true  # Commit timestamps for featured project repos
   snake: false                 # Contribution snake animation (disabled by default)

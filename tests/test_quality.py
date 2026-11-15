@@ -191,7 +191,8 @@ def test_all_svg_assets_are_well_formed_xml() -> None:
 
     assets_dir = Path("assets")
     svg_files = list(assets_dir.glob("*.svg"))
-    assert len(svg_files) >= 6, "Expected at least 6 SVG files in assets/"
+    expected = {"hero-dark.svg", "hero-light.svg", "tech-stack-dark.svg", "tech-stack-light.svg", "tech-stack-mobile-dark.svg", "tech-stack-mobile-light.svg"}
+    assert {p.name for p in svg_files} == expected, "Unexpected or missing SVG assets"
 
     for svg_file in svg_files:
         content = svg_file.read_text(encoding="utf-8")
