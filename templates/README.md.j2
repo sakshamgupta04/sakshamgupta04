@@ -16,23 +16,23 @@
 
 {% set quick_links = [] %}
 {% if has(profile.links.portfolio) %}
-  {% set _ = quick_links.append("[🌐 Portfolio](" + profile.links.portfolio + ")") %}
-{% endif %}
-{% if has(profile.links.linkedin) %}
-  {% set _ = quick_links.append("[💼 LinkedIn](" + profile.links.linkedin + ")") %}
+  {% set _ = quick_links.append("<!-- [🌐 Portfolio] --><a href=\"" ~ profile.links.portfolio ~ "\">🌐 <b>Portfolio Website ↗</b></a>") %}
 {% endif %}
 {% if has(profile.links.github) %}
-  {% set _ = quick_links.append("[🐙 GitHub](" + profile.links.github + ")") %}
+  {% set _ = quick_links.append("<!-- [🐙 GitHub] --><a href=\"" ~ profile.links.github ~ "\">🐙 <b>GitHub ↗</b></a>") %}
 {% endif %}
-{% if has(profile.links.resume_pdf) %}
-  {% set _ = quick_links.append("[📄 Resume](" + profile.links.resume_pdf + ")") %}
+{% if has(profile.links.linkedin) %}
+  {% set _ = quick_links.append("<!-- [💼 LinkedIn] --><a href=\"" ~ profile.links.linkedin ~ "\">💼 <b>LinkedIn ↗</b></a>") %}
 {% endif %}
 {% if has(profile.links.email) %}
   {% set mailto_url = profile.links.email if profile.links.email.startswith('mailto:') else 'mailto:' ~ profile.links.email %}
-  {% set _ = quick_links.append("[✉️ Email](" + mailto_url + ")") %}
+  {% set _ = quick_links.append("<!-- [✉️ Email] --><a href=\"" ~ mailto_url ~ "\">✉️ <b>Email ↗</b></a>") %}
+{% endif %}
+{% if has(profile.links.resume_pdf) %}
+  {% set _ = quick_links.append("<!-- [📄 Resume] --><a href=\"" ~ profile.links.resume_pdf ~ "\">📄 <b>Resume ↓</b></a>") %}
 {% endif %}
 {% if has(profile.links.leetcode) %}
-  {% set _ = quick_links.append("[🧩 LeetCode](" + profile.links.leetcode + ")") %}
+  {% set _ = quick_links.append("<!-- [🧩 LeetCode] --><a href=\"" ~ profile.links.leetcode ~ "\">🧩 <b>LeetCode ↗</b></a>") %}
 {% endif %}
 
 <div align="center" markdown="1">
@@ -99,30 +99,13 @@
 {% include "sections/projects.md.j2" %}
 {% endif %}
 
-{% set has_skills = has(profile.skills.groups) %}
-{% set has_expertise = has(profile.expertise) %}
-{% if has_skills and has_expertise %}
----
-
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-{% include "sections/skills.md.j2" %}
-
-</td>
-<td width="50%" valign="top">
-
-{% include "sections/expertise.md.j2" %}
-
-</td>
-</tr>
-</table>
-{% elif has_skills %}
+{% if has(profile.skills.groups) %}
 ---
 
 {% include "sections/skills.md.j2" %}
-{% elif has_expertise %}
+{% endif %}
+
+{% if has(profile.expertise) %}
 ---
 
 {% include "sections/expertise.md.j2" %}

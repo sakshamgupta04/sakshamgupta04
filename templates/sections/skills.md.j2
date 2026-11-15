@@ -1,4 +1,10 @@
-<h3 style="margin-top: 0; margin-bottom: 8px;">🛠️ Tech Stack <a id="skills"></a></h3>
+<h3 style="margin-top: 0; margin-bottom: 8px;">🛠️ Technical Stack <a id="skills"></a></h3>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/tech-grid-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/tech-grid-light.svg">
+  <img alt="Technical Stack" src="assets/tech-grid-dark.svg" width="100%" style="display: block; margin-bottom: 8px;">
+</picture>
 
 {% if has(mermaid_skill_map) and profile.features.mermaid_skill_map %}
 <p><b>Skill-to-Project Architecture Graph</b></p>
@@ -41,7 +47,7 @@
 {% else %}
 {% for group in profile.skills.groups %}
 {% if has(group.items) %}
-<p style="margin: 6px 0;"><b>{{ group.name }}:</b> {% for item in group.items %}<code>{{ item.name }}</code>{% if not loop.last %} &nbsp;{% endif %}{% endfor %}</p>
+<p style="margin: 4px 0; font-size: 12.5px;"><b>{{ group.name }}:</b> {% for item in group.items %}<code>{{ item.name }}</code>{% if not loop.last %} &nbsp;{% endif %}{% endfor %}</p>
 {% endif %}
 {% endfor %}
 {% endif %}

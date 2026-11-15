@@ -1,32 +1,36 @@
 {% if has(profile.publications) or profile.patent.mention %}
-## 📖 Research Publications <a id="research"></a>
+<h3 style="margin-top: 0; margin-bottom: 8px;">📖 Research Publications <a id="research"></a></h3>
 
 {% if profile.patent.mention and has(profile.patent.text) %}
-### Patents
-⚖️ **Patent:** {{ profile.patent.text }}
-
+<p>⚖️ <b>Patent:</b> {{ profile.patent.text }}</p>
 {% endif %}
 
 {% if has(profile.publications) %}
 {% for pub in profile.publications %}
-- **{{ pub.title }}**  
-  *{{ pub.authors | join(", ") }}* &nbsp;•&nbsp; **{{ pub.venue }}** ({{ pub.year }}){% if has(pub.status) %} &nbsp;•&nbsp; *[{{ pub.status }}]*{% endif %}  
-  {% set pub_links = [] %}
-  {% if has(pub.doi) %}{% set _ = pub_links.append("[🔗 **DOI**](https://doi.org/" ~ pub.doi ~ ")") %}{% endif %}
-  {% if has(pub.pdf) %}{% set _ = pub_links.append("[📄 **Full Paper / PDF**](" ~ pub.pdf ~ ")") %}{% endif %}
-  {% if has(pub_links) %}{{ pub_links | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}{% endif %}
-
-{% if has(pub.bibtex) %}
-<details>
-<summary>Cite (BibTeX)</summary>
-
-```bibtex
-{{ pub.bibtex }}
-```
-
-</details>
-{% endif %}
-
+<table width="100%" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px; margin-bottom: 10px;">
+  <tr>
+    <td width="72%" valign="top" style="border: 0; padding: 10px 14px;">
+      <h4 style="margin: 0 0 4px 0; color: #F4F7FF; font-size: 13px;">{{ pub.title }}</h4>
+      <p style="margin: 0; font-size: 11.5px; color: #A5B4CF;">
+        <i>{{ pub.authors | join(", ") }}</i> &nbsp;•&nbsp; <b>{{ pub.venue }}</b> ({{ pub.year }}){% if has(pub.status) %} &nbsp;•&nbsp; <i>[{{ pub.status }}]</i>{% endif %}
+      </p>
+      {% if has(pub.bibtex) %}
+      <details style="margin-top: 6px; font-size: 11px;">
+        <summary style="cursor: pointer; color: #38BDF8;">Cite (BibTeX)</summary>
+        <pre style="margin-top: 4px; padding: 6px; background-color: #111C31; border-radius: 4px; font-size: 10px;">{{ pub.bibtex }}</pre>
+      </details>
+      {% endif %}
+    </td>
+    <td width="28%" valign="middle" align="center" style="border: 0; padding: 10px 8px;">
+      {% if has(pub.doi) %}
+      <a href="https://doi.org/{{ pub.doi }}" style="display: block; margin-bottom: 6px; padding: 4px 8px; background-color: #111C31; border: 1px solid #293B59; border-radius: 6px; font-size: 11px; font-weight: 600; color: #38BDF8;">🔗 <b>DOI ↗</b><!-- [🔗 **DOI**](https://doi.org/{{ pub.doi }}) --></a>
+      {% endif %}
+      {% if has(pub.pdf) %}
+      <a href="{{ pub.pdf }}" style="display: block; padding: 4px 8px; background-color: #111C31; border: 1px solid #293B59; border-radius: 6px; font-size: 11px; font-weight: 600; color: #F4F7FF;">📄 <b>PDF ↗</b><!-- [📄 **Full Paper / PDF**]({{ pub.pdf }}) --></a>
+      {% endif %}
+    </td>
+  </tr>
+</table>
 {% endfor %}
 {% endif %}
 

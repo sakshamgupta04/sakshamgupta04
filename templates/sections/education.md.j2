@@ -1,10 +1,26 @@
 {% if profile.features.education and has(profile.identity.education) %}
-## 🎓 Education <a id="education"></a>
+<h3 style="margin-top: 0; margin-bottom: 8px;">🎓 Education <a id="education"></a></h3>
 
-| Institution | Degree Program | Academic Period | CGPA Standing |
-| :--- | :--- | :--- | :--- |
 {% for edu in profile.identity.education %}
-| **{{ edu.school }}** | {{ edu.degree }} | {{ edu.start }} — {{ edu.end }} | **CGPA {{ edu.score }}** |
+<table width="100%" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px;">
+  <tr>
+    <td width="12%" align="center" valign="middle" style="border: 0; padding: 12px 6px;">
+      <div style="font-size: 24px;">🏛️</div>
+    </td>
+    <td width="64%" valign="middle" style="border: 0; padding: 12px 8px;">
+      <h4 style="margin: 0 0 2px 0; color: #F4F7FF; font-size: 13px;">{{ edu.school }}</h4>
+      <p style="margin: 0; color: #A5B4CF; font-size: 11.5px;">{{ edu.degree }} &nbsp;|&nbsp; 🗓️ {{ edu.start }} — {{ edu.end }}</p>
+    </td>
+    <td width="24%" align="center" valign="middle" style="border: 0; padding: 12px 8px;">
+      {% if has(edu.score) %}
+      <div style="display: inline-block; padding: 4px 10px; background-color: #064E3B; border: 1px solid #10B981; border-radius: 20px; color: #34D399; font-weight: 700; font-size: 11.5px;">
+        CGPA: {{ edu.score }}
+      </div>
+      <!-- CGPA 8.5/10 -->
+      {% endif %}
+    </td>
+  </tr>
+</table>
 {% endfor %}
 
 {% endif %}

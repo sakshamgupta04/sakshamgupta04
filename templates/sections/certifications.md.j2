@@ -1,12 +1,26 @@
 {% if profile.features.education and has(profile.certifications) %}
-## 🎖️ Certifications &amp; Achievements <a id="certifications"></a>
+<h3 style="margin-top: 0; margin-bottom: 8px;">🎖️ Certifications &amp; Achievements <a id="certifications"></a></h3>
 
-| Credential Name | Issuer | Type | Verified Credential |
-| :--- | :--- | :--- | :--- |
-{% for cert in profile.certifications %}
-| **{{ cert.title }}** | {{ cert.issuer }} | `{{ cert.kind | format_cert_kind }}` | {% if has(cert.url) %}[Verify Credential]({{ cert.url }}){% else %}—{% endif %} |
-{% endfor %}
-
-> ⭐ **Hands-on Training:** AI/ML Hands-on Training Program, Model Institute of Engineering and Technology (March 2025).
+<table width="100%">
+  <tr>
+    <td width="66%" valign="top" style="border: 0; padding: 0 8px 0 0;">
+      <ul style="margin: 0; padding-left: 16px; font-size: 12px; line-height: 1.6;">
+      {% for cert in profile.certifications %}
+        <li>
+          ✔ <b>{{ cert.title }}</b> — {{ cert.issuer }}
+          {% if has(cert.url) %}
+          <a href="{{ cert.url }}" style="color: #38BDF8; font-weight: 600;">Verify Credential ↗<!-- [Verify Credential]({{ cert.url }}) --></a>
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    </td>
+    <td width="34%" valign="middle" align="center" style="border: 1px solid #8B5CF6; background-color: #17243C; border-radius: 8px; padding: 12px 8px;">
+      <div style="font-size: 24px; margin-bottom: 4px;">🏆</div>
+      <div style="font-size: 13px; font-weight: 700; color: #F4F7FF; margin-bottom: 4px;">Hands-on Training</div>
+      <div style="font-size: 10.5px; color: #A5B4CF; line-height: 1.4;">AI/ML Hands-on Training Program, MIET (Mar 2025)</div>
+    </td>
+  </tr>
+</table>
 
 {% endif %}

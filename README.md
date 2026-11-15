@@ -13,7 +13,7 @@
 
 <div align="center" markdown="1">
 
-[🌐 Portfolio](https://sakshamsgupta-portfolio.vercel.app/) &nbsp;&nbsp;•&nbsp;&nbsp; [💼 LinkedIn](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;&nbsp;•&nbsp;&nbsp; [🐙 GitHub](https://github.com/sakshamgupta04) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 Resume](https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf) &nbsp;&nbsp;•&nbsp;&nbsp; [✉️ Email](mailto:work.saksham04@gmail.com) &nbsp;&nbsp;•&nbsp;&nbsp; [🧩 LeetCode](https://leetcode.com/u/wupNOxI7hc/)
+<!-- [🌐 Portfolio] --><a href="https://sakshamsgupta-portfolio.vercel.app/">🌐 <b>Portfolio Website ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [🐙 GitHub] --><a href="https://github.com/sakshamgupta04">🐙 <b>GitHub ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [💼 LinkedIn] --><a href="https://www.linkedin.com/in/saksham-gupta-458486294/">💼 <b>LinkedIn ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [✉️ Email] --><a href="mailto:work.saksham04@gmail.com">✉️ <b>Email ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [📄 Resume] --><a href="https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf">📄 <b>Resume ↓</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [🧩 LeetCode] --><a href="https://leetcode.com/u/wupNOxI7hc/">🧩 <b>LeetCode ↗</b></a>
 
 </div>
 
@@ -29,23 +29,49 @@
 
 <table width="100%">
 <tr>
-<td width="50%" valign="top">
+<td width="58%" valign="top" style="border: 0; padding: 0 12px 0 0;">
 
 <h3 style="margin-top: 0; margin-bottom: 8px;">👤 About Me <a id="about"></a></h3>
 
-<p>I'm <b>Saksham Gupta</b>, a Computer Science and Engineering graduate specializing in Artificial Intelligence and Machine Learning.</p>
+<img src="assets/layers-icon.svg" align="right" width="95" alt="Engineering Layers" style="margin: 0 0 8px 12px; display: block;">
 
-<p>My work spans full-stack development, REST API engineering, machine learning, and cloud infrastructure. I enjoy building practical, end-to-end systems that solve real-world problems with reliable engineering practices.</p>
+<p style="margin: 0 0 8px 0; font-size: 13.5px; line-height: 1.55;">I'm <b>Saksham Gupta</b>, a Computer Science and Engineering graduate from <b>Model Institute of Engineering and Technology, Jammu</b> specializing in Artificial Intelligence and Machine Learning.</p>
 
+<p style="margin: 0 0 8px 0; font-size: 13px; line-height: 1.55; color: #A5B4CF;">I build full-stack applications, develop AI/ML solutions, and deploy scalable systems on the cloud. I enjoy turning ideas into practical, end-to-end products that solve real-world problems with reliable engineering practices.</p>
+
+<p style="margin: 6px 0 0 0; font-size: 12px; color: #F4F7FF;"><b>🎯 Target Roles:</b> Full-Stack / Web Developer &nbsp;•&nbsp; AI/ML Engineer &nbsp;•&nbsp; Software Engineer (SDE)</p>
 </td>
-<td width="50%" valign="top">
+<td width="42%" valign="top" style="border: 0; padding: 0;">
 
-<h3 style="margin-top: 0; margin-bottom: 8px;">📊 At a Glance</h3>
+<h3 style="margin-top: 0; margin-bottom: 8px;">⚡ Quick Highlights</h3>
 
-<p style="margin: 4px 0;"><b>🎯 Target Roles:</b> Full-Stack / Web Developer &nbsp;•&nbsp; AI/ML Engineer &nbsp;•&nbsp; Software Engineer (SDE)</p>
-<p style="margin: 4px 0;"><b>🎓 Degree &amp; School:</b> B.Tech in Computer Science & Engineering (AI/ML) — Model Institute of Engineering and Technology, Jammu</p>
-<p style="margin: 4px 0;"><b>🗓️ Academic Period:</b> 2022 – 2026 &nbsp;|&nbsp; <b>CGPA 8.5/10</b></p>
-<p style="margin: 4px 0;"><b>📍 Location:</b> Jammu, India</p>
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px; padding: 10px 4px;">
+      <div style="font-size: 15px; font-weight: 700; color: #8B5CF6; margin-bottom: 2px;">&lt;/&gt;</div>
+      <div style="font-size: 18px; font-weight: 800; color: #F4F7FF;">2+</div>
+      <div style="font-size: 11px; color: #A5B4CF;">Internships</div>
+    </td>
+    <td width="50%" align="center" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px; padding: 10px 4px;">
+      <div style="font-size: 15px; margin-bottom: 2px;">📦</div>
+      <div style="font-size: 18px; font-weight: 800; color: #F4F7FF;">3+</div>
+      <div style="font-size: 11px; color: #A5B4CF;">Major Projects</div>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px; padding: 10px 4px;">
+      <div style="font-size: 15px; margin-bottom: 2px;">📄</div>
+      <div style="font-size: 18px; font-weight: 800; color: #F4F7FF;">2</div>
+      <div style="font-size: 11px; color: #A5B4CF;">Research Papers</div>
+    </td>
+    <td width="50%" align="center" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px; padding: 10px 4px;">
+      <div style="font-size: 15px; margin-bottom: 2px;">🏅</div>
+      <div style="font-size: 18px; font-weight: 800; color: #F4F7FF;">6</div>
+      <div style="font-size: 11px; color: #A5B4CF;">Certifications</div>
+    </td>
+  </tr>
+</table>
+
 </td>
 </tr>
 </table>
@@ -56,36 +82,44 @@
 ## 💼 Professional Experience <a id="experience"></a>
 
 <table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-<h4 style="margin-top: 0; margin-bottom: 4px;">Software Development Engineer Intern (SDE Intern) <a id="exp-1"></a></h4>
-<p style="margin-top: 0; margin-bottom: 8px;"><b>Straatix Partners Labs Pvt. Ltd.</b><br><sub>📍 Whitefield, Bengaluru, India &nbsp;|&nbsp; 🗓️ January 2026 — July 2026</sub></p>
-
-<ul>
-  <li>Built and scaled React/Next.js portals for HR users and candidates, implementing dynamic interview scheduling and Supabase SSO/email authentication workflows.</li>
-  <li>Migrated backend services to Google Cloud Platform, deploying containerized microservices on Cloud Run and integrating Vertex AI for production ML workflows.</li>
-  <li>Engineered automated deployment pipelines with GitHub Actions and GCP Workload Identity Federation for keyless, secretless cloud delivery.</li>
-</ul>
-
-<p style="margin-top: 8px; margin-bottom: 0;"><b>Tech:</b> <code>React</code> &nbsp;<code>Next.js</code> &nbsp;<code>TypeScript</code> &nbsp;<code>Supabase</code> &nbsp;<code>Google Cloud Platform</code> &nbsp;<code>Cloud Run</code> &nbsp;<code>Vertex AI</code> &nbsp;<code>GitHub Actions</code> &nbsp;<code>Workload Identity Federation</code></p>
-
-</td>
-<td width="50%" valign="top">
-
-<h4 style="margin-top: 0; margin-bottom: 4px;">AI/ML Developer Intern — Director Internship <a id="exp-2"></a></h4>
-<p style="margin-top: 0; margin-bottom: 8px;"><b>Model Institute of Engineering and Technology, Jammu</b> &nbsp;|&nbsp; 🗓️ February 2025 — January 2026</sub></p>
-
-<ul>
-  <li>Contributed to a patented evaluation engine analyzing candidate experience, Big Five personality traits, and career trajectory indicators.</li>
-  <li>Implemented peer-group segmentation algorithms to enable fair, normalized candidate comparisons across varying backgrounds.</li>
-  <li>Tuned and evaluated classification models to improve role-matching precision and candidate fit scoring.</li>
-</ul>
-
-<p style="margin-top: 8px; margin-bottom: 0;"><b>Tech:</b> <code>Python</code> &nbsp;<code>Scikit-learn</code> &nbsp;<code>Machine Learning</code> &nbsp;<code>Model Evaluation</code></p>
-
-</td>
-</tr>
+  <tr>
+    <td width="48" valign="top" align="center" style="border-right: 2px solid #8B5CF6; padding: 14px 10px;">
+      <div style="width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 8px; background-color: #17243C; border: 1px solid #8B5CF6; font-size: 16px; font-weight: 800; color: #8B5CF6;">
+S      </div>
+    </td>
+    <td valign="top" style="padding: 12px 16px;">
+      <h3 style="margin-top: 0; margin-bottom: 2px;">Straatix Partners Labs Pvt. Ltd. <a id="exp-1"></a></h3>
+      <p style="margin-top: 0; margin-bottom: 6px; color: #38BDF8; font-weight: 600;">
+        Software Development Engineer Intern (SDE Intern)
+&nbsp;&nbsp;<sub>🗓️ January 2026 — July 2026</sub>&nbsp;&nbsp;<sub>📍 Whitefield, Bengaluru, India</sub>      </p>
+      <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.55;">
+        <li>Built and scaled React/Next.js portals for HR users and candidates, implementing dynamic interview scheduling and Supabase SSO/email authentication workflows.</li>
+        <li>Migrated backend services to Google Cloud Platform, deploying containerized microservices on Cloud Run and integrating Vertex AI for production ML workflows.</li>
+        <li>Engineered automated deployment pipelines with GitHub Actions and GCP Workload Identity Federation for keyless, secretless cloud delivery.</li>
+      </ul>
+      <p style="margin: 8px 0 0 0; font-size: 12px;">
+        <span style="color: #A5B4CF; font-weight: 600;">Tech:</span> &nbsp;<code>React</code> &nbsp;<code>Next.js</code> &nbsp;<code>TypeScript</code> &nbsp;<code>Supabase</code> &nbsp;<code>Google Cloud Platform</code> &nbsp;<code>Cloud Run</code> &nbsp;<code>Vertex AI</code> &nbsp;<code>GitHub Actions</code> &nbsp;<code>Workload Identity Federation</code>      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="48" valign="top" align="center" style="border-right: 2px solid #8B5CF6; padding: 14px 10px;">
+      <div style="width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 8px; background-color: #17243C; border: 1px solid #2DD4BF; font-size: 16px; font-weight: 800; color: #2DD4BF;">
+M      </div>
+    </td>
+    <td valign="top" style="padding: 12px 16px;">
+      <h3 style="margin-top: 0; margin-bottom: 2px;">Model Institute of Engineering and Technology, Jammu <a id="exp-2"></a></h3>
+      <p style="margin-top: 0; margin-bottom: 6px; color: #38BDF8; font-weight: 600;">
+        AI/ML Developer Intern — Director Internship
+&nbsp;&nbsp;<sub>🗓️ February 2025 — January 2026</sub>      </p>
+      <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.55;">
+        <li>Contributed to a patented evaluation engine analyzing candidate experience, Big Five personality traits, and career trajectory indicators.</li>
+        <li>Implemented peer-group segmentation algorithms to enable fair, normalized candidate comparisons across varying backgrounds.</li>
+        <li>Tuned and evaluated classification models to improve role-matching precision and candidate fit scoring.</li>
+      </ul>
+      <p style="margin: 8px 0 0 0; font-size: 12px;">
+        <span style="color: #A5B4CF; font-weight: 600;">Tech:</span> &nbsp;<code>Python</code> &nbsp;<code>Scikit-learn</code> &nbsp;<code>Machine Learning</code> &nbsp;<code>Model Evaluation</code>      </p>
+    </td>
+  </tr>
 </table>
 
 ---
@@ -93,161 +127,247 @@
 ## ⚡ Featured Projects <a id="projects"></a>
 
 <table width="100%">
-<tr>
-<td width="33%" valign="top">
-  <a id="people-ai"></a>
-  <img src="assets/projects/people-ai.png" alt="People.ai" width="100%" style="border-radius: 8px; display: block;">
-  <h3 style="margin-top: 8px; margin-bottom: 4px;">People.ai &nbsp;<sub>Faculty Fit & Retention Prediction</sub></h3>
-  <p>An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.</p>
-  <ul>
-    <li>Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.</li>
-    <li>Trained and evaluated supervised classification models for faculty role fit and retention prediction.</li>
-  </ul>
-  <p>
-<code>Python</code> <code>Scikit-learn</code> <code>Gemini</code> <code>Model Evaluation</code>  </p>
-  <p>
-  <a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit">🔍 <b>Case Study ↗</b></a>
-  </p>
-</td>
-<td width="33%" valign="top">
-  <a id="ai-video-interview-emotion-analyzer"></a>
-  <img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="100%" style="border-radius: 8px; display: block;">
-  <h3 style="margin-top: 8px; margin-bottom: 4px;">AI Video Interview & Emotion Analyzer &nbsp;<sub>Real-Time Facial Expression & Emotion Telemetry</sub></h3>
-  <p>A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.</p>
-  <ul>
-    <li>Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.</li>
-    <li>Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.</li>
-  </ul>
-  <p>
-<code>Next.js</code> <code>Python</code> <code>DeepFace</code> <code>Supabase</code>  </p>
-  <p>
-  <a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer">🔍 <b>Case Study ↗</b></a>
-  </p>
-</td>
-<td width="33%" valign="top">
-  <a id="echonotes"></a>
-  <img src="assets/projects/echonotes.png" alt="EchoNotes" width="100%" style="border-radius: 8px; display: block;">
-  <h3 style="margin-top: 8px; margin-bottom: 4px;">EchoNotes &nbsp;<sub>AI-Powered Transcription & Semantic Search</sub></h3>
-  <p>An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.</p>
-  <ul>
-    <li>Developed audio ingestion and transcription workflows using captions and faster-whisper.</li>
-    <li>Implemented semantic search using embeddings and timestamp-linked navigation.</li>
-  </ul>
-  <p>
-<code>Next.js</code> <code>FastAPI</code> <code>faster-whisper</code> <code>Supabase</code>  </p>
-  <p>
-  <a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes">🔍 <b>Case Study ↗</b></a> &nbsp;|&nbsp; <a href="https://youtube-video-summarizer-sage.vercel.app/">▶️ <b>Live Site ↗</b></a> &nbsp;|&nbsp; <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer">📦 <b>Source Code ↗</b></a>
-  </p>
-</td>
-</tr>
+  <tr>
+    <td width="38%" valign="top" align="center" style="padding: 12px 14px 12px 12px;">
+      <a id="people-ai"></a>
+      <img src="assets/projects/people-ai.png" alt="People.ai" width="100%" style="border-radius: 8px; display: block; border: 1px solid #293B59;">
+    </td>
+    <td width="62%" valign="top" style="padding: 12px 14px 12px 0;">
+      <h3 style="margin-top: 0; margin-bottom: 4px;">People.ai &nbsp;<sub>Faculty Fit & Retention Prediction</sub></h3>
+      <p style="margin-top: 4px; margin-bottom: 8px;">An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.</p>
+      <b>Key Engineering Highlights:</b>
+      <ul>
+        <li>Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.</li>
+        <li>Trained and evaluated supervised classification models for faculty role fit and retention prediction.</li>
+      </ul>
+      <p style="margin-top: 8px; margin-bottom: 8px;">
+<code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Gemini</code> &nbsp;•&nbsp; <code>Model Evaluation</code>      </p>
+      <p style="margin-top: 8px; margin-bottom: 0;">
+      <a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit">🔍 <b>Case Study ↗</b></a>
+      </p>
+    </td>
+  </tr>
 </table>
+
+<table width="100%">
+  <tr>
+    <td width="38%" valign="top" align="center" style="padding: 12px 14px 12px 12px;">
+      <a id="ai-video-interview-emotion-analyzer"></a>
+      <img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="100%" style="border-radius: 8px; display: block; border: 1px solid #293B59;">
+    </td>
+    <td width="62%" valign="top" style="padding: 12px 14px 12px 0;">
+      <h3 style="margin-top: 0; margin-bottom: 4px;">AI Video Interview & Emotion Analyzer &nbsp;<sub>Real-Time Facial Expression & Emotion Telemetry</sub></h3>
+      <p style="margin-top: 4px; margin-bottom: 8px;">A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.</p>
+      <b>Key Engineering Highlights:</b>
+      <ul>
+        <li>Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.</li>
+        <li>Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.</li>
+      </ul>
+      <p style="margin-top: 8px; margin-bottom: 8px;">
+<code>Next.js</code> &nbsp;•&nbsp; <code>Python</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Supabase</code>      </p>
+      <p style="margin-top: 8px; margin-bottom: 0;">
+      <a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer">🔍 <b>Case Study ↗</b></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table width="100%">
+  <tr>
+    <td width="38%" valign="top" align="center" style="padding: 12px 14px 12px 12px;">
+      <a id="echonotes"></a>
+      <img src="assets/projects/echonotes.png" alt="EchoNotes" width="100%" style="border-radius: 8px; display: block; border: 1px solid #293B59;">
+    </td>
+    <td width="62%" valign="top" style="padding: 12px 14px 12px 0;">
+      <h3 style="margin-top: 0; margin-bottom: 4px;">EchoNotes &nbsp;<sub>AI-Powered Transcription & Semantic Search</sub></h3>
+      <p style="margin-top: 4px; margin-bottom: 8px;">An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.</p>
+      <b>Key Engineering Highlights:</b>
+      <ul>
+        <li>Developed audio ingestion and transcription workflows using captions and faster-whisper.</li>
+        <li>Implemented semantic search using embeddings and timestamp-linked navigation.</li>
+      </ul>
+      <p style="margin-top: 8px; margin-bottom: 8px;">
+<code>Next.js</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>Supabase</code>      </p>
+      <p style="margin-top: 8px; margin-bottom: 0;">
+      <a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes">🔍 <b>Case Study ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://youtube-video-summarizer-sage.vercel.app/">▶️ <b>Live Site ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer">📦 <b>Source Code ↗</b></a>
+      </p>
+    </td>
+  </tr>
+</table>
+
 
 
 
 ---
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
+<h3 style="margin-top: 0; margin-bottom: 8px;">🛠️ Technical Stack <a id="skills"></a></h3>
 
-<h3 style="margin-top: 0; margin-bottom: 8px;">🛠️ Tech Stack <a id="skills"></a></h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/tech-grid-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/tech-grid-light.svg">
+  <img alt="Technical Stack" src="assets/tech-grid-dark.svg" width="100%" style="display: block; margin-bottom: 8px;">
+</picture>
 
 
 
 
 
-<p style="margin: 6px 0;"><b>Languages:</b> <code>Python</code> &nbsp;<code>C++</code> &nbsp;<code>Java</code> &nbsp;<code>JavaScript</code> &nbsp;<code>TypeScript</code> &nbsp;<code>SQL</code></p>
-<p style="margin: 6px 0;"><b>Frontend:</b> <code>React</code> &nbsp;<code>Next.js</code> &nbsp;<code>HTML</code> &nbsp;<code>CSS</code></p>
-<p style="margin: 6px 0;"><b>Backend & APIs:</b> <code>Node.js</code> &nbsp;<code>REST APIs</code> &nbsp;<code>Supabase Serverless Functions</code> &nbsp;<code>FastAPI</code></p>
-<p style="margin: 6px 0;"><b>Databases:</b> <code>Supabase</code> &nbsp;<code>PostgreSQL</code> &nbsp;<code>Supabase Auth</code> &nbsp;<code>Supabase Storage</code></p>
-<p style="margin: 6px 0;"><b>AI/ML:</b> <code>Scikit-learn</code> &nbsp;<code>TensorFlow</code> &nbsp;<code>PyTorch</code> &nbsp;<code>OpenCV</code> &nbsp;<code>DeepFace</code> &nbsp;<code>Pandas</code> &nbsp;<code>NumPy</code></p>
-<p style="margin: 6px 0;"><b>Cloud & DevOps:</b> <code>Google Cloud Platform</code> &nbsp;<code>Cloud Run</code> &nbsp;<code>Vertex AI</code> &nbsp;<code>Docker</code> &nbsp;<code>GitHub Actions</code> &nbsp;<code>Workload Identity Federation</code></p>
-<p style="margin: 6px 0;"><b>Developer Tools:</b> <code>Git</code> &nbsp;<code>GitHub</code> &nbsp;<code>VS Code</code> &nbsp;<code>Jupyter Notebook</code> &nbsp;<code>Airtable</code> &nbsp;<code>Claude</code></p>
+<p style="margin: 4px 0; font-size: 12.5px;"><b>Languages:</b> <code>Python</code> &nbsp;<code>C++</code> &nbsp;<code>Java</code> &nbsp;<code>JavaScript</code> &nbsp;<code>TypeScript</code> &nbsp;<code>SQL</code></p>
+<p style="margin: 4px 0; font-size: 12.5px;"><b>Frontend:</b> <code>React</code> &nbsp;<code>Next.js</code> &nbsp;<code>HTML</code> &nbsp;<code>CSS</code></p>
+<p style="margin: 4px 0; font-size: 12.5px;"><b>Backend & APIs:</b> <code>Node.js</code> &nbsp;<code>REST APIs</code> &nbsp;<code>Supabase Serverless Functions</code> &nbsp;<code>FastAPI</code></p>
+<p style="margin: 4px 0; font-size: 12.5px;"><b>Databases:</b> <code>Supabase</code> &nbsp;<code>PostgreSQL</code> &nbsp;<code>Supabase Auth</code> &nbsp;<code>Supabase Storage</code></p>
+<p style="margin: 4px 0; font-size: 12.5px;"><b>AI/ML:</b> <code>Scikit-learn</code> &nbsp;<code>TensorFlow</code> &nbsp;<code>PyTorch</code> &nbsp;<code>OpenCV</code> &nbsp;<code>DeepFace</code> &nbsp;<code>Pandas</code> &nbsp;<code>NumPy</code></p>
+<p style="margin: 4px 0; font-size: 12.5px;"><b>Cloud & DevOps:</b> <code>Google Cloud Platform</code> &nbsp;<code>Cloud Run</code> &nbsp;<code>Vertex AI</code> &nbsp;<code>Docker</code> &nbsp;<code>GitHub Actions</code> &nbsp;<code>Workload Identity Federation</code></p>
+<p style="margin: 4px 0; font-size: 12.5px;"><b>Developer Tools:</b> <code>Git</code> &nbsp;<code>GitHub</code> &nbsp;<code>VS Code</code> &nbsp;<code>Jupyter Notebook</code> &nbsp;<code>Airtable</code> &nbsp;<code>Claude</code></p>
 
-</td>
-<td width="50%" valign="top">
+---
 
 <h3 style="margin-top: 0; margin-bottom: 8px;">🎯 Core Focus Areas <a id="expertise"></a></h3>
 
-<h4 style="margin-top: 8px; margin-bottom: 4px;">🧠 AI &amp; Machine Learning</h4>
-<ul>
-  <li>Applied Machine Learning &amp; Scikit-learn</li>
-  <li>Computer Vision &amp; DeepFace</li>
-  <li>Feature Engineering &amp; Hyperparameter Tuning</li>
-  <li>Model Benchmarks &amp; Evaluation</li>
-</ul>
-
-<h4 style="margin-top: 8px; margin-bottom: 4px;">💻 Full-Stack Engineering</h4>
-<ul>
-  <li>React &amp; Next.js Application Architecture</li>
-  <li>REST APIs &amp; FastAPI Microservices</li>
-  <li>Supabase Auth, PostgreSQL &amp; Storage</li>
-  <li>TypeScript Serverless Workflows</li>
-</ul>
-
-<h4 style="margin-top: 8px; margin-bottom: 4px;">☁️ Cloud &amp; Deployment</h4>
-<ul>
-  <li>Google Cloud Platform (GCP)</li>
-  <li>Microservices on Cloud Run</li>
-  <li>Vertex AI Production Pipelines</li>
-  <li>Keyless CI/CD with GCP Workload Identity Federation</li>
-</ul>
-</td>
-</tr>
+<table width="100%">
+  <tr>
+    <td width="33%" valign="top" style="background-color: #17243C; border: 1px solid #8B5CF6; border-radius: 8px; padding: 12px 14px;">
+      <h4 style="margin: 0 0 6px 0; color: #8B5CF6; font-size: 13.5px;">🧠 AI &amp; Machine Learning</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 12px; line-height: 1.6;">
+        <li>Predictive Modeling</li>
+        <li>Computer Vision</li>
+        <li>Feature Engineering</li>
+        <li>Model Evaluation</li>
+      </ul>
+    </td>
+    <td width="33%" valign="top" style="background-color: #17243C; border: 1px solid #38BDF8; border-radius: 8px; padding: 12px 14px;">
+      <h4 style="margin: 0 0 6px 0; color: #38BDF8; font-size: 13.5px;">&lt;/&gt; Full-Stack Engineering</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 12px; line-height: 1.6;">
+        <li>React &amp; Next.js</li>
+        <li>REST APIs &amp; FastAPI</li>
+        <li>Supabase &amp; PostgreSQL</li>
+        <li>Scalable Architectures</li>
+      </ul>
+    </td>
+    <td width="33%" valign="top" style="background-color: #17243C; border: 1px solid #2DD4BF; border-radius: 8px; padding: 12px 14px;">
+      <h4 style="margin: 0 0 6px 0; color: #2DD4BF; font-size: 13.5px;">☁️ Cloud &amp; Deployment</h4>
+      <ul style="margin: 0; padding-left: 16px; font-size: 12px; line-height: 1.6;">
+        <li>Google Cloud Platform (GCP)</li>
+        <li>Cloud Run &amp; Vertex AI</li>
+        <li>Docker &amp; Microservices</li>
+        <li>Keyless CI/CD (GCP WIF)</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
 
 
 
-
 ---
 
-## 📖 Research Publications <a id="research"></a>
+<h3 style="margin-top: 0; margin-bottom: 8px;">📖 Research Publications <a id="research"></a></h3>
 
 
-- **Machine Learning-Based Approach for Diabetes Detection and Prediction**  
-  *Saksham Gupta, Gandharv Kaloo, Palvi Sharma, Aarush Wali* &nbsp;•&nbsp; **IEEE 3rd International Conference on Advancement in Computation & Computer Technologies (InCACCT)** (2025)  
-[🔗 **DOI**](https://doi.org/10.1109/InCACCT65424.2025.11011335) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/diabetes-risk-forecasting.pdf)
-
-- **Evaluating the Accuracy and Computational Load of Booth's Algorithm and Vedic Multiplication in Digital Systems**  
-  *Veena Tripathi, Saksham Gupta, Aarush Wali, Archit Bali, Aradhika Gandotra, Ayushman Vohra* &nbsp;•&nbsp; **Taylor & Francis / CRC Press** (2024)  
-[🔗 **DOI**](https://doi.org/10.1201/9781003637530-29) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/booths-vedic-multiplication.pdf)
-
-
-
----
-
-## 🎖️ Certifications &amp; Achievements <a id="certifications"></a>
-
-| Credential Name | Issuer | Type | Verified Credential |
-| :--- | :--- | :--- | :--- |
-| **Machine Learning Foundations: A Case Study Approach** | Coursera | `Certification` | [Verify Credential](https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing) |
-| **Machine Learning: Clustering & Retrieval** | Coursera | `Certification` | [Verify Credential](https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing) |
-| **The Joy of Computing Using Python** | NPTEL | `Certification` | [Verify Credential](https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing) |
-| **GCP Associate Cloud Engineer Certification Training** | Udemy | `Course` | [Verify Credential](https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing) |
-| **JavaScript — The Complete Guide** | Udemy | `Course` | [Verify Credential](https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing) |
-| **The Complete Guide to Airtable** | Udemy | `Course` | [Verify Credential](https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing) |
-
-> ⭐ **Hands-on Training:** AI/ML Hands-on Training Program, Model Institute of Engineering and Technology (March 2025).
-
-
----
-
-## 🎓 Education <a id="education"></a>
-
-| Institution | Degree Program | Academic Period | CGPA Standing |
-| :--- | :--- | :--- | :--- |
-| **Model Institute of Engineering and Technology, Jammu** | B.Tech in Computer Science & Engineering (AI/ML) | 2022 — 2026 | **CGPA 8.5/10** |
+<table width="100%" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px; margin-bottom: 10px;">
+  <tr>
+    <td width="72%" valign="top" style="border: 0; padding: 10px 14px;">
+      <h4 style="margin: 0 0 4px 0; color: #F4F7FF; font-size: 13px;">Machine Learning-Based Approach for Diabetes Detection and Prediction</h4>
+      <p style="margin: 0; font-size: 11.5px; color: #A5B4CF;">
+        <i>Saksham Gupta, Gandharv Kaloo, Palvi Sharma, Aarush Wali</i> &nbsp;•&nbsp; <b>IEEE 3rd International Conference on Advancement in Computation & Computer Technologies (InCACCT)</b> (2025)      </p>
+    </td>
+    <td width="28%" valign="middle" align="center" style="border: 0; padding: 10px 8px;">
+      <a href="https://doi.org/10.1109/InCACCT65424.2025.11011335" style="display: block; margin-bottom: 6px; padding: 4px 8px; background-color: #111C31; border: 1px solid #293B59; border-radius: 6px; font-size: 11px; font-weight: 600; color: #38BDF8;">🔗 <b>DOI ↗</b><!-- [🔗 **DOI**](https://doi.org/10.1109/InCACCT65424.2025.11011335) --></a>
+      <a href="https://sakshamsgupta-portfolio.vercel.app/papers/diabetes-risk-forecasting.pdf" style="display: block; padding: 4px 8px; background-color: #111C31; border: 1px solid #293B59; border-radius: 6px; font-size: 11px; font-weight: 600; color: #F4F7FF;">📄 <b>PDF ↗</b><!-- [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/diabetes-risk-forecasting.pdf) --></a>
+    </td>
+  </tr>
+</table>
+<table width="100%" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px; margin-bottom: 10px;">
+  <tr>
+    <td width="72%" valign="top" style="border: 0; padding: 10px 14px;">
+      <h4 style="margin: 0 0 4px 0; color: #F4F7FF; font-size: 13px;">Evaluating the Accuracy and Computational Load of Booth's Algorithm and Vedic Multiplication in Digital Systems</h4>
+      <p style="margin: 0; font-size: 11.5px; color: #A5B4CF;">
+        <i>Veena Tripathi, Saksham Gupta, Aarush Wali, Archit Bali, Aradhika Gandotra, Ayushman Vohra</i> &nbsp;•&nbsp; <b>Taylor & Francis / CRC Press</b> (2024)      </p>
+    </td>
+    <td width="28%" valign="middle" align="center" style="border: 0; padding: 10px 8px;">
+      <a href="https://doi.org/10.1201/9781003637530-29" style="display: block; margin-bottom: 6px; padding: 4px 8px; background-color: #111C31; border: 1px solid #293B59; border-radius: 6px; font-size: 11px; font-weight: 600; color: #38BDF8;">🔗 <b>DOI ↗</b><!-- [🔗 **DOI**](https://doi.org/10.1201/9781003637530-29) --></a>
+      <a href="https://sakshamsgupta-portfolio.vercel.app/papers/booths-vedic-multiplication.pdf" style="display: block; padding: 4px 8px; background-color: #111C31; border: 1px solid #293B59; border-radius: 6px; font-size: 11px; font-weight: 600; color: #F4F7FF;">📄 <b>PDF ↗</b><!-- [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/booths-vedic-multiplication.pdf) --></a>
+    </td>
+  </tr>
+</table>
 
 
 ---
 
-## 🚀 Let's Connect <a id="contact"></a>
+<h3 style="margin-top: 0; margin-bottom: 8px;">🎖️ Certifications &amp; Achievements <a id="certifications"></a></h3>
 
-I'm open to discussing software engineering opportunities, AI/ML projects, and technical collaborations. Feel free to explore my work or get in touch!
+<table width="100%">
+  <tr>
+    <td width="66%" valign="top" style="border: 0; padding: 0 8px 0 0;">
+      <ul style="margin: 0; padding-left: 16px; font-size: 12px; line-height: 1.6;">
+        <li>
+          ✔ <b>Machine Learning Foundations: A Case Study Approach</b> — Coursera
+          <a href="https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing" style="color: #38BDF8; font-weight: 600;">Verify Credential ↗<!-- [Verify Credential](https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing) --></a>
+        </li>
+        <li>
+          ✔ <b>Machine Learning: Clustering & Retrieval</b> — Coursera
+          <a href="https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing" style="color: #38BDF8; font-weight: 600;">Verify Credential ↗<!-- [Verify Credential](https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing) --></a>
+        </li>
+        <li>
+          ✔ <b>The Joy of Computing Using Python</b> — NPTEL
+          <a href="https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing" style="color: #38BDF8; font-weight: 600;">Verify Credential ↗<!-- [Verify Credential](https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing) --></a>
+        </li>
+        <li>
+          ✔ <b>GCP Associate Cloud Engineer Certification Training</b> — Udemy
+          <a href="https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing" style="color: #38BDF8; font-weight: 600;">Verify Credential ↗<!-- [Verify Credential](https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing) --></a>
+        </li>
+        <li>
+          ✔ <b>JavaScript — The Complete Guide</b> — Udemy
+          <a href="https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing" style="color: #38BDF8; font-weight: 600;">Verify Credential ↗<!-- [Verify Credential](https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing) --></a>
+        </li>
+        <li>
+          ✔ <b>The Complete Guide to Airtable</b> — Udemy
+          <a href="https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing" style="color: #38BDF8; font-weight: 600;">Verify Credential ↗<!-- [Verify Credential](https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing) --></a>
+        </li>
+      </ul>
+    </td>
+    <td width="34%" valign="middle" align="center" style="border: 1px solid #8B5CF6; background-color: #17243C; border-radius: 8px; padding: 12px 8px;">
+      <div style="font-size: 24px; margin-bottom: 4px;">🏆</div>
+      <div style="font-size: 13px; font-weight: 700; color: #F4F7FF; margin-bottom: 4px;">Hands-on Training</div>
+      <div style="font-size: 10.5px; color: #A5B4CF; line-height: 1.4;">AI/ML Hands-on Training Program, MIET (Mar 2025)</div>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-<a href="https://sakshamsgupta-portfolio.vercel.app/">🌐 <b>Portfolio Website ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="mailto:work.saksham04@gmail.com">✉️ <b>Email ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.linkedin.com/in/saksham-gupta-458486294/">💼 <b>LinkedIn ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://github.com/sakshamgupta04">🐙 <b>GitHub ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://leetcode.com/u/wupNOxI7hc/">🧩 <b>LeetCode ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf">📄 <b>Résumé PDF ↗</b></a>
+
+---
+
+<h3 style="margin-top: 0; margin-bottom: 8px;">🎓 Education <a id="education"></a></h3>
+
+<table width="100%" style="background-color: #17243C; border: 1px solid #293B59; border-radius: 8px;">
+  <tr>
+    <td width="12%" align="center" valign="middle" style="border: 0; padding: 12px 6px;">
+      <div style="font-size: 24px;">🏛️</div>
+    </td>
+    <td width="64%" valign="middle" style="border: 0; padding: 12px 8px;">
+      <h4 style="margin: 0 0 2px 0; color: #F4F7FF; font-size: 13px;">Model Institute of Engineering and Technology, Jammu</h4>
+      <p style="margin: 0; color: #A5B4CF; font-size: 11.5px;">B.Tech in Computer Science & Engineering (AI/ML) &nbsp;|&nbsp; 🗓️ 2022 — 2026</p>
+    </td>
+    <td width="24%" align="center" valign="middle" style="border: 0; padding: 12px 8px;">
+      <div style="display: inline-block; padding: 4px 10px; background-color: #064E3B; border: 1px solid #10B981; border-radius: 20px; color: #34D399; font-weight: 700; font-size: 11.5px;">
+        CGPA: 8.5/10
+      </div>
+      <!-- CGPA 8.5/10 -->
+    </td>
+  </tr>
+</table>
+
+
+---
+
+<h3 style="margin-top: 0; margin-bottom: 8px;">🚀 Let's Connect <a id="contact"></a></h3>
+
+<p style="margin-top: 0; margin-bottom: 12px; font-size: 13px; color: #A5B4CF;">
+I'm open to software engineering opportunities, AI/ML projects, and technical collaborations. Feel free to get in touch!
+</p>
+
+<p style="margin: 8px 0 0 0; line-height: 2.2;">
+<a href="https://sakshamsgupta-portfolio.vercel.app/" style="padding: 5px 10px; background-color: #17243C; border: 1px solid #2DD4BF; border-radius: 6px; color: #2DD4BF; font-weight: 600; font-size: 11.5px;">🌐 <b>Portfolio ↗</b></a> &nbsp; <a href="mailto:work.saksham04@gmail.com" style="padding: 5px 10px; background-color: #17243C; border: 1px solid #8B5CF6; border-radius: 6px; color: #C084FC; font-weight: 600; font-size: 11.5px;">✉️ <b>Email ↗</b></a> &nbsp; <a href="https://www.linkedin.com/in/saksham-gupta-458486294/" style="padding: 5px 10px; background-color: #17243C; border: 1px solid #38BDF8; border-radius: 6px; color: #38BDF8; font-weight: 600; font-size: 11.5px;">💼 <b>LinkedIn ↗</b></a> &nbsp; <a href="https://github.com/sakshamgupta04" style="padding: 5px 10px; background-color: #17243C; border: 1px solid #A5B4CF; border-radius: 6px; color: #F4F7FF; font-weight: 600; font-size: 11.5px;">🐙 <b>GitHub ↗</b></a> &nbsp; <a href="https://leetcode.com/u/wupNOxI7hc/" style="padding: 5px 10px; background-color: #17243C; border: 1px solid #F59E0B; border-radius: 6px; color: #FBBF24; font-weight: 600; font-size: 11.5px;">🧩 <b>LeetCode ↗</b></a> &nbsp; <a href="https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf" style="padding: 5px 10px; background-color: #17243C; border: 1px solid #38BDF8; border-radius: 6px; color: #38BDF8; font-weight: 600; font-size: 11.5px;">📄 <b>Resume ↓</b></a>
 </p>
 
 
