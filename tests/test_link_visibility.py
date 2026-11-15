@@ -2,6 +2,7 @@
 
 import copy
 from pathlib import Path
+
 import yaml
 
 from scripts.build_readme import render_readme

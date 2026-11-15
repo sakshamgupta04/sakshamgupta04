@@ -1,9 +1,8 @@
-"""Unit tests for GitHub dynamic data parsing, sanitization, language bar SVGs, and offline fallback."""
+"""Unit tests for GitHub dynamic data parsing, sanitization, and offline fallback."""
 
 from __future__ import annotations
 
 import json
-import xml.etree.ElementTree as ET
 from pathlib import Path
 
 import pytest
@@ -17,12 +16,6 @@ from scripts.github_api import (
     parse_recent_activity,
 )
 from scripts.schema import Profile, validate_profile_dict
-from scripts.svg_languages import (
-    compute_top_languages,
-    format_languages_alt_text,
-    generate_languages_svg,
-    write_languages_svgs,
-)
 
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
 
@@ -37,11 +30,6 @@ def profile_fixture() -> Profile:
 @pytest.fixture
 def sample_events() -> list[dict]:
     return json.loads((FIXTURES_DIR / "events.json").read_text(encoding="utf-8"))
-
-
-@pytest.fixture
-def sample_languages() -> dict[str, int]:
-    return json.loads((FIXTURES_DIR / "languages.json").read_text(encoding="utf-8"))
 
 
 def test_parse_recent_activity_filtering(sample_events: list[dict]) -> None:
@@ -77,33 +65,6 @@ def test_is_github_url_validation() -> None:
     assert is_github_url("javascript:alert(1)") is False
     assert is_github_url("") is False
     assert is_github_url(None) is False
-
-
-def test_language_aggregation_and_alt_text(sample_languages: dict[str, int]) -> None:
-    top = compute_top_languages(sample_languages, max_langs=6)
-    # Must cap at top 6 languages
-    assert len(top) == 6
-    names = [t[0] for t in top]
-    assert names[0] == "Python"
-    assert names[1] == "TypeScript"
-
-    alt = format_languages_alt_text(sample_languages)
-    assert "Top Languages:" in alt
-    assert "Python" in alt
-    assert "TypeScript" in alt
-
-
-def test_svg_languages_generation(sample_languages: dict[str, int], tmp_path: Path) -> None:
-    for theme in ("dark", "light"):
-        svg = generate_languages_svg(sample_languages, theme=theme)
-        root = ET.fromstring(svg)
-        assert root.attrib["width"] == "800"
-        assert root.attrib["height"] == "130"
-        assert "* bytes of code in public repos, not a measure of skill" in svg
-
-    dark_p, light_p = write_languages_svgs(sample_languages, tmp_path)
-    assert dark_p.exists() and dark_p.stat().st_size < 20 * 1024
-    assert light_p.exists() and light_p.stat().st_size < 20 * 1024
 
 
 def test_project_last_pushed_mapping() -> None:
