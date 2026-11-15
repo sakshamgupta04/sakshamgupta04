@@ -1,4 +1,4 @@
-"""Generate modern 4-row horizontal Technical Stack SVG matching approved reference."""
+"""Generate modern 4-row horizontal Technical Stack SVGs for desktop & mobile."""
 
 from __future__ import annotations
 
@@ -105,161 +105,226 @@ def get_logo_svg(tech: str) -> str:
     return logos.get(tech, '<circle cx="8" cy="8" r="7" fill="#38BDF8"/>')
 
 
+CATEGORIES = [
+    {
+        "icon_svg": '<text x="18" y="23" font-family="monospace" font-size="15" font-weight="800" fill="#38BDF8" text-anchor="middle">&lt;/&gt;</text>',
+        "accent": "#38BDF8",
+        "title": "Languages & Core",
+        "desc": "Programming, algorithms, and application logic.",
+        "techs": [
+            ("Python", 82),
+            ("TypeScript", 100),
+            ("JavaScript", 98),
+            ("C++", 66),
+            ("Java", 70),
+            ("SQL", 64),
+        ],
+        "m_rows": [
+            [("Python", 82), ("TypeScript", 98), ("JavaScript", 98)],
+            [("C++", 66), ("Java", 70), ("SQL", 64)],
+        ],
+    },
+    {
+        "icon_svg": '<path d="M18 11L9 16L18 21L27 16L18 11Z" fill="none" stroke="#8B5CF6" stroke-width="1.8"/><path d="M9 19.5L18 24.5L27 19.5" fill="none" stroke="#8B5CF6" stroke-width="1.8"/>',
+        "accent": "#8B5CF6",
+        "title": "Full-Stack Development",
+        "desc": "Responsive web apps, backend services, & APIs.",
+        "techs": [
+            ("React", 80),
+            ("Next.js", 86),
+            ("Node.js", 88),
+            ("FastAPI", 86),
+            ("Supabase", 98),
+        ],
+        "m_rows": [
+            [("React", 80), ("Next.js", 86), ("Node.js", 88)],
+            [("FastAPI", 86), ("Supabase", 98)],
+        ],
+    },
+    {
+        "icon_svg": '<path d="M14 12a4 4 0 00-4 4c0 1.5.8 2.8 2 3.5V22h3v-2.5a4 4 0 00-1-7.5zm8 0a4 4 0 00-1 7.5V22h3v-2.5c1.2-.7 2-2 2-3.5a4 4 0 00-4-4z" fill="#2DD4BF"/>',
+        "accent": "#2DD4BF",
+        "title": "AI & Machine Learning",
+        "desc": "Predictive models, vision systems, & AI integrations.",
+        "techs": [
+            ("PyTorch", 90),
+            ("TensorFlow", 106),
+            ("Scikit-learn", 104),
+            ("OpenCV", 88),
+            ("Gemini", 84),
+        ],
+        "m_rows": [
+            [("PyTorch", 88), ("TensorFlow", 104), ("OpenCV", 86)],
+            [("Scikit-learn", 104), ("Gemini", 84)],
+        ],
+    },
+    {
+        "icon_svg": '<path d="M23 20h-9a4.5 4.5 0 01-1-8.9 6 6 0 0111.5-1.1A4.5 4.5 0 0123 20z" fill="none" stroke="#38BDF8" stroke-width="1.8"/>',
+        "accent": "#38BDF8",
+        "title": "Cloud, Data & DevOps",
+        "desc": "Cloud deployment, data infrastructure, & CI/CD.",
+        "techs": [
+            ("GCP", 74),
+            ("Docker", 84),
+            ("PostgreSQL", 106),
+            ("Actions", 88),
+            ("Git", 66),
+        ],
+        "m_rows": [
+            [("GCP", 74), ("Docker", 84), ("PostgreSQL", 104)],
+            [("Actions", 88), ("Git", 66)],
+        ],
+    },
+]
+
+
 def generate_tech_stack_svg(theme: str = "dark") -> str:
-    """Generate 4-row horizontal Technical Stack SVG."""
+    """Generate 4-row horizontal Technical Stack SVG for desktop."""
     if theme == "light":
         bg_card, border_col = "#FFFFFF", "#CBD5E1"
         bg_squircle, bg_pill = "#F1F5F9", "#FFFFFF"
         text_primary, text_secondary = "#0F172A", "#475569"
         divider_col = "#E2E8F0"
-    else:  # dark
+    else:
         bg_card, border_col = "#0B132B", "#293B59"
         bg_squircle, bg_pill = "#111C31", "#17243C"
         text_primary, text_secondary = "#F4F7FF", "#A5B4CF"
         divider_col = "#1E293B"
 
-    rows = [
-        {
-            "icon_svg": '<text x="19" y="24" font-family="monospace" font-size="16" font-weight="800" fill="#38BDF8" text-anchor="middle">&lt;/&gt;</text>',
-            "accent": "#38BDF8",
-            "title": "Languages & Core",
-            "desc": "Programming, algorithms, and application logic.",
-            "techs": [
-                ("Python", 82),
-                ("TypeScript", 100),
-                ("JavaScript", 98),
-                ("C++", 66),
-                ("Java", 70),
-                ("SQL", 64),
-            ],
-        },
-        {
-            "icon_svg": '<path d="M19 12L10 17L19 22L28 17L19 12Z" fill="none" stroke="#8B5CF6" stroke-width="1.8"/><path d="M10 20.5L19 25.5L28 20.5" fill="none" stroke="#8B5CF6" stroke-width="1.8"/>',
-            "accent": "#8B5CF6",
-            "title": "Full-Stack Development",
-            "desc": "Responsive web apps, backend services, & APIs.",
-            "techs": [
-                ("React", 80),
-                ("Next.js", 86),
-                ("Node.js", 88),
-                ("FastAPI", 86),
-                ("Supabase", 98),
-            ],
-        },
-        {
-            "icon_svg": '<path d="M15 13a4 4 0 00-4 4c0 1.5.8 2.8 2 3.5V23h3v-2.5a4 4 0 00-1-7.5zm8 0a4 4 0 00-1 7.5V23h3v-2.5c1.2-.7 2-2 2-3.5a4 4 0 00-4-4z" fill="#2DD4BF"/>',
-            "accent": "#2DD4BF",
-            "title": "AI & Machine Learning",
-            "desc": "Predictive models, vision systems, & AI integrations.",
-            "techs": [
-                ("PyTorch", 90),
-                ("TensorFlow", 106),
-                ("Scikit-learn", 104),
-                ("OpenCV", 88),
-                ("Gemini", 84),
-            ],
-        },
-        {
-            "icon_svg": '<path d="M24 21h-9.5a4.5 4.5 0 01-1-8.9 6 6 0 0111.5-1.1A4.5 4.5 0 0124 21z" fill="none" stroke="#38BDF8" stroke-width="1.8"/>',
-            "accent": "#38BDF8",
-            "title": "Cloud, Data & DevOps",
-            "desc": "Cloud deployment, data infrastructure, & CI/CD.",
-            "techs": [
-                ("GCP", 74),
-                ("Docker", 84),
-                ("PostgreSQL", 106),
-                ("Actions", 88),
-                ("Git", 66),
-            ],
-        },
-    ]
-
     lines = [
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 352" width="880" height="352">',
-        "  <defs>",
-        '    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">',
-        f'      <stop offset="0%" stop-color="{bg_card}"/>',
-        f'      <stop offset="100%" stop-color="{bg_card}" stop-opacity="0.95"/>',
-        "    </linearGradient>",
-        '    <linearGradient id="geminiGrad" x1="0%" y1="0%" x2="100%" y2="100%">',
-        '      <stop offset="0%" stop-color="#38BDF8"/>',
-        '      <stop offset="100%" stop-color="#8B5CF6"/>',
-        "    </linearGradient>",
-        "    <style>",
-        '      .txt-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 14.5px; font-weight: 700; }',
-        '      .txt-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 400; }',
-        '      .txt-badge { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 11.5px; font-weight: 600; }',
-        "    </style>",
-        "  </defs>",
-        f'  <rect x="1" y="1" width="878" height="350" rx="14" fill="url(#cardGrad)" stroke="{border_col}" stroke-width="1.2"/>',
+        '  <defs><linearGradient id="geminiGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>',
+        '  <style>.txt-title{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:14.5px;font-weight:700}.txt-desc{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:11px;font-weight:400}.txt-badge{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:11.5px;font-weight:600}</style></defs>',
+        f'  <rect x="1" y="1" width="878" height="350" rx="14" fill="{bg_card}" stroke="{border_col}" stroke-width="1.2"/>',
     ]
 
-    row_h = 88
-    for i, r in enumerate(rows):
-        y = i * row_h
+    for i, r in enumerate(CATEGORIES):
+        y = i * 88
         if i > 0:
             lines.append(
                 f'  <line x1="20" y1="{y}" x2="860" y2="{y}" stroke="{divider_col}" stroke-width="1"/>'
             )
-
-        # Left squircle + vertical accent bar + text
-        lines.append(f'  <g transform="translate(24, {y + 24})">')
         lines.append(
-            f'    <rect width="38" height="38" rx="10" fill="{bg_squircle}" stroke="{border_col}" stroke-width="1"/>'
-        )
-        lines.append(f"    {r['icon_svg']}")
-        lines.append("  </g>")
-
-        lines.append(
-            f'  <rect x="74" y="{y + 22}" width="3" height="42" rx="1.5" fill="{r["accent"]}"/>'
+            f'  <g transform="translate(24, {y + 25})"><rect width="36" height="36" rx="9" fill="{bg_squircle}" stroke="{border_col}" stroke-width="1"/>{r["icon_svg"]}</g>'
         )
         lines.append(
-            f'  <text x="88" y="{y + 39}" class="txt-title" fill="{text_primary}">{r["title"]}</text>'
+            f'  <rect x="72" y="{y + 23}" width="3" height="40" rx="1.5" fill="{r["accent"]}"/>'
         )
         lines.append(
-            f'  <text x="88" y="{y + 57}" class="txt-desc" fill="{text_secondary}">{r["desc"]}</text>'
+            f'  <text x="86" y="{y + 40}" class="txt-title" fill="{text_primary}">{r["title"]}</text>'
+        )
+        lines.append(
+            f'  <text x="86" y="{y + 57}" class="txt-desc" fill="{text_secondary}">{r["desc"]}</text>'
         )
 
-        # Right badges
         cur_x = 356
-        badge_y = y + 28
         for tech, badge_w in r["techs"]:
-            lines.append(f'  <g transform="translate({cur_x}, {badge_y})">')
+            lines.append(f'  <g transform="translate({cur_x}, {y + 28})">')
             lines.append(
                 f'    <rect width="{badge_w}" height="30" rx="15" fill="{bg_pill}" stroke="{border_col}" stroke-width="1"/>'
             )
-            lines.append('    <g transform="translate(8, 7)">')
-            lines.append(f"      {get_logo_svg(tech)}")
-            lines.append("    </g>")
+            lines.append(
+                f'    <g transform="translate(8, 7)">{get_logo_svg(tech)}</g>'
+            )
             lines.append(
                 f'    <text x="30" y="19" class="txt-badge" fill="{text_primary}">{tech}</text>'
             )
             lines.append("  </g>")
             cur_x += badge_w + 8
+    lines.append("</svg>")
+    return "\n".join(lines)
+
+
+def generate_tech_stack_mobile_svg(theme: str = "dark") -> str:
+    """Generate vertically stacked Technical Stack SVG for mobile viewports."""
+    if theme == "light":
+        bg_card, border_col = "#FFFFFF", "#CBD5E1"
+        bg_squircle, bg_pill = "#F1F5F9", "#FFFFFF"
+        text_primary, text_secondary = "#0F172A", "#475569"
+        divider_col = "#E2E8F0"
+    else:
+        bg_card, border_col = "#0B132B", "#293B59"
+        bg_squircle, bg_pill = "#111C31", "#17243C"
+        text_primary, text_secondary = "#F4F7FF", "#A5B4CF"
+        divider_col = "#1E293B"
+
+    card_h = 560
+    lines = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 {card_h}" width="420" height="{card_h}">',
+        '  <defs><linearGradient id="geminiGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>',
+        '  <style>.txt-m-title{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:14px;font-weight:700}.txt-m-desc{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:10.5px;font-weight:400}.txt-m-badge{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:11px;font-weight:600}</style></defs>',
+        f'  <rect x="1" y="1" width="418" height="{card_h - 2}" rx="12" fill="{bg_card}" stroke="{border_col}" stroke-width="1.2"/>',
+    ]
+
+    sec_h = 140
+    for i, r in enumerate(CATEGORIES):
+        y = i * sec_h
+        if i > 0:
+            lines.append(
+                f'  <line x1="16" y1="{y}" x2="404" y2="{y}" stroke="{divider_col}" stroke-width="1"/>'
+            )
+        lines.append(
+            f'  <g transform="translate(18, {y + 14})"><rect width="32" height="32" rx="8" fill="{bg_squircle}" stroke="{border_col}" stroke-width="1"/>{r["icon_svg"]}</g>'
+        )
+        lines.append(
+            f'  <rect x="58" y="{y + 13}" width="3" height="34" rx="1.5" fill="{r["accent"]}"/>'
+        )
+        lines.append(
+            f'  <text x="68" y="{y + 27}" class="txt-m-title" fill="{text_primary}">{r["title"]}</text>'
+        )
+        lines.append(
+            f'  <text x="68" y="{y + 43}" class="txt-m-desc" fill="{text_secondary}">{r["desc"]}</text>'
+        )
+
+        for row_idx, badge_row in enumerate(r["m_rows"]):
+            bx = 18
+            by = y + 56 + (row_idx * 36)
+            for tech, bw in badge_row:
+                lines.append(f'  <g transform="translate({bx}, {by})">')
+                lines.append(
+                    f'    <rect width="{bw}" height="28" rx="14" fill="{bg_pill}" stroke="{border_col}" stroke-width="1"/>'
+                )
+                lines.append(
+                    f'    <g transform="translate(7, 6)">{get_logo_svg(tech)}</g>'
+                )
+                lines.append(
+                    f'    <text x="28" y="18" class="txt-m-badge" fill="{text_primary}">{tech}</text>'
+                )
+                lines.append("  </g>")
+                bx += bw + 8
 
     lines.append("</svg>")
     return "\n".join(lines)
 
 
-def write_tech_stack_svgs(output_dir: Path) -> tuple[Path, Path]:
-    """Write dark and light Technical Stack SVGs."""
+def write_tech_stack_svgs(
+    output_dir: Path,
+) -> tuple[Path, Path, Path, Path]:
+    """Write dark and light Technical Stack SVGs for desktop and mobile."""
     output_dir.mkdir(parents=True, exist_ok=True)
     d = output_dir / "tech-stack-dark.svg"
     l = output_dir / "tech-stack-light.svg"
+    md = output_dir / "tech-stack-mobile-dark.svg"
+    ml = output_dir / "tech-stack-mobile-light.svg"
     d.write_text(generate_tech_stack_svg("dark"), encoding="utf-8")
     l.write_text(generate_tech_stack_svg("light"), encoding="utf-8")
-    return d, l
+    md.write_text(generate_tech_stack_mobile_svg("dark"), encoding="utf-8")
+    ml.write_text(generate_tech_stack_mobile_svg("light"), encoding="utf-8")
+    return d, l, md, ml
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate Technical Stack SVGs.")
     parser.add_argument(
-        "--output-dir", type=Path, default=Path("assets"), help="Output directory"
+        "--output-dir",
+        type=Path,
+        default=Path("assets"),
+        help="Output directory",
     )
     args = parser.parse_args()
-    d, l = write_tech_stack_svgs(args.output_dir)
-    print(f"Generated: {d} ({d.stat().st_size} bytes)")
-    print(f"Generated: {l} ({l.stat().st_size} bytes)")
+    d, l, md, ml = write_tech_stack_svgs(args.output_dir)
+    print(f"Generated Desktop SVGs: {d.name}, {l.name}")
+    print(f"Generated Mobile SVGs:  {md.name}, {ml.name}")
 
 
 if __name__ == "__main__":

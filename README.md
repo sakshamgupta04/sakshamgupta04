@@ -158,10 +158,17 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 
 <picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/tech-stack-mobile-dark.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/tech-stack-mobile-light.svg">
+  <source media="(max-width: 600px)" srcset="assets/tech-stack-mobile-dark.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/tech-stack-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/tech-stack-light.svg">
   <img alt="Technical Stack — Languages &amp; Core: Python, TypeScript, JavaScript, C++, Java, SQL | Full-Stack Development: React, Next.js, Node.js, FastAPI, Supabase | AI &amp; Machine Learning: PyTorch, TensorFlow, Scikit-learn, OpenCV, Gemini | Cloud, Data &amp; DevOps: Google Cloud Platform, Docker, PostgreSQL, GitHub Actions, Git" src="assets/tech-stack-dark.svg" width="100%">
 </picture>
+
+<p>
+  <b>Additional Tools &amp; Technologies:</b> &nbsp;<code>Pandas</code> &nbsp;•&nbsp; <code>NumPy</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code> &nbsp;•&nbsp; <code>Jupyter Notebook</code>
+</p>
 
 ---
 
