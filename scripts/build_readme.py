@@ -32,6 +32,7 @@ from scripts.schema import Profile, ProfileValidationError, validate_profile_dic
 from scripts.svg_hero import write_hero_svgs
 from scripts.svg_languages import format_languages_alt_text, write_languages_svgs
 from scripts.svg_tech_grid import write_tech_grid_svgs
+from scripts.svg_tech_stack import write_tech_stack_svgs
 from scripts.svg_terminal import write_terminal_svgs
 
 MAX_README_BYTES = 100 * 1024  # 100 KB limit per project rules
@@ -158,6 +159,7 @@ def build(
     # Generate hero & terminal header SVGs
     assets_dir = output_path.parent / "assets"
     write_hero_svgs(profile, assets_dir)
+    write_tech_stack_svgs(assets_dir)
     write_tech_grid_svgs(assets_dir)
     write_terminal_svgs(profile, assets_dir)
 
