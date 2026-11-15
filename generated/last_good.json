@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-15T17:34:33Z",
+  "fetched_at": "2026-11-15T18:22:49Z",
   "languages": {
-    "Python": 731904,
+    "Python": 726006,
     "HTML": 79862,
     "CSS": 77329,
     "JavaScript": 238993,
@@ -10,7 +10,7 @@
     "Batchfile": 2155,
     "C++": 262664,
     "C": 98225,
-    "Jinja": 18022,
+    "Jinja": 16943,
     "Java": 1353,
     "Dockerfile": 1432
   },
@@ -19,34 +19,34 @@
   },
   "recent_activity": [
     {
-      "description": "Merged PR #1 in `sakshamgupta04/sakshamgupta04`: ",
+      "description": "Merged PR #2 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
       "relative_time": "just now",
+      "absolute_time": "2026-11-15 18:22:31"
+    },
+    {
+      "description": "Opened PR #2 in `sakshamgupta04/sakshamgupta04`: ",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
+      "relative_time": "2m ago",
+      "absolute_time": "2026-11-15 18:20:11"
+    },
+    {
+      "description": "Merged PR #1 in `sakshamgupta04/sakshamgupta04`: ",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
+      "relative_time": "48m ago",
       "absolute_time": "2026-11-15 17:34:13"
     },
     {
       "description": "Opened PR #1 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "3m ago",
+      "relative_time": "52m ago",
       "absolute_time": "2026-11-15 17:30:42"
     },
     {
       "description": "Pushed `8fa3602` to `sakshamgupta04/sakshamgupta04` (`modern-portfolio-redesign`)",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/8fa3602c6b5219184d28f1ed13d0a2fb1ce8b5d3",
-      "relative_time": "1h ago",
-      "absolute_time": "2026-11-15 15:37:22"
-    },
-    {
-      "description": "Pushed `0d0e62a` to `sakshamgupta04/sakshamgupta04` (`modern-portfolio-redesign`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/0d0e62a212a34ec618e338af903a1b9ca02660af",
       "relative_time": "2h ago",
-      "absolute_time": "2026-11-15 15:14:27"
-    },
-    {
-      "description": "Pushed `4a452d8` to `sakshamgupta04/sakshamgupta04` (`redesign-terminal-portfolio`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/4a452d897c865899ab197a539bf5c6c5f9654bd8",
-      "relative_time": "21h ago",
-      "absolute_time": "2026-11-14 19:47:53"
+      "absolute_time": "2026-11-15 15:37:22"
     }
   ],
   "github_stats": {
