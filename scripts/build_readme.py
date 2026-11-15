@@ -30,10 +30,7 @@ from scripts.helpers import (
 from scripts.mermaid_generator import generate_mermaid_skill_map
 from scripts.schema import Profile, ProfileValidationError, validate_profile_dict
 from scripts.svg_hero import write_hero_svgs
-from scripts.svg_languages import format_languages_alt_text, write_languages_svgs
-from scripts.svg_tech_grid import write_tech_grid_svgs
 from scripts.svg_tech_stack import write_tech_stack_svgs
-from scripts.svg_terminal import write_terminal_svgs
 
 MAX_README_BYTES = 100 * 1024  # 100 KB limit per project rules
 
@@ -82,7 +79,6 @@ def render_readme(
     languages = data.get("languages", {})
     recent_activity = data.get("recent_activity", [])
     project_last_updated = data.get("project_last_updated", {})
-    languages_alt = format_languages_alt_text(languages)
 
     template = env.get_template(template_name)
     mermaid_map = generate_mermaid_skill_map(profile)
@@ -92,7 +88,6 @@ def render_readme(
         has=has,
         mermaid_skill_map=mermaid_map,
         languages=languages,
-        languages_alt_text=languages_alt,
         recent_activity=recent_activity,
         project_last_updated=project_last_updated,
         github_stats=data.get("github_stats"),
@@ -156,12 +151,10 @@ def build(
     """Orchestrate profile loading, dynamic fetching, validation, and rendering."""
     raw_data, profile = load_profile_data(data_path)
 
-    # Generate hero & terminal header SVGs
+    # Generate only SVG assets referenced by the active README
     assets_dir = output_path.parent / "assets"
     write_hero_svgs(profile, assets_dir)
     write_tech_stack_svgs(assets_dir)
-    write_tech_grid_svgs(assets_dir)
-    write_terminal_svgs(profile, assets_dir)
 
     # Fetch dynamic GitHub data (or use offline cache)
     project_repos = [p.repo for p in profile.projects if p.repo]
@@ -172,10 +165,6 @@ def build(
         cache_path=cache_path,
     )
     enrich_external_feeds(profile, dynamic_data, offline=offline, cache_path=cache_path)
-
-    # Generate language bar SVGs if language data exists
-    if has(dynamic_data.get("languages")):
-        write_languages_svgs(dynamic_data["languages"], assets_dir)
 
     rendered = render_readme(
         profile=profile,

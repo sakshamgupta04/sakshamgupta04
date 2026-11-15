@@ -22,7 +22,7 @@ jobs:
   refresh:
     name: Refresh Profile
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'sakshamgupta04' && !github.event.repository.fork
+    if: github.repository_owner == 'sakshamgupta04' && !github.event.repository.fork && github.ref == 'refs/heads/main'
     timeout-minutes: 10
 
     steps:
