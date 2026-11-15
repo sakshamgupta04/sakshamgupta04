@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" width="880" height="320">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#7C3AED" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0D9488" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="laptopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <style>
+      .txt-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .txt-mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+      @media (prefers-reduced-motion: reduce) {
+        .animated-wave { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Card Frame -->
+  <rect x="2" y="2" width="876" height="316" rx="16" fill="url(#cardBg)" stroke="#CBD5E1" stroke-width="1.5" />
+
+  <!-- Flowing Abstract Ribbon Wave Background -->
+  <g opacity="0.65" filter="url(#softGlow)">
+    <path d="M 320 180 Q 440 60, 560 140 T 780 100" fill="none" stroke="url(#waveGrad)" stroke-width="6" stroke-linecap="round" />
+    <path d="M 340 195 Q 460 75, 580 155 T 800 115" fill="none" stroke="url(#waveGrad)" stroke-width="3" opacity="0.7" />
+    <path d="M 310 165 Q 430 45, 550 125 T 770 85" fill="none" stroke="url(#waveGrad)" stroke-width="2" opacity="0.5" />
+    <!-- Secondary soft wave -->
+    <path d="M 280 220 Q 420 130, 540 200 T 750 160" fill="none" stroke="#0D9488" stroke-width="2.5" opacity="0.4" />
+  </g>
+
+  <!-- LEFT CONTENT -->
+  <!-- Hi, I'm -->
+  <text x="36" y="52" class="txt-sans" fill="#475569" font-size="14" font-weight="500">Hi, I&apos;m</text>
+
+  <!-- Name -->
+  <text x="36" y="90" class="txt-sans" fill="#0F172A" font-size="34" font-weight="800" letter-spacing="-0.5">Saksham Gupta</text>
+
+  <!-- Headline -->
+  <text x="36" y="118" class="txt-sans" fill="#0284C7" font-size="15" font-weight="600">Software Developer · AI/ML Engineer</text>
+
+  <!-- Subtitle Paragraph -->
+  <text x="36" y="145" class="txt-sans" fill="#475569" font-size="12" font-weight="400">
+    <tspan x="36" dy="0">Building intelligent, scalable, and user-centric applications</tspan>
+    <tspan x="36" dy="18">that bridge AI, full-stack development, and cloud infrastructure.</tspan>
+  </text>
+
+  <!-- Status & Role Pills -->
+  <!-- Open to Roles Pill -->
+  <g transform="translate(36, 185)">
+    <rect x="0" y="0" width="168" height="26" rx="13" fill="#F1F5F9" stroke="#0D9488" stroke-opacity="0.6" stroke-width="1" />
+    <circle cx="14" cy="13" r="4" fill="#0D9488" />
+    <text x="24" y="17" class="txt-sans" fill="#0F172A" font-size="11" font-weight="600">Open to Full-Time Roles</text>
+  </g>
+
+  <!-- Role tags -->
+  <g transform="translate(212, 185)">
+    <rect x="0" y="0" width="108" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+    <text x="12" y="17" class="txt-sans" fill="#475569" font-size="10.5" font-weight="500">Software Engineer</text>
+  </g>
+  <g transform="translate(328, 185)">
+    <rect x="0" y="0" width="98" height="26" rx="13" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+    <text x="12" y="17" class="txt-sans" fill="#475569" font-size="10.5" font-weight="500">AI/ML Developer</text>
+  </g>
+
+  <!-- Action Buttons Row -->
+  <!-- Explore My Work -->
+  <g transform="translate(36, 230)">
+    <rect x="0" y="0" width="144" height="34" rx="8" fill="url(#btnGrad)" />
+    <text x="24" y="22" class="txt-sans" fill="#FFFFFF" font-size="12.5" font-weight="700">🚀 Explore My Work ↗</text>
+  </g>
+  <!-- Get in Touch -->
+  <g transform="translate(190, 230)">
+    <rect x="0" y="0" width="118" height="34" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.2" />
+    <text x="20" y="22" class="txt-sans" fill="#0F172A" font-size="12.5" font-weight="600">✉️ Get in Touch</text>
+  </g>
+
+  <!-- CENTER 3D LAPTOP ILLUSTRATION -->
+  <g transform="translate(490, 65)">
+    <!-- Ambient Screen Glow -->
+    <ellipse cx="90" cy="85" rx="75" ry="55" fill="#0284C7" opacity="0.18" filter="url(#softGlow)" />
+    <ellipse cx="90" cy="85" rx="50" ry="35" fill="#7C3AED" opacity="0.22" filter="url(#softGlow)" />
+
+    <!-- Screen Bezel (Perspective) -->
+    <path d="M 30 18 L 150 10 L 146 115 L 26 125 Z" fill="#CBD5E1" stroke="#CBD5E1" stroke-width="1" />
+    <!-- Screen Display -->
+    <path d="M 34 22 L 146 14 L 142 110 L 30 119 Z" fill="#0F172A" />
+    <!-- Code Glyph on Screen: < / > -->
+    <text x="86" y="74" class="txt-mono" fill="#0284C7" font-size="28" font-weight="700" text-anchor="middle" filter="url(#softGlow)">&lt; / &gt;</text>
+
+    <!-- Laptop Base / Keyboard Deck -->
+    <path d="M 12 124 L 158 114 L 180 152 L 2 164 Z" fill="url(#laptopGrad)" stroke="#CBD5E1" stroke-width="1" />
+    <!-- Trackpad -->
+    <path d="M 72 138 L 114 135 L 118 152 L 74 155 Z" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8" opacity="0.8" />
+    <!-- Front Edge Accent -->
+    <path d="M 2 164 L 180 152 L 182 156 L 0 168 Z" fill="#0284C7" opacity="0.6" />
+  </g>
+
+  <!-- RIGHT COLUMN: STAT BADGES -->
+  <!-- Badge 1: Degree -->
+  <g transform="translate(680, 42)">
+    <rect x="0" y="0" width="176" height="52" rx="10" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+    <circle cx="24" cy="26" r="13" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.8" />
+    <text x="24" y="30" class="txt-sans" font-size="12" text-anchor="middle">🎓</text>
+    <text x="46" y="22" class="txt-sans" fill="#0F172A" font-size="11.5" font-weight="700">B.Tech CSE (AI/ML)</text>
+    <text x="46" y="38" class="txt-sans" fill="#475569" font-size="10" font-weight="500">MIET Jammu</text>
+  </g>
+
+  <!-- Badge 2: Academic Period -->
+  <g transform="translate(680, 104)">
+    <rect x="0" y="0" width="176" height="52" rx="10" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+    <circle cx="24" cy="26" r="13" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.8" />
+    <text x="24" y="30" class="txt-sans" font-size="12" text-anchor="middle">📅</text>
+    <text x="46" y="22" class="txt-sans" fill="#0F172A" font-size="11.5" font-weight="700">2022 — 2026</text>
+    <text x="46" y="38" class="txt-sans" fill="#475569" font-size="10" font-weight="500">Academic Period</text>
+  </g>
+
+  <!-- Badge 3: CGPA -->
+  <g transform="translate(680, 166)">
+    <rect x="0" y="0" width="176" height="52" rx="10" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+    <circle cx="24" cy="26" r="13" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.8" />
+    <text x="24" y="30" class="txt-sans" font-size="12" text-anchor="middle">⭐</text>
+    <text x="46" y="22" class="txt-sans" fill="#0F172A" font-size="11.5" font-weight="700">8.5 / 10</text>
+    <text x="46" y="38" class="txt-sans" fill="#475569" font-size="10" font-weight="500">CGPA Standing</text>
+  </g>
+
+  <!-- Badge 4: Location -->
+  <g transform="translate(680, 228)">
+    <rect x="0" y="0" width="176" height="52" rx="10" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1" />
+    <circle cx="24" cy="26" r="13" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="0.8" />
+    <text x="24" y="30" class="txt-sans" font-size="12" text-anchor="middle">📍</text>
+    <text x="46" y="22" class="txt-sans" fill="#0F172A" font-size="11.5" font-weight="700">Jammu, India</text>
+    <text x="46" y="38" class="txt-sans" fill="#475569" font-size="10" font-weight="500">Location</text>
+  </g>
+</svg>

@@ -1,12 +1,14 @@
-## 🤝 $ contact.sh — Let's Connect <a id="contact"></a>
+## 🚀 Let's Connect <a id="contact"></a>
 
-I'm open to discussing software engineering opportunities, AI/ML projects, and technical collaborations. Feel free to explore my work or get in touch:
+I'm open to discussing software engineering opportunities, AI/ML projects, and technical collaborations. Feel free to explore my work or get in touch!
 
 {% set contact_links = [] %}
-{% if has(profile.links.portfolio) %}{% set _ = contact_links.append("[🌐 **Portfolio Website**](" ~ profile.links.portfolio ~ ")") %}{% endif %}
-{% if has(profile.links.email) %}{% set mailto_url = profile.links.email if profile.links.email.startswith('mailto:') else 'mailto:' ~ profile.links.email %}{% set _ = contact_links.append("[✉️ **Email**](" ~ mailto_url ~ ")") %}{% endif %}
-{% if has(profile.links.linkedin) %}{% set _ = contact_links.append("[💼 **LinkedIn**](" ~ profile.links.linkedin ~ ")") %}{% endif %}
-{% if has(profile.links.github) %}{% set _ = contact_links.append("[🐙 **GitHub**](" ~ profile.links.github ~ ")") %}{% endif %}
-{% if has(profile.links.leetcode) %}{% set _ = contact_links.append("[🧩 **LeetCode**](" ~ profile.links.leetcode ~ ")") %}{% endif %}
-{% if has(profile.links.resume_pdf) %}{% set _ = contact_links.append("[📄 **Résumé PDF**](" ~ profile.links.resume_pdf ~ ")") %}{% endif %}
-{{ contact_links | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}
+{% if has(profile.links.portfolio) %}{% set _ = contact_links.append("<a href=\"" ~ profile.links.portfolio ~ "\">🌐 <b>Portfolio Website ↗</b></a>") %}{% endif %}
+{% if has(profile.links.email) %}{% set mailto_url = profile.links.email if profile.links.email.startswith('mailto:') else 'mailto:' ~ profile.links.email %}{% set _ = contact_links.append("<a href=\"" ~ mailto_url ~ "\">✉️ <b>Email ↗</b></a>") %}{% endif %}
+{% if has(profile.links.linkedin) %}{% set _ = contact_links.append("<a href=\"" ~ profile.links.linkedin ~ "\">💼 <b>LinkedIn ↗</b></a>") %}{% endif %}
+{% if has(profile.links.github) %}{% set _ = contact_links.append("<a href=\"" ~ profile.links.github ~ "\">🐙 <b>GitHub ↗</b></a>") %}{% endif %}
+{% if has(profile.links.leetcode) %}{% set _ = contact_links.append("<a href=\"" ~ profile.links.leetcode ~ "\">🧩 <b>LeetCode ↗</b></a>") %}{% endif %}
+{% if has(profile.links.resume_pdf) %}{% set _ = contact_links.append("<a href=\"" ~ profile.links.resume_pdf ~ "\">📄 <b>Résumé PDF ↗</b></a>") %}{% endif %}
+<p align="center">
+{{ contact_links | join(" &nbsp;&nbsp;|&nbsp;&nbsp; ") }}
+</p>

@@ -1,22 +1,26 @@
 {% if has(profile.experience) %}
-## 💼 $ experience — Professional Experience <a id="experience"></a>
+## 💼 Professional Experience <a id="experience"></a>
 
+<table width="100%">
+<tr>
 {% for exp in profile.experience %}
-### {{ exp.role }} <a id="exp-{{ loop.index }}"></a>
-**{{ exp.org }}**{% if has(exp.location) %} &nbsp;|&nbsp; 📍 {{ exp.location }}{% endif %}{% if has(exp.start) and has(exp.end) %} &nbsp;|&nbsp; 🗓️ `{{ exp.start }} — {{ exp.end }}`{% endif %}
+<td width="50%" valign="top">
 
+<h4 style="margin-top: 0; margin-bottom: 4px;">{{ exp.role }} <a id="exp-{{ loop.index }}"></a></h4>
+<p style="margin-top: 0; margin-bottom: 8px;"><b>{{ exp.org }}</b>{% if has(exp.location) %}<br><sub>📍 {{ exp.location }}{% endif %}{% if has(exp.start) and has(exp.end) %} &nbsp;|&nbsp; 🗓️ {{ exp.start }} — {{ exp.end }}</sub>{% endif %}</p>
+
+<ul>
 {% for b in exp.bullets %}
-- {{ b }}
+  <li>{{ b }}</li>
 {% endfor %}
+</ul>
 
 {% if has(exp.stack) %}
-**Technologies:** {% for s in exp.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
-
+<p style="margin-top: 8px; margin-bottom: 0;"><b>Tech:</b> {% for s in exp.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;{% endif %}{% endfor %}</p>
 {% endif %}
-{% if not loop.last %}
-<hr>
 
-{% endif %}
+</td>
 {% endfor %}
-
+</tr>
+</table>
 {% endif %}

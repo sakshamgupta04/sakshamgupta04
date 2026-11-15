@@ -1,28 +1,37 @@
-## 👨‍💻 $ whoami — About Me <a id="about"></a>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
 
-I'm **{{ profile.identity.name }}**, a Computer Science and Engineering graduate specializing in Artificial Intelligence and Machine Learning.
+<h3 style="margin-top: 0; margin-bottom: 8px;">👤 About Me <a id="about"></a></h3>
 
-My work spans full-stack application development, REST API engineering, machine learning, and cloud infrastructure. I have practical experience building React and Next.js applications, developing AI-powered systems, integrating Supabase services, and deploying workloads using Google Cloud Platform.
+<p>I'm <b>{{ profile.identity.name }}</b>, a Computer Science and Engineering graduate specializing in Artificial Intelligence and Machine Learning.</p>
 
-I focus on connecting intelligent software with reliable engineering practices to build applications that solve practical problems.
+<p>My work spans full-stack development, REST API engineering, machine learning, and cloud infrastructure. I enjoy building practical, end-to-end systems that solve real-world problems with reliable engineering practices.</p>
 
-| Attribute | Details |
-| :--- | :--- |
+</td>
+<td width="50%" valign="top">
+
+<h3 style="margin-top: 0; margin-bottom: 8px;">📊 At a Glance</h3>
+
 {% if has(profile.identity.roles_targeted) -%}
-| 🎯 **Target Roles** | {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }} |
+<p style="margin: 4px 0;"><b>🎯 Target Roles:</b> {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }}</p>
 {% endif -%}
 {% if has(profile.identity.education) -%}
 {% for edu in profile.identity.education -%}
-| 🎓 **Degree &amp; School** | {{ edu.degree }} — {{ edu.school }} |
-| 🗓️ **Academic Period** | {{ edu.start }}–{{ edu.end }}{% if has(edu.score) %} &nbsp;|&nbsp; **CGPA {{ edu.score }}**{% endif %} |
+<p style="margin: 4px 0;"><b>🎓 Degree &amp; School:</b> {{ edu.degree }} — {{ edu.school }}</p>
+<p style="margin: 4px 0;"><b>🗓️ Academic Period:</b> {{ edu.start }} – {{ edu.end }}{% if has(edu.score) %} &nbsp;|&nbsp; <b>CGPA {{ edu.score }}</b>{% endif %}</p>
 {% endfor -%}
 {% endif -%}
 {% if has(profile.identity.location) -%}
-| 📍 **Location** | {{ profile.identity.location }} |
+<p style="margin: 4px 0;"><b>📍 Location:</b> {{ profile.identity.location }}</p>
 {% endif -%}
 {% if has(profile.identity.languages_spoken) -%}
-| 🗣️ **Languages** | {{ profile.identity.languages_spoken | join(", ") }} |
+<p style="margin: 4px 0;"><b>🗣️ Languages:</b> {{ profile.identity.languages_spoken | join(", ") }}</p>
 {% endif -%}
 {% if has(profile.identity.focus_areas) -%}
-| 🔬 **Focus Areas** | {{ profile.identity.focus_areas | join(" &nbsp;•&nbsp; ") }} |
+<p style="margin: 4px 0;"><b>🔬 Focus Areas:</b> {{ profile.identity.focus_areas | join(" &nbsp;•&nbsp; ") }}</p>
 {% endif -%}
+
+</td>
+</tr>
+</table>

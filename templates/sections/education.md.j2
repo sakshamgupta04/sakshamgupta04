@@ -1,5 +1,5 @@
-{% if has(profile.identity.education) %}
-## 🎓 $ education — Education <a id="education"></a>
+{% if profile.features.education and has(profile.identity.education) %}
+## 🎓 Education <a id="education"></a>
 
 | Institution | Degree Program | Academic Period | CGPA Standing |
 | :--- | :--- | :--- | :--- |
