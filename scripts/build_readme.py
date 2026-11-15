@@ -29,6 +29,7 @@ from scripts.helpers import (
 )
 from scripts.mermaid_generator import generate_mermaid_skill_map
 from scripts.schema import Profile, ProfileValidationError, validate_profile_dict
+from scripts.svg_certifications import write_certification_svgs
 from scripts.svg_hero import write_hero_svgs
 from scripts.svg_tech_stack import write_tech_stack_svgs
 
@@ -154,6 +155,7 @@ def build(
     # Generate only SVG assets referenced by the active README
     assets_dir = output_path.parent / "assets"
     write_hero_svgs(profile, assets_dir)
+    write_certification_svgs(profile, assets_dir)
     write_tech_stack_svgs(assets_dir)
 
     # Fetch dynamic GitHub data (or use offline cache)
