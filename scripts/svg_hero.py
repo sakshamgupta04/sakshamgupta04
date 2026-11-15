@@ -41,7 +41,7 @@ def generate_modern_hero_svg(profile: Profile, theme: str = "dark") -> str:
         accent_blue, accent_violet, accent_teal = "#38BDF8", "#8B5CF6", "#2DD4BF"
         laptop_screen_bg, laptop_body = "#0B132B", "#1E293B"
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="880" height="260">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 220" width="880" height="220">
   <defs>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="{bg_card}" />
@@ -55,10 +55,6 @@ def generate_modern_hero_svg(profile: Profile, theme: str = "dark") -> str:
     <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="{accent_violet}" />
       <stop offset="100%" stop-color="{accent_blue}" />
-    </linearGradient>
-    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="{accent_blue}" />
-      <stop offset="100%" stop-color="{accent_violet}" />
     </linearGradient>
     <linearGradient id="laptopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#334155" />
@@ -75,13 +71,13 @@ def generate_modern_hero_svg(profile: Profile, theme: str = "dark") -> str:
   </defs>
 
   <!-- Outer Card Frame -->
-  <rect x="2" y="2" width="876" height="256" rx="16" fill="url(#cardBg)" stroke="{border_col}" stroke-width="1.5" />
+  <rect x="2" y="2" width="876" height="216" rx="16" fill="url(#cardBg)" stroke="{border_col}" stroke-width="1.5" />
 
   <!-- Flowing Ribbon Waves -->
   <g opacity="0.6" filter="url(#softGlow)">
-    <path d="M 380 180 Q 520 40, 680 120 T 860 80" fill="none" stroke="url(#waveGrad)" stroke-width="6" stroke-linecap="round" />
-    <path d="M 400 195 Q 540 55, 700 135 T 870 95" fill="none" stroke="url(#waveGrad)" stroke-width="3" opacity="0.7" />
-    <path d="M 350 215 Q 500 110, 650 170 T 840 130" fill="none" stroke="{accent_teal}" stroke-width="2.5" opacity="0.4" />
+    <path d="M 380 150 Q 520 30, 680 90 T 860 60" fill="none" stroke="url(#waveGrad)" stroke-width="6" stroke-linecap="round" />
+    <path d="M 400 165 Q 540 45, 700 105 T 870 75" fill="none" stroke="url(#waveGrad)" stroke-width="3" opacity="0.7" />
+    <path d="M 350 185 Q 500 95, 650 140 T 840 105" fill="none" stroke="{accent_teal}" stroke-width="2.5" opacity="0.4" />
   </g>
 
   <!-- LEFT COLUMN CONTENT -->
@@ -114,30 +110,8 @@ def generate_modern_hero_svg(profile: Profile, theme: str = "dark") -> str:
     <text x="10" y="15.5" class="txt-sans" fill="{text_secondary}" font-size="9.5" font-weight="500">Full-Stack Engineer</text>
   </g>
 
-  <!-- 5 Action Buttons Row -->
-  <g transform="translate(40, 204)">
-    <rect x="0" y="0" width="102" height="30" rx="6" fill="url(#btnGrad)" />
-    <text x="14" y="19" class="txt-sans" fill="#FFFFFF" font-size="11" font-weight="700">🚀 Portfolio ↗</text>
-  </g>
-  <g transform="translate(148, 204)">
-    <rect x="0" y="0" width="86" height="30" rx="6" fill="{bg_pill}" stroke="{border_col}" stroke-width="1.2" />
-    <text x="12" y="19" class="txt-sans" fill="{text_primary}" font-size="11" font-weight="600">🐙 GitHub ↗</text>
-  </g>
-  <g transform="translate(240, 204)">
-    <rect x="0" y="0" width="92" height="30" rx="6" fill="{bg_pill}" stroke="{border_col}" stroke-width="1.2" />
-    <text x="12" y="19" class="txt-sans" fill="{text_primary}" font-size="11" font-weight="600">💼 LinkedIn ↗</text>
-  </g>
-  <g transform="translate(338, 204)">
-    <rect x="0" y="0" width="78" height="30" rx="6" fill="{bg_pill}" stroke="{border_col}" stroke-width="1.2" />
-    <text x="12" y="19" class="txt-sans" fill="{text_primary}" font-size="11" font-weight="600">✉️ Email ↗</text>
-  </g>
-  <g transform="translate(422, 204)">
-    <rect x="0" y="0" width="88" height="30" rx="6" fill="{bg_pill}" stroke="{border_col}" stroke-width="1.2" />
-    <text x="12" y="19" class="txt-sans" fill="{text_primary}" font-size="11" font-weight="600">📄 Resume ↓</text>
-  </g>
-
   <!-- RIGHT 3D LAPTOP ILLUSTRATION -->
-  <g transform="translate(580, 40)">
+  <g transform="translate(580, 10)">
     <ellipse cx="120" cy="95" rx="110" ry="70" fill="{accent_blue}" opacity="0.22" filter="url(#softGlow)" />
     <ellipse cx="120" cy="95" rx="75" ry="50" fill="{accent_violet}" opacity="0.3" filter="url(#softGlow)" />
     <!-- Screen Shell -->

@@ -17,19 +17,13 @@
 
 </div>
 
-<br>
-
 <div align="center" markdown="1">
 
 **Jump to:** [About](#about) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Tech Stack](#skills) &nbsp;•&nbsp; [Focus Areas](#expertise) &nbsp;•&nbsp; [Research](#research) &nbsp;•&nbsp; [Certifications](#certifications) &nbsp;•&nbsp; [Education](#education) &nbsp;•&nbsp; [Contact](#contact)
 
 </div>
 
-<br>
-
 ---
-
-<br>
 
 ## 👤 About Me <a id="about"></a>
 
@@ -40,11 +34,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 **🎯 Target Roles:** Full-Stack / Web Developer &nbsp;•&nbsp; AI/ML Engineer &nbsp;•&nbsp; Software Engineer (SDE)
 
 
-<br>
-
 ---
-
-<br>
 
 ## 💼 Professional Experience <a id="experience"></a>
 
@@ -68,21 +58,19 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 **Technologies:** <code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Machine Learning</code> &nbsp;•&nbsp; <code>Model Evaluation</code>
 
-<br>
-
 ---
-
-<br>
 
 ## ⚡ Featured Projects <a id="projects"></a>
 
 <a id="people-ai"></a>
-<p align="center" style="margin-bottom: 16px;">
+<p align="center">
   <img src="assets/projects/people-ai.png" alt="People.ai" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
 </p>
 
-### People.ai — Faculty Fit & Retention Prediction
-<p style="margin: 8px 0 12px 0; font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+### 01 &nbsp; People.ai
+**Faculty Fit & Retention Prediction**
+
+<p style="font-size: 14px; line-height: 1.6; color: #A5B4CF;">
   An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.
 </p>
 
@@ -93,27 +81,25 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 - Trained and evaluated supervised classification models for faculty role fit and retention prediction.
 
 
-<p style="margin: 12px 0 8px 0;">
+<p>
   <b>Technologies:</b> &nbsp;<code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Gemini</code> &nbsp;•&nbsp; <code>Model Evaluation</code></p>
 
-<p style="margin-top: 14px; margin-bottom: 0;">
+<p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit">🔍 <b>Case Study ↗</b></a>
 </p>
 
 
-<br>
-
 ---
 
-<br>
-
 <a id="ai-video-interview-emotion-analyzer"></a>
-<p align="center" style="margin-bottom: 16px;">
+<p align="center">
   <img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
 </p>
 
-### AI Video Interview & Emotion Analyzer — Real-Time Facial Expression & Emotion Telemetry
-<p style="margin: 8px 0 12px 0; font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+### 02 &nbsp; AI Video Interview & Emotion Analyzer
+**Real-Time Facial Expression & Emotion Telemetry**
+
+<p style="font-size: 14px; line-height: 1.6; color: #A5B4CF;">
   A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.
 </p>
 
@@ -124,27 +110,25 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 - Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.
 
 
-<p style="margin: 12px 0 8px 0;">
+<p>
   <b>Technologies:</b> &nbsp;<code>Next.js</code> &nbsp;•&nbsp; <code>Python</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Supabase</code></p>
 
-<p style="margin-top: 14px; margin-bottom: 0;">
+<p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer">🔍 <b>Case Study ↗</b></a>
 </p>
 
 
-<br>
-
 ---
 
-<br>
-
 <a id="echonotes"></a>
-<p align="center" style="margin-bottom: 16px;">
+<p align="center">
   <img src="assets/projects/echonotes.png" alt="EchoNotes" width="100%" style="border-radius: 8px; border: 1px solid #293B59; display: block;">
 </p>
 
-### EchoNotes — AI-Powered Transcription & Semantic Search
-<p style="margin: 8px 0 12px 0; font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+### 03 &nbsp; EchoNotes
+**AI-Powered Transcription & Semantic Search**
+
+<p style="font-size: 14px; line-height: 1.6; color: #A5B4CF;">
   An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.
 </p>
 
@@ -155,21 +139,17 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 - Implemented semantic search using embeddings and timestamp-linked navigation.
 
 
-<p style="margin: 12px 0 8px 0;">
+<p>
   <b>Technologies:</b> &nbsp;<code>Next.js</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>Supabase</code></p>
 
-<p style="margin-top: 14px; margin-bottom: 0;">
+<p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes">🔍 <b>Case Study ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://youtube-video-summarizer-sage.vercel.app/">▶️ <b>Live Site ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer">📦 <b>Source Code ↗</b></a>
 </p>
 
 
 
 
-<br>
-
 ---
-
-<br>
 
 ## 🛠️ Technical Stack <a id="skills"></a>
 
@@ -210,11 +190,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
   </tr>
 </table>
 
-<br>
-
 ---
-
-<br>
 
 ## 🎯 Core Focus Areas <a id="expertise"></a>
 
@@ -230,11 +206,7 @@ Containerizing microservices with Docker and deploying serverless workloads to G
 
 
 
-<br>
-
 ---
-
-<br>
 
 ## 📖 Research Publications <a id="research"></a>
 
@@ -252,11 +224,7 @@ Containerizing microservices with Docker and deploying serverless workloads to G
 
 
 
-<br>
-
 ---
-
-<br>
 
 ## 🎖️ Certifications &amp; Achievements <a id="certifications"></a>
 
@@ -270,11 +238,7 @@ Containerizing microservices with Docker and deploying serverless workloads to G
 > 🏆 **Hands-on Training:** AI/ML Hands-on Training Program, Model Institute of Engineering and Technology (March 2025).
 
 
-<br>
-
 ---
-
-<br>
 
 ## 🎓 Education <a id="education"></a>
 
@@ -283,11 +247,7 @@ Containerizing microservices with Docker and deploying serverless workloads to G
 > **Academic Standing:** CGPA 8.5/10
 
 
-<br>
-
 ---
-
-<br>
 
 ## 🚀 Let's Connect <a id="contact"></a>
 
