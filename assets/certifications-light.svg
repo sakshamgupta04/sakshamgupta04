@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="534" viewBox="0 0 1120 534" role="img" aria-labelledby="title desc">
+<title id="title">Certifications and achievements</title>
+<desc id="desc">Six individual credential cards with issuer and course information. Verification links are provided below the graphic.</desc>
+<rect width="1120" height="534" fill="#F7F9FE" rx="16"/>
+<rect x="14" y="14" width="535" height="154" rx="16" fill="#FFFFFF" stroke="#D8E2F1" stroke-width="1.5"/>
+<rect x="34" y="34" width="4" height="24" rx="2" fill="#1766B2"/>
+<text x="50" y="52" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.2" font-weight="700" fill="#1766B2">COURSERA</text>
+<text x="36" y="87" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#17243C">Machine Learning Foundations: A Case</text>
+<text x="36" y="108" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#17243C">Study Approach</text>
+<text x="36" y="149" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#50637D">Certification  ·  Credential link below</text>
+<path d="M 513 44 l 12 -12 m -10 0 h 10 v 10" fill="none" stroke="#1766B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="571" y="14" width="535" height="154" rx="16" fill="#FFFFFF" stroke="#D8E2F1" stroke-width="1.5"/>
+<rect x="591" y="34" width="4" height="24" rx="2" fill="#1766B2"/>
+<text x="607" y="52" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.2" font-weight="700" fill="#1766B2">COURSERA</text>
+<text x="593" y="87" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#17243C">Machine Learning: Clustering &amp;</text>
+<text x="593" y="108" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#17243C">Retrieval</text>
+<text x="593" y="149" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#50637D">Certification  ·  Credential link below</text>
+<path d="M 1070 44 l 12 -12 m -10 0 h 10 v 10" fill="none" stroke="#1766B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="14" y="190" width="535" height="154" rx="16" fill="#FFFFFF" stroke="#D8E2F1" stroke-width="1.5"/>
+<rect x="34" y="210" width="4" height="24" rx="2" fill="#1766B2"/>
+<text x="50" y="228" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.2" font-weight="700" fill="#1766B2">NPTEL</text>
+<text x="36" y="263" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#17243C">The Joy of Computing Using Python</text>
+<text x="36" y="325" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#50637D">Certification  ·  Credential link below</text>
+<path d="M 513 220 l 12 -12 m -10 0 h 10 v 10" fill="none" stroke="#1766B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="571" y="190" width="535" height="154" rx="16" fill="#FFFFFF" stroke="#D8E2F1" stroke-width="1.5"/>
+<rect x="591" y="210" width="4" height="24" rx="2" fill="#1766B2"/>
+<text x="607" y="228" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.2" font-weight="700" fill="#1766B2">UDEMY</text>
+<text x="593" y="263" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#17243C">GCP Associate Cloud Engineer</text>
+<text x="593" y="284" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#17243C">Certification Training</text>
+<text x="593" y="325" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#50637D">Course  ·  Credential link below</text>
+<path d="M 1070 220 l 12 -12 m -10 0 h 10 v 10" fill="none" stroke="#1766B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="14" y="366" width="535" height="154" rx="16" fill="#FFFFFF" stroke="#D8E2F1" stroke-width="1.5"/>
+<rect x="34" y="386" width="4" height="24" rx="2" fill="#1766B2"/>
+<text x="50" y="404" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.2" font-weight="700" fill="#1766B2">UDEMY</text>
+<text x="36" y="439" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#17243C">JavaScript — The Complete Guide</text>
+<text x="36" y="501" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#50637D">Course  ·  Credential link below</text>
+<path d="M 513 396 l 12 -12 m -10 0 h 10 v 10" fill="none" stroke="#1766B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="571" y="366" width="535" height="154" rx="16" fill="#FFFFFF" stroke="#D8E2F1" stroke-width="1.5"/>
+<rect x="591" y="386" width="4" height="24" rx="2" fill="#1766B2"/>
+<text x="607" y="404" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.2" font-weight="700" fill="#1766B2">UDEMY</text>
+<text x="593" y="439" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#17243C">The Complete Guide to Airtable</text>
+<text x="593" y="501" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#50637D">Course  ·  Credential link below</text>
+<path d="M 1070 396 l 12 -12 m -10 0 h 10 v 10" fill="none" stroke="#1766B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
