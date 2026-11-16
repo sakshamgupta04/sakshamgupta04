@@ -191,7 +191,18 @@ def test_all_svg_assets_are_well_formed_xml() -> None:
 
     assets_dir = Path("assets")
     svg_files = list(assets_dir.glob("*.svg"))
-    expected = {"hero-dark.svg", "hero-light.svg", "tech-stack-dark.svg", "tech-stack-light.svg", "tech-stack-mobile-dark.svg", "tech-stack-mobile-light.svg"}
+    expected = {
+        "hero-dark.svg",
+        "hero-light.svg",
+        "tech-stack-dark.svg",
+        "tech-stack-light.svg",
+        "tech-stack-mobile-dark.svg",
+        "tech-stack-mobile-light.svg",
+        "certifications-dark.svg",
+        "certifications-light.svg",
+        "certifications-mobile-dark.svg",
+        "certifications-mobile-light.svg",
+    }
     assert {p.name for p in svg_files} == expected, "Unexpected or missing SVG assets"
 
     for svg_file in svg_files:
