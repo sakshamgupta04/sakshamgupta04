@@ -80,6 +80,7 @@ This runs:
 1. `ruff check .` (code quality and formatting)
 2. `pytest tests` (offline unit test suite)
 3. `python scripts/build_readme.py --offline --check` (schema and size validation)
+4. `python scripts/check_links.py --offline` (offline link format validation)
 
 ---
 

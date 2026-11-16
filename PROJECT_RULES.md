@@ -29,10 +29,12 @@ Maintain Saksham Gupta's professional, modern, non-terminal GitHub profile READM
 - `assets/hero-dark.svg`, `assets/hero-light.svg`
 - `assets/tech-stack-dark.svg`, `assets/tech-stack-light.svg`
 - `assets/tech-stack-mobile-dark.svg`, `assets/tech-stack-mobile-light.svg`
+- `assets/certifications-dark.svg`, `assets/certifications-light.svg`
+- `assets/certifications-mobile-dark.svg`, `assets/certifications-mobile-light.svg`
 
 ## Review checklist
 - The generated README preserves its current sections and live links.
-- All six active SVG assets are valid XML.
+- All ten active SVG assets are valid XML.
 - The three featured-project PNGs remain unchanged.
 - Offline generation and test suite pass.
 - GitHub Actions can refresh the README without recreating deleted assets.

@@ -1,4 +1,4 @@
-"""Verification script: runs ruff, pytest, and build_readme --offline --check.
+"""Verification script: runs ruff, pytest, build_readme --offline --check, and check_links --offline.
 
 Halts immediately on the first failure.
 """
