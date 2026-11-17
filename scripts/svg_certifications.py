@@ -14,11 +14,11 @@ def render_certification_svg(profile: Profile, *, dark: bool, mobile: bool) -> s
     """Create accessible cards with spacious gutters and no external assets."""
     certs = profile.certifications
     width = 560 if mobile else 1120
-    cols = 1 if mobile else 3
-    gutter = 12 if mobile else 16
-    margin = 14
+    cols = 2 if mobile else 3
+    gutter = 12
+    margin = 10
     card_width = (width - margin * 2 - gutter * (cols - 1)) // cols
-    card_height = 128 if mobile else 146
+    card_height = 124 if mobile else 116
     row_step = card_height + gutter
     rows = (len(certs) + cols - 1) // cols
     height = margin * 2 + rows * card_height + max(rows - 1, 0) * gutter
@@ -37,24 +37,24 @@ def render_certification_svg(profile: Profile, *, dark: bool, mobile: bool) -> s
     for i, cert in enumerate(certs):
         x = margin + (i % cols) * (card_width + gutter)
         y = margin + (i // cols) * row_step
-        lines = textwrap.wrap(cert.title, width=42 if mobile else 29, break_long_words=False, break_on_hyphens=False)
+        lines = textwrap.wrap(cert.title, width=29 if mobile else 30, break_long_words=False, break_on_hyphens=False)
         lines = lines[:3]
         parts.append(
-            f'<rect x="{x}" y="{y}" width="{card_width}" height="{card_height}" rx="16" fill="{surface}" stroke="{stroke}" stroke-width="1.5"/>'
+            f'<rect x="{x}" y="{y}" width="{card_width}" height="{card_height}" rx="12" fill="{surface}" stroke="{stroke}" stroke-width="1.5"/>'
         )
-        parts.append(f'<rect x="{x + 20}" y="{y + 16}" width="4" height="24" rx="2" fill="{accent}"/>')
+        parts.append(f'<rect x="{x + 13}" y="{y + 13}" width="4" height="16" rx="2" fill="{accent}"/>')
         parts.append(
-            f'<text x="{x + 36}" y="{y + 32}" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.2" font-weight="700" fill="{accent}">{html.escape(cert.issuer.upper())}</text>'
+            f'<text x="{x + 25}" y="{y + 26}" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="0.7" font-weight="700" fill="{accent}">{html.escape(cert.issuer.upper())}</text>'
         )
         for j, line in enumerate(lines):
             parts.append(
-                f'<text x="{x + 22}" y="{y + 61 + j * 19}" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="{text}">{html.escape(line)}</text>'
+                f'<text x="{x + 14}" y="{y + 49 + j * 17}" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="{text}">{html.escape(line)}</text>'
             )
         parts.append(
-            f'<text x="{x + 22}" y="{y + card_height - 14}" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="{muted}">{html.escape(cert.kind.title())}  ·  Verify below</text>'
+            f'<text x="{x + 22}" y="{y + card_height - 10}" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="{muted}">{html.escape(cert.kind.title())}  ·  Verify below</text>'
         )
         parts.append(
-            f'<path d="M {x + card_width - 36} {y + 25} l 12 -12 m -10 0 h 10 v 10" fill="none" stroke="{accent}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'
+            f'<path d="M {x + card_width - 30} {y + 23} l 12 -12 m -10 0 h 10 v 10" fill="none" stroke="{accent}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'
         )
     parts.append("</svg>")
     svg = "\n".join(parts) + "\n"

@@ -29,7 +29,7 @@ def test_certification_showcase_preserves_all_credentials() -> None:
             assert section.count(credential.url) == 1
     assert section.count("[View credential]") == 6
     assert "AI/ML Hands-on Training Program" in section
-    assert "March 2025" in section
+    assert "Mar 2025" in section
 
 
 def test_certification_svgs_have_separate_cards_in_all_variants() -> None:
@@ -38,6 +38,7 @@ def test_certification_svgs_have_separate_cards_in_all_variants() -> None:
         for mobile in (True, False):
             svg = render_certification_svg(profile, dark=dark, mobile=mobile)
             root = ET.fromstring(svg)
+            assert int(root.attrib["height"]) <= (410 if mobile else 260)
             rectangles = root.findall("{http://www.w3.org/2000/svg}rect")
             assert len(rectangles) == 2 * len(profile.certifications) + 1
             assert 'aria-labelledby="title desc"' in svg
