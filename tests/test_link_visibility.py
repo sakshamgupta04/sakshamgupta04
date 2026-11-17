@@ -18,6 +18,6 @@ def test_links_hidden_when_null() -> None:
     rendered = render_readme(profile=p, template_dir=Path("templates"), template_name="README.md.j2")
     assert "[📄 Resume]" not in rendered
     assert "[🌐 Portfolio]" not in rendered
-    assert "[💼 LinkedIn]" in rendered
-    assert "[✉️ Email]" in rendered
-    assert "[🧩 LeetCode]" in rendered
+    assert "[💼 **LinkedIn**]" in rendered
+    assert "[✉️ **Email**]" in rendered
+    assert "[🧩 **LeetCode**]" in rendered

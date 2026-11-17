@@ -109,7 +109,7 @@ def test_principles_table_rendered(profile_fixture: Profile) -> None:
     assert "Ship it" in output
 
 
-def test_anchors_and_toc_links(profile_fixture: Profile) -> None:
+def test_section_anchors_without_toc(profile_fixture: Profile) -> None:
     p = copy.deepcopy(profile_fixture)
     p.features.start_here = True
     p.features.goals = True
@@ -121,10 +121,7 @@ def test_anchors_and_toc_links(profile_fixture: Profile) -> None:
     assert 'id="principles"' in output
     assert 'id="contact"' in output
 
-    assert "[About](#about)" in output
-    assert "[Start Here](#start-here)" in output
-    assert "[Roadmap &amp; Goals](#goals)" in output
-    assert "[Principles](#principles)" in output
+    assert "**Jump to:**" not in output
 
 
 def test_unwanted_sections_hidden_by_default(profile_fixture: Profile) -> None:
