@@ -193,37 +193,37 @@ def generate_tech_stack_svg(theme: str = "dark") -> str:
         divider_col = "#1E293B"
 
     lines = [
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 352" width="880" height="352">',
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 264" width="880" height="264">',
         '  <defs><linearGradient id="geminiGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>',
         '  <style>.txt-title{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:14.5px;font-weight:700}.txt-desc{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:11px;font-weight:400}.txt-badge{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:11.5px;font-weight:600}</style></defs>',
-        f'  <rect x="1" y="1" width="878" height="350" rx="14" fill="{bg_card}" stroke="{border_col}" stroke-width="1.2"/>',
+        f'  <rect x="1" y="1" width="878" height="262" rx="14" fill="{bg_card}" stroke="{border_col}" stroke-width="1.2"/>',
     ]
 
     for i, r in enumerate(CATEGORIES):
-        y = i * 88
+        y = i * 66
         if i > 0:
             lines.append(
                 f'  <line x1="20" y1="{y}" x2="860" y2="{y}" stroke="{divider_col}" stroke-width="1"/>'
             )
         lines.append(
-            f'  <g transform="translate(24, {y + 25})"><rect width="36" height="36" rx="9" fill="{bg_squircle}" stroke="{border_col}" stroke-width="1"/>{r["icon_svg"]}</g>'
+            f'  <g transform="translate(24, {y + 15})"><rect width="36" height="36" rx="9" fill="{bg_squircle}" stroke="{border_col}" stroke-width="1"/>{r["icon_svg"]}</g>'
         )
         lines.append(
-            f'  <rect x="72" y="{y + 23}" width="3" height="40" rx="1.5" fill="{r["accent"]}"/>'
+            f'  <rect x="72" y="{y + 13}" width="3" height="38" rx="1.5" fill="{r["accent"]}"/>'
         )
         title_esc = html.escape(r["title"])
         desc_esc = html.escape(r["desc"])
         lines.append(
-            f'  <text x="86" y="{y + 40}" class="txt-title" fill="{text_primary}">{title_esc}</text>'
+            f'  <text x="86" y="{y + 29}" class="txt-title" fill="{text_primary}">{title_esc}</text>'
         )
         lines.append(
-            f'  <text x="86" y="{y + 57}" class="txt-desc" fill="{text_secondary}">{desc_esc}</text>'
+            f'  <text x="86" y="{y + 46}" class="txt-desc" fill="{text_secondary}">{desc_esc}</text>'
         )
 
         cur_x = 356
         for tech, badge_w in r["techs"]:
             tech_esc = html.escape(tech)
-            lines.append(f'  <g transform="translate({cur_x}, {y + 28})">')
+            lines.append(f'  <g transform="translate({cur_x}, {y + 18})">')
             lines.append(
                 f'    <rect width="{badge_w}" height="30" rx="15" fill="{bg_pill}" stroke="{border_col}" stroke-width="1"/>'
             )
@@ -252,7 +252,7 @@ def generate_tech_stack_mobile_svg(theme: str = "dark") -> str:
         text_primary, text_secondary = "#F4F7FF", "#A5B4CF"
         divider_col = "#1E293B"
 
-    card_h = 560
+    card_h = 448
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 {card_h}" width="420" height="{card_h}">',
         '  <defs><linearGradient id="geminiGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>',
@@ -260,7 +260,7 @@ def generate_tech_stack_mobile_svg(theme: str = "dark") -> str:
         f'  <rect x="1" y="1" width="418" height="{card_h - 2}" rx="12" fill="{bg_card}" stroke="{border_col}" stroke-width="1.2"/>',
     ]
 
-    sec_h = 140
+    sec_h = 112
     for i, r in enumerate(CATEGORIES):
         y = i * sec_h
         if i > 0:
@@ -284,12 +284,12 @@ def generate_tech_stack_mobile_svg(theme: str = "dark") -> str:
 
         for row_idx, badge_row in enumerate(r["m_rows"]):
             bx = 18
-            by = y + 56 + (row_idx * 36)
+            by = y + 51 + (row_idx * 30)
             for tech, bw in badge_row:
                 tech_esc = html.escape(tech)
                 lines.append(f'  <g transform="translate({bx}, {by})">')
                 lines.append(
-                    f'    <rect width="{bw}" height="28" rx="14" fill="{bg_pill}" stroke="{border_col}" stroke-width="1"/>'
+                    f'    <rect width="{bw}" height="26" rx="13" fill="{bg_pill}" stroke="{border_col}" stroke-width="1"/>'
                 )
                 lines.append(
                     f'    <g transform="translate(7, 6)">{get_logo_svg(tech)}</g>'
