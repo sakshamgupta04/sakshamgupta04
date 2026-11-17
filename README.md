@@ -10,19 +10,6 @@
   <img alt="sakshamgupta04@github — Saksham Gupta&#10;Software Developer · AI/ML Engineer&#10;Open to full-time roles: Software Engineer, AI/ML Developer, Full-Stack Engineer" src="assets/hero-dark.svg" width="100%">
 </picture>
 
-
-<div align="center" markdown="1">
-
-<!-- [🌐 Portfolio] --><a href="https://sakshamsgupta-portfolio.vercel.app/">🌐 <b>Portfolio Website ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [🐙 GitHub] --><a href="https://github.com/sakshamgupta04">🐙 <b>GitHub ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [💼 LinkedIn] --><a href="https://www.linkedin.com/in/saksham-gupta-458486294/">💼 <b>LinkedIn ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [✉️ Email] --><a href="mailto:work.saksham04@gmail.com">✉️ <b>Email ↗</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [📄 Resume] --><a href="https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf">📄 <b>Resume ↓</b></a> &nbsp;&nbsp;•&nbsp;&nbsp; <!-- [🧩 LeetCode] --><a href="https://leetcode.com/u/wupNOxI7hc/">🧩 <b>LeetCode ↗</b></a>
-
-</div>
-
-<div align="center" markdown="1">
-
-**Jump to:** [About](#about) &nbsp;•&nbsp; [Experience](#experience) &nbsp;•&nbsp; [Projects](#projects) &nbsp;•&nbsp; [Tech Stack](#skills) &nbsp;•&nbsp; [Focus Areas](#expertise) &nbsp;•&nbsp; [Research](#research) &nbsp;•&nbsp; [Certifications](#certifications) &nbsp;•&nbsp; [Education](#education) &nbsp;•&nbsp; [Contact](#contact)
-
-</div>
-
 ---
 
 ## 👤 About Me <a id="about"></a>
@@ -63,22 +50,22 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 ## ⚡ Featured Projects <a id="projects"></a>
 
 <a id="people-ai"></a>
-<p align="center">
-  <img src="assets/projects/people-ai.png" alt="People.ai" width="620">
-</p>
+<table width="100%"><tr>
+<td width="34%" valign="top"><img src="assets/projects/people-ai.png" alt="People.ai" width="240"></td><td valign="top">
+<h3>01 · People.ai</h3>
+<strong>Faculty Fit & Retention Prediction</strong>
 
-### 01 &nbsp; People.ai
-**Faculty Fit & Retention Prediction**
-
-<p style="font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+<p>
   An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.
 </p>
 
-**Key Engineering Highlights:**
+<strong>Key Engineering Highlights:</strong>
 
 
-- Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.
-- Trained and evaluated supervised classification models for faculty role fit and retention prediction.
+<ul>
+<li>Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.</li>
+<li>Trained and evaluated supervised classification models for faculty role fit and retention prediction.</li>
+</ul>
 
 
 <p>
@@ -88,26 +75,24 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit">🔍 <b>Case Study ↗</b></a>
 </p>
 
-
----
-
+</td></tr></table>
 <a id="ai-video-interview-emotion-analyzer"></a>
-<p align="center">
-  <img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="620">
-</p>
+<table width="100%"><tr>
+<td width="34%" valign="top"><img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="240"></td><td valign="top">
+<h3>02 · AI Video Interview & Emotion Analyzer</h3>
+<strong>Real-Time Facial Expression & Emotion Telemetry</strong>
 
-### 02 &nbsp; AI Video Interview & Emotion Analyzer
-**Real-Time Facial Expression & Emotion Telemetry**
-
-<p style="font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+<p>
   A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.
 </p>
 
-**Key Engineering Highlights:**
+<strong>Key Engineering Highlights:</strong>
 
 
-- Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.
-- Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.
+<ul>
+<li>Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.</li>
+<li>Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.</li>
+</ul>
 
 
 <p>
@@ -117,26 +102,24 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer">🔍 <b>Case Study ↗</b></a>
 </p>
 
-
----
-
+</td></tr></table>
 <a id="echonotes"></a>
-<p align="center">
-  <img src="assets/projects/echonotes.png" alt="EchoNotes" width="620">
-</p>
+<table width="100%"><tr>
+<td width="34%" valign="top"><img src="assets/projects/echonotes.png" alt="EchoNotes" width="240"></td><td valign="top">
+<h3>03 · EchoNotes</h3>
+<strong>AI-Powered Transcription & Semantic Search</strong>
 
-### 03 &nbsp; EchoNotes
-**AI-Powered Transcription & Semantic Search**
-
-<p style="font-size: 14px; line-height: 1.6; color: #A5B4CF;">
+<p>
   An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.
 </p>
 
-**Key Engineering Highlights:**
+<strong>Key Engineering Highlights:</strong>
 
 
-- Developed audio ingestion and transcription workflows using captions and faster-whisper.
-- Implemented semantic search using embeddings and timestamp-linked navigation.
+<ul>
+<li>Developed audio ingestion and transcription workflows using captions and faster-whisper.</li>
+<li>Implemented semantic search using embeddings and timestamp-linked navigation.</li>
+</ul>
 
 
 <p>
@@ -146,6 +129,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes">🔍 <b>Case Study ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://youtube-video-summarizer-sage.vercel.app/">▶️ <b>Live Site ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer">📦 <b>Source Code ↗</b></a>
 </p>
 
+</td></tr></table>
 
 
 
@@ -166,22 +150,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
   <img alt="Technical Stack — Languages &amp; Core: Python, TypeScript, JavaScript, C++, Java, SQL | Full-Stack Development: React, Next.js, Node.js, FastAPI, Supabase | AI &amp; Machine Learning: PyTorch, TensorFlow, Scikit-learn, OpenCV, Gemini | Cloud, Data &amp; DevOps: Google Cloud Platform, Docker, PostgreSQL, GitHub Actions, Git" src="assets/tech-stack-dark.svg" width="100%">
 </picture>
 
-<p>
-  <b>Additional Tools &amp; Technologies:</b> &nbsp;<code>Pandas</code> &nbsp;•&nbsp; <code>NumPy</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Cloud Run</code> &nbsp;•&nbsp; <code>Vertex AI</code> &nbsp;•&nbsp; <code>Workload Identity Federation</code> &nbsp;•&nbsp; <code>Jupyter Notebook</code>
-</p>
 
----
-
-## 🎯 Core Focus Areas <a id="expertise"></a>
-
-### 🧠 AI &amp; Machine Learning
-Developing predictive models, supervised classification pipelines, computer vision systems, and feature engineering with scikit-learn, TensorFlow, and PyTorch. Rigorous focus on model evaluation, validation metrics, and production inference.
-
-### 💻 Full-Stack Engineering
-Architecting end-to-end web applications with React, Next.js, and TypeScript, backed by robust RESTful APIs in FastAPI and Node.js. Persistent state management, real-time sync, and database design with Supabase and PostgreSQL.
-
-### ☁️ Cloud &amp; Infrastructure
-Containerizing microservices with Docker and deploying serverless workloads to Google Cloud Platform (Cloud Run, Vertex AI). Implementing keyless, secure CI/CD pipelines using GitHub Actions and GCP Workload Identity Federation.
 
 
 
@@ -191,15 +160,13 @@ Containerizing microservices with Docker and deploying serverless workloads to G
 ## 📖 Research Publications <a id="research"></a>
 
 
-### Machine Learning-Based Approach for Diabetes Detection and Prediction
-*Saksham Gupta, Gandharv Kaloo, Palvi Sharma, Aarush Wali* &nbsp;•&nbsp; **IEEE 3rd International Conference on Advancement in Computation & Computer Technologies (InCACCT)** (2025)
+**Machine Learning-Based Approach for Diabetes Detection and Prediction**  
+IEEE 3rd International Conference on Advancement in Computation & Computer Technologies (InCACCT) · 2025
 [🔗 **DOI**](https://doi.org/10.1109/InCACCT65424.2025.11011335) &nbsp;&nbsp;|&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/diabetes-risk-forecasting.pdf)
 
 
----
-
-### Evaluating the Accuracy and Computational Load of Booth's Algorithm and Vedic Multiplication in Digital Systems
-*Veena Tripathi, Saksham Gupta, Aarush Wali, Archit Bali, Aradhika Gandotra, Ayushman Vohra* &nbsp;•&nbsp; **Taylor & Francis / CRC Press** (2024)
+**Evaluating the Accuracy and Computational Load of Booth's Algorithm and Vedic Multiplication in Digital Systems**  
+Taylor & Francis / CRC Press · 2024
 [🔗 **DOI**](https://doi.org/10.1201/9781003637530-29) &nbsp;&nbsp;|&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/booths-vedic-multiplication.pdf)
 
 
@@ -219,7 +186,13 @@ Containerizing microservices with Docker and deploying serverless workloads to G
 <details>
 <summary><b>🔗 View and verify all 6 credentials</b></summary>
 
-- **Machine Learning Foundations: A Case Study Approach** · Coursera · Certification · [View credential](https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing)- **Machine Learning: Clustering & Retrieval** · Coursera · Certification · [View credential](https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing)- **The Joy of Computing Using Python** · NPTEL · Certification · [View credential](https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing)- **GCP Associate Cloud Engineer Certification Training** · Udemy · Course · [View credential](https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing)- **JavaScript — The Complete Guide** · Udemy · Course · [View credential](https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing)- **The Complete Guide to Airtable** · Udemy · Course · [View credential](https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing)
+
+- **Machine Learning Foundations: A Case Study Approach** · Coursera · [View credential](https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing)
+- **Machine Learning: Clustering & Retrieval** · Coursera · [View credential](https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing)
+- **The Joy of Computing Using Python** · NPTEL · [View credential](https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing)
+- **GCP Associate Cloud Engineer Certification Training** · Udemy · [View credential](https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing)
+- **JavaScript — The Complete Guide** · Udemy · [View credential](https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing)
+- **The Complete Guide to Airtable** · Udemy · [View credential](https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing)
 </details>
 
 > 🏆 **Hands-on Training:** AI/ML Hands-on Training Program · Model Institute of Engineering and Technology · March 2025
