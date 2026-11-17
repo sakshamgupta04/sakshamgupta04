@@ -7,8 +7,8 @@
 
 {% if has(profile.publications) %}
 {% for pub in profile.publications %}
-### {{ pub.title }}
-*{{ pub.authors | join(", ") }}* &nbsp;•&nbsp; **{{ pub.venue }}** ({{ pub.year }}){% if has(pub.status) %} &nbsp;•&nbsp; *[{{ pub.status }}]*{% endif %}
+**{{ pub.title }}**  
+{{ pub.venue }} · {{ pub.year }}{% if has(pub.status) %} · *{{ pub.status }}*{% endif %}
 
 {% if has(pub.doi) %}[🔗 **DOI**](https://doi.org/{{ pub.doi }}){% endif %}{% if has(pub.doi) and has(pub.pdf) %} &nbsp;&nbsp;|&nbsp;&nbsp; {% endif %}{% if has(pub.pdf) %}[📄 **Full Paper / PDF**]({{ pub.pdf }}){% endif %}
 
@@ -23,8 +23,6 @@
 {% endif %}
 
 {% if not loop.last %}
-
----
 
 {% endif %}
 {% endfor %}

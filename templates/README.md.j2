@@ -14,61 +14,6 @@
   <img alt="{{ alt_lines | join('&#10;') }}" src="assets/hero-dark.svg" width="100%">
 </picture>
 
-{% set quick_links = [] %}
-{% if has(profile.links.portfolio) %}
-  {% set _ = quick_links.append("<!-- [🌐 Portfolio] --><a href=\"" ~ profile.links.portfolio ~ "\">🌐 <b>Portfolio Website ↗</b></a>") %}
-{% endif %}
-{% if has(profile.links.github) %}
-  {% set _ = quick_links.append("<!-- [🐙 GitHub] --><a href=\"" ~ profile.links.github ~ "\">🐙 <b>GitHub ↗</b></a>") %}
-{% endif %}
-{% if has(profile.links.linkedin) %}
-  {% set _ = quick_links.append("<!-- [💼 LinkedIn] --><a href=\"" ~ profile.links.linkedin ~ "\">💼 <b>LinkedIn ↗</b></a>") %}
-{% endif %}
-{% if has(profile.links.email) %}
-  {% set mailto_url = profile.links.email if profile.links.email.startswith('mailto:') else 'mailto:' ~ profile.links.email %}
-  {% set _ = quick_links.append("<!-- [✉️ Email] --><a href=\"" ~ mailto_url ~ "\">✉️ <b>Email ↗</b></a>") %}
-{% endif %}
-{% if has(profile.links.resume_pdf) %}
-  {% set _ = quick_links.append("<!-- [📄 Resume] --><a href=\"" ~ profile.links.resume_pdf ~ "\">📄 <b>Resume ↓</b></a>") %}
-{% endif %}
-{% if has(profile.links.leetcode) %}
-  {% set _ = quick_links.append("<!-- [🧩 LeetCode] --><a href=\"" ~ profile.links.leetcode ~ "\">🧩 <b>LeetCode ↗</b></a>") %}
-{% endif %}
-
-<div align="center" markdown="1">
-
-{{ quick_links | join(" &nbsp;&nbsp;•&nbsp;&nbsp; ") }}
-
-</div>
-
-{% set toc = [] %}
-{% set _ = toc.append("[About](#about)") %}
-{% if profile.features.start_here %}{% set _ = toc.append("[Start Here](#start-here)") %}{% endif %}
-{% if has(profile.now) %}{% set _ = toc.append("[Now](#now)") %}{% endif %}
-{% if profile.features.experience and has(profile.experience) %}{% set _ = toc.append("[Experience](#experience)") %}{% endif %}
-{% if has(profile.projects) %}{% set _ = toc.append("[Projects](#projects)") %}{% endif %}
-{% if has(profile.skills.groups) %}{% set _ = toc.append("[Tech Stack](#skills)") %}{% endif %}
-{% if has(profile.expertise) %}{% set _ = toc.append("[Focus Areas](#expertise)") %}{% endif %}
-{% if has(recent_activity) and profile.features.recent_activity %}{% set _ = toc.append("[Activity](#activity)") %}{% endif %}
-{% if profile.features.stats_card and has(github_stats) and (has(github_stats.public_repos) or has(github_stats.total_stars)) %}{% set _ = toc.append("[GitHub Metrics](#github-stats)") %}{% endif %}
-{% if profile.features.wakatime and has(wakatime_stats) %}{% set _ = toc.append("[WakaTime](#wakatime)") %}{% endif %}
-{% if profile.features.snake %}{% set _ = toc.append("[Contributions](#contributions)") %}{% endif %}
-{% if has(profile.publications) or profile.patent.mention %}{% set _ = toc.append("[Research](#research)") %}{% endif %}
-{% if profile.features.education and has(profile.certifications) %}{% set _ = toc.append("[Certifications](#certifications)") %}{% endif %}
-{% if profile.features.education and has(profile.identity.education) %}{% set _ = toc.append("[Education](#education)") %}{% endif %}
-{% if profile.features.leetcode_block and (has(profile.leetcode.solved) or has(profile.leetcode.rating)) %}{% set _ = toc.append("[LeetCode](#leetcode)") %}{% endif %}
-{% if profile.features.blog_rss and has(blog_posts) %}{% set _ = toc.append("[Articles](#blog)") %}{% endif %}
-{% if profile.features.goals and has(profile.goals) %}{% set _ = toc.append("[Roadmap &amp; Goals](#goals)") %}{% endif %}
-{% if profile.features.principles and has(profile.principles) %}{% set _ = toc.append("[Principles](#principles)") %}{% endif %}
-{% if has(profile.links) %}{% set _ = toc.append("[Contact](#contact)") %}{% endif %}
-{% if has(toc) %}
-<div align="center" markdown="1">
-
-**Jump to:** {{ toc | join(" &nbsp;•&nbsp; ") }}
-
-</div>
-{% endif %}
-
 ---
 
 {% include "sections/whoami.md.j2" %}
@@ -101,12 +46,6 @@
 ---
 
 {% include "sections/skills.md.j2" %}
-{% endif %}
-
-{% if has(profile.expertise) %}
----
-
-{% include "sections/expertise.md.j2" %}
 {% endif %}
 
 {% if has(recent_activity) and profile.features.recent_activity %}

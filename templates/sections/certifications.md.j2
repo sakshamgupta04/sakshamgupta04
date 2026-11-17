@@ -13,7 +13,8 @@
 <summary><b>🔗 View and verify all {{ profile.certifications | length }} credentials</b></summary>
 
 {% for cert in profile.certifications %}
-- **{{ cert.title }}** · {{ cert.issuer }} · {{ cert.kind | format_cert_kind }}{% if has(cert.url) %} · [View credential]({{ cert.url }}){% endif %}
+
+- **{{ cert.title }}** · {{ cert.issuer }}{% if has(cert.url) %} · [View credential]({{ cert.url }}){% endif %}
 {% endfor %}
 
 </details>
