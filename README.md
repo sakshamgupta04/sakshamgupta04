@@ -180,11 +180,11 @@ Taylor & Francis / CRC Press · 2024
   <source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/certifications-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/certifications-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/certifications-light.svg">
-  <img src="assets/certifications-dark.svg" width="100%" alt="Six individual floating certification cards with spacious gutters. All credential titles and verification links are listed below.">
+  <img src="assets/certifications-dark.svg" width="100%" alt="Six compact credential tiles. Verification links are available in the expandable list below.">
 </picture>
 
 <details>
-<summary><b>🔗 View and verify all 6 credentials</b></summary>
+<summary><b>🔗 Verify all 6 credentials</b></summary>
 
 
 - **Machine Learning Foundations: A Case Study Approach** · Coursera · [View credential](https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing)
@@ -195,7 +195,7 @@ Taylor & Francis / CRC Press · 2024
 - **The Complete Guide to Airtable** · Udemy · [View credential](https://drive.google.com/file/d/1q7hdYtMm1DiE9gZC5GZ4lBmBxF8WlWFG/view?usp=sharing)
 </details>
 
-> 🏆 **Hands-on Training:** AI/ML Hands-on Training Program · Model Institute of Engineering and Technology · March 2025
+<sub>🏆 **Hands-on training:** AI/ML Hands-on Training Program · Model Institute of Engineering and Technology · Mar 2025</sub>
 
 
 ---
