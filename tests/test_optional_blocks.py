@@ -82,7 +82,7 @@ def test_leetcode_block_rendered_when_enabled_with_data() -> None:
     assert "1785" in rendered
     assert "2026-11" in rendered
     assert "https://leetcode.com/u/saksham04/" in rendered
-    assert "[LeetCode](#leetcode)" in rendered
+    assert "[LeetCode](#leetcode)" not in rendered
 
 
 def test_leetcode_block_hidden_when_data_missing() -> None:
@@ -149,7 +149,7 @@ def test_blog_rss_rendered_when_enabled_with_data() -> None:
     assert "Latest Articles" in rendered
     assert "Scaling ML Pipelines" in rendered
     assert "https://saksham.dev/blog/p1" in rendered
-    assert "[Articles](#blog)" in rendered
+    assert "[Articles](#blog)" not in rendered
 
 
 def test_blog_rss_hidden_when_empty() -> None:
@@ -216,7 +216,7 @@ def test_wakatime_rendered_when_enabled_with_data() -> None:
     assert "Python" in rendered
     assert "70.0%" in rendered
     assert "14 hrs" in rendered
-    assert "[WakaTime](#wakatime)" in rendered
+    assert "[WakaTime](#wakatime)" not in rendered
 
 
 def test_wakatime_hidden_when_empty() -> None:
@@ -270,7 +270,7 @@ def test_stats_card_rendered_when_enabled_with_data() -> None:
     assert "15" in rendered
     assert "Total Stargazers" in rendered
     assert "42" in rendered
-    assert "[GitHub Metrics](#github-stats)" in rendered
+    assert "[GitHub Metrics](#github-stats)" not in rendered
 
 
 def test_stats_card_hidden_when_disabled_or_empty() -> None:

@@ -33,29 +33,17 @@ def test_production_readme_cleanliness() -> None:
     assert size_bytes < MAX_README_BYTES
 
 
-def test_table_of_contents_anchors_match_headings() -> None:
-    """Validate that every link in the Table of Contents resolves to an anchor in the document."""
+def test_navigation_removed_but_section_anchors_preserved() -> None:
+    """Compact README omits the jump list while keeping section anchors."""
     _, profile = load_profile_data(Path("data/profile.yml"))
     rendered = render_readme(
         profile=profile,
         template_dir=Path("templates"),
         template_name="README.md.j2",
     )
-
-    # Extract TOC line: **Jump to:** [About](#about) • ...
-    toc_match = re.search(r"\*\*Jump to:\*\*\s*(.+)", rendered)
-    assert toc_match, "Table of Contents not found"
-    toc_line = toc_match.group(1)
-
-    # Find all anchor links in TOC: (#anchor-name)
-    toc_anchors = re.findall(r"\(#([^\)]+)\)", toc_line)
-    assert len(toc_anchors) >= 4, "Too few TOC anchors found"
-
-    # Find all anchor definitions: id="anchor-name"
-    defined_anchors = set(re.findall(r"""id=["']([^"']+)["']""", rendered))
-
-    for anchor in toc_anchors:
-        assert anchor in defined_anchors, f"TOC anchor '#{anchor}' does not exist in rendered README"
+    assert "**Jump to:**" not in rendered
+    for anchor in ("about", "projects", "skills", "contact"):
+        assert f'id="{anchor}"' in rendered
 
 
 def test_heading_hierarchy_consistency() -> None:

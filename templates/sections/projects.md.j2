@@ -11,7 +11,7 @@
 <td valign="top">
 <h3>0{{ loop.index }} · {{ p.title }}</h3>
 {% if has(p.subtitle) %}
-**{{ p.subtitle }}**
+<strong>{{ p.subtitle }}</strong>
 {% endif %}
 
 <p>
@@ -19,21 +19,25 @@
 </p>
 
 {% if has(p.highlights) %}
-**Key Engineering Highlights:**
+<strong>Key Engineering Highlights:</strong>
 
 
+<ul>
 {% for h in p.highlights[:2] %}
-- {{ h }}
+<li>{{ h }}</li>
 {% endfor %}
+</ul>
 {% endif %}
 
 {% if has(p.results) %}
-**Measured Evaluation &amp; Benchmarks:**
+<strong>Measured Evaluation &amp; Benchmarks:</strong>
 
 
+<ul>
 {% for r in p.results %}
-- {{ r }}
+<li>{{ r }}</li>
 {% endfor %}
+</ul>
 {% endif %}
 
 {% if has(p.stack) %}

@@ -46,7 +46,7 @@ def test_snake_rendered_when_enabled() -> None:
         template_name="README.md.j2",
     )
     assert "github-snake" in rendered
-    assert "[Contributions](#contributions)" in rendered
+    assert "[Contributions](#contributions)" not in rendered
     assert "github-snake-dark.svg" in rendered
 
 
