@@ -140,7 +140,7 @@ def test_all_features_enabled_renders_without_errors() -> None:
     )
 
     assert "Full User" in rendered
-    assert "GitHub Metrics" in rendered
+    assert "GitHub Statistics" in rendered
     assert "Weekly Coding Activity (WakaTime)" in rendered
     assert "LeetCode Stats" in rendered
     assert "Latest Articles" in rendered
