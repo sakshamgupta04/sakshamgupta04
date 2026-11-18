@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-17T18:46:47Z",
+  "fetched_at": "2026-11-18T11:45:41Z",
   "languages": {
-    "Python": 732048,
+    "Python": 731505,
     "HTML": 79862,
     "CSS": 77329,
     "JavaScript": 238993,
@@ -10,7 +10,7 @@
     "Batchfile": 2155,
     "C++": 262664,
     "C": 98225,
-    "Jinja": 17670,
+    "Jinja": 17231,
     "Java": 1353,
     "Dockerfile": 1432
   },
@@ -19,34 +19,34 @@
   },
   "recent_activity": [
     {
+      "description": "Pushed `596be9d` to `sakshamgupta04/sakshamgupta04` (`feat/concise-profile-readme`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/596be9d907c0e3f3cecb8c964001ccd58ffc3286",
+      "relative_time": "17h ago",
+      "absolute_time": "2026-11-17 18:33:52"
+    },
+    {
       "description": "Merged PR #8 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "just now",
+      "relative_time": "16h ago",
       "absolute_time": "2026-11-17 18:46:21"
     },
     {
       "description": "Opened PR #8 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "1m ago",
+      "relative_time": "17h ago",
       "absolute_time": "2026-11-17 18:44:52"
     },
     {
       "description": "Merged PR #7 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "6m ago",
+      "relative_time": "17h ago",
       "absolute_time": "2026-11-17 18:40:45"
     },
     {
       "description": "Opened PR #7 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "6m ago",
+      "relative_time": "17h ago",
       "absolute_time": "2026-11-17 18:40:14"
-    },
-    {
-      "description": "Merged PR #6 in `sakshamgupta04/sakshamgupta04`: ",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "9m ago",
-      "absolute_time": "2026-11-17 18:37:15"
     }
   ],
   "github_stats": {
