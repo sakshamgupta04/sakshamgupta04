@@ -158,34 +158,41 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 ## ⚡ Recent Activity <a id="activity"></a>
 
-- Merged PR #14 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:28:48"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #14 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:27:29"><em>1m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #13 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:25:47"><em>3m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #13 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:24:44"><em>4m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #12 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:23:31"><em>5m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #15 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:32:53"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #15 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:30:07"><em>3m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #14 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:28:48"><em>4m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #14 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:27:29"><em>5m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #13 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:25:47"><em>7m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
 
 
 ---
 
-## 📊 GitHub Metrics <a id="github-stats"></a>
+## 📊 GitHub Statistics <a id="github-stats"></a>
+
+<!-- Transparent cards inherit the viewer's GitHub theme; no solid panels. -->
+<table align="center">
+  <tr>
+    <td width="55%" align="center" valign="middle">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sakshamgupta04&amp;show_icons=true&amp;include_all_commits=true&amp;count_private=false&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=79A8FF&amp;text_color=57D9D0&amp;icon_color=C792EA&amp;rank_icon=default" />
+        <img src="https://github-readme-stats.vercel.app/api?username=sakshamgupta04&amp;show_icons=true&amp;include_all_commits=true&amp;count_private=false&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=275DAD&amp;text_color=087E8B&amp;icon_color=9B4DCA&amp;rank_icon=default" alt="GitHub statistics for sakshamgupta04" width="495" />
+      </picture>
+    </td>
+    <td width="45%" align="center" valign="middle">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=79A8FF&amp;text_color=57D9D0" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=275DAD&amp;text_color=087E8B" alt="Most used programming languages across public repositories for sakshamgupta04" width="380" />
+      </picture>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=github-dark-blue&amp;hide_border=true&amp;timezone=Asia/Kolkata" />
-    <img src="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=default&amp;hide_border=true&amp;timezone=Asia/Kolkata" alt="GitHub contribution streak statistics for sakshamgupta04" width="495" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=79A8FF&amp;fire=F59E72&amp;currStreakNum=C792EA&amp;sideNums=79A8FF&amp;currStreakLabel=57D9D0&amp;sideLabels=57D9D0&amp;dates=9CA3AF&amp;timezone=Asia/Kolkata" />
+    <img src="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=275DAD&amp;fire=E87942&amp;currStreakNum=9B4DCA&amp;sideNums=275DAD&amp;currStreakLabel=087E8B&amp;sideLabels=087E8B&amp;dates=6B7280&amp;timezone=Asia/Kolkata" alt="GitHub contribution streak statistics for sakshamgupta04" width="620" />
   </picture>
 </p>
-
-
-### GitHub Overview
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sakshamgupta04&amp;show_icons=true&amp;include_all_commits=true&amp;count_private=false&amp;theme=github_dark&amp;hide_border=true&amp;rank_icon=github" />
-    <img src="https://github-readme-stats.vercel.app/api?username=sakshamgupta04&amp;show_icons=true&amp;include_all_commits=true&amp;count_private=false&amp;theme=default&amp;hide_border=true&amp;rank_icon=github" alt="GitHub overview statistics for sakshamgupta04" width="495" />
-  </picture>
-</p>
-
 
 
 
