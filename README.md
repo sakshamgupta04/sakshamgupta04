@@ -53,13 +53,13 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <table width="100%"><tr>
 <td width="34%" valign="top"><img src="assets/projects/people-ai.png" alt="People.ai" width="240"></td><td valign="top">
 <h3>01 · People.ai</h3>
-<strong>Faculty Fit & Retention Prediction</strong>
+<sub>Applied Machine Learning</sub><strong>Faculty Fit & Retention Prediction</strong>
 
 <p>
   An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.
 </p>
 
-<strong>Key Engineering Highlights:</strong>
+<strong>What I built:</strong>
 
 
 <ul>
@@ -71,6 +71,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <p>
   <b>Technologies:</b> &nbsp;<code>Python</code> &nbsp;•&nbsp; <code>Scikit-learn</code> &nbsp;•&nbsp; <code>Gemini</code> &nbsp;•&nbsp; <code>Model Evaluation</code></p>
 
+<p><b>Explore this project:</b></p>
 <p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit">🔍 <b>Case Study ↗</b></a>
 </p>
@@ -80,13 +81,13 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <table width="100%"><tr>
 <td width="34%" valign="top"><img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="240"></td><td valign="top">
 <h3>02 · AI Video Interview & Emotion Analyzer</h3>
-<strong>Real-Time Facial Expression & Emotion Telemetry</strong>
+<sub>Computer Vision / Full-Stack AI</sub><strong>Real-Time Facial Expression & Emotion Telemetry</strong>
 
 <p>
   A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.
 </p>
 
-<strong>Key Engineering Highlights:</strong>
+<strong>What I built:</strong>
 
 
 <ul>
@@ -98,6 +99,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <p>
   <b>Technologies:</b> &nbsp;<code>Next.js</code> &nbsp;•&nbsp; <code>Python</code> &nbsp;•&nbsp; <code>DeepFace</code> &nbsp;•&nbsp; <code>Supabase</code></p>
 
+<p><b>Explore this project:</b></p>
 <p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer">🔍 <b>Case Study ↗</b></a>
 </p>
@@ -107,13 +109,13 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <table width="100%"><tr>
 <td width="34%" valign="top"><img src="assets/projects/echonotes.png" alt="EchoNotes" width="240"></td><td valign="top">
 <h3>03 · EchoNotes</h3>
-<strong>AI-Powered Transcription & Semantic Search</strong>
+<sub>NLP / Full-Stack AI</sub><strong>AI-Powered Transcription & Semantic Search</strong>
 
 <p>
   An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.
 </p>
 
-<strong>Key Engineering Highlights:</strong>
+<strong>What I built:</strong>
 
 
 <ul>
@@ -125,6 +127,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <p>
   <b>Technologies:</b> &nbsp;<code>Next.js</code> &nbsp;•&nbsp; <code>FastAPI</code> &nbsp;•&nbsp; <code>faster-whisper</code> &nbsp;•&nbsp; <code>Supabase</code></p>
 
+<p><b>Explore this project:</b></p>
 <p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes">🔍 <b>Case Study ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://youtube-video-summarizer-sage.vercel.app/">▶️ <b>Live Site ↗</b></a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer">📦 <b>Source Code ↗</b></a>
 </p>
@@ -151,7 +154,25 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 </picture>
 
 
+---
 
+## ⚡ Recent Activity <a id="activity"></a>
+
+- Merged PR #9 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:13:41"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #9 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:10:28"><em>3m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Pushed `5bf4220` to `sakshamgupta04/sakshamgupta04` (`main`) &nbsp;•&nbsp; <span title="2026-11-17 18:40:46"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/5bf422004d97cd0fa290fe9fb7e73679c5c466aa)
+- Pushed `5ea8ff9` to `sakshamgupta04/sakshamgupta04` (`main`) &nbsp;•&nbsp; <span title="2026-11-17 18:37:16"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/5ea8ff90650174b08c7d5840b342e1f9d3843847)
+- Pushed `7516e9f` to `sakshamgupta04/sakshamgupta04` (`feat/concise-profile-readme`) &nbsp;•&nbsp; <span title="2026-11-17 18:36:42"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/7516e9f9cd44787ef7f70644ed0f773c12fa5061)
+
+
+---
+
+## 📊 GitHub Metrics <a id="github-stats"></a>
+
+| Metric | Count |
+| :--- | :--- |
+| **Public Repositories** | 23 |
+| **Total Stargazers** | 0 |
 
 
 
