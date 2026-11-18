@@ -17,14 +17,5 @@
     <img src="https://github-readme-activity-graph.vercel.app/graph?username={{ profile.identity.handle }}&amp;theme=github-light&amp;hide_border=true&amp;area=true" alt="GitHub contribution activity graph for {{ profile.identity.handle }}" width="100%" />
   </picture>
 </p>
-
-| Metric | Count |
-| :--- | :--- |
-{% if has(github_stats.public_repos) -%}
-| **Public Repositories** | {{ github_stats.public_repos }} |
-{% endif -%}
-{% if has(github_stats.total_stars) -%}
-| **Total Stargazers** | {{ github_stats.total_stars }} |
-{% endif %}
 {% endif %}
 
