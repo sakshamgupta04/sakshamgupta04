@@ -265,10 +265,12 @@ def test_stats_card_rendered_when_enabled_with_data() -> None:
     }
     rendered = render_readme(profile, Path("templates"), "README.md.j2", dynamic_data=dynamic_data)
 
-    assert "GitHub Metrics" in rendered
+    assert "GitHub Statistics" in rendered
     assert "streak-stats.demolab.com" in rendered
-    assert "GitHub Overview" in rendered
-    assert "github-readme-stats.vercel.app" in rendered
+    assert "github-readme-stats.vercel.app/api/top-langs/" in rendered
+    assert "github-readme-stats.vercel.app/api?" in rendered
+    assert "bg_color=00000000" in rendered
+    assert "background=00000000" in rendered
     assert "Contribution Activity" not in rendered
     assert "github-readme-activity-graph.vercel.app" not in rendered
     assert "Public Repositories" not in rendered
@@ -283,13 +285,13 @@ def test_stats_card_hidden_when_disabled_or_empty() -> None:
     }
     profile = validate_profile_dict(data)
     rendered = render_readme(profile, Path("templates"), "README.md.j2", dynamic_data={"github_stats": {"public_repos": 10, "total_stars": 5}})
-    assert "GitHub Metrics" not in rendered
+    assert "GitHub Statistics" not in rendered
 
     # Enabled but empty
     data["features"]["stats_card"] = True
     profile_enabled = validate_profile_dict(data)
     rendered_empty = render_readme(profile_enabled, Path("templates"), "README.md.j2", dynamic_data={})
-    assert "GitHub Metrics" not in rendered_empty
+    assert "GitHub Statistics" not in rendered_empty
 
 
 # --- 5. Empty inputs to fetchers ---
