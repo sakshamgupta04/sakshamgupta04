@@ -267,8 +267,10 @@ def test_stats_card_rendered_when_enabled_with_data() -> None:
 
     assert "GitHub Metrics" in rendered
     assert "streak-stats.demolab.com" in rendered
-    assert "Contribution Activity" in rendered
-    assert "github-readme-activity-graph.vercel.app" in rendered
+    assert "GitHub Overview" in rendered
+    assert "github-readme-stats.vercel.app" in rendered
+    assert "Contribution Activity" not in rendered
+    assert "github-readme-activity-graph.vercel.app" not in rendered
     assert "Public Repositories" not in rendered
     assert "Total Stargazers" not in rendered
     assert "[GitHub Metrics](#github-stats)" not in rendered
