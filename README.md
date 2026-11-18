@@ -158,16 +158,24 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 ## ⚡ Recent Activity <a id="activity"></a>
 
-- Merged PR #9 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:13:41"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #9 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:10:28"><em>3m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Pushed `5bf4220` to `sakshamgupta04/sakshamgupta04` (`main`) &nbsp;•&nbsp; <span title="2026-11-17 18:40:46"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/5bf422004d97cd0fa290fe9fb7e73679c5c466aa)
-- Pushed `5ea8ff9` to `sakshamgupta04/sakshamgupta04` (`main`) &nbsp;•&nbsp; <span title="2026-11-17 18:37:16"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/5ea8ff90650174b08c7d5840b342e1f9d3843847)
-- Pushed `7516e9f` to `sakshamgupta04/sakshamgupta04` (`feat/concise-profile-readme`) &nbsp;•&nbsp; <span title="2026-11-17 18:36:42"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/7516e9f9cd44787ef7f70644ed0f773c12fa5061)
+- Opened PR #11 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:17:52"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #10 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:17:35"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #10 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:16:10"><em>1m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #9 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:13:41"><em>4m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #9 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:10:28"><em>7m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
 
 
 ---
 
 ## 📊 GitHub Metrics <a id="github-stats"></a>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=github-dark-blue&amp;hide_border=true&amp;timezone=Asia/Kolkata" />
+    <img src="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=default&amp;hide_border=true&amp;timezone=Asia/Kolkata" alt="GitHub contribution streak statistics for sakshamgupta04" width="495" />
+  </picture>
+</p>
+
 
 | Metric | Count |
 | :--- | :--- |

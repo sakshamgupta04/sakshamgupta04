@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-18T19:14:03Z",
+  "fetched_at": "2026-11-18T19:17:55Z",
   "languages": {
     "Python": 731505,
     "HTML": 79862,
@@ -19,34 +19,34 @@
   },
   "recent_activity": [
     {
-      "description": "Merged PR #9 in `sakshamgupta04/sakshamgupta04`: ",
+      "description": "Opened PR #11 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
       "relative_time": "just now",
+      "absolute_time": "2026-11-18 19:17:52"
+    },
+    {
+      "description": "Merged PR #10 in `sakshamgupta04/sakshamgupta04`: ",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
+      "relative_time": "just now",
+      "absolute_time": "2026-11-18 19:17:35"
+    },
+    {
+      "description": "Opened PR #10 in `sakshamgupta04/sakshamgupta04`: ",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
+      "relative_time": "1m ago",
+      "absolute_time": "2026-11-18 19:16:10"
+    },
+    {
+      "description": "Merged PR #9 in `sakshamgupta04/sakshamgupta04`: ",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
+      "relative_time": "4m ago",
       "absolute_time": "2026-11-18 19:13:41"
     },
     {
       "description": "Opened PR #9 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "3m ago",
+      "relative_time": "7m ago",
       "absolute_time": "2026-11-18 19:10:28"
-    },
-    {
-      "description": "Pushed `5bf4220` to `sakshamgupta04/sakshamgupta04` (`main`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/5bf422004d97cd0fa290fe9fb7e73679c5c466aa",
-      "relative_time": "1d ago",
-      "absolute_time": "2026-11-17 18:40:46"
-    },
-    {
-      "description": "Pushed `5ea8ff9` to `sakshamgupta04/sakshamgupta04` (`main`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/5ea8ff90650174b08c7d5840b342e1f9d3843847",
-      "relative_time": "1d ago",
-      "absolute_time": "2026-11-17 18:37:16"
-    },
-    {
-      "description": "Pushed `7516e9f` to `sakshamgupta04/sakshamgupta04` (`feat/concise-profile-readme`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/7516e9f9cd44787ef7f70644ed0f773c12fa5061",
-      "relative_time": "1d ago",
-      "absolute_time": "2026-11-17 18:36:42"
     }
   ],
   "github_stats": {
