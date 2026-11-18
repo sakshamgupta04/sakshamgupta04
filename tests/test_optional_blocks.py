@@ -266,10 +266,11 @@ def test_stats_card_rendered_when_enabled_with_data() -> None:
     rendered = render_readme(profile, Path("templates"), "README.md.j2", dynamic_data=dynamic_data)
 
     assert "GitHub Metrics" in rendered
-    assert "Public Repositories" in rendered
-    assert "15" in rendered
-    assert "Total Stargazers" in rendered
-    assert "42" in rendered
+    assert "streak-stats.demolab.com" in rendered
+    assert "Contribution Activity" in rendered
+    assert "github-readme-activity-graph.vercel.app" in rendered
+    assert "Public Repositories" not in rendered
+    assert "Total Stargazers" not in rendered
     assert "[GitHub Metrics](#github-stats)" not in rendered
 
 
