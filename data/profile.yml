@@ -277,10 +277,10 @@ features:
   terminal_header: true
   mermaid_skill_map: false
   languages_chart: false
-  recent_activity: false
+  recent_activity: true
   projects_last_updated: false
   snake: false
-  stats_card: false
+  stats_card: true
   leetcode_block: false
   blog_rss: false
   wakatime: false

@@ -10,6 +10,7 @@
 {% if has(p.image) %}<td width="34%" valign="top"><img src="{{ p.image }}" alt="{{ p.title }}" width="240"></td>{% endif %}
 <td valign="top">
 <h3>0{{ loop.index }} · {{ p.title }}</h3>
+{% if has(p.category) %}<sub>{{ p.category }}</sub>{% endif %}
 {% if has(p.subtitle) %}
 <strong>{{ p.subtitle }}</strong>
 {% endif %}
@@ -19,7 +20,7 @@
 </p>
 
 {% if has(p.highlights) %}
-<strong>Key Engineering Highlights:</strong>
+<strong>What I built:</strong>
 
 
 <ul>
@@ -51,6 +52,7 @@
 {% if has(p.links.live) %}{% set _ = proj_links.append("<a href=\"" ~ p.links.live ~ "\">▶️ <b>Live Site ↗</b></a>") %}{% endif %}
 {% if has(p.repo) %}{% set _ = proj_links.append("<a href=\"https://github.com/" ~ p.repo ~ "\">📦 <b>Source Code ↗</b></a>") %}{% endif %}
 {% if has(proj_links) %}
+<p><b>Explore this project:</b></p>
 <p>
 {{ proj_links | join(" &nbsp;&nbsp;|&nbsp;&nbsp; ") }}
 </p>
