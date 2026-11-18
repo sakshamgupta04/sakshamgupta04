@@ -158,11 +158,11 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 ## ⚡ Recent Activity <a id="activity"></a>
 
-- Merged PR #12 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:23:31"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #12 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:21:21"><em>2m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #11 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:19:24"><em>4m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #11 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:17:52"><em>5m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #10 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:17:35"><em>6m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #13 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:25:47"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #13 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:24:44"><em>1m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #12 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:23:31"><em>2m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #12 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:21:21"><em>4m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #11 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:19:24"><em>6m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
 
 
 ---
@@ -176,6 +176,15 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
   </picture>
 </p>
 
+
+### GitHub Overview
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sakshamgupta04&amp;show_icons=true&amp;include_all_commits=true&amp;count_private=false&amp;theme=github_dark&amp;hide_border=true&amp;rank_icon=github" />
+    <img src="https://github-readme-stats.vercel.app/api?username=sakshamgupta04&amp;show_icons=true&amp;include_all_commits=true&amp;count_private=false&amp;theme=default&amp;hide_border=true&amp;rank_icon=github" alt="GitHub overview statistics for sakshamgupta04" width="495" />
+  </picture>
+</p>
 
 ### Contribution Activity
 
