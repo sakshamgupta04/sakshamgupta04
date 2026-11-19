@@ -9,16 +9,18 @@
 <a id="{{ p.slug }}"></a>
 <table width="100%">
 <tr>
-{% if has(p.image) %}<td width="30%" valign="top"><img src="{{ p.image }}" alt="{{ p.title }}" width="240"></td>{% endif %}
-<td valign="top">
+{% if has(p.image) %}<td width="32%" valign="top" align="center">{% if has(p.links.demo) %}<a href="{{ p.links.demo }}">{% endif %}<img src="{{ p.image }}" alt="{{ p.title }} project screenshot" width="100%">{% if has(p.links.demo) %}</a>{% endif %}</td>{% endif %}
+<td width="68%" valign="top">
+{% if has(p.category) %}<sub><strong>{{ p.category }}</strong></sub>{% endif %}
 <h3>0{{ loop.index }} · {{ p.title }}</h3>
-{% if has(p.category) %}<sub>{{ p.category }}</sub>{% endif %}
-{% if has(p.subtitle) %}<p><strong>{{ p.subtitle }}</strong></p>{% endif %}
+{% if has(p.subtitle) %}<p><em>{{ p.subtitle }}</em></p>{% endif %}
 {% if has(p.tagline) %}<p>{{ p.tagline }}</p>{% endif %}
 {% if has(p.challenge) %}<p><b>Engineering challenge:</b> {{ p.challenge }}</p>{% endif %}
 {% if has(p.approach) %}<p><b>Technical approach:</b> {{ p.approach }}</p>{% endif %}
-{% if has(p.highlights) %}<p><b>Implementation highlights:</b> {% for h in p.highlights[:2] %}{{ h }}{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}</p>{% endif %}
-{% if has(p.results) %}<p><b>Measured Evaluation &amp; Benchmarks:</b> {% for r in p.results %}{{ r }}{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}</p>{% endif %}
+{% if has(p.highlights) %}<p><b>Implementation highlights:</b></p>
+<ul>{% for h in p.highlights %}<li>{{ h }}</li>{% endfor %}</ul>{% endif %}
+{% if has(p.results) %}<p><b>Measured Evaluation &amp; Benchmarks:</b></p>
+<ul>{% for r in p.results %}<li>{{ r }}</li>{% endfor %}</ul>{% endif %}
 {% if has(p.stack) %}<p><b>Stack:</b> {% for s in p.stack %}<code>{{ s }}</code>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
 <p>
 {% if has(p.links.demo) %}<a href="{{ p.links.demo }}"><b>🔍 Case Study ↗</b></a>{% endif %}
