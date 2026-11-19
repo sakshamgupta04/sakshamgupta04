@@ -167,15 +167,15 @@ def test_optional_case_study_details_hide_when_missing(profile_fixture: Profile)
     assert output.count("Technical approach:") == 2
 
 
-def test_compact_featured_gallery_uses_three_columns_and_collapsed_details(profile_fixture: Profile) -> None:
+def test_horizontal_featured_gallery_shows_all_details(profile_fixture: Profile) -> None:
     output = render(profile_fixture)
-    assert output.count('<td width="33%" valign="top" align="center">') == 3
-    assert output.count("<summary><b>Project details ▾</b></summary>") == 3
-    assert output.count('width="100%"') >= 4
+    assert output.count('<td width="30%" valign="top">') == 3
+    assert output.count('<table width="100%">') >= 3
+    assert "<summary><b>Project details ▾</b></summary>" not in output
     assert "Case Study ↗" in output
     assert "Live Site ↗" in output
     assert "Source Code ↗" in output
-    assert 'width="240"' not in output
+    assert output.count('width="240"') == 3
 
 
 def test_premium_gallery_preserves_images_and_link_destinations(profile_fixture: Profile) -> None:
@@ -185,5 +185,5 @@ def test_premium_gallery_preserves_images_and_link_destinations(profile_fixture:
         assert f'href="{project.links.demo}"' in output
     assert "https://youtube-video-summarizer-sage.vercel.app/" in output
     assert "https://github.com/sakshamgupta04/Youtube-Video-Summarizer" in output
-    assert output.count("<summary><b>Project details ▾</b></summary>") == 3
+    assert "<summary><b>Project details ▾</b></summary>" not in output
     assert output.count("Engineering challenge:") == 3
