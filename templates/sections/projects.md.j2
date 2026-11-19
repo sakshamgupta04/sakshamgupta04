@@ -10,16 +10,16 @@
 {% for p in sorted_projects[:3] %}
 <td width="33%" valign="top" align="center">
 <a id="{{ p.slug }}"></a>
-{% if has(p.image) %}<img src="{{ p.image }}" alt="{{ p.title }} project preview" width="100%">{% endif %}
+{% if has(p.image) %}<img src="{{ p.image }}" alt="{{ p.title }}" width="100%">{% endif %}
 <h3>{{ p.title }}</h3>
 {% if has(p.subtitle) %}<sub><strong>{{ p.subtitle }}</strong></sub>{% endif %}
 {% if has(p.category) %}<p><sub>{{ p.category }}</sub></p>{% endif %}
 <p>{{ p.tagline }}</p>
-{% if has(p.stack) %}<p>{% for s in p.stack[:3] %}<code>{{ s }}</code>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+{% if has(p.stack) %}<p>{% for s in p.stack[:5] %}<code>{{ s }}</code>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
 <p>
-{% if has(p.links.demo) %}<a href="{{ p.links.demo }}"><b>Case Study ↗</b></a>{% endif %}
-{% if has(p.links.live) %}{% if has(p.links.demo) %} · {% endif %}<a href="{{ p.links.live }}"><b>Live ↗</b></a>{% endif %}
-{% if has(p.repo) %}{% if has(p.links.demo) or has(p.links.live) %} · {% endif %}<a href="https://github.com/{{ p.repo }}"><b>Code ↗</b></a>{% endif %}
+{% if has(p.links.demo) %}<a href="{{ p.links.demo }}"><b>🔍 Case Study ↗</b></a>{% endif %}
+{% if has(p.links.live) %}{% if has(p.links.demo) %} · {% endif %}<a href="{{ p.links.live }}"><b>▶️ Live Site ↗</b></a>{% endif %}
+{% if has(p.repo) %}{% if has(p.links.demo) or has(p.links.live) %} · {% endif %}<a href="https://github.com/{{ p.repo }}"><b>📦 Source Code ↗</b></a>{% endif %}
 </p>
 {% if has(p.challenge) or has(p.approach) or has(p.highlights) or has(p.results) %}
 <details>
