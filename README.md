@@ -49,11 +49,10 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 ## ⚡ Featured Projects <a id="projects"></a>
 
-<!-- Compact, GitHub-native thumbnail + full case study rows; no hidden project content. -->
+<!-- GitHub-native stacked showcase: readable full-width screenshots and visible case studies. -->
 <a id="people-ai"></a>
 <table width="100%">
-<tr>
-<td width="24%" valign="top" align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit"><img src="assets/projects/people-ai.png" alt="People.ai project screenshot" width="180"></a></td><td width="76%" valign="top">
+<tr><td align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit"><img src="assets/projects/people-ai.png" alt="People.ai project screenshot" width="600"></a></td></tr><tr><td valign="top">
 <sub><strong>Applied Machine Learning</strong></sub><h3>01 · People.ai</h3>
 <p><em>Faculty Fit & Retention Prediction</em></p><p>An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.</p><p><b>Engineering challenge:</b> Assess faculty suitability and retention using professional experience and domain expertise.</p><p><b>Technical approach:</b> Engineer skill-diversity and experience features, then evaluate supervised classification models.</p><p><b>Implementation highlights:</b></p>
 <ul><li>Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.</li><li>Trained and evaluated supervised classification models for faculty role fit and retention prediction.</li></ul><p><b>Stack:</b> <code>Python</code> · <code>Scikit-learn</code> · <code>Gemini</code> · <code>Model Evaluation</code></p><p>
@@ -63,8 +62,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 </table>
 <a id="ai-video-interview-emotion-analyzer"></a>
 <table width="100%">
-<tr>
-<td width="24%" valign="top" align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer"><img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer project screenshot" width="180"></a></td><td width="76%" valign="top">
+<tr><td align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer"><img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer project screenshot" width="600"></a></td></tr><tr><td valign="top">
 <sub><strong>Computer Vision / Full-Stack AI</strong></sub><h3>02 · AI Video Interview & Emotion Analyzer</h3>
 <p><em>Real-Time Facial Expression & Emotion Telemetry</em></p><p>A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.</p><p><b>Engineering challenge:</b> Turn recorded interview responses into structured facial-expression signals.</p><p><b>Technical approach:</b> Capture browser video with MediaRecorder, store uploads in Supabase, and analyze frames using DeepFace and OpenCV.</p><p><b>Implementation highlights:</b></p>
 <ul><li>Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.</li><li>Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.</li></ul><p><b>Stack:</b> <code>Next.js</code> · <code>Python</code> · <code>DeepFace</code> · <code>Supabase</code></p><p>
@@ -74,8 +72,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 </table>
 <a id="echonotes"></a>
 <table width="100%">
-<tr>
-<td width="24%" valign="top" align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes"><img src="assets/projects/echonotes.png" alt="EchoNotes project screenshot" width="180"></a></td><td width="76%" valign="top">
+<tr><td align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes"><img src="assets/projects/echonotes.png" alt="EchoNotes project screenshot" width="600"></a></td></tr><tr><td valign="top">
 <sub><strong>NLP / Full-Stack AI</strong></sub><h3>03 · EchoNotes</h3>
 <p><em>AI-Powered Transcription & Semantic Search</em></p><p>An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.</p><p><b>Engineering challenge:</b> Make lengthy audio and video content searchable without reviewing entire recordings.</p><p><b>Technical approach:</b> Combine caption and faster-whisper transcription with embedding-based search and timestamp-linked navigation.</p><p><b>Implementation highlights:</b></p>
 <ul><li>Developed audio ingestion and transcription workflows using captions and faster-whisper.</li><li>Implemented semantic search using embeddings and timestamp-linked navigation.</li></ul><p><b>Stack:</b> <code>Next.js</code> · <code>FastAPI</code> · <code>faster-whisper</code> · <code>Supabase</code></p><p>
@@ -106,11 +103,11 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 ## ⚡ Recent Activity <a id="activity"></a>
 
-- Merged PR #21 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:53:58"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #21 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:52:39"><em>1m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #20 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:49:28"><em>4m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #20 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:47:59"><em>6m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #19 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:46:09"><em>8m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #22 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:58:25"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #22 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:57:21"><em>1m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #21 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:53:58"><em>4m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #21 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:52:39"><em>6m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #20 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:49:28"><em>9m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
 
 
 ---
