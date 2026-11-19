@@ -165,3 +165,14 @@ def test_optional_case_study_details_hide_when_missing(profile_fixture: Profile)
     output = render(p)
     assert output.count("Engineering challenge:") == 2
     assert output.count("Technical approach:") == 2
+
+
+def test_compact_featured_gallery_uses_three_columns_and_collapsed_details(profile_fixture: Profile) -> None:
+    output = render(profile_fixture)
+    assert output.count('<td width="33%" valign="top" align="center">') == 3
+    assert output.count("<summary><b>Engineering details</b></summary>") == 3
+    assert output.count('width="100%"') >= 4
+    assert "Case Study ↗" in output
+    assert "Live ↗" in output
+    assert "Code ↗" in output
+    assert 'width="240"' not in output
