@@ -173,6 +173,6 @@ def test_compact_featured_gallery_uses_three_columns_and_collapsed_details(profi
     assert output.count("<summary><b>Engineering details</b></summary>") == 3
     assert output.count('width="100%"') >= 4
     assert "Case Study ↗" in output
-    assert "Live ↗" in output
-    assert "Code ↗" in output
+    assert "Live Site ↗" in output
+    assert "Source Code ↗" in output
     assert 'width="240"' not in output
