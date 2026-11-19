@@ -283,7 +283,7 @@ features:
   terminal_header: true
   mermaid_skill_map: false
   languages_chart: false
-  recent_activity: true
+  recent_activity: false
   projects_last_updated: false
   snake: false
   stats_card: true
