@@ -4,13 +4,12 @@
 {% set sorted_projects = [] %}
 {% for p in profile.projects if p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
 {% for p in profile.projects if not p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
-<!-- Compact, GitHub-native thumbnail + full case study rows; no hidden project content. -->
+<!-- GitHub-native stacked showcase: readable full-width screenshots and visible case studies. -->
 {% for p in sorted_projects[:3] %}
 <a id="{{ p.slug }}"></a>
 <table width="100%">
-<tr>
-{% if has(p.image) %}<td width="24%" valign="top" align="center">{% if has(p.links.demo) %}<a href="{{ p.links.demo }}">{% endif %}<img src="{{ p.image }}" alt="{{ p.title }} project screenshot" width="180">{% if has(p.links.demo) %}</a>{% endif %}</td>{% endif %}
-<td width="76%" valign="top">
+{% if has(p.image) %}<tr><td align="center">{% if has(p.links.demo) %}<a href="{{ p.links.demo }}">{% endif %}<img src="{{ p.image }}" alt="{{ p.title }} project screenshot" width="600">{% if has(p.links.demo) %}</a>{% endif %}</td></tr>{% endif %}
+<tr><td valign="top">
 {% if has(p.category) %}<sub><strong>{{ p.category }}</strong></sub>{% endif %}
 <h3>0{{ loop.index }} · {{ p.title }}</h3>
 {% if has(p.subtitle) %}<p><em>{{ p.subtitle }}</em></p>{% endif %}
