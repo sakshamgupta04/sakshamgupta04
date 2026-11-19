@@ -147,3 +147,21 @@ def test_status_formatting_helpers() -> None:
     assert format_project_status("shipped") == "🚀 Shipped"
     assert format_project_status("building") == "🔨 Building"
     assert format_project_status("planned") == "💡 Planned"
+
+
+def test_featured_case_study_details(profile_fixture: Profile) -> None:
+    output = render(profile_fixture)
+    assert output.count("Engineering challenge:") == 3
+    assert output.count("Technical approach:") == 3
+    assert "Implementation highlights:" in output
+    assert "MediaRecorder" in output
+    assert "Measured Evaluation &amp; Benchmarks:" not in output
+
+
+def test_optional_case_study_details_hide_when_missing(profile_fixture: Profile) -> None:
+    p = copy.deepcopy(profile_fixture)
+    p.projects[0].challenge = None
+    p.projects[0].approach = None
+    output = render(p)
+    assert output.count("Engineering challenge:") == 2
+    assert output.count("Technical approach:") == 2

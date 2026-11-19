@@ -128,6 +128,8 @@ expertise:
 projects:
   - slug: "people-ai"
     title: "People.ai"
+    challenge: "Assess faculty suitability and retention using professional experience and domain expertise."
+    approach: "Engineer skill-diversity and experience features, then evaluate supervised classification models."
     subtitle: "Faculty Fit & Retention Prediction"
     category: "Applied Machine Learning"
     tagline: "An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory."
@@ -150,6 +152,8 @@ projects:
 
   - slug: "ai-video-interview-emotion-analyzer"
     title: "AI Video Interview & Emotion Analyzer"
+    challenge: "Turn recorded interview responses into structured facial-expression signals."
+    approach: "Capture browser video with MediaRecorder, store uploads in Supabase, and analyze frames using DeepFace and OpenCV."
     subtitle: "Real-Time Facial Expression & Emotion Telemetry"
     category: "Computer Vision / Full-Stack AI"
     tagline: "A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results."
@@ -172,6 +176,8 @@ projects:
 
   - slug: "echonotes"
     title: "EchoNotes"
+    challenge: "Make lengthy audio and video content searchable without reviewing entire recordings."
+    approach: "Combine caption and faster-whisper transcription with embedding-based search and timestamp-linked navigation."
     subtitle: "AI-Powered Transcription & Semantic Search"
     category: "NLP / Full-Stack AI"
     tagline: "An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval."

@@ -18,9 +18,15 @@
 <p>
   {{ p.tagline }}
 </p>
+{% if has(p.challenge) %}
+<p><strong>Engineering challenge:</strong> {{ p.challenge }}</p>
+{% endif %}
+{% if has(p.approach) %}
+<p><strong>Technical approach:</strong> {{ p.approach }}</p>
+{% endif %}
 
 {% if has(p.highlights) %}
-<strong>What I built:</strong>
+<strong>Implementation highlights:</strong>
 
 
 <ul>

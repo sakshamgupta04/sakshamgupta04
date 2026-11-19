@@ -146,6 +146,8 @@ class ProjectItem(StrictModel):
     subtitle: str | None = None
     category: str | None = None
     tagline: str | None = None
+    challenge: str | None = None
+    approach: str | None = None
     status: ProjectStatus = ProjectStatus.BUILDING
     repo: str | None = None
     featured: bool = False
