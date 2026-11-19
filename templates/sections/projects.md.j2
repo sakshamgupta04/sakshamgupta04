@@ -17,7 +17,7 @@
 {% if has(p.tagline) %}<p>{{ p.tagline }}</p>{% endif %}
 {% if has(p.challenge) %}<p><b>Engineering challenge:</b> {{ p.challenge }}</p>{% endif %}
 {% if has(p.approach) %}<p><b>Technical approach:</b> {{ p.approach }}</p>{% endif %}
-{% if has(p.highlights) %}<p><b>Built:</b> {% for h in p.highlights[:2] %}{{ h }}{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}</p>{% endif %}
+{% if has(p.highlights) %}<p><b>Implementation highlights:</b> {% for h in p.highlights[:2] %}{{ h }}{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}</p>{% endif %}
 {% if has(p.results) %}<p><b>Measured Evaluation &amp; Benchmarks:</b> {% for r in p.results %}{{ r }}{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}</p>{% endif %}
 {% if has(p.stack) %}<p><b>Stack:</b> {% for s in p.stack %}<code>{{ s }}</code>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
 <p>
