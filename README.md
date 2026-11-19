@@ -49,47 +49,34 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 ## ⚡ Featured Projects <a id="projects"></a>
 
-<!-- Image-first, GitHub-native gallery: original assets and destinations, no external CSS. -->
+<!-- GitHub-compatible, full-width project rows. All case-study information is visible. -->
+<a id="people-ai"></a>
 <table width="100%">
 <tr>
-<td width="33%" valign="top" align="center">
-<a id="people-ai"></a>
-<img src="assets/projects/people-ai.png" alt="People.ai" width="100%"><h3>01 · People.ai</h3>
-<sub>Applied Machine Learning</sub><p><strong>Faculty Fit & Retention Prediction</strong></p><p><code>Python</code> · <code>Scikit-learn</code> · <code>Gemini</code></p><p>
+<td width="30%" valign="top"><img src="assets/projects/people-ai.png" alt="People.ai" width="240"></td><td valign="top">
+<h3>01 · People.ai</h3>
+<sub>Applied Machine Learning</sub><p><strong>Faculty Fit & Retention Prediction</strong></p><p>An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.</p><p><b>Engineering challenge:</b> Assess faculty suitability and retention using professional experience and domain expertise.</p><p><b>Technical approach:</b> Engineer skill-diversity and experience features, then evaluate supervised classification models.</p><p><b>Implementation highlights:</b> Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators. &nbsp;•&nbsp; Trained and evaluated supervised classification models for faculty role fit and retention prediction.</p><p><b>Stack:</b> <code>Python</code> · <code>Scikit-learn</code> · <code>Gemini</code> · <code>Model Evaluation</code></p><p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit"><b>🔍 Case Study ↗</b></a></p>
-<details>
-<summary><b>Project details ▾</b></summary>
-<div align="left">
-<p>An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.</p><p><strong>Full stack:</strong> <code>Python</code> · <code>Scikit-learn</code> · <code>Gemini</code> · <code>Model Evaluation</code></p><p><strong>Engineering challenge:</strong> Assess faculty suitability and retention using professional experience and domain expertise.</p><p><strong>Technical approach:</strong> Engineer skill-diversity and experience features, then evaluate supervised classification models.</p><strong>Implementation highlights:</strong>
-<ul><li>Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.</li><li>Trained and evaluated supervised classification models for faculty role fit and retention prediction.</li></ul>
-</div>
-</details>
 </td>
-<td width="33%" valign="top" align="center">
+</tr>
+</table>
 <a id="ai-video-interview-emotion-analyzer"></a>
-<img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="100%"><h3>02 · AI Video Interview & Emotion Analyzer</h3>
-<sub>Computer Vision / Full-Stack AI</sub><p><strong>Real-Time Facial Expression & Emotion Telemetry</strong></p><p><code>Next.js</code> · <code>Python</code> · <code>DeepFace</code></p><p>
+<table width="100%">
+<tr>
+<td width="30%" valign="top"><img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer" width="240"></td><td valign="top">
+<h3>02 · AI Video Interview & Emotion Analyzer</h3>
+<sub>Computer Vision / Full-Stack AI</sub><p><strong>Real-Time Facial Expression & Emotion Telemetry</strong></p><p>A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.</p><p><b>Engineering challenge:</b> Turn recorded interview responses into structured facial-expression signals.</p><p><b>Technical approach:</b> Capture browser video with MediaRecorder, store uploads in Supabase, and analyze frames using DeepFace and OpenCV.</p><p><b>Implementation highlights:</b> Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage. &nbsp;•&nbsp; Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.</p><p><b>Stack:</b> <code>Next.js</code> · <code>Python</code> · <code>DeepFace</code> · <code>Supabase</code></p><p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer"><b>🔍 Case Study ↗</b></a></p>
-<details>
-<summary><b>Project details ▾</b></summary>
-<div align="left">
-<p>A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.</p><p><strong>Full stack:</strong> <code>Next.js</code> · <code>Python</code> · <code>DeepFace</code> · <code>Supabase</code></p><p><strong>Engineering challenge:</strong> Turn recorded interview responses into structured facial-expression signals.</p><p><strong>Technical approach:</strong> Capture browser video with MediaRecorder, store uploads in Supabase, and analyze frames using DeepFace and OpenCV.</p><strong>Implementation highlights:</strong>
-<ul><li>Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.</li><li>Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.</li></ul>
-</div>
-</details>
 </td>
-<td width="33%" valign="top" align="center">
+</tr>
+</table>
 <a id="echonotes"></a>
-<img src="assets/projects/echonotes.png" alt="EchoNotes" width="100%"><h3>03 · EchoNotes</h3>
-<sub>NLP / Full-Stack AI</sub><p><strong>AI-Powered Transcription & Semantic Search</strong></p><p><code>Next.js</code> · <code>FastAPI</code> · <code>faster-whisper</code></p><p>
-<a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes"><b>🔍 Case Study ↗</b></a> · <a href="https://youtube-video-summarizer-sage.vercel.app/"><b>▶️ Live Site ↗</b></a> · <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer"><b>📦 Source Code ↗</b></a></p>
-<details>
-<summary><b>Project details ▾</b></summary>
-<div align="left">
-<p>An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.</p><p><strong>Full stack:</strong> <code>Next.js</code> · <code>FastAPI</code> · <code>faster-whisper</code> · <code>Supabase</code></p><p><strong>Engineering challenge:</strong> Make lengthy audio and video content searchable without reviewing entire recordings.</p><p><strong>Technical approach:</strong> Combine caption and faster-whisper transcription with embedding-based search and timestamp-linked navigation.</p><strong>Implementation highlights:</strong>
-<ul><li>Developed audio ingestion and transcription workflows using captions and faster-whisper.</li><li>Implemented semantic search using embeddings and timestamp-linked navigation.</li></ul>
-</div>
-</details>
+<table width="100%">
+<tr>
+<td width="30%" valign="top"><img src="assets/projects/echonotes.png" alt="EchoNotes" width="240"></td><td valign="top">
+<h3>03 · EchoNotes</h3>
+<sub>NLP / Full-Stack AI</sub><p><strong>AI-Powered Transcription & Semantic Search</strong></p><p>An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.</p><p><b>Engineering challenge:</b> Make lengthy audio and video content searchable without reviewing entire recordings.</p><p><b>Technical approach:</b> Combine caption and faster-whisper transcription with embedding-based search and timestamp-linked navigation.</p><p><b>Implementation highlights:</b> Developed audio ingestion and transcription workflows using captions and faster-whisper. &nbsp;•&nbsp; Implemented semantic search using embeddings and timestamp-linked navigation.</p><p><b>Stack:</b> <code>Next.js</code> · <code>FastAPI</code> · <code>faster-whisper</code> · <code>Supabase</code></p><p>
+<a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes"><b>🔍 Case Study ↗</b></a> &nbsp;·&nbsp; <a href="https://youtube-video-summarizer-sage.vercel.app/"><b>▶️ Live Site ↗</b></a> &nbsp;·&nbsp; <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer"><b>📦 Source Code ↗</b></a></p>
 </td>
 </tr>
 </table>
@@ -116,11 +103,11 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 ## ⚡ Recent Activity <a id="activity"></a>
 
-- Merged PR #18 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:40:53"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #18 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:39:25"><em>1m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #17 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:37:49"><em>3m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #17 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:35:33"><em>5m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #16 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:33:21"><em>7m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #19 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:46:09"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #19 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:42:52"><em>3m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #18 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:40:53"><em>5m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #18 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:39:25"><em>7m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #17 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:37:49"><em>8m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
 
 
 ---
