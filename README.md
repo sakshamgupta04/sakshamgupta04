@@ -99,16 +99,6 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 </picture>
 
 
----
-
-## ⚡ Recent Activity <a id="activity"></a>
-
-- Merged PR #22 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:58:25"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #22 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:57:21"><em>1m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #21 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:53:58"><em>4m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #21 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:52:39"><em>6m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #20 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:49:28"><em>9m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-
 
 ---
 
