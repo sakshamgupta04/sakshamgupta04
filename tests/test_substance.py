@@ -170,14 +170,15 @@ def test_optional_case_study_details_hide_when_missing(profile_fixture: Profile)
 
 def test_horizontal_featured_gallery_shows_all_details(profile_fixture: Profile) -> None:
     output = render(profile_fixture)
-    assert output.count('<td width="32%" valign="top" align="center">') == 3
+    assert output.count('<td width="24%" valign="top" align="center">') == 3
     assert output.count('<table width="100%">') >= 3
     assert "<summary><b>Project details ▾</b></summary>" not in output
     assert "Case Study ↗" in output
     assert "Live Site ↗" in output
     assert "Source Code ↗" in output
     assert output.count('alt="People.ai project screenshot"') == 1
-    assert output.count('<td width="68%" valign="top">') == 3
+    assert output.count('<td width="76%" valign="top">') == 3
+    assert output.count('width="180"') == 3
 
 
 def test_premium_gallery_preserves_images_and_link_destinations(profile_fixture: Profile) -> None:
