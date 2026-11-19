@@ -92,6 +92,7 @@ def render_readme(
         recent_activity=recent_activity,
         project_last_updated=project_last_updated,
         github_stats=data.get("github_stats"),
+        stats_refresh_key=str(data.get("fetched_at", ""))[:13].replace("-", "").replace("T", ""),
         blog_posts=data.get("blog_posts", []),
         wakatime_stats=data.get("wakatime", []),
     )
