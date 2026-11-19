@@ -109,8 +109,8 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
   <tr>
     <td width="55%" align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sakshamgupta04&amp;show_icons=true&amp;include_all_commits=true&amp;count_private=false&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=79A8FF&amp;text_color=57D9D0&amp;icon_color=C792EA&amp;rank_icon=default&amp;cache_seconds=3600&amp;refresh=2026111919" />
-        <img src="https://github-readme-stats.vercel.app/api?username=sakshamgupta04&amp;show_icons=true&amp;include_all_commits=true&amp;count_private=false&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=275DAD&amp;text_color=087E8B&amp;icon_color=9B4DCA&amp;rank_icon=default&amp;cache_seconds=3600&amp;refresh=2026111919" alt="GitHub statistics for sakshamgupta04" width="495" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sakshamgupta04&amp;show_icons=true&amp;include_all_commits=false&amp;count_private=false&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=79A8FF&amp;text_color=57D9D0&amp;icon_color=C792EA&amp;rank_icon=default&amp;cache_seconds=86400" />
+        <img src="https://github-readme-stats.vercel.app/api?username=sakshamgupta04&amp;show_icons=true&amp;include_all_commits=false&amp;count_private=false&amp;theme=transparent&amp;bg_color=00000000&amp;hide_border=true&amp;title_color=275DAD&amp;text_color=087E8B&amp;icon_color=9B4DCA&amp;rank_icon=default&amp;cache_seconds=86400" alt="GitHub statistics for sakshamgupta04" width="495" />
       </picture>
     </td>
     <td width="45%" align="center" valign="middle">
