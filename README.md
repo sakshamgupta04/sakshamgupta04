@@ -158,11 +158,11 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 ## ⚡ Recent Activity <a id="activity"></a>
 
-- Merged PR #15 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:32:53"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #15 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:30:07"><em>3m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #14 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:28:48"><em>4m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #14 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:27:29"><em>5m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #13 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:25:47"><em>7m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Pushed `7a88af2` to `sakshamgupta04/sakshamgupta04` (`feat/credential-compact-tiles`) &nbsp;•&nbsp; <span title="2026-11-17 18:45:51"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/7a88af2af808d501d8253b0cfae625720149971a)
+- Merged PR #15 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:32:53"><em>16h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #15 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:30:07"><em>16h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #14 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:28:48"><em>16h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #14 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:27:29"><em>16h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
 
 
 ---

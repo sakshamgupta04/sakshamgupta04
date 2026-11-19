@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-18T19:33:18Z",
+  "fetched_at": "2026-11-19T11:43:04Z",
   "languages": {
-    "Python": 731505,
+    "Python": 731859,
     "HTML": 79862,
     "CSS": 77329,
     "JavaScript": 238993,
@@ -10,7 +10,7 @@
     "Batchfile": 2155,
     "C++": 262664,
     "C": 98225,
-    "Jinja": 17231,
+    "Jinja": 19611,
     "Java": 1353,
     "Dockerfile": 1432
   },
@@ -19,34 +19,34 @@
   },
   "recent_activity": [
     {
+      "description": "Pushed `7a88af2` to `sakshamgupta04/sakshamgupta04` (`feat/credential-compact-tiles`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/7a88af2af808d501d8253b0cfae625720149971a",
+      "relative_time": "1d ago",
+      "absolute_time": "2026-11-17 18:45:51"
+    },
+    {
       "description": "Merged PR #15 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "just now",
+      "relative_time": "16h ago",
       "absolute_time": "2026-11-18 19:32:53"
     },
     {
       "description": "Opened PR #15 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "3m ago",
+      "relative_time": "16h ago",
       "absolute_time": "2026-11-18 19:30:07"
     },
     {
       "description": "Merged PR #14 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "4m ago",
+      "relative_time": "16h ago",
       "absolute_time": "2026-11-18 19:28:48"
     },
     {
       "description": "Opened PR #14 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "5m ago",
+      "relative_time": "16h ago",
       "absolute_time": "2026-11-18 19:27:29"
-    },
-    {
-      "description": "Merged PR #13 in `sakshamgupta04/sakshamgupta04`: ",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "7m ago",
-      "absolute_time": "2026-11-18 19:25:47"
     }
   ],
   "github_stats": {
