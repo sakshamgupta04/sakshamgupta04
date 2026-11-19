@@ -4,77 +4,47 @@
 {% set sorted_projects = [] %}
 {% for p in profile.projects if p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
 {% for p in profile.projects if not p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
+<!-- Compact, responsive GitHub-native project gallery; no external CSS or scripts. -->
+<table width="100%">
+<tr>
 {% for p in sorted_projects[:3] %}
+<td width="33%" valign="top" align="center">
 <a id="{{ p.slug }}"></a>
-<table width="100%"><tr>
-{% if has(p.image) %}<td width="34%" valign="top"><img src="{{ p.image }}" alt="{{ p.title }}" width="240"></td>{% endif %}
-<td valign="top">
-<h3>0{{ loop.index }} · {{ p.title }}</h3>
-{% if has(p.category) %}<sub>{{ p.category }}</sub>{% endif %}
-{% if has(p.subtitle) %}
-<strong>{{ p.subtitle }}</strong>
-{% endif %}
-
+{% if has(p.image) %}<img src="{{ p.image }}" alt="{{ p.title }}" width="100%">{% endif %}
+<h3>{{ p.title }}</h3>
+{% if has(p.subtitle) %}<sub><strong>{{ p.subtitle }}</strong></sub>{% endif %}
+{% if has(p.category) %}<p><sub>{{ p.category }}</sub></p>{% endif %}
+<p>{{ p.tagline }}</p>
+{% if has(p.stack) %}<p>{% for s in p.stack[:5] %}<code>{{ s }}</code>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
 <p>
-  {{ p.tagline }}
+{% if has(p.links.demo) %}<a href="{{ p.links.demo }}"><b>🔍 Case Study ↗</b></a>{% endif %}
+{% if has(p.links.live) %}{% if has(p.links.demo) %} · {% endif %}<a href="{{ p.links.live }}"><b>▶️ Live Site ↗</b></a>{% endif %}
+{% if has(p.repo) %}{% if has(p.links.demo) or has(p.links.live) %} · {% endif %}<a href="https://github.com/{{ p.repo }}"><b>📦 Source Code ↗</b></a>{% endif %}
 </p>
-{% if has(p.challenge) %}
-<p><strong>Engineering challenge:</strong> {{ p.challenge }}</p>
-{% endif %}
-{% if has(p.approach) %}
-<p><strong>Technical approach:</strong> {{ p.approach }}</p>
-{% endif %}
-
+{% if has(p.challenge) or has(p.approach) or has(p.highlights) or has(p.results) %}
+<details>
+<summary><b>Engineering details</b></summary>
+<div align="left">
+{% if has(p.challenge) %}<p><strong>Engineering challenge:</strong> {{ p.challenge }}</p>{% endif %}
+{% if has(p.approach) %}<p><strong>Technical approach:</strong> {{ p.approach }}</p>{% endif %}
 {% if has(p.highlights) %}
 <strong>Implementation highlights:</strong>
-
-
-<ul>
-{% for h in p.highlights[:2] %}
-<li>{{ h }}</li>
-{% endfor %}
-</ul>
+<ul>{% for h in p.highlights[:2] %}<li>{{ h }}</li>{% endfor %}</ul>
 {% endif %}
-
 {% if has(p.results) %}
 <strong>Measured Evaluation &amp; Benchmarks:</strong>
-
-
-<ul>
-{% for r in p.results %}
-<li>{{ r }}</li>
+<ul>{% for r in p.results %}<li>{{ r }}</li>{% endfor %}</ul>
+{% endif %}
+</div>
+</details>
+{% endif %}
+</td>
 {% endfor %}
-</ul>
-{% endif %}
-
-{% if has(p.stack) %}
-<p>
-  <b>Technologies:</b> &nbsp;{% for s in p.stack[:5] %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}
-</p>
-{% endif %}
-
-{% set proj_links = [] %}
-{% if has(p.links.demo) %}{% set _ = proj_links.append("<a href=\"" ~ p.links.demo ~ "\">🔍 <b>Case Study ↗</b></a>") %}{% endif %}
-{% if has(p.links.live) %}{% set _ = proj_links.append("<a href=\"" ~ p.links.live ~ "\">▶️ <b>Live Site ↗</b></a>") %}{% endif %}
-{% if has(p.repo) %}{% set _ = proj_links.append("<a href=\"https://github.com/" ~ p.repo ~ "\">📦 <b>Source Code ↗</b></a>") %}{% endif %}
-{% if has(proj_links) %}
-<p><b>Explore this project:</b></p>
-<p>
-{{ proj_links | join(" &nbsp;&nbsp;|&nbsp;&nbsp; ") }}
-</p>
-{% endif %}
-
-</td></tr></table>
-{% endfor %}
-
+</tr>
+</table>
 {% if sorted_projects | length > 3 %}
-{% for p in sorted_projects %}
-{% if loop.index > 3 %}
-### {{ p.title }} <a id="{{ p.slug }}"></a>
-> {{ p.tagline }}
-{% if has(p.stack) %}- **Technologies:** {% for s in p.stack %}<code>{{ s }}</code>{% if not loop.last %} &nbsp;•&nbsp; {% endif %}{% endfor %}{% endif %}
-{% endif %}
+{% for p in sorted_projects[3:] %}
+**{{ p.title }}** — {{ p.tagline }}{% if has(p.repo) %} · [Code](https://github.com/{{ p.repo }}){% endif %}
 {% endfor %}
 {% endif %}
-
 {% endif %}
