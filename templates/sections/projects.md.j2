@@ -9,7 +9,7 @@
 <a id="{{ p.slug }}"></a>
 <table width="100%">
 <tr>
-{% if has(p.image) %}<td width="32%" valign="top" align="center"><a href="{{ p.links.demo if has(p.links.demo) else (p.links.live if has(p.links.live) else 'https://github.com/' ~ p.repo if has(p.repo) else '#' ~ p.slug) }}"><img src="{{ p.image }}" alt="{{ p.title }} project screenshot" width="100%"></a></td>{% endif %}
+{% if has(p.image) %}<td width="32%" valign="top" align="center">{% if has(p.links.demo) %}<a href="{{ p.links.demo }}">{% endif %}<img src="{{ p.image }}" alt="{{ p.title }} project screenshot" width="100%">{% if has(p.links.demo) %}</a>{% endif %}</td>{% endif %}
 <td width="68%" valign="top">
 {% if has(p.category) %}<sub><strong>{{ p.category }}</strong></sub>{% endif %}
 <h3>0{{ loop.index }} · {{ p.title }}</h3>
