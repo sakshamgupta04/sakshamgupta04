@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-19T18:33:56Z",
+  "fetched_at": "2026-11-19T18:38:13Z",
   "languages": {
     "Python": 731859,
     "HTML": 79862,
@@ -19,15 +19,27 @@
   },
   "recent_activity": [
     {
-      "description": "Merged PR #16 in `sakshamgupta04/sakshamgupta04`: ",
+      "description": "Merged PR #17 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
       "relative_time": "just now",
+      "absolute_time": "2026-11-19 18:37:49"
+    },
+    {
+      "description": "Opened PR #17 in `sakshamgupta04/sakshamgupta04`: ",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
+      "relative_time": "2m ago",
+      "absolute_time": "2026-11-19 18:35:33"
+    },
+    {
+      "description": "Merged PR #16 in `sakshamgupta04/sakshamgupta04`: ",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
+      "relative_time": "4m ago",
       "absolute_time": "2026-11-19 18:33:21"
     },
     {
       "description": "Opened PR #16 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "1m ago",
+      "relative_time": "6m ago",
       "absolute_time": "2026-11-19 18:32:10"
     },
     {
@@ -35,18 +47,6 @@
       "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/2e2981f3599a9f0b24a37c344d1baefdb075cdc0",
       "relative_time": "23h ago",
       "absolute_time": "2026-11-18 19:17:37"
-    },
-    {
-      "description": "Pushed `7a88af2` to `sakshamgupta04/sakshamgupta04` (`feat/credential-compact-tiles`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/7a88af2af808d501d8253b0cfae625720149971a",
-      "relative_time": "1d ago",
-      "absolute_time": "2026-11-17 18:45:51"
-    },
-    {
-      "description": "Merged PR #15 in `sakshamgupta04/sakshamgupta04`: ",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "23h ago",
-      "absolute_time": "2026-11-18 19:32:53"
     }
   ],
   "github_stats": {
