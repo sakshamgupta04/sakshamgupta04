@@ -102,3 +102,7 @@ def test_statistics_refresh_key_and_transparent_cards() -> None:
     assert "theme=transparent" in output
     assert "timezone=Asia/Kolkata" in output
     assert "cache_seconds=3600" in output
+    assert "include_all_commits=false" in output
+    assert "include_all_commits=true" not in output
+    assert "cache_seconds=86400" in output
+    assert "rank_icon=default&amp;cache_seconds=86400" in output
