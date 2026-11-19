@@ -171,7 +171,7 @@ def test_horizontal_featured_gallery_shows_all_details(profile_fixture: Profile)
     output = render(profile_fixture)
     assert output.count('<td width="30%" valign="top">') == 3
     assert output.count('<table width="100%">') >= 3
-    assert "<details>" not in output
+    assert "<summary><b>Project details ▾</b></summary>" not in output
     assert "Case Study ↗" in output
     assert "Live Site ↗" in output
     assert "Source Code ↗" in output
@@ -185,5 +185,5 @@ def test_premium_gallery_preserves_images_and_link_destinations(profile_fixture:
         assert f'href="{project.links.demo}"' in output
     assert "https://youtube-video-summarizer-sage.vercel.app/" in output
     assert "https://github.com/sakshamgupta04/Youtube-Video-Summarizer" in output
-    assert "<details>" not in output
+    assert "<summary><b>Project details ▾</b></summary>" not in output
     assert output.count("Engineering challenge:") == 3
