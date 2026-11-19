@@ -58,8 +58,10 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <p>
   An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.
 </p>
+<p><strong>Engineering challenge:</strong> Assess faculty suitability and retention using professional experience and domain expertise.</p>
+<p><strong>Technical approach:</strong> Engineer skill-diversity and experience features, then evaluate supervised classification models.</p>
 
-<strong>What I built:</strong>
+<strong>Implementation highlights:</strong>
 
 
 <ul>
@@ -86,8 +88,10 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <p>
   A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.
 </p>
+<p><strong>Engineering challenge:</strong> Turn recorded interview responses into structured facial-expression signals.</p>
+<p><strong>Technical approach:</strong> Capture browser video with MediaRecorder, store uploads in Supabase, and analyze frames using DeepFace and OpenCV.</p>
 
-<strong>What I built:</strong>
+<strong>Implementation highlights:</strong>
 
 
 <ul>
@@ -114,8 +118,10 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <p>
   An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.
 </p>
+<p><strong>Engineering challenge:</strong> Make lengthy audio and video content searchable without reviewing entire recordings.</p>
+<p><strong>Technical approach:</strong> Combine caption and faster-whisper transcription with embedding-based search and timestamp-linked navigation.</p>
 
-<strong>What I built:</strong>
+<strong>Implementation highlights:</strong>
 
 
 <ul>
@@ -158,11 +164,11 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 ## ⚡ Recent Activity <a id="activity"></a>
 
+- Merged PR #16 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:33:21"><em>just now</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Opened PR #16 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-19 18:32:10"><em>1m ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Pushed `2e2981f` to `sakshamgupta04/sakshamgupta04` (`main`) &nbsp;•&nbsp; <span title="2026-11-18 19:17:37"><em>23h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/2e2981f3599a9f0b24a37c344d1baefdb075cdc0)
 - Pushed `7a88af2` to `sakshamgupta04/sakshamgupta04` (`feat/credential-compact-tiles`) &nbsp;•&nbsp; <span title="2026-11-17 18:45:51"><em>1d ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04/commit/7a88af2af808d501d8253b0cfae625720149971a)
-- Merged PR #15 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:32:53"><em>16h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #15 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:30:07"><em>16h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Merged PR #14 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:28:48"><em>16h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
-- Opened PR #14 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:27:29"><em>16h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
+- Merged PR #15 in `sakshamgupta04/sakshamgupta04`:  &nbsp;•&nbsp; <span title="2026-11-18 19:32:53"><em>23h ago</em></span> &nbsp;•&nbsp; [View on GitHub](https://github.com/sakshamgupta04/sakshamgupta04)
 
 
 ---
