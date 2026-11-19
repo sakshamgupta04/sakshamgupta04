@@ -2,8 +2,8 @@ name: Refresh Profile README
 
 on:
   schedule:
-    # Runs once a day at an odd minute (03:17 UTC)
-    - cron: '17 3 * * *'
+    # Refresh every four hours; scheduled Actions can be delayed by GitHub.
+    - cron: '17 */4 * * *'
   workflow_dispatch:
   push:
     paths:

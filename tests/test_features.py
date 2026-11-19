@@ -81,3 +81,24 @@ def test_write_step_summary(tmp_path: Path) -> None:
     assert "Language Statistics Bar" in content
     assert "Recent Public Activity" in content
 
+
+
+def test_statistics_refresh_key_and_transparent_cards() -> None:
+    profile = validate_profile_dict({
+        "identity": {"name": "Saksham Gupta", "handle": "sakshamgupta04"},
+        "features": {"stats_card": True},
+    })
+    output = render_readme(
+        profile=profile,
+        template_dir=Path("templates"),
+        template_name="README.md.j2",
+        dynamic_data={
+            "fetched_at": "2026-11-20T12:45:00Z",
+            "github_stats": {"public_repos": 10, "total_stars": 2},
+        },
+    )
+    assert "GitHub Statistics" in output
+    assert "refresh=2026112012" in output
+    assert "theme=transparent" in output
+    assert "timezone=Asia/Kolkata" in output
+    assert "cache_seconds=3600" in output
