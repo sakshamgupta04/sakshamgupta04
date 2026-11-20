@@ -30,3 +30,7 @@ jobs:
       - run: python -m pip install -r requirements.txt
       - name: Verify lint, tests, README generation, and links
         run: python scripts/verify.py
+      - name: Audit Python dependencies for known vulnerabilities
+        run: |
+          python -m pip install pip-audit
+          python -m pip_audit --requirement requirements.txt --progress-spinner off
