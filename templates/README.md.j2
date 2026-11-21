@@ -72,12 +72,6 @@
 {% include "sections/snake.md.j2" %}
 {% endif %}
 
-{% if has(profile.publications) or profile.patent.mention %}
----
-
-{% include "sections/research.md.j2" %}
-{% endif %}
-
 {% if profile.features.education and has(profile.certifications) %}
 ---
 
