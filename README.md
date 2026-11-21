@@ -115,8 +115,8 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
     </td>
     <td width="45%" align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=79A8FF&amp;text_color=57D9D0&amp;cache_seconds=3600&amp;refresh=2026112116" />
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=275DAD&amp;text_color=087E8B&amp;cache_seconds=3600&amp;refresh=2026112116" alt="Most used programming languages across public repositories for sakshamgupta04" width="380" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=79A8FF&amp;text_color=57D9D0&amp;cache_seconds=3600&amp;refresh=2026112118" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=275DAD&amp;text_color=087E8B&amp;cache_seconds=3600&amp;refresh=2026112118" alt="Most used programming languages across public repositories for sakshamgupta04" width="380" />
       </picture>
     </td>
   </tr>
@@ -124,26 +124,10 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=79A8FF&amp;fire=F59E72&amp;currStreakNum=C792EA&amp;sideNums=79A8FF&amp;currStreakLabel=57D9D0&amp;sideLabels=57D9D0&amp;dates=9CA3AF&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112116" />
-    <img src="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=275DAD&amp;fire=E87942&amp;currStreakNum=9B4DCA&amp;sideNums=275DAD&amp;currStreakLabel=087E8B&amp;sideLabels=087E8B&amp;dates=6B7280&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112116" alt="GitHub contribution streak statistics for sakshamgupta04" width="620" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=79A8FF&amp;fire=F59E72&amp;currStreakNum=C792EA&amp;sideNums=79A8FF&amp;currStreakLabel=57D9D0&amp;sideLabels=57D9D0&amp;dates=9CA3AF&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112118" />
+    <img src="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=275DAD&amp;fire=E87942&amp;currStreakNum=9B4DCA&amp;sideNums=275DAD&amp;currStreakLabel=087E8B&amp;sideLabels=087E8B&amp;dates=6B7280&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112118" alt="GitHub contribution streak statistics for sakshamgupta04" width="620" />
   </picture>
 </p>
-
-
-
----
-
-## 📖 Research Publications <a id="research"></a>
-
-
-**Machine Learning-Based Approach for Diabetes Detection and Prediction**  
-IEEE 3rd International Conference on Advancement in Computation & Computer Technologies (InCACCT) · 2025
-[🔗 **DOI**](https://doi.org/10.1109/InCACCT65424.2025.11011335) &nbsp;&nbsp;|&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/diabetes-risk-forecasting.pdf)
-
-
-**Evaluating the Accuracy and Computational Load of Booth's Algorithm and Vedic Multiplication in Digital Systems**  
-Taylor & Francis / CRC Press · 2024
-[🔗 **DOI**](https://doi.org/10.1201/9781003637530-29) &nbsp;&nbsp;|&nbsp;&nbsp; [📄 **Full Paper / PDF**](https://sakshamsgupta-portfolio.vercel.app/papers/booths-vedic-multiplication.pdf)
 
 
 
