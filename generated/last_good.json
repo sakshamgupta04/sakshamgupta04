@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-21T06:59:49Z",
+  "fetched_at": "2026-11-21T16:07:33Z",
   "languages": {
     "Python": 734863,
     "HTML": 79862,
@@ -19,6 +19,24 @@
   },
   "recent_activity": [
     {
+      "description": "Pushed `f743a93` to `sakshamgupta04/sakshamgupta04` (`fix/fresher-github-statistics`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/f743a93a9d7b1a9b7bcb8201c811060be71c8447",
+      "relative_time": "1d ago",
+      "absolute_time": "2026-11-19 19:03:16"
+    },
+    {
+      "description": "Pushed `336fb9a` to `sakshamgupta04/sakshamgupta04` (`feat/compact-featured-project-grid`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/336fb9a5eaf2a260daa12275c8eadcd032003dd9",
+      "relative_time": "1d ago",
+      "absolute_time": "2026-11-19 18:35:15"
+    },
+    {
+      "description": "Pushed `52d22a4` to `sakshamgupta04/sakshamgupta04` (`feat/featured-project-case-studies`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/52d22a40b01be852af847f5454511e5fbd4c63b0",
+      "relative_time": "1d ago",
+      "absolute_time": "2026-11-19 18:32:02"
+    },
+    {
       "description": "Pushed `287f58c` to `sakshamgupta04/sakshamgupta04` (`feat/vibrant-transparent-github-statistics`)",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/287f58c69053cd4cf7db3f82bc00d57993454274",
       "relative_time": "2d ago",
@@ -29,24 +47,6 @@
       "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/bd110dbf7d2b83ec8ea8ba931b5d965633de0d06",
       "relative_time": "2d ago",
       "absolute_time": "2026-11-18 19:28:50"
-    },
-    {
-      "description": "Merged PR #26 in `sakshamgupta04/sakshamgupta04`: ",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "12h ago",
-      "absolute_time": "2026-11-20 18:33:43"
-    },
-    {
-      "description": "Opened PR #26 in `sakshamgupta04/sakshamgupta04`: ",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "12h ago",
-      "absolute_time": "2026-11-20 18:32:25"
-    },
-    {
-      "description": "Pushed `eb20742` to `sakshamgupta04/sakshamgupta04` (`main`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/eb20742ed6151b264dab32a6bbb45983c224dc80",
-      "relative_time": "2d ago",
-      "absolute_time": "2026-11-18 19:25:49"
     }
   ],
   "github_stats": {
