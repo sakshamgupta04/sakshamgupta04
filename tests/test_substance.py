@@ -84,16 +84,10 @@ def test_project_measured_results_hiding(profile_fixture: Profile) -> None:
     assert "WER: 8.2% on LibriSpeech clean" in output_populated
 
 
-def test_research_section_hidden_when_empty_and_shown_when_present(profile_fixture: Profile) -> None:
-    p_empty = copy.deepcopy(profile_fixture)
-    p_empty.publications = []
-    p_empty.patent.mention = False
-    output_empty = render(p_empty)
-    assert "Research Publications" not in output_empty
-
-    # Populated publications
-    p_pub = copy.deepcopy(profile_fixture)
-    p_pub.publications = [
+def test_research_publications_remain_hidden_even_when_data_exists(profile_fixture: Profile) -> None:
+    # Publication metadata is retained but intentionally omitted from the profile README.
+    p = copy.deepcopy(profile_fixture)
+    p.publications = [
         PublicationItem(
             title="Privacy-Preserving On-Device Document AI",
             authors=["Saksham Gupta"],
@@ -101,23 +95,14 @@ def test_research_section_hidden_when_empty_and_shown_when_present(profile_fixtu
             year=2026,
             status="Under Review",
             doi="10.1109/EXAMPLE.2026",
-            bibtex="@article{gupta2026, title={Privacy-Preserving On-Device Document AI}}",
         )
     ]
-    output_pub = render(p_pub)
-    assert "Research Publications" in output_pub
-    assert "Privacy-Preserving On-Device Document AI" in output_pub
-    assert "[🔗 **DOI**](https://doi.org/10.1109/EXAMPLE.2026)" in output_pub
-    assert "Cite (BibTeX)" in output_pub
-
-    # Populated patent only
-    p_pat = copy.deepcopy(profile_fixture)
-    p_pat.publications = []
-    p_pat.patent.mention = True
-    p_pat.patent.text = "System and Method for Automated Candidate Fit Scoring (App No. 202511012345)"
-    output_pat = render(p_pat)
-    assert "Research Publications" in output_pat
-    assert "System and Method for Automated Candidate Fit Scoring" in output_pat
+    p.patent.mention = True
+    p.patent.text = "System and Method for Automated Candidate Fit Scoring"
+    output = render(p)
+    assert "Research Publications" not in output
+    assert "Privacy-Preserving On-Device Document AI" not in output
+    assert "System and Method for Automated Candidate Fit Scoring" not in output
 
 
 def test_education_and_certifications_formatting(profile_fixture: Profile) -> None:
