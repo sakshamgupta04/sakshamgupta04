@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-21T18:37:54Z",
+  "fetched_at": "2026-11-21T21:38:01Z",
   "languages": {
-    "Python": 734863,
+    "Python": 734283,
     "HTML": 79862,
     "CSS": 77329,
     "JavaScript": 238993,
@@ -19,34 +19,34 @@
   },
   "recent_activity": [
     {
-      "description": "Merged PR #27 in `sakshamgupta04/sakshamgupta04`: ",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "just now",
-      "absolute_time": "2026-11-21 18:37:36"
-    },
-    {
-      "description": "Opened PR #27 in `sakshamgupta04/sakshamgupta04`: ",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "3m ago",
-      "absolute_time": "2026-11-21 18:34:44"
-    },
-    {
-      "description": "Pushed `f743a93` to `sakshamgupta04/sakshamgupta04` (`fix/fresher-github-statistics`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/f743a93a9d7b1a9b7bcb8201c811060be71c8447",
-      "relative_time": "1d ago",
-      "absolute_time": "2026-11-19 19:03:16"
-    },
-    {
-      "description": "Pushed `336fb9a` to `sakshamgupta04/sakshamgupta04` (`feat/compact-featured-project-grid`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/336fb9a5eaf2a260daa12275c8eadcd032003dd9",
+      "description": "Pushed `1de6f00` to `sakshamgupta04/sakshamgupta04` (`design/compact-project-thumbnails`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/1de6f00127e58a58464b2f46e01c652998d8966d",
       "relative_time": "2d ago",
-      "absolute_time": "2026-11-19 18:35:15"
+      "absolute_time": "2026-11-19 18:52:34"
     },
     {
-      "description": "Pushed `52d22a4` to `sakshamgupta04/sakshamgupta04` (`feat/featured-project-case-studies`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/52d22a40b01be852af847f5454511e5fbd4c63b0",
+      "description": "Pushed `8a14dc4` to `sakshamgupta04/sakshamgupta04` (`design/visible-horizontal-project-showcase`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/8a14dc48d1e1e5650582fa8ee4ab462ba8aa4027",
       "relative_time": "2d ago",
-      "absolute_time": "2026-11-19 18:32:02"
+      "absolute_time": "2026-11-19 18:44:06"
+    },
+    {
+      "description": "Pushed `d86460d` to `sakshamgupta04/sakshamgupta04` (`design/compact-project-thumbnails`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/d86460d706b91cf8a1a6f0a8c2943892ece88c4a",
+      "relative_time": "2d ago",
+      "absolute_time": "2026-11-19 18:52:27"
+    },
+    {
+      "description": "Pushed `e025fee` to `sakshamgupta04/sakshamgupta04` (`design/visible-horizontal-project-showcase`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/e025fee5aa8c45358ecfcaf0f7999d0433639b5a",
+      "relative_time": "2d ago",
+      "absolute_time": "2026-11-19 18:42:47"
+    },
+    {
+      "description": "Pushed `5945199` to `sakshamgupta04/sakshamgupta04` (`design/remove-research-publications-section`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/5945199267330ad34d5233d89bd93ba32a0e557b",
+      "relative_time": "3h ago",
+      "absolute_time": "2026-11-21 18:36:33"
     }
   ],
   "github_stats": {
