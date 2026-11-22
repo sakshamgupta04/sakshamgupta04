@@ -80,7 +80,7 @@ def test_project_measured_results_hiding(profile_fixture: Profile) -> None:
     p = copy.deepcopy(profile_fixture)
     p.projects[0].results = ["WER: 8.2% on LibriSpeech clean", "Latency: 280ms p95"]
     output_populated = render(p)
-    assert "Measured Evaluation &amp; Benchmarks:" in output_populated
+    assert "Benchmarks:" in output_populated
     assert "WER: 8.2% on LibriSpeech clean" in output_populated
 
 
@@ -136,10 +136,10 @@ def test_status_formatting_helpers() -> None:
 
 def test_featured_case_study_details(profile_fixture: Profile) -> None:
     output = render(profile_fixture)
-    assert output.count("Engineering challenge:") == 3
+    assert output.count("Challenge:") == 3
     assert output.count("<ul>") >= 3
-    assert output.count("Technical approach:") == 3
-    assert "Implementation highlights:" in output
+    assert output.count("Approach:") == 3
+    assert "Highlights:" in output
     assert "MediaRecorder" in output
     assert "Measured Evaluation &amp; Benchmarks:" not in output
 
@@ -149,21 +149,25 @@ def test_optional_case_study_details_hide_when_missing(profile_fixture: Profile)
     p.projects[0].challenge = None
     p.projects[0].approach = None
     output = render(p)
-    assert output.count("Engineering challenge:") == 2
-    assert output.count("Technical approach:") == 2
+    assert output.count("Challenge:") == 2
+    assert output.count("Approach:") == 2
 
 
-def test_horizontal_featured_gallery_shows_all_details(profile_fixture: Profile) -> None:
+def test_two_column_featured_gallery_shows_all_details(profile_fixture: Profile) -> None:
     output = render(profile_fixture)
-    assert output.count('<tr><td align="center">') == 3
-    assert output.count('<table width="100%">') >= 3
+    assert output.count('<td width="50%" valign="top">') == 2
+    assert output.count('<td width="100%" valign="top">') == 1
+    assert output.count('<table width="100%">') >= 1
     assert "<summary><b>Project details ▾</b></summary>" not in output
-    assert "Case Study ↗" in output
+    assert output.count("Case Study ↗") == 3
     assert "Live Site ↗" in output
     assert "Source Code ↗" in output
     assert output.count('alt="People.ai project screenshot"') == 1
-    assert output.count('<tr><td valign="top">') == 3
-    assert output.count('width="600"') == 3
+    assert output.count('width="320"') == 2
+    assert output.count('width="600"') == 1
+    assert output.count("Challenge:") == 3
+    assert output.count("Approach:") == 3
+    assert output.count("Highlights:") == 3
 
 
 def test_premium_gallery_preserves_images_and_link_destinations(profile_fixture: Profile) -> None:
@@ -174,4 +178,4 @@ def test_premium_gallery_preserves_images_and_link_destinations(profile_fixture:
     assert "https://youtube-video-summarizer-sage.vercel.app/" in output
     assert "https://github.com/sakshamgupta04/Youtube-Video-Summarizer" in output
     assert "<summary><b>Project details ▾</b></summary>" not in output
-    assert output.count("Engineering challenge:") == 3
+    assert output.count("Challenge:") == 3

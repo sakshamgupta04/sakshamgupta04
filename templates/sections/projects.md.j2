@@ -4,32 +4,31 @@
 {% set sorted_projects = [] %}
 {% for p in profile.projects if p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
 {% for p in profile.projects if not p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
-<!-- GitHub-native stacked showcase: readable full-width screenshots and visible case studies. -->
-{% for p in sorted_projects[:3] %}
-<a id="{{ p.slug }}"></a>
+<!-- Two-column, image-first cards; third featured project spans the full width. -->
 <table width="100%">
-{% if has(p.image) %}<tr><td align="center">{% if has(p.links.demo) %}<a href="{{ p.links.demo }}">{% endif %}<img src="{{ p.image }}" alt="{{ p.title }} project screenshot" width="600">{% if has(p.links.demo) %}</a>{% endif %}</td></tr>{% endif %}
-<tr><td valign="top">
+{% for p in sorted_projects[:3] %}
+{% if loop.index0 is even %}<tr>{% endif %}
+<td width="{% if loop.index == 3 %}100%{% else %}50%{% endif %}" valign="top">
+<a id="{{ p.slug }}"></a>
+{% if has(p.image) %}<p align="center">{% if has(p.links.demo) %}<a href="{{ p.links.demo }}">{% endif %}<img src="{{ p.image }}" alt="{{ p.title }} project screenshot" width="{% if loop.index == 3 %}600{% else %}320{% endif %}">{% if has(p.links.demo) %}</a>{% endif %}</p>{% endif %}
 {% if has(p.category) %}<sub><strong>{{ p.category }}</strong></sub>{% endif %}
 <h3>0{{ loop.index }} · {{ p.title }}</h3>
 {% if has(p.subtitle) %}<p><em>{{ p.subtitle }}</em></p>{% endif %}
 {% if has(p.tagline) %}<p>{{ p.tagline }}</p>{% endif %}
-{% if has(p.challenge) %}<p><b>Engineering challenge:</b> {{ p.challenge }}</p>{% endif %}
-{% if has(p.approach) %}<p><b>Technical approach:</b> {{ p.approach }}</p>{% endif %}
-{% if has(p.highlights) %}<p><b>Implementation highlights:</b></p>
-<ul>{% for h in p.highlights %}<li>{{ h }}</li>{% endfor %}</ul>{% endif %}
-{% if has(p.results) %}<p><b>Measured Evaluation &amp; Benchmarks:</b></p>
-<ul>{% for r in p.results %}<li>{{ r }}</li>{% endfor %}</ul>{% endif %}
-{% if has(p.stack) %}<p><b>Stack:</b> {% for s in p.stack %}<code>{{ s }}</code>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+{% if has(p.challenge) %}<p><b>Challenge:</b> {{ p.challenge }}</p>{% endif %}
+{% if has(p.approach) %}<p><b>Approach:</b> {{ p.approach }}</p>{% endif %}
+{% if has(p.highlights) %}<p><b>Highlights:</b></p><ul>{% for h in p.highlights %}<li>{{ h }}</li>{% endfor %}</ul>{% endif %}
+{% if has(p.results) %}<p><b>Benchmarks:</b></p><ul>{% for result in p.results %}<li>{{ result }}</li>{% endfor %}</ul>{% endif %}
+{% if has(p.stack) %}<p><b>Stack:</b> {% for item in p.stack %}<code>{{ item }}</code>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
 <p>
 {% if has(p.links.demo) %}<a href="{{ p.links.demo }}"><b>🔍 Case Study ↗</b></a>{% endif %}
 {% if has(p.links.live) %}{% if has(p.links.demo) %} &nbsp;·&nbsp; {% endif %}<a href="{{ p.links.live }}"><b>▶️ Live Site ↗</b></a>{% endif %}
 {% if has(p.repo) %}{% if has(p.links.demo) or has(p.links.live) %} &nbsp;·&nbsp; {% endif %}<a href="https://github.com/{{ p.repo }}"><b>📦 Source Code ↗</b></a>{% endif %}
 </p>
 </td>
-</tr>
-</table>
+{% if loop.index is even or loop.last %}</tr>{% endif %}
 {% endfor %}
+</table>
 {% if sorted_projects | length > 3 %}
 {% for p in sorted_projects[3:] %}
 **{{ p.title }}** — {{ p.tagline }}{% if has(p.repo) %} · [Code](https://github.com/{{ p.repo }}){% endif %}
