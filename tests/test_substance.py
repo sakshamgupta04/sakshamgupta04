@@ -153,18 +153,16 @@ def test_optional_case_study_details_hide_when_missing(profile_fixture: Profile)
     assert output.count("Approach:") == 2
 
 
-def test_two_column_featured_gallery_shows_all_details(profile_fixture: Profile) -> None:
+def test_three_column_featured_gallery_shows_all_details(profile_fixture: Profile) -> None:
     output = render(profile_fixture)
-    assert output.count('<td width="50%" valign="top">') == 2
-    assert output.count('<td width="100%" valign="top">') == 1
+    assert output.count('<td width="33%" valign="top" style="padding: 12px;">') == 3
     assert output.count('<table width="100%">') >= 1
     assert "<summary><b>Project details ▾</b></summary>" not in output
     assert output.count("Case Study ↗") == 3
     assert "Live Site ↗" in output
     assert "Source Code ↗" in output
     assert output.count('alt="People.ai project screenshot"') == 1
-    assert output.count('width="320"') == 2
-    assert output.count('width="600"') == 1
+    assert output.count('width="100%"') >= 4
     assert output.count("Challenge:") == 3
     assert output.count("Approach:") == 3
     assert output.count("Highlights:") == 3
