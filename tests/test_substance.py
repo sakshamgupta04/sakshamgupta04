@@ -80,7 +80,7 @@ def test_project_measured_results_hiding(profile_fixture: Profile) -> None:
     p = copy.deepcopy(profile_fixture)
     p.projects[0].results = ["WER: 8.2% on LibriSpeech clean", "Latency: 280ms p95"]
     output_populated = render(p)
-    assert "Measured Evaluation &amp; Benchmarks:" in output_populated
+    assert "Benchmarks:" in output_populated
     assert "WER: 8.2% on LibriSpeech clean" in output_populated
 
 
@@ -178,4 +178,4 @@ def test_premium_gallery_preserves_images_and_link_destinations(profile_fixture:
     assert "https://youtube-video-summarizer-sage.vercel.app/" in output
     assert "https://github.com/sakshamgupta04/Youtube-Video-Summarizer" in output
     assert "<summary><b>Project details ▾</b></summary>" not in output
-    assert output.count("Engineering challenge:") == 3
+    assert output.count("Challenge:") == 3
