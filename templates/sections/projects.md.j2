@@ -4,13 +4,13 @@
 {% set sorted_projects = [] %}
 {% for p in profile.projects if p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
 {% for p in profile.projects if not p.featured %}{% set _ = sorted_projects.append(p) %}{% endfor %}
-<!-- Two-column, image-first cards; third featured project spans the full width. -->
-<table width="100%">
+<!-- Three equally spaced, image-first GitHub-native cards; original project images are unchanged. -->
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
 {% for p in sorted_projects[:3] %}
-{% if loop.index0 is even %}<tr>{% endif %}
-<td width="{% if loop.index == 3 %}100%{% else %}50%{% endif %}" valign="top">
+<td width="33%" valign="top" style="padding: 12px;">
 <a id="{{ p.slug }}"></a>
-{% if has(p.image) %}<p align="center">{% if has(p.links.demo) %}<a href="{{ p.links.demo }}">{% endif %}<img src="{{ p.image }}" alt="{{ p.title }} project screenshot" width="{% if loop.index == 3 %}600{% else %}320{% endif %}">{% if has(p.links.demo) %}</a>{% endif %}</p>{% endif %}
+{% if has(p.image) %}<p align="center">{% if has(p.links.demo) %}<a href="{{ p.links.demo }}">{% endif %}<img src="{{ p.image }}" alt="{{ p.title }} project screenshot" width="100%">{% if has(p.links.demo) %}</a>{% endif %}</p>{% endif %}
 {% if has(p.category) %}<sub><strong>{{ p.category }}</strong></sub>{% endif %}
 <h3>0{{ loop.index }} · {{ p.title }}</h3>
 {% if has(p.subtitle) %}<p><em>{{ p.subtitle }}</em></p>{% endif %}
@@ -26,8 +26,8 @@
 {% if has(p.repo) %}{% if has(p.links.demo) or has(p.links.live) %} &nbsp;·&nbsp; {% endif %}<a href="https://github.com/{{ p.repo }}"><b>📦 Source Code ↗</b></a>{% endif %}
 </p>
 </td>
-{% if loop.index is even or loop.last %}</tr>{% endif %}
 {% endfor %}
+</tr>
 </table>
 {% if sorted_projects | length > 3 %}
 {% for p in sorted_projects[3:] %}
