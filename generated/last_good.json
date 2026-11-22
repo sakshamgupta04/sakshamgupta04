@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-22T18:41:54Z",
+  "fetched_at": "2026-11-22T21:45:48Z",
   "languages": {
-    "Python": 734283,
+    "Python": 734334,
     "HTML": 79862,
     "CSS": 77329,
     "JavaScript": 238993,
@@ -10,7 +10,7 @@
     "Batchfile": 2155,
     "C++": 262664,
     "C": 98225,
-    "Jinja": 20004,
+    "Jinja": 20017,
     "Java": 1353,
     "Dockerfile": 1432
   },
@@ -19,34 +19,34 @@
   },
   "recent_activity": [
     {
+      "description": "Pushed `9cec8fe` to `sakshamgupta04/sakshamgupta04` (`design/equal-three-column-project-gallery`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/9cec8feda80d46769acf5359b10d4035ed2fd233",
+      "relative_time": "3h ago",
+      "absolute_time": "2026-11-22 18:39:05"
+    },
+    {
+      "description": "Pushed `e2d7baa` to `sakshamgupta04/sakshamgupta04` (`design/equal-three-column-project-gallery`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/e2d7baa4c09a88e6039c83b6e1b2fec517fbf370",
+      "relative_time": "3h ago",
+      "absolute_time": "2026-11-22 18:39:13"
+    },
+    {
+      "description": "Pushed `1d39c91` to `sakshamgupta04/sakshamgupta04` (`design/compact-two-column-featured-projects`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/1d39c91503775eaa01ef860cb074494455633647",
+      "relative_time": "3h ago",
+      "absolute_time": "2026-11-22 18:33:53"
+    },
+    {
+      "description": "Pushed `22cd498` to `sakshamgupta04/sakshamgupta04` (`design/compact-two-column-featured-projects`)",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/22cd4987a0ec139c0afa135aeae4ada3b48eb8ce",
+      "relative_time": "3h ago",
+      "absolute_time": "2026-11-22 18:31:56"
+    },
+    {
       "description": "Merged PR #29 in `sakshamgupta04/sakshamgupta04`: ",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "just now",
+      "relative_time": "3h ago",
       "absolute_time": "2026-11-22 18:41:34"
-    },
-    {
-      "description": "Opened PR #29 in `sakshamgupta04/sakshamgupta04`: ",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "2m ago",
-      "absolute_time": "2026-11-22 18:39:17"
-    },
-    {
-      "description": "Merged PR #28 in `sakshamgupta04/sakshamgupta04`: ",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "4m ago",
-      "absolute_time": "2026-11-22 18:37:31"
-    },
-    {
-      "description": "Opened PR #28 in `sakshamgupta04/sakshamgupta04`: ",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
-      "relative_time": "9m ago",
-      "absolute_time": "2026-11-22 18:32:01"
-    },
-    {
-      "description": "Pushed `37152bf` to `sakshamgupta04/sakshamgupta04` (`design/readable-stacked-project-screenshots`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/37152bf5ff28bf368b2cb8f835bdebe465a0809d",
-      "relative_time": "2d ago",
-      "absolute_time": "2026-11-19 18:57:06"
     }
   ],
   "github_stats": {
