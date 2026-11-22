@@ -49,37 +49,27 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 ## ⚡ Featured Projects <a id="projects"></a>
 
-<!-- GitHub-native stacked showcase: readable full-width screenshots and visible case studies. -->
-<a id="people-ai"></a>
+<!-- Two-column, image-first cards; third featured project spans the full width. -->
 <table width="100%">
-<tr><td align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit"><img src="assets/projects/people-ai.png" alt="People.ai project screenshot" width="600"></a></td></tr><tr><td valign="top">
-<sub><strong>Applied Machine Learning</strong></sub><h3>01 · People.ai</h3>
-<p><em>Faculty Fit & Retention Prediction</em></p><p>An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.</p><p><b>Engineering challenge:</b> Assess faculty suitability and retention using professional experience and domain expertise.</p><p><b>Technical approach:</b> Engineer skill-diversity and experience features, then evaluate supervised classification models.</p><p><b>Implementation highlights:</b></p>
-<ul><li>Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.</li><li>Trained and evaluated supervised classification models for faculty role fit and retention prediction.</li></ul><p><b>Stack:</b> <code>Python</code> · <code>Scikit-learn</code> · <code>Gemini</code> · <code>Model Evaluation</code></p><p>
+<tr><td width="50%" valign="top">
+<a id="people-ai"></a>
+<p align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit"><img src="assets/projects/people-ai.png" alt="People.ai project screenshot" width="320"></a></p><sub><strong>Applied Machine Learning</strong></sub><h3>01 · People.ai</h3>
+<p><em>Faculty Fit & Retention Prediction</em></p><p>An AI-driven faculty evaluation system designed to assess role suitability and predict long-term retention using professional experience, domain expertise, and career trajectory.</p><p><b>Challenge:</b> Assess faculty suitability and retention using professional experience and domain expertise.</p><p><b>Approach:</b> Engineer skill-diversity and experience features, then evaluate supervised classification models.</p><p><b>Highlights:</b></p><ul><li>Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.</li><li>Trained and evaluated supervised classification models for faculty role fit and retention prediction.</li></ul><p><b>Stack:</b> <code>Python</code> · <code>Scikit-learn</code> · <code>Gemini</code> · <code>Model Evaluation</code></p><p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit"><b>🔍 Case Study ↗</b></a></p>
 </td>
-</tr>
-</table>
+<td width="50%" valign="top">
 <a id="ai-video-interview-emotion-analyzer"></a>
-<table width="100%">
-<tr><td align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer"><img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer project screenshot" width="600"></a></td></tr><tr><td valign="top">
-<sub><strong>Computer Vision / Full-Stack AI</strong></sub><h3>02 · AI Video Interview & Emotion Analyzer</h3>
-<p><em>Real-Time Facial Expression & Emotion Telemetry</em></p><p>A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.</p><p><b>Engineering challenge:</b> Turn recorded interview responses into structured facial-expression signals.</p><p><b>Technical approach:</b> Capture browser video with MediaRecorder, store uploads in Supabase, and analyze frames using DeepFace and OpenCV.</p><p><b>Implementation highlights:</b></p>
-<ul><li>Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.</li><li>Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.</li></ul><p><b>Stack:</b> <code>Next.js</code> · <code>Python</code> · <code>DeepFace</code> · <code>Supabase</code></p><p>
+<p align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer"><img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer project screenshot" width="320"></a></p><sub><strong>Computer Vision / Full-Stack AI</strong></sub><h3>02 · AI Video Interview & Emotion Analyzer</h3>
+<p><em>Real-Time Facial Expression & Emotion Telemetry</em></p><p>A web-based interview analysis platform that records video responses and processes facial expressions to generate structured emotion-analysis results.</p><p><b>Challenge:</b> Turn recorded interview responses into structured facial-expression signals.</p><p><b>Approach:</b> Capture browser video with MediaRecorder, store uploads in Supabase, and analyze frames using DeepFace and OpenCV.</p><p><b>Highlights:</b></p><ul><li>Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.</li><li>Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.</li></ul><p><b>Stack:</b> <code>Next.js</code> · <code>Python</code> · <code>DeepFace</code> · <code>Supabase</code></p><p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer"><b>🔍 Case Study ↗</b></a></p>
 </td>
-</tr>
-</table>
+</tr><tr><td width="100%" valign="top">
 <a id="echonotes"></a>
-<table width="100%">
-<tr><td align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes"><img src="assets/projects/echonotes.png" alt="EchoNotes project screenshot" width="600"></a></td></tr><tr><td valign="top">
-<sub><strong>NLP / Full-Stack AI</strong></sub><h3>03 · EchoNotes</h3>
-<p><em>AI-Powered Transcription & Semantic Search</em></p><p>An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.</p><p><b>Engineering challenge:</b> Make lengthy audio and video content searchable without reviewing entire recordings.</p><p><b>Technical approach:</b> Combine caption and faster-whisper transcription with embedding-based search and timestamp-linked navigation.</p><p><b>Implementation highlights:</b></p>
-<ul><li>Developed audio ingestion and transcription workflows using captions and faster-whisper.</li><li>Implemented semantic search using embeddings and timestamp-linked navigation.</li></ul><p><b>Stack:</b> <code>Next.js</code> · <code>FastAPI</code> · <code>faster-whisper</code> · <code>Supabase</code></p><p>
+<p align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes"><img src="assets/projects/echonotes.png" alt="EchoNotes project screenshot" width="600"></a></p><sub><strong>NLP / Full-Stack AI</strong></sub><h3>03 · EchoNotes</h3>
+<p><em>AI-Powered Transcription & Semantic Search</em></p><p>An AI-powered application that converts audio and video content into structured transcripts, summaries, and searchable knowledge with timestamp-linked retrieval.</p><p><b>Challenge:</b> Make lengthy audio and video content searchable without reviewing entire recordings.</p><p><b>Approach:</b> Combine caption and faster-whisper transcription with embedding-based search and timestamp-linked navigation.</p><p><b>Highlights:</b></p><ul><li>Developed audio ingestion and transcription workflows using captions and faster-whisper.</li><li>Implemented semantic search using embeddings and timestamp-linked navigation.</li></ul><p><b>Stack:</b> <code>Next.js</code> · <code>FastAPI</code> · <code>faster-whisper</code> · <code>Supabase</code></p><p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes"><b>🔍 Case Study ↗</b></a> &nbsp;·&nbsp; <a href="https://youtube-video-summarizer-sage.vercel.app/"><b>▶️ Live Site ↗</b></a> &nbsp;·&nbsp; <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer"><b>📦 Source Code ↗</b></a></p>
 </td>
-</tr>
-</table>
+</tr></table>
 
 ---
 
@@ -115,8 +105,8 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
     </td>
     <td width="45%" align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=79A8FF&amp;text_color=57D9D0&amp;cache_seconds=3600&amp;refresh=2026112216" />
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=275DAD&amp;text_color=087E8B&amp;cache_seconds=3600&amp;refresh=2026112216" alt="Most used programming languages across public repositories for sakshamgupta04" width="380" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=79A8FF&amp;text_color=57D9D0&amp;cache_seconds=3600&amp;refresh=2026112218" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=275DAD&amp;text_color=087E8B&amp;cache_seconds=3600&amp;refresh=2026112218" alt="Most used programming languages across public repositories for sakshamgupta04" width="380" />
       </picture>
     </td>
   </tr>
@@ -124,8 +114,8 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=79A8FF&amp;fire=F59E72&amp;currStreakNum=C792EA&amp;sideNums=79A8FF&amp;currStreakLabel=57D9D0&amp;sideLabels=57D9D0&amp;dates=9CA3AF&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112216" />
-    <img src="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=275DAD&amp;fire=E87942&amp;currStreakNum=9B4DCA&amp;sideNums=275DAD&amp;currStreakLabel=087E8B&amp;sideLabels=087E8B&amp;dates=6B7280&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112216" alt="GitHub contribution streak statistics for sakshamgupta04" width="620" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=79A8FF&amp;fire=F59E72&amp;currStreakNum=C792EA&amp;sideNums=79A8FF&amp;currStreakLabel=57D9D0&amp;sideLabels=57D9D0&amp;dates=9CA3AF&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112218" />
+    <img src="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=275DAD&amp;fire=E87942&amp;currStreakNum=9B4DCA&amp;sideNums=275DAD&amp;currStreakLabel=087E8B&amp;sideLabels=087E8B&amp;dates=6B7280&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112218" alt="GitHub contribution streak statistics for sakshamgupta04" width="620" />
   </picture>
 </p>
 

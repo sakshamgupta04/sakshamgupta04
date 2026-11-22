@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-22T16:14:33Z",
+  "fetched_at": "2026-11-22T18:37:59Z",
   "languages": {
     "Python": 734283,
     "HTML": 79862,
@@ -19,6 +19,18 @@
   },
   "recent_activity": [
     {
+      "description": "Merged PR #28 in `sakshamgupta04/sakshamgupta04`: ",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
+      "relative_time": "just now",
+      "absolute_time": "2026-11-22 18:37:31"
+    },
+    {
+      "description": "Opened PR #28 in `sakshamgupta04/sakshamgupta04`: ",
+      "url": "https://github.com/sakshamgupta04/sakshamgupta04",
+      "relative_time": "5m ago",
+      "absolute_time": "2026-11-22 18:32:01"
+    },
+    {
       "description": "Pushed `37152bf` to `sakshamgupta04/sakshamgupta04` (`design/readable-stacked-project-screenshots`)",
       "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/37152bf5ff28bf368b2cb8f835bdebe465a0809d",
       "relative_time": "2d ago",
@@ -35,18 +47,6 @@
       "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/cfd92635995a54c251fef52d933491202f95f8a1",
       "relative_time": "2d ago",
       "absolute_time": "2026-11-19 18:49:29"
-    },
-    {
-      "description": "Pushed `10c7178` to `sakshamgupta04/sakshamgupta04` (`design/visible-horizontal-project-showcase`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/10c717899adc202fa42cec94ca81d51f0a61d0c8",
-      "relative_time": "2d ago",
-      "absolute_time": "2026-11-19 18:45:08"
-    },
-    {
-      "description": "Pushed `6406d59` to `sakshamgupta04/sakshamgupta04` (`main`)",
-      "url": "https://github.com/sakshamgupta04/sakshamgupta04/commit/6406d59025db1c75f5c825acb4c9d329ca7d332c",
-      "relative_time": "2d ago",
-      "absolute_time": "2026-11-19 18:40:54"
     }
   ],
   "github_stats": {
