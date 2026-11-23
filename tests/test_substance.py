@@ -177,3 +177,27 @@ def test_premium_gallery_preserves_images_and_link_destinations(profile_fixture:
     assert "https://github.com/sakshamgupta04/Youtube-Video-Summarizer" in output
     assert "<summary><b>Project details ▾</b></summary>" not in output
     assert output.count("Challenge:") == 3
+
+
+def test_balanced_readme_section_order_and_original_project_assets(profile_fixture: Profile) -> None:
+    output = render(profile_fixture)
+    headings = [
+        "## 👤 About Me",
+        "## ⚡ Featured Projects",
+        "## 🛠️ Technical Stack",
+        "## 💼 Professional Experience",
+        "## 📊 GitHub Statistics",
+        "## 🎖️ Certifications",
+        "## 🎓 Education",
+        "## 🚀 Let's Connect",
+    ]
+    positions = [output.index(heading) for heading in headings]
+    assert positions == sorted(positions)
+    assert "Building software that connects intelligence with real-world use." in output
+    assert output.count('<td width="33%" valign="top" style="padding: 12px;">') == 3
+    for project in profile_fixture.projects[:3]:
+        assert f'src="{project.image}"' in output
+        assert f'href="{project.links.demo}"' in output
+        assert project.tagline not in output
+    assert "https://youtube-video-summarizer-sage.vercel.app/" in output
+    assert "https://github.com/sakshamgupta04/Youtube-Video-Summarizer" in output
