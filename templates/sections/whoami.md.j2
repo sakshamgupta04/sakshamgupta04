@@ -2,7 +2,11 @@
 
 I'm **{{ profile.identity.name }}**, a Computer Science and Engineering graduate{% if has(profile.identity.education) %} from **{{ profile.identity.education[0].school }}**{% endif %} specializing in Artificial Intelligence and Machine Learning.
 
-{{ profile.identity.summary }}
+{% if has(profile.identity.tagline) %}
+**{{ profile.identity.tagline }}**
+{% endif %}
+
+{% if has(profile.identity.summary) %}{{ profile.identity.summary }}{% endif %}
 
 {% if has(profile.identity.roles_targeted) -%}
 **🎯 Target Roles:** {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }}
