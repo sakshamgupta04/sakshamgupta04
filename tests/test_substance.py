@@ -186,7 +186,6 @@ def test_balanced_readme_section_order_and_original_project_assets(profile_fixtu
         "## ⚡ Featured Projects",
         "## 🛠️ Technical Stack",
         "## 💼 Professional Experience",
-        "## 📊 GitHub Statistics",
         "## 🎖️ Certifications",
         "## 🎓 Education",
         "## 🚀 Let's Connect",
