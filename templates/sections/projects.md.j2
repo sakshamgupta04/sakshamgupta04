@@ -14,7 +14,6 @@
 {% if has(p.category) %}<sub><strong>{{ p.category }}</strong></sub>{% endif %}
 <h3>0{{ loop.index }} · {{ p.title }}</h3>
 {% if has(p.subtitle) %}<p><em>{{ p.subtitle }}</em></p>{% endif %}
-{% if has(p.tagline) %}<p>{{ p.tagline }}</p>{% endif %}
 {% if has(p.challenge) %}<p><b>Challenge:</b> {{ p.challenge }}</p>{% endif %}
 {% if has(p.approach) %}<p><b>Approach:</b> {{ p.approach }}</p>{% endif %}
 {% if has(p.highlights) %}<p><b>Highlights:</b></p><ul>{% for h in p.highlights %}<li>{{ h }}</li>{% endfor %}</ul>{% endif %}

@@ -30,12 +30,6 @@
 {% include "sections/now.md.j2" %}
 {% endif %}
 
-{% if profile.features.experience and has(profile.experience) %}
----
-
-{% include "sections/experience.md.j2" %}
-{% endif %}
-
 {% if has(profile.projects) %}
 ---
 
@@ -46,6 +40,12 @@
 ---
 
 {% include "sections/skills.md.j2" %}
+{% endif %}
+
+{% if profile.features.experience and has(profile.experience) %}
+---
+
+{% include "sections/experience.md.j2" %}
 {% endif %}
 
 {% if has(recent_activity) and profile.features.recent_activity %}
