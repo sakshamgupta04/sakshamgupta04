@@ -48,7 +48,7 @@ def test_start_here_recruiter_and_engineer(profile_fixture: Profile) -> None:
     # Recruiter section
     assert "💼 Recruiter &amp; Hiring Manager" in output
     assert "EchoNotes" in output
-    assert "AI Video Interview & Emotion Analyzer" in output
+    assert "AI Video Interview &amp; Emotion Analyzer" in output
     assert "People.ai" in output
 
     # Engineer section
