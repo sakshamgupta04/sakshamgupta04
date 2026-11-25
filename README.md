@@ -32,19 +32,19 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 <td width="33%" valign="top" style="padding: 12px;">
 <a id="people-ai"></a>
 <p align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit"><img src="assets/projects/people-ai.png" alt="People.ai project screenshot" width="100%"></a></p><sub><strong>Applied Machine Learning</strong></sub><h3>01 · People.ai</h3>
-<p><em>Faculty Fit & Retention Prediction</em></p><p><b>Challenge:</b> Assess faculty suitability and retention using professional experience and domain expertise.</p><p><b>Approach:</b> Engineer skill-diversity and experience features, then evaluate supervised classification models.</p><p><b>Highlights:</b></p><ul><li>Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.</li><li>Trained and evaluated supervised classification models for faculty role fit and retention prediction.</li></ul><p><b>Stack:</b> <code>Python</code> · <code>Scikit-learn</code> · <code>Gemini</code> · <code>Model Evaluation</code></p><p>
+<p><em>Faculty Fit &amp; Retention Prediction</em></p><p><b>Challenge:</b> Assess faculty suitability and retention using professional experience and domain expertise.</p><p><b>Approach:</b> Engineer skill-diversity and experience features, then evaluate supervised classification models.</p><p><b>Highlights:</b></p><ul><li>Engineered candidate profile features covering skill diversity, experience trends, and career longevity indicators.</li><li>Trained and evaluated supervised classification models for faculty role fit and retention prediction.</li></ul><p><b>Stack:</b> <code>Python</code> · <code>Scikit-learn</code> · <code>Gemini</code> · <code>Model Evaluation</code></p><p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/people-ai-faculty-fit"><b>🔍 Case Study ↗</b></a></p>
 </td>
 <td width="33%" valign="top" style="padding: 12px;">
 <a id="ai-video-interview-emotion-analyzer"></a>
-<p align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer"><img src="assets/projects/interview-analyzer.png" alt="AI Video Interview & Emotion Analyzer project screenshot" width="100%"></a></p><sub><strong>Computer Vision / Full-Stack AI</strong></sub><h3>02 · AI Video Interview & Emotion Analyzer</h3>
-<p><em>Real-Time Facial Expression & Emotion Telemetry</em></p><p><b>Challenge:</b> Turn recorded interview responses into structured facial-expression signals.</p><p><b>Approach:</b> Capture browser video with MediaRecorder, store uploads in Supabase, and analyze frames using DeepFace and OpenCV.</p><p><b>Highlights:</b></p><ul><li>Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.</li><li>Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.</li></ul><p><b>Stack:</b> <code>Next.js</code> · <code>Python</code> · <code>DeepFace</code> · <code>Supabase</code></p><p>
+<p align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer"><img src="assets/projects/interview-analyzer.png" alt="AI Video Interview &amp; Emotion Analyzer project screenshot" width="100%"></a></p><sub><strong>Computer Vision / Full-Stack AI</strong></sub><h3>02 · AI Video Interview &amp; Emotion Analyzer</h3>
+<p><em>Real-Time Facial Expression &amp; Emotion Telemetry</em></p><p><b>Challenge:</b> Turn recorded interview responses into structured facial-expression signals.</p><p><b>Approach:</b> Capture browser video with MediaRecorder, store uploads in Supabase, and analyze frames using DeepFace and OpenCV.</p><p><b>Highlights:</b></p><ul><li>Developed browser video recording with MediaRecorder API and multipart streaming to Supabase Storage.</li><li>Built a frame-by-frame emotion telemetry pipeline using DeepFace and OpenCV Haar cascades.</li></ul><p><b>Stack:</b> <code>Next.js</code> · <code>Python</code> · <code>DeepFace</code> · <code>Supabase</code></p><p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/ai-video-interview-emotion-analyzer"><b>🔍 Case Study ↗</b></a></p>
 </td>
 <td width="33%" valign="top" style="padding: 12px;">
 <a id="echonotes"></a>
 <p align="center"><a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes"><img src="assets/projects/echonotes.png" alt="EchoNotes project screenshot" width="100%"></a></p><sub><strong>NLP / Full-Stack AI</strong></sub><h3>03 · EchoNotes</h3>
-<p><em>AI-Powered Transcription & Semantic Search</em></p><p><b>Challenge:</b> Make lengthy audio and video content searchable without reviewing entire recordings.</p><p><b>Approach:</b> Combine caption and faster-whisper transcription with embedding-based search and timestamp-linked navigation.</p><p><b>Highlights:</b></p><ul><li>Developed audio ingestion and transcription workflows using captions and faster-whisper.</li><li>Implemented semantic search using embeddings and timestamp-linked navigation.</li></ul><p><b>Stack:</b> <code>Next.js</code> · <code>FastAPI</code> · <code>faster-whisper</code> · <code>Supabase</code></p><p>
+<p><em>AI-Powered Transcription &amp; Semantic Search</em></p><p><b>Challenge:</b> Make lengthy audio and video content searchable without reviewing entire recordings.</p><p><b>Approach:</b> Combine caption and faster-whisper transcription with embedding-based search and timestamp-linked navigation.</p><p><b>Highlights:</b></p><ul><li>Developed audio ingestion and transcription workflows using captions and faster-whisper.</li><li>Implemented semantic search using embeddings and timestamp-linked navigation.</li></ul><p><b>Stack:</b> <code>Next.js</code> · <code>FastAPI</code> · <code>faster-whisper</code> · <code>Supabase</code></p><p>
 <a href="https://sakshamsgupta-portfolio.vercel.app/projects/echonotes"><b>🔍 Case Study ↗</b></a> &nbsp;·&nbsp; <a href="https://youtube-video-summarizer-sage.vercel.app/"><b>▶️ Live Site ↗</b></a> &nbsp;·&nbsp; <a href="https://github.com/sakshamgupta04/Youtube-Video-Summarizer"><b>📦 Source Code ↗</b></a></p>
 </td>
 </tr>
@@ -108,8 +108,8 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
     </td>
     <td width="45%" align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=79A8FF&amp;text_color=57D9D0&amp;cache_seconds=3600&amp;refresh=2026112514" />
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=275DAD&amp;text_color=087E8B&amp;cache_seconds=3600&amp;refresh=2026112514" alt="Most used programming languages across public repositories for sakshamgupta04" width="380" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=79A8FF&amp;text_color=57D9D0&amp;cache_seconds=3600&amp;refresh=2026112518" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=275DAD&amp;text_color=087E8B&amp;cache_seconds=3600&amp;refresh=2026112518" alt="Most used programming languages across public repositories for sakshamgupta04" width="380" />
       </picture>
     </td>
   </tr>
@@ -117,8 +117,8 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=79A8FF&amp;fire=F59E72&amp;currStreakNum=C792EA&amp;sideNums=79A8FF&amp;currStreakLabel=57D9D0&amp;sideLabels=57D9D0&amp;dates=9CA3AF&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112514" />
-    <img src="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=275DAD&amp;fire=E87942&amp;currStreakNum=9B4DCA&amp;sideNums=275DAD&amp;currStreakLabel=087E8B&amp;sideLabels=087E8B&amp;dates=6B7280&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112514" alt="GitHub contribution streak statistics for sakshamgupta04" width="620" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=79A8FF&amp;fire=F59E72&amp;currStreakNum=C792EA&amp;sideNums=79A8FF&amp;currStreakLabel=57D9D0&amp;sideLabels=57D9D0&amp;dates=9CA3AF&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112518" />
+    <img src="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=275DAD&amp;fire=E87942&amp;currStreakNum=9B4DCA&amp;sideNums=275DAD&amp;currStreakLabel=087E8B&amp;sideLabels=087E8B&amp;dates=6B7280&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112518" alt="GitHub contribution streak statistics for sakshamgupta04" width="620" />
   </picture>
 </p>
 
@@ -141,7 +141,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 
 - **Machine Learning Foundations: A Case Study Approach** · Coursera · [View credential](https://drive.google.com/file/d/1OEpAV99YcSLHiKTEZYi837R5TxQRKD5B/view?usp=sharing)
-- **Machine Learning: Clustering & Retrieval** · Coursera · [View credential](https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing)
+- **Machine Learning: Clustering &amp; Retrieval** · Coursera · [View credential](https://drive.google.com/file/d/1ltixDuXfPTm9ZjuJG0D5CUbCBdMpZNC9/view?usp=sharing)
 - **The Joy of Computing Using Python** · NPTEL · [View credential](https://drive.google.com/file/d/1WuVjc5FJYyqfh6lhZQ6vbLnY26bnvM-0/view?usp=sharing)
 - **GCP Associate Cloud Engineer Certification Training** · Udemy · [View credential](https://drive.google.com/file/d/1Bw5bg4Yojz2DPmFDPV0K1wRqYPpmOakV/view?usp=sharing)
 - **JavaScript — The Complete Guide** · Udemy · [View credential](https://drive.google.com/file/d/17mlMA4FOzjRV_1lhhy4L5Zpctv_hgzN5/view?usp=sharing)
@@ -156,7 +156,7 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 ## 🎓 Education <a id="education"></a>
 
 ### Model Institute of Engineering and Technology, Jammu
-**B.Tech in Computer Science & Engineering (AI/ML)** &nbsp;•&nbsp; 🗓️ 2022 — 2026
+**B.Tech in Computer Science &amp; Engineering (AI/ML)** &nbsp;•&nbsp; 🗓️ 2022 — 2026
 > **Academic Standing:** CGPA 8.5/10
 
 
@@ -168,7 +168,7 @@ I'm actively looking for software engineering, AI/ML, and full-stack development
 
 <div align="center" markdown="1">
 
-[🌐 **Portfolio**](https://sakshamsgupta-portfolio.vercel.app/) &nbsp;&nbsp;•&nbsp;&nbsp; [✉️ **Email**](mailto:work.saksham04@gmail.com) &nbsp;&nbsp;•&nbsp;&nbsp; [💼 **LinkedIn**](https://www.linkedin.com/in/saksham-gupta-458486294/) &nbsp;&nbsp;•&nbsp;&nbsp; [🐙 **GitHub**](https://github.com/sakshamgupta04) &nbsp;&nbsp;•&nbsp;&nbsp; [🧩 **LeetCode**](https://leetcode.com/u/wupNOxI7hc/) &nbsp;&nbsp;•&nbsp;&nbsp; [📄 **Resume**](https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf)
+[🌐 **Portfolio**](https://sakshamsgupta-portfolio.vercel.app/) &amp;nbsp;&amp;nbsp;•&amp;nbsp;&amp;nbsp; [✉️ **Email**](mailto:work.saksham04@gmail.com) &amp;nbsp;&amp;nbsp;•&amp;nbsp;&amp;nbsp; [💼 **LinkedIn**](https://www.linkedin.com/in/saksham-gupta-458486294/) &amp;nbsp;&amp;nbsp;•&amp;nbsp;&amp;nbsp; [🐙 **GitHub**](https://github.com/sakshamgupta04) &amp;nbsp;&amp;nbsp;•&amp;nbsp;&amp;nbsp; [🧩 **LeetCode**](https://leetcode.com/u/wupNOxI7hc/) &amp;nbsp;&amp;nbsp;•&amp;nbsp;&amp;nbsp; [📄 **Resume**](https://sakshamsgupta-portfolio.vercel.app/Saksham_Gupta_Resume.pdf)
 
 </div>
 
