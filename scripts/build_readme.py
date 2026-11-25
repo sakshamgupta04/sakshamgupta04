@@ -65,7 +65,7 @@ def render_readme(
         loader=FileSystemLoader(str(template_dir)),
         trim_blocks=True,
         lstrip_blocks=True,
-        autoescape=False,
+        autoescape=True,
     )
     env.globals.update(has=has, validate_diagram=validate_mermaid_diagram)
     env.filters.update(

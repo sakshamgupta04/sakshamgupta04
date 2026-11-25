@@ -116,7 +116,7 @@ def test_education_and_certifications_formatting(profile_fixture: Profile) -> No
     p.features.education = True
     output = render(p)
     assert "Education" in output
-    assert "B.Tech in Computer Science & Engineering (AI/ML)" in output
+    assert "B.Tech in Computer Science &amp; Engineering (AI/ML)" in output
     assert "CGPA 8.5/10" in output
 
     # Check cert kinds
@@ -200,3 +200,11 @@ def test_balanced_readme_section_order_and_original_project_assets(profile_fixtu
         assert project.tagline not in output
     assert "https://youtube-video-summarizer-sage.vercel.app/" in output
     assert "https://github.com/sakshamgupta04/Youtube-Video-Summarizer" in output
+
+
+def test_renderer_escapes_html_in_project_content(profile_fixture: Profile) -> None:
+    p = copy.deepcopy(profile_fixture)
+    p.projects[0].challenge = '<img src=x onerror="alert(1)">'
+    output = render(p)
+    assert '<img src=x onerror=' not in output
+    assert '&lt;img src=x onerror=' in output

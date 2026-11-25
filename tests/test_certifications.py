@@ -1,5 +1,6 @@
 """Verify floating certification assets and credential links."""
 
+from html import unescape
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -24,9 +25,9 @@ def test_certification_showcase_preserves_all_credentials() -> None:
         assert f"assets/{name}" in section
     assert "<details>" in section
     for credential in profile.certifications:
-        assert credential.title in section
+        assert credential.title in unescape(section)
         if credential.url:
-            assert section.count(credential.url) == 1
+            assert unescape(section).count(credential.url) == 1
     assert section.count("[View credential]") == 6
     assert "AI/ML Hands-on Training Program" in section
     assert "Mar 2025" in section
