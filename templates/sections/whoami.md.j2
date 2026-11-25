@@ -9,5 +9,5 @@ I'm **{{ profile.identity.name }}**, a Computer Science and Engineering graduate
 {% if has(profile.identity.summary) %}{{ profile.identity.summary }}{% endif %}
 
 {% if has(profile.identity.roles_targeted) -%}
-**🎯 Target Roles:** {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; ") }}
+**🎯 Target Roles:** {{ profile.identity.roles_targeted | join(" &nbsp;•&nbsp; " | safe) }}
 {%- endif %}
