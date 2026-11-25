@@ -116,7 +116,7 @@ def test_education_and_certifications_formatting(profile_fixture: Profile) -> No
     p.features.education = True
     output = render(p)
     assert "Education" in output
-    assert "B.Tech in Computer Science & Engineering (AI/ML)" in output
+    assert "B.Tech in Computer Science &amp; Engineering (AI/ML)" in output
     assert "CGPA 8.5/10" in output
 
     # Check cert kinds
