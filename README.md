@@ -108,8 +108,8 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
     </td>
     <td width="45%" align="center" valign="middle">
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=79A8FF&amp;text_color=57D9D0&amp;cache_seconds=3600&amp;refresh=2026112800" />
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=275DAD&amp;text_color=087E8B&amp;cache_seconds=3600&amp;refresh=2026112800" alt="Most used programming languages across public repositories for sakshamgupta04" width="380" />
+        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=79A8FF&amp;text_color=57D9D0&amp;cache_seconds=3600&amp;refresh=2026112807" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sakshamgupta04&amp;layout=compact&amp;langs_count=8&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=275DAD&amp;text_color=087E8B&amp;cache_seconds=3600&amp;refresh=2026112807" alt="Most used programming languages across public repositories for sakshamgupta04" width="380" />
       </picture>
     </td>
   </tr>
@@ -117,8 +117,8 @@ I'm **Saksham Gupta**, a Computer Science and Engineering graduate from **Model 
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=79A8FF&amp;fire=F59E72&amp;currStreakNum=C792EA&amp;sideNums=79A8FF&amp;currStreakLabel=57D9D0&amp;sideLabels=57D9D0&amp;dates=9CA3AF&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112800" />
-    <img src="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=275DAD&amp;fire=E87942&amp;currStreakNum=9B4DCA&amp;sideNums=275DAD&amp;currStreakLabel=087E8B&amp;sideLabels=087E8B&amp;dates=6B7280&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112800" alt="GitHub contribution streak statistics for sakshamgupta04" width="620" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=79A8FF&amp;fire=F59E72&amp;currStreakNum=C792EA&amp;sideNums=79A8FF&amp;currStreakLabel=57D9D0&amp;sideLabels=57D9D0&amp;dates=9CA3AF&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112807" />
+    <img src="https://streak-stats.demolab.com/?user=sakshamgupta04&amp;theme=transparent&amp;background=00000000&amp;hide_border=true&amp;ring=275DAD&amp;fire=E87942&amp;currStreakNum=9B4DCA&amp;sideNums=275DAD&amp;currStreakLabel=087E8B&amp;sideLabels=087E8B&amp;dates=6B7280&amp;timezone=Asia/Kolkata&amp;cache_seconds=3600&amp;refresh=2026112807" alt="GitHub contribution streak statistics for sakshamgupta04" width="620" />
   </picture>
 </p>
 
